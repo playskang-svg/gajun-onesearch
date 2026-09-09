@@ -26,6 +26,12 @@ export default {
       return new Response(null, { headers: corsHeaders });
     }
 
+    // SEO Canonical Domain: Redirect www.gajun.kr or any other host to https://gajun.kr (301 Permanent)
+    if (url.hostname !== 'gajun.kr' && !url.hostname.includes('localhost') && !url.hostname.endsWith('.workers.dev')) {
+      url.hostname = 'gajun.kr';
+      return Response.redirect(url.toString(), 301);
+    }
+
     // 1. Health check endpoint
     if (url.pathname === '/api/health') {
       return new Response(
