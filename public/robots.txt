@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gajun.kr/sitemap.xml
