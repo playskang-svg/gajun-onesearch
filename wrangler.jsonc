@@ -5,8 +5,8 @@
   "compatibility_date": "2026-09-08",
   "compatibility_flags": ["nodejs_compat"],
   "routes": [
-    { "pattern": "gajun.adbles.com", "custom_domain": true },
-    { "pattern": "onesearch.adbles.com", "custom_domain": true }
+    { "pattern": "gajun.noluga.com", "custom_domain": true },
+    { "pattern": "onesearch.noluga.com", "custom_domain": true }
   ],
   "assets": {
     "directory": "./dist",
