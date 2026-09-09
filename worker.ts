@@ -49,6 +49,24 @@ export default {
       );
     }
 
+    // 1-1. Google AdSense ads.txt endpoint
+    if (url.pathname === '/ads.txt') {
+      return new Response(
+        `# Google AdSense ads.txt for gajun.kr
+# Replace pub-XXXXXXXXXXXXXXXX with your actual Google AdSense Publisher ID when approved
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+`,
+        {
+          headers: {
+            'Content-Type': 'text/plain; charset=utf-8',
+            'Cache-Control': 'public, max-age=3600',
+            ...corsHeaders,
+          },
+        }
+      );
+    }
+
+
     // 2. Serve static assets via Cloudflare Assets
     let response = await env.ASSETS.fetch(request);
 

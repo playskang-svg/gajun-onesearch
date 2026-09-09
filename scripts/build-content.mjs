@@ -143,6 +143,15 @@ Sitemap: ${SITE.domain}/sitemap.xml
 `
 );
 
+// ── ads.txt (Google AdSense crawler compliance)
+write(
+  'ads.txt',
+  `# Google AdSense ads.txt for gajun.kr
+# Replace pub-XXXXXXXXXXXXXXXX with your actual Google AdSense Publisher ID when approved
+google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+`
+);
+
 console.log(
   `콘텐츠 생성 완료 — 글 ${posts.length}편, 카테고리 ${groups.length}개, 정책 ${pages.length}개, sitemap ${urls.length} URL`
 );

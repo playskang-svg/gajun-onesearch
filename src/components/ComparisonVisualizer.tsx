@@ -47,7 +47,7 @@ export const ComparisonVisualizer: React.FC<ComparisonVisualizerProps> = ({
 
   // 1. Radar Chart Data Preparation
   const radarMetrics = [
-    { key: 'nosearchScore', label: '가전비교 종합점수' },
+    { key: 'nosearchScore', label: '자체 기준 점수' },
     { key: 'performance', label: '성능 지수' },
     { key: 'convenience', label: '사용 편의성' },
     { key: 'maintenance', label: '유지관리·소음' },
@@ -107,7 +107,7 @@ export const ComparisonVisualizer: React.FC<ComparisonVisualizerProps> = ({
                 비교 데이터 시각화 분석
               </h3>
               <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-400/30">
-                실측 데이터 기반
+                공개 사양 기반
               </span>
             </div>
             <p className="text-xs text-slate-400">
@@ -329,7 +329,7 @@ export const ComparisonVisualizer: React.FC<ComparisonVisualizerProps> = ({
                   {quietestProduct.name} ({quietestProduct.scores.maintenance}점)
                 </div>
                 <div className="text-[11px] text-slate-300 mt-1 line-clamp-1">
-                  실측 소음 및 관리 편의성 우수 모델
+                  표기 소음이 낮고 관리가 편한 모델
                 </div>
               </div>
             </div>

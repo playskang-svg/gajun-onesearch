@@ -92,7 +92,7 @@ export const ApplianceFinder: React.FC<ApplianceFinderProps> = ({
       } else if (priority === 'performance') {
         matchReason = `동급 최강의 흡입력/세척 성능(${p.scores.performance}점)을 보유해 잔여 오염 없이 완벽한 결과를 냅니다.`;
       } else {
-        matchReason = `조용한 실측 소음과 안정적인 기본기로 일상 만족도가 매우 높은 추천작입니다.`;
+        matchReason = `표기 소음이 낮고 안정적인 기본기로 일상 만족도가 매우 높은 추천작입니다.`;
       }
 
       return {
@@ -128,7 +128,7 @@ export const ApplianceFinder: React.FC<ApplianceFinderProps> = ({
           3분 만에 찾는 내 집 맞춤 가전
         </h1>
         <p className="text-sm text-gray-600 max-w-lg mx-auto">
-          가구 형태, 평수, 반려동물 유무, 예산에 맞춰 가전비교연구소 실측 데이터를 기반으로 한번에 한눈에 맞춤 모델을 진단해 드립니다.
+          가구 형태, 평수, 반려동물 유무, 예산에 맞춰 제조사 공개 사양을 기준으로 한번에 한눈에 맞춤 모델을 진단해 드립니다.
         </p>
       </div>
 

@@ -27,6 +27,7 @@ interface NavbarProps {
   compareCount: number;
   openCompareStudio: () => void;
   onToggleMobileFilter?: () => void;
+  onOpenPolicy?: (tab: 'about' | 'privacy' | 'terms' | 'contact' | 'affiliate') => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -39,6 +40,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   compareCount,
   openCompareStudio,
   onToggleMobileFilter,
+  onOpenPolicy,
 }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -58,12 +60,12 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-2 min-w-0">
             <span className="bg-blue-600 text-white px-1.5 py-0.5 rounded text-[10px] font-semibold shrink-0">LAB UPDATE</span>
-            <span className="truncate">{new Date().getFullYear()} 최신 가전 실측 데이터 & 1:1 비교 스펙 전면 업데이트 완료</span>
+            <span className="truncate">{new Date().getFullYear()} 최신 가전 사양 정리 & 1:1 비교 전면 업데이트 완료</span>
           </div>
           <div className="hidden sm:flex items-center gap-3 text-slate-400 text-[11px]">
-            <span>독립 연구소 실측 기준</span>
+            <span>제조사 공개 사양 기준</span>
             <span>•</span>
-            <span>제조사 카탈로그 대신 실측 수치</span>
+            <span>같은 항목으로 맞춘 사양 비교</span>
           </div>
         </div>
       </div>
@@ -375,7 +377,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                       </div>
                       <div className="text-left">
                         <div className="text-sm font-bold">가전 탐색 & 랭킹</div>
-                        <div className="text-[11px] font-normal text-gray-400">70여 개 실측 가전 비교</div>
+                        <div className="text-[11px] font-normal text-gray-400">70여 개 가전 사양 비교</div>
                       </div>
                     </div>
                     <ArrowRight className="w-4 h-4 text-gray-400 shrink-0" />
@@ -533,9 +535,36 @@ export const Navbar: React.FC<NavbarProps> = ({
               </div>
             </div>
 
-            {/* Drawer Footer */}
-            <div className="p-4 border-t border-gray-100 bg-gray-50 text-xs text-gray-500 text-center">
-              가전비교연구소 • 독립 연구소 실측 데이터 기반
+            {/* Drawer Footer with Legal & Policy Shortcuts */}
+            <div className="p-4 border-t border-gray-100 bg-gray-50 text-xs text-gray-500 space-y-3">
+              <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 text-xs font-semibold text-gray-600">
+                <a href="/guide/" className="hover:text-blue-600 text-blue-600 font-bold">가전 상식(31편)</a>
+                <span>•</span>
+                {onOpenPolicy ? (
+                  <>
+                    <button onClick={() => { onOpenPolicy('about'); setMobileMenuOpen(false); }} className="hover:text-blue-600">소개</button>
+                    <span>•</span>
+                    <button onClick={() => { onOpenPolicy('privacy'); setMobileMenuOpen(false); }} className="hover:text-blue-600">개인정보</button>
+                    <span>•</span>
+                    <button onClick={() => { onOpenPolicy('terms'); setMobileMenuOpen(false); }} className="hover:text-blue-600">약관</button>
+                    <span>•</span>
+                    <button onClick={() => { onOpenPolicy('contact'); setMobileMenuOpen(false); }} className="hover:text-blue-600">문의</button>
+                  </>
+                ) : (
+                  <>
+                    <a href="/guide/about/" className="hover:text-blue-600">소개</a>
+                    <span>•</span>
+                    <a href="/guide/privacy/" className="hover:text-blue-600">개인정보</a>
+                    <span>•</span>
+                    <a href="/guide/terms/" className="hover:text-blue-600">약관</a>
+                    <span>•</span>
+                    <a href="/guide/contact/" className="hover:text-blue-600">문의</a>
+                  </>
+                )}
+              </div>
+              <div className="text-[11px] text-gray-400 text-center">
+                가전비교연구소 • 공정위 및 구글 애드센스 정책 준수
+              </div>
             </div>
           </div>
         </div>

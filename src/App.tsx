@@ -27,7 +27,9 @@ import { BuyingGuidesView } from './components/BuyingGuidesView';
 import { AiConsultantView } from './components/AiConsultantView';
 import { MallSalesView } from './components/MallSalesView';
 import { MobileBottomNav } from './components/MobileBottomNav';
+import { PolicyModal, PolicyTab } from './components/PolicyModal';
 import { NavTabType } from './components/Navbar';
+
 
 export default function App() {
   // Navigation
@@ -60,6 +62,15 @@ export default function App() {
 
   // Mobile filter drawer
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
+
+  // Policy & Legal modal
+  const [isPolicyOpen, setIsPolicyOpen] = useState(false);
+  const [policyTab, setPolicyTab] = useState<PolicyTab>('about');
+
+  const handleOpenPolicy = (tab: PolicyTab) => {
+    setPolicyTab(tab);
+    setIsPolicyOpen(true);
+  };
 
   // Toast / notification
   const [toastMessage, setToastMessage] = useState<string | null>(null);
@@ -229,6 +240,7 @@ export default function App() {
         compareCount={compareList.length}
         openCompareStudio={() => setIsStudioOpen(true)}
         onToggleMobileFilter={() => setIsMobileFilterOpen(true)}
+        onOpenPolicy={handleOpenPolicy}
       />
 
       {/* VIEW SWITCHER */}
@@ -240,14 +252,14 @@ export default function App() {
             <div className="relative z-10 max-w-2xl space-y-3">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/20 text-blue-300 text-xs font-bold border border-blue-400/20">
                 <Sparkles className="w-3.5 h-3.5 text-blue-400" />
-                <span>한번에 한눈에 비교! 독립 연구소 실측 가전 플랫폼</span>
+                <span>한번에 한눈에 비교! 공개 사양 기반 가전 비교 플랫폼</span>
               </div>
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight leading-tight">
-                홍보 문구 걷어낸 실측 스펙 비교,<br />
+                홍보 문구 걷어낸 스펙 비교,<br />
                 <span className="text-blue-400">가전비교연구소</span>에서 한번에 한눈에!
               </h1>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
-                제조사 카탈로그의 과장된 수치 대신, 연구소에서 직접 측정한 흡입력(AW), 실측 소음(dB), 
+                홍보 문구 대신 제조사가 공개한 흡입력(AW), 소음(dB), 
                 전기요금 및 고장률 데이터를 기반으로 한번에 한눈에 비교하여 실패 없는 가전 선택을 돕습니다.
               </p>
 
@@ -255,11 +267,11 @@ export default function App() {
               <div className="pt-2 flex flex-wrap items-center gap-3 sm:gap-8 text-xs sm:text-sm text-slate-300">
                 <div className="flex items-center gap-2">
                   <div className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
-                  <span>실측 테스트 완료 <strong>70여 개 인기 가전</strong></span>
+                  <span>사양 정리 완료 <strong>70여 개 인기 가전</strong></span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2.5 h-2.5 rounded-full bg-blue-400" />
-                  <span>4대 평가 지표 실측</span>
+                  <span>4대 지표 비교</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-2.5 h-2.5 rounded-full bg-amber-400" />
@@ -292,7 +304,7 @@ export default function App() {
               {GUIDE_POSTS.slice(0, 6).map((g) => (
                 <a
                   key={g.slug}
-                  href={`/guide//`}
+                  href={`/guide/${g.slug}/`}
                   className="block bg-white border border-gray-200 rounded-2xl p-4 hover:border-emerald-300 hover:shadow-xs transition"
                 >
                   <div className="text-[11px] font-bold text-emerald-700 mb-1.5">{g.categoryName}</div>
@@ -433,6 +445,7 @@ export default function App() {
           onOpenDetails={(p) => setSelectedProduct(p)}
           onToggleCompare={handleToggleCompare}
           compareList={compareList}
+          onOpenPolicy={handleOpenPolicy}
         />
       )}
 
@@ -512,34 +525,65 @@ export default function App() {
 
       {/* Footer */}
       <footer className="mt-16 bg-white border-t border-gray-200 py-10 text-xs text-gray-500">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-5">
+          {/* Main Navigation Row */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <span className="font-bold text-gray-900 text-sm">가전비교연구소</span>
               <span className="text-gray-400">| 한번에 한눈에 비교하는 가전 스펙 플랫폼</span>
             </div>
             <div className="flex items-center gap-4 text-gray-600 flex-wrap">
-              <button onClick={() => setActiveTab('explore')} className="hover:text-blue-600">가전 탐색</button>
-              <button onClick={() => setActiveTab('compare')} className="hover:text-blue-600">1:1 스펙비교</button>
-              <button onClick={() => setActiveTab('finder')} className="hover:text-blue-600">맞춤 가전 찾기</button>
-              <button onClick={() => setActiveTab('guides')} className="hover:text-blue-600">구매 가이드</button>
-              <button onClick={() => setActiveTab('sales')} className="hover:text-rose-600 font-semibold text-rose-600">백화점·몰 세일전</button>
-              <button onClick={() => setActiveTab('ai')} className="hover:text-purple-600">AI 컨설턴트</button>
+              <button onClick={() => setActiveTab('explore')} className="hover:text-blue-600 cursor-pointer">가전 탐색</button>
+              <button onClick={() => setActiveTab('compare')} className="hover:text-blue-600 cursor-pointer">1:1 스펙비교</button>
+              <button onClick={() => setActiveTab('finder')} className="hover:text-blue-600 cursor-pointer">맞춤 가전 찾기</button>
+              <button onClick={() => setActiveTab('guides')} className="hover:text-blue-600 cursor-pointer">구매 가이드</button>
+              <button onClick={() => setActiveTab('sales')} className="hover:text-rose-600 font-semibold text-rose-600 cursor-pointer">백화점·몰 세일전</button>
+              <button onClick={() => setActiveTab('ai')} className="hover:text-purple-600 cursor-pointer">AI 컨설턴트</button>
             </div>
           </div>
+
+          {/* Legal & Compliance Policy Links (Google AdSense 필수 승인 요건) */}
+          <div className="pt-4 border-t border-gray-100 flex flex-wrap items-center justify-between gap-3 text-xs">
+            <div className="flex items-center gap-3 sm:gap-4 flex-wrap text-gray-700 font-bold">
+              <a href="/guide/" className="text-blue-600 hover:underline">가전 상식 백과 (31편)</a>
+              <span className="text-gray-300">|</span>
+              <button onClick={() => handleOpenPolicy('about')} className="hover:text-blue-600 cursor-pointer">사이트 소개 (About)</button>
+              <span className="text-gray-300">|</span>
+              <button onClick={() => handleOpenPolicy('privacy')} className="text-gray-900 hover:text-blue-600 underline decoration-blue-500 cursor-pointer">개인정보처리방침 (Privacy)</button>
+              <span className="text-gray-300">|</span>
+              <button onClick={() => handleOpenPolicy('terms')} className="hover:text-blue-600 cursor-pointer">이용약관 및 면책</button>
+              <span className="text-gray-300">|</span>
+              <button onClick={() => handleOpenPolicy('contact')} className="hover:text-blue-600 cursor-pointer">문의하기 (Contact)</button>
+              <span className="text-gray-300">|</span>
+              <button onClick={() => handleOpenPolicy('affiliate')} className="hover:text-blue-600 cursor-pointer">제휴·수익 고지</button>
+            </div>
+            <div className="text-[11px] text-gray-500">
+              공식 문의: <a href="mailto:contact@gajun.kr" className="text-blue-600 hover:underline font-mono">contact@gajun.kr</a>
+            </div>
+          </div>
+
           <p className="text-[11px] text-gray-400 leading-relaxed">
             본 서비스는 실제 가전 사용자의 합리적인 구매를 돕기 위해 제작된 한번에 한눈에 비교하는 가전비교연구소 가전 스펙 비교 및 실험실 리뷰 웹 애플리케이션입니다. 
-            모든 평가 점수와 실측치는 표준 시험 조건에 기반합니다.
+            평가 점수는 공개 사양을 항목별로 환산한 자체 기준이며, 수치는 제조사 공개 자료를 따릅니다.
           </p>
-          <div className="bg-slate-50 border border-slate-200/80 rounded-xl p-3 text-[11px] text-slate-500 leading-relaxed">
+
+          <div className="bg-slate-50 border border-slate-200/80 rounded-xl p-3.5 text-[11px] text-slate-500 leading-relaxed">
             <span className="font-semibold text-slate-700">공정거래위원회 제휴 마케팅 안내:</span> 본 사이트는 쿠팡 파트너스 및 링크프라이스 등 제휴 마케팅 프로그램의 활동으로 일정액의 수수료를 제공받을 수 있으며, 추천 상품의 최종 구매 가격에는 어떠한 영향도 미치지 않습니다.
           </div>
+
           <div className="pt-2 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-400 flex-wrap gap-2">
             <span>© 2026 가전비교연구소 (gajun.kr). All rights reserved.</span>
-            <span>독립 연구소 실측 검증 데이터 & 검증된 파트너십 딥링크 탑재</span>
+            <span>제조사 공개 사양 기반 비교 & Google AdSense 정책 준수</span>
           </div>
         </div>
       </footer>
+
+      {/* Legal & Policy Modal */}
+      <PolicyModal
+        isOpen={isPolicyOpen}
+        initialTab={policyTab}
+        onClose={() => setIsPolicyOpen(false)}
+      />
 
       {/* Mobile Bottom Navigation Bar */}
       <MobileBottomNav

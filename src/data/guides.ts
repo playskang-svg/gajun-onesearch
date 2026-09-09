@@ -114,7 +114,7 @@ export const BUYING_GUIDES: BuyingGuide[] = [
   {
     id: 'guide-refrigerator-compare-2026',
     categoryId: 'refrigerator',
-    title: '2026 양문형 냉장고 vs 4도어 냉장고 실측 비교 및 가구별 용량 선택법',
+    title: '2026 양문형 냉장고 vs 4도어 냉장고 사양 비교 및 가구별 용량 선택법',
     subtitle: '16만 검색량 키워드 분석! 신혼부부 600L vs 4인가구 800L 후회 없는 선택 기준',
     readTime: '4분',
     publishedAt: '2026.09.09',
@@ -138,7 +138,7 @@ export const BUYING_GUIDES: BuyingGuide[] = [
       },
       {
         heading: '3. 스마트 도어 및 UV 살균 필터',
-        body: '손잡이를 잡지 않아도 센서 터치로 열리는 오토 도어와 식재료 냄새를 99% 잡아주는 UV 청정 필터는 실사용 만족도가 가장 높은 기능입니다. LG 디오스 오브제와 삼성 비스포크의 실측 스펙을 비교해 보세요.'
+        body: '손잡이를 잡지 않아도 센서 터치로 열리는 오토 도어와 식재료 냄새를 99% 잡아주는 UV 청정 필터는 실사용 만족도가 가장 높은 기능입니다. LG 디오스 오브제와 삼성 비스포크의 공개 사양을 비교해 보세요.'
       }
     ],
     recommendedProductIds: ['prod-refrigerator-1', 'prod-refrigerator-2', 'prod-refrigerator-3']
@@ -151,7 +151,7 @@ export const BUYING_GUIDES: BuyingGuide[] = [
     readTime: '4분',
     publishedAt: '2026.09.09',
     thumbnail: 'https://images.unsplash.com/photo-1544816155-12df9643f363?w=800&auto=format&fit=crop&q=80',
-    summary: '세탁 후 빨래를 옮기지 않아도 건조까지 끝나는 올인원 일체형과 대용량 이불 빨래에 특화된 상하 직렬 워시타워의 실측 장단점.',
+    summary: '세탁 후 빨래를 옮기지 않아도 건조까지 끝나는 올인원 일체형과 대용량 이불 빨래에 특화된 상하 직렬 워시타워의 장단점.',
     keyPoints: [
       { title: '세탁물 이전 불필요', desc: '일체형 콤보는 외출 전 버튼 한 번으로 귀가 시 보송보송한 건조 완료 의류 확인' },
       { title: '건조 용량 한계', desc: '일체형은 세탁 25kg 대비 건조 15kg 수준이므로 4인 이상 이불 건조는 워시타워가 우위' },

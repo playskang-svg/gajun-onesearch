@@ -175,6 +175,7 @@ ${keywords ? `<meta name="keywords" content="${esc(keywords)}">` : ''}
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${esc(canonical)}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
 <style>${CSS}</style>
@@ -189,8 +190,8 @@ function header(activeCat) {
   ).join('');
   return `
 <div class="topbar"><div class="wrap wide">
-  <span class="t"><b>가전 상식</b> 실측과 사용설명서로 확인한 가전 관리·수명 정보</span>
-  <span class="meta">독립 연구소 실측 기준</span>
+  <span class="t"><b>가전 상식</b> 사용설명서와 공개 자료로 확인한 가전 관리·수명 정보</span>
+  <span class="meta">제조사 공개 사양 기준</span>
 </div></div>
 <header class="site"><div class="wrap wide">
   <a class="brand" href="/">${esc(SITE.name)}<span>${esc(SITE.tagline)}</span></a>

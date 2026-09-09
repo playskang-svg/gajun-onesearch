@@ -120,7 +120,7 @@ export const ComparisonStudio: React.FC<ComparisonStudioProps> = ({
                 가전비교 1:1 스펙 맞대결 비교함
               </h2>
               <p className="text-xs text-gray-500 hidden sm:block">
-                한번에 한눈에 비교! 선택한 가전의 점수, 실측 성능, 장단점 차이를 한눈에 대조 분석합니다.
+                한번에 한눈에 비교! 선택한 가전의 점수, 사양, 장단점 차이를 한눈에 대조 분석합니다.
               </p>
             </div>
           </div>
@@ -356,7 +356,7 @@ export const ComparisonStudio: React.FC<ComparisonStudioProps> = ({
                   {/* SECTION 1: 가전비교 평가 점수 */}
                   <tr className="bg-slate-900 text-white">
                     <td colSpan={compareList.length + 2} className="py-2.5 px-4 font-bold text-xs uppercase tracking-wider">
-                      📊 가전비교 종합 점수 및 4대 지표 평가
+                      📊 자체 기준 점수 및 4대 지표 비교
                     </td>
                   </tr>
 
@@ -520,16 +520,16 @@ export const ComparisonStudio: React.FC<ComparisonStudioProps> = ({
                     );
                   })}
 
-                  {/* SECTION 3: 실측 랩 테스트 결과 */}
+                  {/* SECTION 3: 사양 비교표 */}
                   <tr className="bg-slate-100 text-slate-800">
                     <td colSpan={compareList.length + 2} className="py-2 px-4 font-bold text-xs uppercase">
-                      🔬 가전비교 랩 실측 테스트 대조
+                      🔬 제조사 공개 사양 대조
                     </td>
                   </tr>
 
                   <tr className="border-b border-gray-100 hover:bg-gray-50/50">
                     <th className="p-3 text-xs font-semibold text-gray-600 sticky left-0 bg-white z-10 border-r border-gray-200">
-                      실측 데이터 종합
+                      사양 종합
                     </th>
                     {compareList.map((p) => (
                       <td key={p.id} className="p-3 border-r border-gray-100 align-top">
@@ -596,7 +596,7 @@ export const ComparisonStudio: React.FC<ComparisonStudioProps> = ({
                   {/* 가전비교 종합 판정 코멘트 */}
                   <tr className="bg-blue-50/40 border-b border-gray-200">
                     <th className="p-3 text-xs font-bold text-blue-900 sticky left-0 bg-blue-50/80 z-10 border-r border-gray-200">
-                      가전비교 추천 총평
+                      자체 기준 총평
                     </th>
                     {compareList.map((p) => (
                       <td key={p.id} className="p-3 text-xs text-gray-800 font-medium italic border-r border-gray-100">

@@ -89,7 +89,7 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
             <Sparkles className="w-5 h-5 text-blue-600 shrink-0" />
             <div className="min-w-0">
               <div className="text-sm font-bold text-blue-950 whitespace-nowrap">가전비교 PICK만 보기</div>
-              <div className="text-xs text-blue-700 leading-snug">실측 추천 등급 모델</div>
+              <div className="text-xs text-blue-700 leading-snug">자체 기준 추천 모델</div>
             </div>
           </div>
           <input

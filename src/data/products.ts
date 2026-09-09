@@ -31,7 +31,7 @@ export const CATEGORIES: CategoryMeta[] = [
     name: '대형 냉장고',
     iconName: 'Box',
     count: 6,
-    description: '4도어, 양문형, 김치냉장고 용량·에너지효율·소음 실측 비교',
+    description: '4도어, 양문형, 김치냉장고 용량·에너지효율·소음 사양 비교',
     availableFeatures: ['4도어', '양문형', '인버터 리니어 컴프레서', 'UV살균탈취', '1등급 에너지효율'],
   },
   {
@@ -39,7 +39,7 @@ export const CATEGORIES: CategoryMeta[] = [
     name: '세탁기·건조기',
     iconName: 'RefreshCw',
     count: 6,
-    description: '일체형 워시타워, 비스포크 그랑데 AI, 세척력·건조소요시간 랩 테스트',
+    description: '일체형 워시타워, 비스포크 그랑데 AI, 세척력·건조 소요시간 사양 비교',
     availableFeatures: ['워시타워(일체형)', 'AI 맞춤세탁', '인버터 DD모터', '스팀 살균', '자동 세제투입'],
   },
   {
@@ -55,7 +55,7 @@ export const CATEGORIES: CategoryMeta[] = [
     name: 'TV·스마트TV',
     iconName: 'Tv',
     count: 6,
-    description: 'OLED evo, Neo QLED, 삼탠바이미 4K 해상도·주사율·사운드 실측',
+    description: 'OLED evo, Neo QLED, 삼탠바이미 4K 해상도·주사율·사운드 사양',
     availableFeatures: ['OLED 패널', 'Mini LED', '120Hz/144Hz 고주사율', '돌비 애트모스', '구글TV/스마트OS'],
   },
   {
@@ -63,7 +63,7 @@ export const CATEGORIES: CategoryMeta[] = [
     name: '노트북',
     iconName: 'Laptop',
     count: 8,
-    description: 'LG 그램, 갤럭시북, 맥북 에어 실측 배터리·디스플레이·무게 비교',
+    description: 'LG 그램, 갤럭시북, 맥북 에어 배터리·디스플레이·무게 사양 비교',
     availableFeatures: ['인텔 코어 울트라', '애플 실리콘(M3/M5)', '경량화(1kg 내외)', 'OLED 디스플레이', '외장그래픽(RTX)'],
   },
   {
@@ -95,7 +95,7 @@ export const CATEGORIES: CategoryMeta[] = [
     name: '무선청소기',
     iconName: 'Zap',
     count: 6,
-    description: '실측 흡입력(AW), 배터리 유지시간, 무게 밸런스 비교',
+    description: '흡입력(AW), 배터리 유지시간, 무게 밸런스 비교',
     availableFeatures: ['올인원 타워(먼지비움)', '레이저 먼지조명', '헤파 14등급', '착탈식 배터리', '물걸레 키트'],
   },
   {
@@ -127,7 +127,7 @@ export const CATEGORIES: CategoryMeta[] = [
     name: '제습기',
     iconName: 'Droplets',
     count: 4,
-    description: '일일 제습용량, 소음(dB), 에너지효율 등급 실측',
+    description: '일일 제습용량, 소음(dB), 에너지효율 등급 사양',
     availableFeatures: ['듀얼 인버터', '연속 배수', '내부 건조/자동 성에제거', '만수 자동정지', '신발/의류 건조키트'],
   },
 ];
@@ -200,19 +200,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "인기 모델의 경우 한정 수량 조기 마감 가능"
     ],
-    "reviews": [
-        {
-            "id": "rev-lotte-1",
-            "author": "김*현",
-            "rating": 5,
-            "date": "2026-09-08",
-            "verifiedBuyer": true,
-            "content": "오브제 냉장고 백화점 세일로 샀는데 카드할인에 포인트까지 합치니 인터넷 최저가보다 30만원 더 싸게 샀습니다.",
-            "usageMonths": 1,
-            "pros": "설치 기사님 너무 친절하시고 백화점 배송이라 안심",
-            "cons": "인기 색상은 배송 대기 3일 걸림"
-        }
-    ],
+    "reviews": [],
     "salesRank": 1,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -288,19 +276,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "수입 가전의 경우 재고 소진 속도가 빠름"
     ],
-    "reviews": [
-        {
-            "id": "rev-thehyundai-1",
-            "author": "이*경",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "content": "신혼가전 준비하면서 더현대닷컴에서 구매했습니다. 사은품으로 받은 냄비세트도 너무 좋고 포인트도 쏠쏠하네요.",
-            "usageMonths": 2,
-            "pros": "정품 등록 100% 원클릭 지원",
-            "cons": "카드사별 청구할인 날짜 확인 필수"
-        }
-    ],
+    "reviews": [],
     "salesRank": 2,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -376,19 +352,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "쿠폰 다운로드 선착순 일일 수량 한정"
     ],
-    "reviews": [
-        {
-            "id": "rev-ssg-1",
-            "author": "박*수",
-            "rating": 5,
-            "date": "2026-09-06",
-            "verifiedBuyer": true,
-            "content": "SSG 쓱세일 때 갤럭시북 구매했는데 쿠폰에 카드할인 먹여서 온오프라인 통틀어 가장 싸게 샀습니다.",
-            "usageMonths": 1,
-            "pros": "배송 진짜 빠르고 포인트 적립 대박",
-            "cons": "자정 세일 오픈 때 접속자 몰림"
-        }
-    ],
+    "reviews": [],
     "salesRank": 3,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -464,19 +428,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "인기 모델은 조기 품절될 수 있음"
     ],
-    "reviews": [
-        {
-            "id": "rev-himart-1",
-            "author": "최*민",
-            "rating": 5,
-            "date": "2026-09-05",
-            "verifiedBuyer": true,
-            "content": "세탁기 바꾸면서 오래된 통돌이 수거가 걱정이었는데 하이마트에서 무료로 수거해가고 새것 설치까지 완벽했습니다.",
-            "usageMonths": 3,
-            "pros": "폐가전 수거가 진짜 큰 메리트",
-            "cons": "주말 설치 예약은 미리 해야 함"
-        }
-    ],
+    "reviews": [],
     "salesRank": 4,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -552,19 +504,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "일부 품목은 제휴카드 전용가 적용"
     ],
-    "reviews": [
-        {
-            "id": "rev-etland-1",
-            "author": "정*훈",
-            "rating": 5,
-            "date": "2026-09-04",
-            "verifiedBuyer": true,
-            "content": "자취방에 놓을 TV랑 세탁기 세트로 장기 무이자 긁어서 월 부담 없이 잘 쓰고 있습니다.",
-            "usageMonths": 4,
-            "pros": "36개월 무이자가 최고네요",
-            "cons": "배송일정 전날 해피콜 확인 필수"
-        }
-    ],
+    "reviews": [],
     "salesRank": 5,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -622,7 +562,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -640,19 +580,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "가로폭 91cm 이상 주방 설치 공간 확인 필요"
     ],
-    "reviews": [
-        {
-            "id": "rev-refrigerator-0-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "LG전자 디오스 오브제컬렉션 870L 4도어 냉장고 방문설치 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "식재료 신선도가 오래 유지되는 정온 냉각",
-            "cons": "가로폭 91cm 이상 주방 설치 공간 확인 필요"
-        }
-    ],
+    "reviews": [],
     "salesRank": 1,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -710,7 +638,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -728,19 +656,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "가로폭 91cm 이상 주방 설치 공간 확인 필요"
     ],
-    "reviews": [
-        {
-            "id": "rev-refrigerator-1-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "삼성전자 Bespoke AI 905L 4도어 냉장고 방문설치 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "식재료 신선도가 오래 유지되는 정온 냉각",
-            "cons": "가로폭 91cm 이상 주방 설치 공간 확인 필요"
-        }
-    ],
+    "reviews": [],
     "salesRank": 2,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -798,7 +714,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -816,19 +732,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "가로폭 91cm 이상 주방 설치 공간 확인 필요"
     ],
-    "reviews": [
-        {
-            "id": "rev-refrigerator-2-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "[상세페이지지역확인후구매]위니아 클라쎄 양문형냉장고 521리터 RKA152TS5MV8, 상세페이지지역확인 RKA152TS5MV8 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "식재료 신선도가 오래 유지되는 정온 냉각",
-            "cons": "가로폭 91cm 이상 주방 설치 공간 확인 필요"
-        }
-    ],
+    "reviews": [],
     "salesRank": 3,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -885,7 +789,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -903,19 +807,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "가로폭 91cm 이상 주방 설치 공간 확인 필요"
     ],
-    "reviews": [
-        {
-            "id": "rev-refrigerator-3-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "LG전자 디오스 AI 오브제컬렉션 832L 양문형 냉장고 방문설치 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "식재료 신선도가 오래 유지되는 정온 냉각",
-            "cons": "가로폭 91cm 이상 주방 설치 공간 확인 필요"
-        }
-    ],
+    "reviews": [],
     "salesRank": 4,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -972,7 +864,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -990,19 +882,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "가로폭 91cm 이상 주방 설치 공간 확인 필요"
     ],
-    "reviews": [
-        {
-            "id": "rev-refrigerator-4-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "캐리어 클라윈드 슬림형 182L 2도어 냉장고 방문설치, CRF-TD182MDE 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "식재료 신선도가 오래 유지되는 정온 냉각",
-            "cons": "가로폭 91cm 이상 주방 설치 공간 확인 필요"
-        }
-    ],
+    "reviews": [],
     "salesRank": 5,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -1059,7 +939,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -1077,19 +957,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "가로폭 91cm 이상 주방 설치 공간 확인 필요"
     ],
-    "reviews": [
-        {
-            "id": "rev-refrigerator-5-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "LG전자 2도어 일반냉장고 189L 방문설치 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "식재료 신선도가 오래 유지되는 정온 냉각",
-            "cons": "가로폭 91cm 이상 주방 설치 공간 확인 필요"
-        }
-    ],
+    "reviews": [],
     "salesRank": 6,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -1147,7 +1015,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -1165,19 +1033,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "타워형 일체형으로 천장 높이 2m 이상 확보 필수"
     ],
-    "reviews": [
-        {
-            "id": "rev-washer_dryer-0-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "LG전자 트롬 오브제컬렉션 워시타워 세탁기 + 건조기 세트 24kg + 20kg 방문설치 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "세탁 후 최적 건조 코스로 자동 연동",
-            "cons": "타워형 일체형으로 천장 높이 2m 이상 확보 필수"
-        }
-    ],
+    "reviews": [],
     "salesRank": 1,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -1235,7 +1091,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -1253,19 +1109,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "타워형 일체형으로 천장 높이 2m 이상 확보 필수"
     ],
-    "reviews": [
-        {
-            "id": "rev-washer_dryer-1-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "LG전자 트롬 워시타워 세탁기 + 건조기 세트 23kg + 20kg 방문설치 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "세탁 후 최적 건조 코스로 자동 연동",
-            "cons": "타워형 일체형으로 천장 높이 2m 이상 확보 필수"
-        }
-    ],
+    "reviews": [],
     "salesRank": 2,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -1323,7 +1167,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -1341,19 +1185,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "타워형 일체형으로 천장 높이 2m 이상 확보 필수"
     ],
-    "reviews": [
-        {
-            "id": "rev-washer_dryer-2-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "마이디어 건조겸용 드럼세탁기 12kg + 8kg 방문설치, MFK03D120B/WK-KR, 화이트 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "세탁 후 최적 건조 코스로 자동 연동",
-            "cons": "타워형 일체형으로 천장 높이 2m 이상 확보 필수"
-        }
-    ],
+    "reviews": [],
     "salesRank": 3,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -1410,7 +1242,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -1428,19 +1260,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "타워형 일체형으로 천장 높이 2m 이상 확보 필수"
     ],
-    "reviews": [
-        {
-            "id": "rev-washer_dryer-3-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "삼성전자 BESPOKE 그랑데 AI 원바디 Top Fit 세탁기 + 건조기 WF2420HCWWC 24kg + 20kg 방문설치 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "세탁 후 최적 건조 코스로 자동 연동",
-            "cons": "타워형 일체형으로 천장 높이 2m 이상 확보 필수"
-        }
-    ],
+    "reviews": [],
     "salesRank": 4,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -1497,7 +1317,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -1515,19 +1335,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "타워형 일체형으로 천장 높이 2m 이상 확보 필수"
     ],
-    "reviews": [
-        {
-            "id": "rev-washer_dryer-4-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "한일전기 한일 UV살균 미니 의류건조기 5kg, HLD-5100W, 화이트 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "세탁 후 최적 건조 코스로 자동 연동",
-            "cons": "타워형 일체형으로 천장 높이 2m 이상 확보 필수"
-        }
-    ],
+    "reviews": [],
     "salesRank": 5,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -1584,7 +1392,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -1602,19 +1410,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "타워형 일체형으로 천장 높이 2m 이상 확보 필수"
     ],
-    "reviews": [
-        {
-            "id": "rev-washer_dryer-5-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "미닉스 미니건조기 프로 플러스 3.5kg 고객직접설치 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "세탁 후 최적 건조 코스로 자동 연동",
-            "cons": "타워형 일체형으로 천장 높이 2m 이상 확보 필수"
-        }
-    ],
+    "reviews": [],
     "salesRank": 6,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -1672,7 +1468,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -1690,19 +1486,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "실외기 설치 위치에 따라 추가 배관 비용 발생 가능"
     ],
-    "reviews": [
-        {
-            "id": "rev-air_conditioner-0-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "삼성 전자 AI Q9000 스탠드형 17형 에어컨 설치비 별도 실외기 리모컨 포함, 삼성전자 스탠드 에어컨, 일반배관형 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "바람이 직접 닿지 않는 쾌적 간접 냉방",
-            "cons": "실외기 설치 위치에 따라 추가 배관 비용 발생 가능"
-        }
-    ],
+    "reviews": [],
     "salesRank": 1,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -1760,7 +1544,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -1778,19 +1562,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "실외기 설치 위치에 따라 추가 배관 비용 발생 가능"
     ],
-    "reviews": [
-        {
-            "id": "rev-air_conditioner-1-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "LG전자 인버터 56.9㎡ 휘센 오브제컬렉션 위너 1시리즈 스텐드형 에어컨 방문설치 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "바람이 직접 닿지 않는 쾌적 간접 냉방",
-            "cons": "실외기 설치 위치에 따라 추가 배관 비용 발생 가능"
-        }
-    ],
+    "reviews": [],
     "salesRank": 2,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -1848,7 +1620,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -1866,19 +1638,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "실외기 설치 위치에 따라 추가 배관 비용 발생 가능"
     ],
-    "reviews": [
-        {
-            "id": "rev-air_conditioner-2-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "[캐리어 공식인증점] 6평형  인버터 벽걸이 에어컨 친환경냉매 무상AS 2년 농막 원룸 작은방 오피스텔 사무실 18.7m2, 6평형 벽걸이 에어컨, 일반배관형 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "바람이 직접 닿지 않는 쾌적 간접 냉방",
-            "cons": "실외기 설치 위치에 따라 추가 배관 비용 발생 가능"
-        }
-    ],
+    "reviews": [],
     "salesRank": 3,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -1935,7 +1695,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -1953,19 +1713,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "실외기 설치 위치에 따라 추가 배관 비용 발생 가능"
     ],
-    "reviews": [
-        {
-            "id": "rev-air_conditioner-3-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "캐리어 인버터 18.7㎡ 벽걸이형 에어컨 방문설치 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "바람이 직접 닿지 않는 쾌적 간접 냉방",
-            "cons": "실외기 설치 위치에 따라 추가 배관 비용 발생 가능"
-        }
-    ],
+    "reviews": [],
     "salesRank": 4,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -2022,7 +1770,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -2040,19 +1788,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "실외기 설치 위치에 따라 추가 배관 비용 발생 가능"
     ],
-    "reviews": [
-        {
-            "id": "rev-air_conditioner-4-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "위닉스 19.1㎡ 직선형 창문형 에어컨 2세대 바닐라화이트 방문설치, EWIE067-PWK, 기본키트 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "바람이 직접 닿지 않는 쾌적 간접 냉방",
-            "cons": "실외기 설치 위치에 따라 추가 배관 비용 발생 가능"
-        }
-    ],
+    "reviews": [],
     "salesRank": 5,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -2109,7 +1845,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -2127,19 +1863,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "실외기 설치 위치에 따라 추가 배관 비용 발생 가능"
     ],
-    "reviews": [
-        {
-            "id": "rev-air_conditioner-5-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "창문형 에어컨 에어컨 실외기 없는 자가설치 원룸 소형 제습 창문 이동식 리모콘 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "바람이 직접 닿지 않는 쾌적 간접 냉방",
-            "cons": "실외기 설치 위치에 따라 추가 배관 비용 발생 가능"
-        }
-    ],
+    "reviews": [],
     "salesRank": 6,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -2197,7 +1921,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -2215,19 +1939,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "내장 스피커 베이스가 아쉬울 경우 사운드바 권장"
     ],
-    "reviews": [
-        {
-            "id": "rev-tv-0-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "LG전자 4K UHD 올레드 TV 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "베젤이 거의 없는 보더리스 슬림 디자인",
-            "cons": "내장 스피커 베이스가 아쉬울 경우 사운드바 권장"
-        }
-    ],
+    "reviews": [],
     "salesRank": 1,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -2285,7 +1997,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -2303,19 +2015,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "내장 스피커 베이스가 아쉬울 경우 사운드바 권장"
     ],
-    "reviews": [
-        {
-            "id": "rev-tv-1-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "LG전자 4K UHD 올레드 TV 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "베젤이 거의 없는 보더리스 슬림 디자인",
-            "cons": "내장 스피커 베이스가 아쉬울 경우 사운드바 권장"
-        }
-    ],
+    "reviews": [],
     "salesRank": 2,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -2373,7 +2073,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -2391,19 +2091,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "내장 스피커 베이스가 아쉬울 경우 사운드바 권장"
     ],
-    "reviews": [
-        {
-            "id": "rev-tv-2-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "위드라이프 구글 50인치 스마트TV UHD 4K 최신형 대기업정품패널 안드로이드 고화질티비, 127cm/50인치, 50smart, 스탠드형, 고객직접설치 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "베젤이 거의 없는 보더리스 슬림 디자인",
-            "cons": "내장 스피커 베이스가 아쉬울 경우 사운드바 권장"
-        }
-    ],
+    "reviews": [],
     "salesRank": 3,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -2460,7 +2148,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -2478,19 +2166,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "내장 스피커 베이스가 아쉬울 경우 사운드바 권장"
     ],
-    "reviews": [
-        {
-            "id": "rev-tv-3-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "시티브 4K UHD IPS패널 구글OS 1등급 스마트TV 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "베젤이 거의 없는 보더리스 슬림 디자인",
-            "cons": "내장 스피커 베이스가 아쉬울 경우 사운드바 권장"
-        }
-    ],
+    "reviews": [],
     "salesRank": 4,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -2547,7 +2223,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -2565,19 +2241,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "내장 스피커 베이스가 아쉬울 경우 사운드바 권장"
     ],
-    "reviews": [
-        {
-            "id": "rev-tv-4-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "삼성 65인치 TV QLED UHD 4K 스마트티비 65Q7F LED 미러링 넷플릭스 유튜브 25년형, 방문설치, 스탠드형, 65Q7F, 65인치 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "베젤이 거의 없는 보더리스 슬림 디자인",
-            "cons": "내장 스피커 베이스가 아쉬울 경우 사운드바 권장"
-        }
-    ],
+    "reviews": [],
     "salesRank": 5,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -2634,7 +2298,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -2652,19 +2316,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "내장 스피커 베이스가 아쉬울 경우 사운드바 권장"
     ],
-    "reviews": [
-        {
-            "id": "rev-tv-5-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "시티브 4K UHD HDR 제로 베젤리스 TV 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "베젤이 거의 없는 보더리스 슬림 디자인",
-            "cons": "내장 스피커 베이스가 아쉬울 경우 사운드바 권장"
-        }
-    ],
+    "reviews": [],
     "salesRank": 6,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -2722,7 +2374,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -2740,19 +2392,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "고성능 3D 렌더링 시 팬 소음 약간 발생"
     ],
-    "reviews": [
-        {
-            "id": "rev-laptop-0-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "LG전자 2024 그램 15 코어 Ultra5, 에센스 화이트, 256GB, 16GB, WIN11 Home, 15Z90S-GA5VK 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "한 손으로 들어도 부담 없는 가벼운 무게",
-            "cons": "고성능 3D 렌더링 시 팬 소음 약간 발생"
-        }
-    ],
+    "reviews": [],
     "salesRank": 1,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -2810,7 +2450,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -2828,19 +2468,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "고성능 3D 렌더링 시 팬 소음 약간 발생"
     ],
-    "reviews": [
-        {
-            "id": "rev-laptop-1-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "LG전자 2025 그램 16 코어Ultra5 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "한 손으로 들어도 부담 없는 가벼운 무게",
-            "cons": "고성능 3D 렌더링 시 팬 소음 약간 발생"
-        }
-    ],
+    "reviews": [],
     "salesRank": 2,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -2898,7 +2526,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -2916,19 +2544,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "고성능 3D 렌더링 시 팬 소음 약간 발생"
     ],
-    "reviews": [
-        {
-            "id": "rev-laptop-2-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "삼성전자 갤럭시북4 인텔 i5 15.6인치 사무용 학생용 업무용 인강용 가성비 노트북, NT750XGRA51A-CK, WIN11 Home, 16GB, 256GB, 그레이 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "한 손으로 들어도 부담 없는 가벼운 무게",
-            "cons": "고성능 3D 렌더링 시 팬 소음 약간 발생"
-        }
-    ],
+    "reviews": [],
     "salesRank": 3,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -2985,7 +2601,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -3003,19 +2619,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "고성능 3D 렌더링 시 팬 소음 약간 발생"
     ],
-    "reviews": [
-        {
-            "id": "rev-laptop-3-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "갤럭시북4 15.6, 코어I5 13세대, 가성비 노트북, 한컴오피스팩 동봉 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "한 손으로 들어도 부담 없는 가벼운 무게",
-            "cons": "고성능 3D 렌더링 시 팬 소음 약간 발생"
-        }
-    ],
+    "reviews": [],
     "salesRank": 4,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -3072,7 +2676,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -3090,19 +2694,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "고성능 3D 렌더링 시 팬 소음 약간 발생"
     ],
-    "reviews": [
-        {
-            "id": "rev-laptop-4-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "Apple 맥북 에어 15 M5칩 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "한 손으로 들어도 부담 없는 가벼운 무게",
-            "cons": "고성능 3D 렌더링 시 팬 소음 약간 발생"
-        }
-    ],
+    "reviews": [],
     "salesRank": 5,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -3159,7 +2751,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -3177,19 +2769,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "고성능 3D 렌더링 시 팬 소음 약간 발생"
     ],
-    "reviews": [
-        {
-            "id": "rev-laptop-5-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "Apple 맥북 에어 15 M5칩 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "한 손으로 들어도 부담 없는 가벼운 무게",
-            "cons": "고성능 3D 렌더링 시 팬 소음 약간 발생"
-        }
-    ],
+    "reviews": [],
     "salesRank": 6,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -3246,7 +2826,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -3264,19 +2844,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "고성능 3D 렌더링 시 팬 소음 약간 발생"
     ],
-    "reviews": [
-        {
-            "id": "rev-laptop-6-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "에이수스 2026 TUF 게이밍 F16 코어i5 인텔 14세대 지포스 RTX 5060, 예거 그레이, FX608JMI-QT273, 512GB, 16GB, Free DOS 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "한 손으로 들어도 부담 없는 가벼운 무게",
-            "cons": "고성능 3D 렌더링 시 팬 소음 약간 발생"
-        }
-    ],
+    "reviews": [],
     "salesRank": 7,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -3333,7 +2901,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -3351,19 +2919,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "고성능 3D 렌더링 시 팬 소음 약간 발생"
     ],
-    "reviews": [
-        {
-            "id": "rev-laptop-7-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "삼성 게이밍 노트북 인텔 코어 i7 6세대 지포스 920MX 외장그래픽 FHD Windows 11 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "한 손으로 들어도 부담 없는 가벼운 무게",
-            "cons": "고성능 3D 렌더링 시 팬 소음 약간 발생"
-        }
-    ],
+    "reviews": [],
     "salesRank": 8,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -3421,7 +2977,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -3439,19 +2995,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "내장 스피커 볼륨은 기본 수준"
     ],
-    "reviews": [
-        {
-            "id": "rev-desktop_pc-0-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "LG전자 FHD 울트라기어 게이밍 모니터, 60.3cm, 24GS50F 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "잔상 없는 깔끔한 144Hz 이상 화면 전환",
-            "cons": "내장 스피커 볼륨은 기본 수준"
-        }
-    ],
+    "reviews": [],
     "salesRank": 1,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -3509,7 +3053,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -3527,19 +3071,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "내장 스피커 볼륨은 기본 수준"
     ],
-    "reviews": [
-        {
-            "id": "rev-desktop_pc-1-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "한성컴퓨터  FHD IPS 144Hz 게이밍 모니터 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "잔상 없는 깔끔한 144Hz 이상 화면 전환",
-            "cons": "내장 스피커 볼륨은 기본 수준"
-        }
-    ],
+    "reviews": [],
     "salesRank": 2,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -3597,7 +3129,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -3615,19 +3147,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "내장 스피커 볼륨은 기본 수준"
     ],
-    "reviews": [
-        {
-            "id": "rev-desktop_pc-2-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "LG전자 FHD PC 모니터, 68.6cm, 27MS500 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "잔상 없는 깔끔한 144Hz 이상 화면 전환",
-            "cons": "내장 스피커 볼륨은 기본 수준"
-        }
-    ],
+    "reviews": [],
     "salesRank": 3,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -3684,7 +3204,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -3702,19 +3222,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "내장 스피커 볼륨은 기본 수준"
     ],
-    "reviews": [
-        {
-            "id": "rev-desktop_pc-3-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "큐닉스 FHD 무결점 게이밍 모니터 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "잔상 없는 깔끔한 144Hz 이상 화면 전환",
-            "cons": "내장 스피커 볼륨은 기본 수준"
-        }
-    ],
+    "reviews": [],
     "salesRank": 4,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -3771,7 +3279,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -3789,19 +3297,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "내장 스피커 볼륨은 기본 수준"
     ],
-    "reviews": [
-        {
-            "id": "rev-desktop_pc-4-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "고사양 i7 갓성비 초고속 SSD장착 디아블로4 배그 롤 피파4 오버워치 발로란트 조립 게이밍 컴퓨터 GTX1060 본체 PC 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "잔상 없는 깔끔한 144Hz 이상 화면 전환",
-            "cons": "내장 스피커 볼륨은 기본 수준"
-        }
-    ],
+    "reviews": [],
     "salesRank": 5,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -3858,7 +3354,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -3876,19 +3372,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "내장 스피커 볼륨은 기본 수준"
     ],
-    "reviews": [
-        {
-            "id": "rev-desktop_pc-5-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "컴퓨터 조립 풀세트 조립PC 게이밍 사무용 고사양 게임용 본체 롤 발로란트 오버워치 배틀그라운드 메이플 피파 로블록스 스타크래프트 마인크래프트 컴퓨터본체 우쓰 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "잔상 없는 깔끔한 144Hz 이상 화면 전환",
-            "cons": "내장 스피커 볼륨은 기본 수준"
-        }
-    ],
+    "reviews": [],
     "salesRank": 6,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -3946,7 +3430,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -3964,19 +3448,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "고압 취사 시 증기 배출음 주의"
     ],
-    "reviews": [
-        {
-            "id": "rev-kitchen_appliances-0-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "쿠쿠 IH 전기압력밥솥 6인용 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "잡곡밥도 백미처럼 부드럽게 취사",
-            "cons": "고압 취사 시 증기 배출음 주의"
-        }
-    ],
+    "reviews": [],
     "salesRank": 1,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -4034,7 +3506,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -4052,19 +3524,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "고압 취사 시 증기 배출음 주의"
     ],
-    "reviews": [
-        {
-            "id": "rev-kitchen_appliances-1-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "쿠쿠 CRP-HVB06BS 6인용 IH 전기압력밥솥 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "잡곡밥도 백미처럼 부드럽게 취사",
-            "cons": "고압 취사 시 증기 배출음 주의"
-        }
-    ],
+    "reviews": [],
     "salesRank": 2,
     "bestSeller": true,
     "releaseYear": 2026,
@@ -4122,7 +3582,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -4140,19 +3600,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "고압 취사 시 증기 배출음 주의"
     ],
-    "reviews": [
-        {
-            "id": "rev-kitchen_appliances-2-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "리빙웰 스텐 에어프라이어 대용량 16리터 AF16, 화이트, AF16 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "잡곡밥도 백미처럼 부드럽게 취사",
-            "cons": "고압 취사 시 증기 배출음 주의"
-        }
-    ],
+    "reviews": [],
     "salesRank": 3,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -4209,7 +3657,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -4227,19 +3675,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "고압 취사 시 증기 배출음 주의"
     ],
-    "reviews": [
-        {
-            "id": "rev-kitchen_appliances-3-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "OYEAH 저소음 에어프라이어 4.5L 가정용 AF- 4501 즉시발열 간편세척 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "잡곡밥도 백미처럼 부드럽게 취사",
-            "cons": "고압 취사 시 증기 배출음 주의"
-        }
-    ],
+    "reviews": [],
     "salesRank": 4,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -4296,7 +3732,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -4314,19 +3750,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "고압 취사 시 증기 배출음 주의"
     ],
-    "reviews": [
-        {
-            "id": "rev-kitchen_appliances-4-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "삼성전자 비스포크 전자레인지 터치식 23L, MG23A5378CE 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "잡곡밥도 백미처럼 부드럽게 취사",
-            "cons": "고압 취사 시 증기 배출음 주의"
-        }
-    ],
+    "reviews": [],
     "salesRank": 5,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -4383,7 +3807,7 @@ export const PRODUCTS: Product[] = [
             "title": "핵심 성능 효율",
             "value": "동급 상위 3%",
             "rating": "최상",
-            "detail": "공식 랩 테스트 및 실측 데이터 기준"
+            "detail": "제조사 공개 사양 기준"
         },
         {
             "title": "내구성 및 신뢰도",
@@ -4401,19 +3825,7 @@ export const PRODUCTS: Product[] = [
     "cons": [
         "고압 취사 시 증기 배출음 주의"
     ],
-    "reviews": [
-        {
-            "id": "rev-kitchen_appliances-5-1",
-            "author": "이*훈 (실구매자 인증)",
-            "rating": 5,
-            "date": "2026-09-07",
-            "verifiedBuyer": true,
-            "usageMonths": 2,
-            "content": "쿠쿠 전자레인지 다이얼식 20L 구매 후 매우 만족하며 사용 중입니다. 성능과 마감이 훌륭하고 가격 대비 만족도가 높습니다.",
-            "pros": "잡곡밥도 백미처럼 부드럽게 취사",
-            "cons": "고압 취사 시 증기 배출음 주의"
-        }
-    ],
+    "reviews": [],
     "salesRank": 6,
     "bestSeller": false,
     "releaseYear": 2026,
@@ -4450,7 +3862,7 @@ export const PRODUCTS: Product[] = [
       { label: '물걸레 방식', value: '음파진동 (3,000회/분)' },
       { label: '스테이션 기능', value: '온풍건조 + 자동세척 + 먼지비움', highlight: true },
       { label: '센서', value: 'PreciSense LiDAR + 3D 구조광' },
-      { label: '실측 소음', value: '59.2 dB' },
+      { label: '표기 소음', value: '59.2 dB' },
       { label: '배터리', value: '5,200 mAh (최대 180분)' },
     ],
     detailedSpecs: {
@@ -4480,30 +3892,7 @@ export const PRODUCTS: Product[] = [
       '스테이션 부피가 커서 가로/세로 50cm 이상의 설치 여유 공간 필요',
       '150만원을 웃도는 높은 초기 구매 비용',
     ],
-    reviews: [
-      {
-        id: 'r1',
-        author: '김*현 (30평대 아파트 거주)',
-        rating: 5,
-        date: '2026.05.14',
-        verifiedBuyer: true,
-        usageMonths: 4,
-        content: '진짜 삶의 질이 수직 상승했습니다. 강아지 털과 머리카락 매일 치우느라 힘들었는데 알아서 청소하고 걸레 빨고 말리기까지 하니 손댈 게 없어요.',
-        pros: '머리카락 엉킴 없음, 지도 맵핑 정확도 최고',
-        cons: '스테이션이 좀 커서 인테리어 자리 잘 잡아야 함',
-      },
-      {
-        id: 'r2',
-        author: '박*준 (신혼부부)',
-        rating: 5,
-        date: '2026.08.06',
-        verifiedBuyer: true,
-        usageMonths: 2,
-        content: '가전비교 리뷰 보고 고민 끝에 구매했는데 돈값 제대로 합니다. 바닥에 광이 나네요.',
-        pros: '소음이 기존 청소기보다 훨씬 조용함',
-        cons: '가격이 비쌈',
-      },
-    ],
+    reviews: [],
     salesRank: 1,
     bestSeller: true,
     releaseYear: 2024,
@@ -4535,7 +3924,7 @@ export const PRODUCTS: Product[] = [
       { label: '물걸레 방식', value: '모파익스텐드 회전형 물걸레', highlight: true },
       { label: '스테이션 기능', value: '온수세척 + 열풍건조 + 먼지비움' },
       { label: '센서', value: 'AI 액션 카메라 + 듀얼 레이저' },
-      { label: '실측 소음', value: '61.5 dB' },
+      { label: '표기 소음', value: '61.5 dB' },
       { label: '배터리', value: '6,400 mAh (최대 260분)' },
     ],
     detailedSpecs: {
@@ -4549,7 +3938,7 @@ export const PRODUCTS: Product[] = [
     },
     labTests: [
       { title: '구석 모서리 물걸레 청소율', value: '99.1%', rating: '최상', detail: '외곽 물걸레 팔이 튀어나와 사각지대 없음' },
-      { title: '흡입력 실측 (카펫 틈새)', value: '7,000Pa 실현', rating: '최상', detail: '깊은 카펫 먼지까지 완벽 포집' },
+      { title: '흡입력 (카펫 틈새)', value: '7,000Pa 실현', rating: '최상', detail: '깊은 카펫 먼지까지 완벽 포집' },
       { title: '장애물 55종 감지율', value: '98.0%', rating: '최상', detail: 'AI 카메라로 사물명까지 앱에 표기' },
     ],
     verdict: '구석진 벽면까지 물걸레가 뻗어나가는 모파익스텐드 기능과 압도적 7,000Pa 흡입력의 성능 챔피언.',
@@ -4562,19 +3951,7 @@ export const PRODUCTS: Product[] = [
       '스테이션 높이가 60cm 이상으로 다소 높음',
       '회전 걸레 특성상 마모 시 패드 주기적 교체 필요',
     ],
-    reviews: [
-      {
-        id: 'r3',
-        author: '이*수 (42평형 거주)',
-        rating: 5,
-        date: '2026.06.25',
-        verifiedBuyer: true,
-        usageMonths: 3,
-        content: '벽 모서리 청소할 때 걸레가 옆으로 슥 튀어나오는 거 보고 감탄했습니다. 걸레를 스테이션에 떼어놓고 카펫 청소하러 가는 것도 최고예요.',
-        pros: '벽면 모서리 청소, 대용량 물통',
-        cons: '기기 본체와 스테이션이 꽤 묵직함',
-      },
-    ],
+    reviews: [],
     salesRank: 2,
     bestSeller: true,
     releaseYear: 2024,
@@ -4606,7 +3983,7 @@ export const PRODUCTS: Product[] = [
       { label: '물걸레 방식', value: '듀얼 회전형 물걸레 (180회/분)' },
       { label: '스테이션 기능', value: '열풍건조 + 자동세척 + 먼지비움', highlight: true },
       { label: '센서', value: 'LDS 네비게이션 + S-Cross 3D' },
-      { label: '실측 소음', value: '62.0 dB' },
+      { label: '표기 소음', value: '62.0 dB' },
       { label: '배터리', value: '5,200 mAh (최대 120분)' },
     ],
     detailedSpecs: {
@@ -4632,19 +4009,7 @@ export const PRODUCTS: Product[] = [
       '플래그십 대비 작은 장애물(얇은 전선) 회피율은 약간 낮음',
       '중국 브랜드 전용 서버 랙이 간혹 발생할 수 있음',
     ],
-    reviews: [
-      {
-        id: 'r4',
-        author: '최*영 (자취 5년차)',
-        rating: 5,
-        date: '2026.08.24',
-        verifiedBuyer: true,
-        usageMonths: 6,
-        content: '150만원짜리 살 엄두가 안 났는데 이 가격에 열풍건조랑 먼지비움 다 들어가서 너무 행복합니다.',
-        pros: '압도적인 가격 대 성능비',
-        cons: '전선은 미리 치워두고 돌리는 게 안전',
-      },
-    ],
+    reviews: [],
     salesRank: 3,
     bestSeller: false,
     releaseYear: 2023,
@@ -4676,7 +4041,7 @@ export const PRODUCTS: Product[] = [
       { label: '물걸레 방식', value: '100℃ 스팀 살균 회전 물걸레', highlight: true },
       { label: '스테이션 기능', value: '스팀살균 + 열풍건조 + 먼지비움', highlight: true },
       { label: '센서', value: 'LiDAR + AI 사물인식 카메라' },
-      { label: '실측 소음', value: '58.0 dB (최저수준)', highlight: true },
+      { label: '표기 소음', value: '58.0 dB (최저수준)', highlight: true },
     ],
     detailedSpecs: {
       '제조국': '베트남 (삼성전자)',
@@ -4698,19 +4063,7 @@ export const PRODUCTS: Product[] = [
       '물통 용량이 외산 대용량 대비 다소 작은 편',
       '가격대가 프리미엄 라인업에 위치함',
     ],
-    reviews: [
-      {
-        id: 'r5',
-        author: '한*민 (아이 키우는 집)',
-        rating: 5,
-        date: '2026.07.08',
-        verifiedBuyer: true,
-        usageMonths: 2,
-        content: '아기 키우는 집이라 걸레 위생이 제일 신경 쓰였는데 스팀 살균이라 냄새도 하나도 안 나고 너무 안심됩니다.',
-        pros: '스팀 살균력, 삼성 서비스 신뢰',
-        cons: '가격이 있는 편',
-      },
-    ],
+    reviews: [],
     salesRank: 4,
     bestSeller: false,
     releaseYear: 2024,
@@ -4742,7 +4095,7 @@ export const PRODUCTS: Product[] = [
       { label: '물걸레 방식', value: '전자제어 펌프 패드형' },
       { label: '스테이션 기능', value: '자동 먼지비움 올인원타워' },
       { label: '센서', value: '360도 LiDAR 센서' },
-      { label: '실측 소음', value: '60.4 dB' },
+      { label: '표기 소음', value: '60.4 dB' },
     ],
     detailedSpecs: {
       '제조국': '중국 (LG전자 OEM/품질관리)',
@@ -4819,19 +4172,7 @@ export const PRODUCTS: Product[] = [
       '먼지통 크기가 0.35L로 다소 콤팩트함',
       '먼지 자동비움 스테이션은 미포함 구성',
     ],
-    reviews: [
-      {
-        id: 'r6',
-        author: '윤*진 (손목 터널증후군 겪음)',
-        rating: 5,
-        date: '2026.05.30',
-        verifiedBuyer: true,
-        usageMonths: 5,
-        content: '기존 다이슨 V10 쓰다가 너무 무거워서 바꿨는데 신세계입니다. 가볍고 레이저 켜면 먼지가 다 보여서 청소가 재밌어져요.',
-        pros: '무게가 너무 가벼움, 레이저 조명',
-        cons: '먼지통을 자주 비워줘야 함',
-      },
-    ],
+    reviews: [],
     salesRank: 1,
     bestSeller: true,
     releaseYear: 2024,
@@ -4872,7 +4213,7 @@ export const PRODUCTS: Product[] = [
       'A/S 보증': 'LG전자 1년 (모터 10년)',
     },
     labTests: [
-      { title: '카펫 심층 먼지 흡입력', value: '280AW 실측 일치', rating: '최상', detail: '가장 강력한 터보 모드 흡입력' },
+      { title: '카펫 심층 먼지 흡입력', value: '280AW (제조사 표기)', rating: '최상', detail: '가장 강력한 터보 모드 흡입력' },
       { title: '타워 먼지비움 밀폐도', value: '0.3㎛ 99.999% 차단', rating: '최상', detail: '비움 과정에서 비산먼지 완전 없음' },
     ],
     verdict: '흡입과 물걸레를 동시에 해결하며, 거치대에 꽂기만 하면 먼지를 싹 비워주는 한국형 무선청소기의 표본.',
@@ -5030,7 +4371,7 @@ export const PRODUCTS: Product[] = [
     labTests: [
       { title: '음식물 부피 감량률', value: '95.4% 감량', rating: '최상', detail: '물기 가득한 수박껍질, 찌개건더기가 가루로 변환' },
       { title: '악취 누출 측정 (VOC 검출)', value: '0.00 ppm (미검출)', rating: '최상', detail: '청국장, 김치 처리 시에도 냄새 제로' },
-      { title: '야간 실측 소음', value: '19.9 dB', rating: '최상', detail: '주방 싱크대 위에 둬도 작동 소리 안 들림' },
+      { title: '야간 소음(표기)', value: '19.9 dB', rating: '최상', detail: '주방 싱크대 위에 둬도 작동 소리 안 들림' },
     ],
     verdict: '주방 인테리어를 해치지 않는 예쁜 미니멀 디자인에 냄새 차단과 19.9dB 초저소음을 실현한 베스트셀러.',
     pros: [
@@ -5041,19 +4382,7 @@ export const PRODUCTS: Product[] = [
     cons: [
       '4인 이상 대가족이 하루 세 끼 많은 양을 버리기엔 2L 용량이 조금 아쉬움',
     ],
-    reviews: [
-      {
-        id: 'r7',
-        author: '송*하 (신혼 2년차)',
-        rating: 5,
-        date: '2026.04.09',
-        verifiedBuyer: true,
-        usageMonths: 4,
-        content: '여름에 음식물 쓰레기 버리러 엘리베이터 타는 고통에서 해방됐습니다. 김치 냄새도 진짜 1도 안 나요.',
-        pros: '냄새 차단력 완벽, 초소형 디자인',
-        cons: '필터 주기적으로 갈아줘야 함',
-      },
-    ],
+    reviews: [],
     salesRank: 1,
     bestSeller: true,
     releaseYear: 2024,
@@ -5208,19 +4537,7 @@ export const PRODUCTS: Product[] = [
     cons: [
       '프리스탠딩 설치 시 주방 싱크대 리폼 공사가 필요할 수 있음',
     ],
-    reviews: [
-      {
-        id: 'r8',
-        author: '정*미 (4인 가족 주부)',
-        rating: 5,
-        date: '2026.06.11',
-        verifiedBuyer: true,
-        usageMonths: 3,
-        content: '6인용 쓰다가 14인용으로 바꿨는데 진짜 차원이 달라요. 프라이팬이랑 큰 도마까지 다 들어가니 설거지거리가 아예 안 나옵니다.',
-        pros: '대용량 수납, 열풍 건조, 자동문열림',
-        cons: '싱크대 하부장 공사 비용 발생',
-      },
-    ],
+    reviews: [],
     salesRank: 1,
     bestSeller: true,
     releaseYear: 2024,
@@ -5364,7 +4681,7 @@ export const PRODUCTS: Product[] = [
     labTests: [
       { title: '극초미세먼지(0.01㎛) 정화속도', value: '15분 내 99.9% 도달', rating: '최상', detail: '밀폐 챔버 시험 기준 최고속 정화력' },
       { title: '생활 악취(암모니아/초산) 탈취율', value: '98.8%', rating: '최상', detail: '생선 굽기 후 20분 내 냄새 싹 사라짐' },
-      { title: '취침 모드 실측 소음', value: '20.0 dB', rating: '최상', detail: '시계 초침 소리보다 조용함' },
+      { title: '취침 모드 소음(표기)', value: '20.0 dB', rating: '최상', detail: '시계 초침 소리보다 조용함' },
     ],
     verdict: '360도 전방위 흡입과 0.01㎛까지 걸러내는 V필터로 성능, 디자인, 저소음 삼박자를 완성한 거실/안방 전천후 추천기.',
     pros: [
@@ -5375,19 +4692,7 @@ export const PRODUCTS: Product[] = [
     cons: [
       '상단 클린부스터(서큘레이터 돌출형)는 제외된 기본 모델',
     ],
-    reviews: [
-      {
-        id: 'r9',
-        author: '강*우 (알레르기 비염 환자)',
-        rating: 5,
-        date: '2026.04.27',
-        verifiedBuyer: true,
-        usageMonths: 8,
-        content: '환절기마다 재채기 달고 살았는데 방에 퓨리케어 틀어놓고 자면 코 막힘이 확 줄어듭니다. 소음도 거의 안 나요.',
-        pros: '확실한 공기 정화 체감, 저소음',
-        cons: '1년마다 필터 교체 비용(약 6~7만원) 발생',
-      },
-    ],
+    reviews: [],
     salesRank: 1,
     bestSeller: true,
     releaseYear: 2024,
@@ -5527,7 +4832,7 @@ export const PRODUCTS: Product[] = [
     },
     labTests: [
       { title: '실내 습도 80% → 50% 도달시간', value: '28분 소요', rating: '최상', detail: '장마철 빨래 건조 시 3시간 만에 바삭하게 마름' },
-      { title: '실측 소비전력 (월 예상 전기요금)', value: '약 6,200원/월', rating: '최상', detail: '인버터 제어로 목표 습도 도달 시 최소 전력 운전' },
+      { title: '소비전력 기준 월 예상 전기요금', value: '약 6,200원/월', rating: '최상', detail: '인버터 제어로 목표 습도 도달 시 최소 전력 운전' },
       { title: '연속 작동 시 소음', value: '38.3 dB', rating: '우수', detail: '침실 문 닫아두면 거실에서 거의 안 들림' },
     ],
     verdict: '제습기의 대명사 위닉스가 선보인 1등급 인버터 명작. 검증된 내구성과 신발 건조 키트까지 여름철 필수 가전 1순위.',
@@ -5539,19 +4844,7 @@ export const PRODUCTS: Product[] = [
     cons: [
       '물통을 비울 때 손잡이 그립감이 다소 묵직함',
     ],
-    reviews: [
-      {
-        id: 'r10',
-        author: '오*경 (여름 빨래 고민)',
-        rating: 5,
-        date: '2026.07.21',
-        verifiedBuyer: true,
-        usageMonths: 7,
-        content: '작년 여름에 왜 이제 샀나 후회했습니다. 방에 빨래 널고 틀어놓으면 반나절 만에 냄새 없이 뽀송뽀송하게 마르고 습도 45% 유지돼요.',
-        pros: '강력한 제습 속도, 신발 건조 호스',
-        cons: '가동 시 미세한 미온풍 발생',
-      },
-    ],
+    reviews: [],
     salesRank: 1,
     bestSeller: true,
     releaseYear: 2024,

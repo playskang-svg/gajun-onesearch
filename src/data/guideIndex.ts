@@ -11,6 +11,87 @@ export interface GuidePost {
 
 export const GUIDE_POSTS: GuidePost[] = [
   {
+    "slug": "tv-oled-vs-qled",
+    "title": "OLED 번인 현상과 수명, QLED와의 실사용 차이와 거실 조도별 선택 기준",
+    "summary": "OLED의 완벽한 블랙과 무한대 명암비는 압도적이지만, 고정 화면에서 생기는 번인 우려가 여전합니다. 백라이트 방식의 QLED와의 물리적 차이와 거실 채광에 맞춘 선택법을 정리했습니다.",
+    "category": "tv",
+    "categoryName": "TV·영상가전",
+    "keyword": "OLED번인",
+    "date": "2026.09.09"
+  },
+  {
+    "slug": "tv-size-distance",
+    "title": "TV 화면 크기(인치)와 시청 거리 계산법, 65·75·85인치 거실 평수별 공식",
+    "summary": "\"TV는 거거익선\"이라는 말만 믿고 좁은 거실에 너무 큰 TV를 샀다가 목 통증을 겪거나, 반대로 작아서 후회하는 경우가 많습니다. 4K 해상도 기준 시야각 공식과 평수별 적정 인치를 실측 기준으로 계산했습니다.",
+    "category": "tv",
+    "categoryName": "TV·영상가전",
+    "keyword": "TV시청거리",
+    "date": "2026.09.09"
+  },
+  {
+    "slug": "robot-vacuum-smell",
+    "title": "로봇청소기 물걸레 쉰내와 오수통 악취 방지법, 온수세척·열풍건조 핵심 관리",
+    "summary": "올인원 로봇청소기를 쓰다 보면 어느 순간 걸레에서 걸레 빤 냄새가 나고 온 집안에 쉰내가 퍼집니다. 오수통 세균 번식 구조와 걸레 열풍 건조, 청소 세제 선택 요령을 정리했습니다.",
+    "category": "cleaner",
+    "categoryName": "청소기·로봇청소기",
+    "keyword": "로봇청소기냄새",
+    "date": "2026.09.09"
+  },
+  {
+    "slug": "cordless-vacuum-battery",
+    "title": "무선청소기 배터리 수명 2배 늘리는 법, 흡입력 급감 시 헤드 청소 순서",
+    "summary": "2년만 지나면 작동 시간이 5분으로 줄어드는 무선청소기 배터리. 리튬이온 특성에 맞춘 충전 관리법과 모터가 꺼지는 원인인 롤러 브러시·헤파 필터 관리법을 정리했습니다.",
+    "category": "cleaner",
+    "categoryName": "청소기·로봇청소기",
+    "keyword": "무선청소기배터리",
+    "date": "2026.09.09"
+  },
+  {
+    "slug": "dishwasher-rinse-watermark",
+    "title": "식기세척기 하얀 물얼룩과 비린내 원인, 린스 투입량 조절과 필터 청소법",
+    "summary": "세척 후 유리컵에 하얗게 남는 물자국은 세제 잔여물이 아니라 수돗물 속 석회질입니다. 린스의 물리적 역할과 적정 레벨 조절, 거름망 찌꺼기로 인한 생선 비린내 제거법을 정리했습니다.",
+    "category": "kitchen",
+    "categoryName": "주방가전",
+    "keyword": "식기세척기물얼룩",
+    "date": "2026.09.09"
+  },
+  {
+    "slug": "induction-burn-mark",
+    "title": "인덕션 상판 탄자국·백화현상 흠집 없이 지우는 법과 전용 냄비 판별법",
+    "summary": "인덕션 상판에 검게 타붙은 기름때와 하얗게 변색된 원형 자국은 주방세제로는 지워지지 않습니다. 세라믹 글라스 코팅을 보호하면서 때만 긁어내는 안전한 청소법과 전용 조리기구 구분법을 정리했습니다.",
+    "category": "kitchen",
+    "categoryName": "주방가전",
+    "keyword": "인덕션상판청소",
+    "date": "2026.09.09"
+  },
+  {
+    "slug": "microwave-steam-clean",
+    "title": "전자레인지 내부 기름때와 찌든 냄새, 레몬과 베이킹소다 스팀으로 5분 해결",
+    "summary": "국물 튀김과 기름때가 마른 채 굳어버린 전자레인지 내부를 화학 세제 없이 안전하게 닦아내는 천연 스팀 세척법과 회전축 부품 관리 요령을 정리했습니다.",
+    "category": "kitchen",
+    "categoryName": "주방가전",
+    "keyword": "전자레인지청소",
+    "date": "2026.09.09"
+  },
+  {
+    "slug": "laptop-battery-care",
+    "title": "노트북 배터리 수명 극대화하는 80% 충전 제한 설정과 쿨러 먼지 청소법",
+    "summary": "어댑터를 항상 꽂아두고 쓰면 배터리가 부풀어 오르는 스웰링(Swelling)이 생깁니다. 제조사별 배터리 수명 보호(80~85% 제한) 모드 설정법과 팬 소음을 잡는 쿨러 관리 요령을 정리했습니다.",
+    "category": "digital",
+    "categoryName": "노트북·IT가전",
+    "keyword": "노트북배터리수명",
+    "date": "2026.09.09"
+  },
+  {
+    "slug": "monitor-refresh-rate",
+    "title": "모니터 주사율 60Hz vs 144Hz 체감 차이와 눈 피로 줄이는 해상도·글꼴 설정",
+    "summary": "144Hz 게이밍 모니터를 비싸게 사고도 윈도우 설정에서 60Hz로 방치하고 쓰는 경우가 절반이 넘습니다. 주사율 확인법과 장시간 문서·코딩 작업 시 눈 피로를 절반으로 줄이는 텍스트 튜닝법을 정리했습니다.",
+    "category": "digital",
+    "categoryName": "노트북·IT가전",
+    "keyword": "모니터주사율",
+    "date": "2026.09.09"
+  },
+  {
     "slug": "energy-grade",
     "title": "에너지 소비효율 등급, 1등급이 항상 이득은 아닌 이유",
     "summary": "등급은 같은 용량대 안에서 매기는 상대 평가입니다. 등급만 보면 실제 전기요금을 잘못 예상하게 되는데, 함께 봐야 할 숫자를 정리했습니다.",
@@ -228,6 +309,30 @@ export const GUIDE_CATEGORIES = [
     "name": "냉장고",
     "desc": "적정 온도, 정리, 수명과 전기요금",
     "count": 4
+  },
+  {
+    "id": "tv",
+    "name": "TV·영상가전",
+    "desc": "OLED/QLED 번인 방지, 시청거리별 인치 계산과 화질",
+    "count": 2
+  },
+  {
+    "id": "cleaner",
+    "name": "청소기·로봇청소기",
+    "desc": "물걸레 쉰내 방지, 배터리 수명 연장과 필터 관리",
+    "count": 2
+  },
+  {
+    "id": "kitchen",
+    "name": "주방가전",
+    "desc": "식기세척기 물얼룩, 인덕션 상판 탄자국, 오븐 청소",
+    "count": 3
+  },
+  {
+    "id": "digital",
+    "name": "노트북·IT가전",
+    "desc": "배터리 수명 관리, 발열 해소와 모니터 세팅",
+    "count": 2
   },
   {
     "id": "common",

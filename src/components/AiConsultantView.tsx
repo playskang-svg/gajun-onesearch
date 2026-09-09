@@ -26,7 +26,7 @@ export const AiConsultantView: React.FC<AiConsultantViewProps> = ({
     {
       id: 'init-1',
       sender: 'ai',
-      text: '안녕하세요! 가전비교연구소 AI 가전 전문 컨설턴트입니다. 🏠\n거주 평수, 예산, 가족 구성원이나 고민 중인 모델명을 편하게 말씀해 주시면, 한번에 한눈에 비교할 수 있도록 실측 스펙과 랩 테스트 데이터를 기반으로 가장 합리적인 가전을 추천해 드립니다.',
+      text: '안녕하세요! 가전비교연구소 AI 가전 전문 컨설턴트입니다. 🏠\n거주 평수, 예산, 가족 구성원이나 고민 중인 모델명을 편하게 말씀해 주시면, 한번에 한눈에 비교할 수 있도록 제조사 공개 사양을 기준으로 가장 합리적인 가전을 추천해 드립니다.',
     },
   ]);
   const [isTyping, setIsTyping] = useState(false);
@@ -64,7 +64,7 @@ export const AiConsultantView: React.FC<AiConsultantViewProps> = ({
         responseText = `30평대 이상이며 반려동물(털, 사료 부스러기)이 있는 가정이라면 '온수 물걸레 세척 + 열풍 건조 + 엉킴 방지 롤러' 3가지가 핵심입니다.\n\n👑 1순위 추천: [로보락 S8 Pro Ultra]\n- 듀얼 실리콘 고무 롤러로 털 엉킴이 거의 없고, 6,000Pa 흡입력과 열풍 건조로 걸레 쉰내가 나지 않습니다.\n\n⚡ 2순위 (모서리 특화): [드리미 L20 Ultra]\n- 모파익스텐드 팔이 뻗어나와 벽 모서리 사각지대까지 걸레질을 해줍니다.\n\n💰 가성비 원픽: [샤오미 X10+]\n- 40만원대 후반에 올인원 열풍건조 스테이션을 누릴 수 있어 예산 절감에 최고입니다.`;
         recommendedIds = ['rv-roborock-s8-pro', 'rv-dreame-l20-ultra', 'rv-xiaomi-x10-plus'];
       } else if (lower.includes('무선') || lower.includes('청소기') || lower.includes('손목') || lower.includes('다이슨') || lower.includes('코드제로')) {
-        responseText = `손목 피로도를 우선하신다면 제품의 '실측 총 중량'과 '무게 밸런스'를 꼭 보셔야 합니다.\n\n✨ 가벼움 1위: [다이슨 V12 디텍트 슬림] (2.2kg)\n- 깃털 같은 무게와 그린 레이저로 먼지를 찾아내어 손목 부담이 현저히 적습니다.\n\n📦 올인원 완성도 1위: [LG 코드제로 A9S 오브제컬렉션]\n- 280AW의 막강한 흡입력과 타워 거치만 하면 먼지를 자동으로 비워주는 편리함이 최고입니다.`;
+        responseText = `손목 피로도를 우선하신다면 제품의 '총 중량(표기)'과 '무게 밸런스'를 꼭 보셔야 합니다.\n\n✨ 가벼움 1위: [다이슨 V12 디텍트 슬림] (2.2kg)\n- 깃털 같은 무게와 그린 레이저로 먼지를 찾아내어 손목 부담이 현저히 적습니다.\n\n📦 올인원 완성도 1위: [LG 코드제로 A9S 오브제컬렉션]\n- 280AW의 막강한 흡입력과 타워 거치만 하면 먼지를 자동으로 비워주는 편리함이 최고입니다.`;
         recommendedIds = ['cv-dyson-v12-detect-slim', 'cv-lg-codezero-a9s'];
       } else if (lower.includes('음식물') || lower.includes('미닉스') || lower.includes('스마트카라') || lower.includes('냄새')) {
         responseText = `음식물처리기는 냄새 차단 탈취 필터와 작동 소음이 가장 중요한 구매 기준입니다.\n\n🥇 종합 1위: [미닉스 더 플렌더]\n- A4 용지 크기 초소형 디자인에 19.9dB의 극저소음, 95% 부피 감량으로 1~3인 가구 만족도 1위입니다.\n\n💪 분쇄력 1위: [스마트카라 400 Pro]\n- 닭뼈나 생선가시까지 강력한 맷돌 모터로 갈아버리는 압도적 내구성을 자랑합니다.`;
@@ -76,7 +76,7 @@ export const AiConsultantView: React.FC<AiConsultantViewProps> = ({
         responseText = `제습기는 아파트 평수 ÷ 2 공식으로 일일 제습량을 맞추고, 전기세를 아끼려면 '스마트 인버터 1등급' 필수입니다.\n\n🏆 국민 제습기: [위닉스 뽀송 인버터 16L]\n- 1등급 에너지 효율과 신발 건조 전용 호스 포함으로 25~35평형에서 가장 무난하고 실패 없는 선택입니다.\n\n⚡ 대용량 끝판왕: [LG 휘센 듀얼 인버터 20L]\n- 40평대 거실도 20분 만에 쾌적권으로 낮추는 강력 모터와 UV 팬 살균 탑재.`;
         recommendedIds = ['dh-winix-bbosong-16', 'dh-lg-whisen-dual-inverter-20'];
       } else {
-        responseText = `질문해주신 '${query}' 관련 가전비교연구소 분석 결과입니다.\n가전제품은 제조사의 과장 광고보다 독립 연구소의 실측 데이터(흡입력 실측 AW/Pa, 작동 소음 dB, 소비전력, 필터 등급)를 기준으로 선택하셔야 중복 투자를 막을 수 있습니다.\n\n아래 검증된 대표 모델들을 비교함에 담아 1:1 스펙 차이를 한번에 한눈에 확인해 보세요!`;
+        responseText = `질문해주신 '${query}' 관련 가전비교연구소 분석 결과입니다.\n가전제품은 제조사의 과장 광고보다 제조사가 공개한 사양(흡입력 AW/Pa, 작동 소음 dB, 소비전력, 필터 등급)를 기준으로 선택하셔야 중복 투자를 막을 수 있습니다.\n\n아래 검증된 대표 모델들을 비교함에 담아 1:1 스펙 차이를 한번에 한눈에 확인해 보세요!`;
         recommendedIds = ['rv-roborock-s8-pro', 'dw-lg-dios-objet-14', 'dh-winix-bbosong-16'];
       }
 
@@ -105,11 +105,11 @@ export const AiConsultantView: React.FC<AiConsultantViewProps> = ({
             <h1 className="text-lg font-black flex items-center gap-2">
               <span>가전비교연구소 AI 컨설턴트</span>
               <span className="text-[10px] bg-purple-400/20 text-purple-200 border border-purple-300/30 px-2 py-0.5 rounded-full font-bold">
-                실측 데이터 기반
+                공개 사양 기반
               </span>
             </h1>
             <p className="text-xs text-purple-200">
-              실제 랩 테스트 결과와 스펙 시트를 학습한 AI가 1:1 맞춤 분석을 제공합니다.
+              공개된 제품 사양을 바탕으로 AI가 1:1 맞춤 분석을 제공합니다.
             </p>
           </div>
         </div>
