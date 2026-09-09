@@ -143,38 +143,65 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
               </div>
 
               {/* Price Row */}
-              <div className="flex items-baseline justify-between pt-2 border-t border-gray-100">
+              <div className="flex items-baseline justify-between pt-2 border-t border-gray-100 flex-wrap gap-2">
                 <div>
                   <div className="flex items-center gap-2">
                     <span className="text-sm text-red-500 font-bold">{discountPercent}% 할인</span>
                     <span className="text-sm text-gray-400 line-through">₩{product.originalPrice.toLocaleString()}</span>
                   </div>
-                  <div className="text-2xl font-black text-gray-900">
+                  <div className="text-2xl font-black text-gray-900 flex items-center gap-2 flex-wrap">
                     ₩{product.price.toLocaleString()}
-                    <span className="text-xs font-normal text-gray-500 ml-1.5">온라인 최저가</span>
+                    <span className="text-xs font-normal text-gray-500">온라인 최저가</span>
+                    {product.mallName && (
+                      <span className="text-[11px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-100">
+                        {product.mallName}
+                      </span>
+                    )}
+                    {product.isRocket && (
+                      <span className="text-[11px] font-bold text-sky-600 bg-sky-50 px-1.5 py-0.5 rounded border border-sky-200">
+                        🚀 로켓배송
+                      </span>
+                    )}
+                    {product.mallSaleBadge && (
+                      <span className="text-[11px] font-bold text-rose-600 bg-rose-50 px-1.5 py-0.5 rounded border border-rose-200">
+                        {product.mallSaleBadge}
+                      </span>
+                    )}
                   </div>
                 </div>
 
-                <button
-                  onClick={() => onToggleCompare(product)}
-                  className={`px-4 py-2.5 rounded-xl font-bold text-sm flex items-center gap-2 transition ${
-                    isInCompare
-                      ? 'bg-blue-600 text-white shadow-xs'
-                      : 'bg-gray-100 hover:bg-gray-200 text-gray-800'
-                  }`}
-                >
-                  {isInCompare ? (
-                    <>
-                      <Check className="w-4 h-4 stroke-[3]" />
-                      <span>비교함 담김</span>
-                    </>
-                  ) : (
-                    <>
-                      <Scale className="w-4 h-4" />
-                      <span>비교함 담기</span>
-                    </>
-                  )}
-                </button>
+                <div className="flex items-center gap-2">
+                  <button
+                    onClick={() => onToggleCompare(product)}
+                    className={`px-3 py-2 rounded-xl font-bold text-xs sm:text-sm flex items-center gap-1.5 transition ${
+                      isInCompare
+                        ? 'bg-blue-600 text-white shadow-xs'
+                        : 'bg-gray-100 hover:bg-gray-200 text-gray-800'
+                    }`}
+                  >
+                    {isInCompare ? (
+                      <>
+                        <Check className="w-4 h-4 stroke-[3]" />
+                        <span>비교함 담김</span>
+                      </>
+                    ) : (
+                      <>
+                        <Scale className="w-4 h-4" />
+                        <span>비교함 담기</span>
+                      </>
+                    )}
+                  </button>
+
+                  <a
+                    href={product.buyUrl || 'https://link.coupang.com/a/AF5563346?subid=gajun&subid2=modal_hero'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 rounded-xl font-bold text-xs sm:text-sm bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white flex items-center gap-1.5 transition shadow-sm"
+                  >
+                    <span>{product.mallName || '쿠팡'} 바로가기</span>
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -394,28 +421,33 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         </div>
 
         {/* Modal Bottom Sticky CTA */}
-        <div className="p-4 bg-gray-50 border-t border-gray-200 flex items-center justify-between gap-4 sticky bottom-0 z-20">
-          <button
-            onClick={() => onToggleCompare(product)}
-            className={`flex-1 py-3 px-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition ${
-              isInCompare 
-                ? 'bg-blue-600 text-white hover:bg-blue-700' 
-                : 'bg-white border border-gray-300 text-gray-800 hover:bg-gray-100'
-            }`}
-          >
-            <Scale className="w-4 h-4" />
-            <span>{isInCompare ? '비교함에서 제거' : '비교함에 추가하기'}</span>
-          </button>
+        <div className="p-4 bg-gray-50 border-t border-gray-200 flex flex-col gap-2.5 sticky bottom-0 z-20">
+          <div className="flex items-center justify-between gap-3">
+            <button
+              onClick={() => onToggleCompare(product)}
+              className={`flex-1 py-3 px-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition ${
+                isInCompare 
+                  ? 'bg-blue-600 text-white hover:bg-blue-700' 
+                  : 'bg-white border border-gray-300 text-gray-800 hover:bg-gray-100'
+              }`}
+            >
+              <Scale className="w-4 h-4" />
+              <span>{isInCompare ? '비교함에서 제거' : '비교함에 추가하기'}</span>
+            </button>
 
-          <a
-            href="https://m.search.naver.com/search.naver?query=가전제품+최저가"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex-1 py-3 px-4 rounded-xl font-bold text-sm bg-gray-900 text-white hover:bg-gray-800 flex items-center justify-center gap-2 transition text-center shadow-xs"
-          >
-            <span>최저가 쇼핑몰 바로가기</span>
-            <ExternalLink className="w-4 h-4" />
-          </a>
+            <a
+              href={product.buyUrl || 'https://link.coupang.com/a/AF5563346?subid=gajun&subid2=modal_bottom'}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex-1 py-3 px-4 rounded-xl font-bold text-sm bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-700 hover:to-indigo-800 text-white flex items-center justify-center gap-2 transition text-center shadow-md shadow-blue-500/20"
+            >
+              <span>{product.mallName || '쿠팡'} 최저가 바로가기</span>
+              <ExternalLink className="w-4 h-4" />
+            </a>
+          </div>
+          <p className="text-[10px] text-gray-400 text-center">
+            ※ 이 포스팅은 쿠팡 파트너스 및 제휴 마케팅 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받을 수 있습니다.
+          </p>
         </div>
       </div>
     </div>

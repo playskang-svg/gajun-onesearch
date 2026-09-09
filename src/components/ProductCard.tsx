@@ -1,5 +1,5 @@
 import React from 'react';
-import { Scale, Check, ChevronRight, Award, Zap, ThumbsUp } from 'lucide-react';
+import { Scale, Check, ChevronRight, Award, Zap, ThumbsUp, ExternalLink } from 'lucide-react';
 import { Product } from '../types';
 
 interface ProductCardProps {
@@ -68,69 +68,50 @@ export const ProductCard: React.FC<ProductCardProps> = ({
   return (
     <div 
       id={`product-card-${product.id}`}
-      className={`bg-white rounded-2xl border transition-all duration-200 flex flex-col overflow-hidden hover:shadow-lg ${
-        isInCompare 
-          ? 'border-blue-500 ring-2 ring-blue-500/20 shadow-md' 
-          : 'border-gray-200/90 hover:border-gray-300'
-      }`}
+      className="group bg-white rounded-2xl border border-gray-200 overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col justify-between"
     >
-      {/* Top Media & Badges */}
-      <div className="relative bg-gray-50/70 p-4 border-b border-gray-100 flex items-center justify-center min-h-[220px]">
-        {/* Floating Pick Badge */}
-        <div className="absolute top-3 left-3 z-10 flex flex-col gap-1 items-start">
-          {getPickBadge()}
-          {product.bestSeller && (
-            <span className="bg-red-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded">
-              BEST
-            </span>
-          )}
-        </div>
-
-        {/* Compare Checkbox Button */}
-        <button
-          id={`compare-btn-${product.id}`}
-          onClick={(e) => {
-            e.stopPropagation();
-            onToggleCompare(product);
-          }}
-          className={`absolute top-3 right-3 z-10 flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold transition shadow-xs ${
-            isInCompare
-              ? 'bg-blue-600 text-white ring-2 ring-blue-300'
-              : 'bg-white/90 text-gray-700 hover:bg-white hover:text-blue-600 border border-gray-200'
-          }`}
-          title={isInCompare ? '비교함에서 제거' : '비교함에 담기'}
-        >
-          {isInCompare ? (
-            <>
-              <Check className="w-3.5 h-3.5 stroke-[3]" />
-              <span>비교중</span>
-            </>
-          ) : (
-            <>
-              <Scale className="w-3.5 h-3.5" />
-              <span>비교담기</span>
-            </>
-          )}
-        </button>
-
-        {/* Product Image */}
-        <div 
-          className="w-full h-44 overflow-hidden rounded-lg cursor-pointer flex items-center justify-center"
-          onClick={() => onOpenDetails(product)}
-        >
-          <img
-            src={product.image}
-            alt={product.name}
-            referrerPolicy="no-referrer"
-            className="w-full h-full object-cover rounded-lg hover:scale-105 transition-transform duration-300"
-            loading="lazy"
-          />
-        </div>
-      </div>
-
-      {/* Main Content Body */}
       <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between">
         <div>
+          {/* Top Badges & Compare Button */}
+          <div className="flex items-start justify-between gap-2 mb-3">
+            <div className="flex flex-wrap items-center gap-1.5">
+              {getPickBadge()}
+              <span className={`text-[11px] font-bold px-2 py-0.5 rounded border ${getScoreColor(product.nosearchScore)}`}>
+                {product.nosearchScore}점
+              </span>
+            </div>
+
+            <button
+              id={`compare-btn-${product.id}`}
+              onClick={(e) => {
+                e.stopPropagation();
+                onToggleCompare(product);
+              }}
+              className={`p-1.5 rounded-lg text-xs font-semibold flex items-center gap-1 transition ${
+                isInCompare
+                  ? 'bg-blue-600 text-white shadow-xs'
+                  : 'bg-gray-100 text-gray-600 hover:bg-gray-200 hover:text-gray-900'
+              }`}
+              title="비교함에 담기"
+            >
+              {isInCompare ? <Check className="w-3.5 h-3.5" /> : <Scale className="w-3.5 h-3.5" />}
+              <span className="hidden sm:inline">{isInCompare ? '담김' : '비교'}</span>
+            </button>
+          </div>
+
+          {/* Thumbnail Image */}
+          <div 
+            onClick={() => onOpenDetails(product)}
+            className="relative w-full h-44 sm:h-48 rounded-xl bg-gray-50 overflow-hidden cursor-pointer mb-4 flex items-center justify-center p-2"
+          >
+            <img 
+              src={product.image} 
+              alt={product.name}
+              className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+
           {/* Brand & Model */}
           <div className="flex items-center justify-between text-xs text-gray-500 mb-1">
             <span className="font-medium">{product.brand}</span>
@@ -208,30 +189,49 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         </div>
 
         {/* Pricing & Footer Actions */}
-        <div className="pt-3 border-t border-gray-100 flex items-center justify-between">
-          <div>
-            <div className="flex items-center gap-1.5">
-              {discountPercent > 0 && (
-                <span className="text-red-500 text-xs font-bold">{discountPercent}%</span>
-              )}
-              <span className="text-xs text-gray-400 line-through">
-                ₩{product.originalPrice.toLocaleString()}
-              </span>
+        <div className="pt-3 border-t border-gray-100 space-y-2">
+          <div className="flex items-center justify-between">
+            <div>
+              <div className="flex items-center gap-1.5">
+                {discountPercent > 0 && (
+                  <span className="text-red-500 text-xs font-bold">{discountPercent}%</span>
+                )}
+                <span className="text-xs text-gray-400 line-through">
+                  ₩{product.originalPrice.toLocaleString()}
+                </span>
+                {product.mallSaleBadge && (
+                  <span className="text-[10px] bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded font-bold border border-blue-100">
+                    {product.mallSaleBadge}
+                  </span>
+                )}
+              </div>
+              <div className="text-lg font-black text-gray-950 leading-tight">
+                ₩{product.price.toLocaleString()}
+                <span className="text-xs font-normal text-gray-500 ml-1">최저가</span>
+              </div>
             </div>
-            <div className="text-lg font-black text-gray-950 leading-tight">
-              ₩{product.price.toLocaleString()}
-              <span className="text-xs font-normal text-gray-500 ml-1">최저가</span>
-            </div>
+
+            <button
+              id={`view-detail-btn-${product.id}`}
+              onClick={() => onOpenDetails(product)}
+              className="flex items-center gap-1 px-3 py-2 text-xs font-bold text-gray-700 bg-gray-100 hover:bg-gray-200 hover:text-gray-900 rounded-xl transition"
+            >
+              <span>상세분석</span>
+              <ChevronRight className="w-3.5 h-3.5" />
+            </button>
           </div>
 
-          <button
-            id={`view-detail-btn-${product.id}`}
-            onClick={() => onOpenDetails(product)}
-            className="flex items-center gap-1 px-3 py-2 text-xs font-bold text-gray-700 bg-gray-100 hover:bg-gray-200 hover:text-gray-900 rounded-xl transition"
-          >
-            <span>상세분석</span>
-            <ChevronRight className="w-3.5 h-3.5" />
-          </button>
+          {product.buyUrl && (
+            <a
+              href={product.buyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-2 px-3 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition flex items-center justify-center gap-1.5 shadow-xs"
+            >
+              <span>{product.mallName || '최저가 바로가기'}</span>
+              <ExternalLink className="w-3.5 h-3.5" />
+            </a>
+          )}
         </div>
       </div>
     </div>

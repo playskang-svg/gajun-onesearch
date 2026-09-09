@@ -22,10 +22,12 @@ import { FilterSidebar } from './components/FilterSidebar';
 import { ApplianceFinder } from './components/ApplianceFinder';
 import { BuyingGuidesView } from './components/BuyingGuidesView';
 import { AiConsultantView } from './components/AiConsultantView';
+import { MallSalesView } from './components/MallSalesView';
+import { NavTabType } from './components/Navbar';
 
 export default function App() {
   // Navigation
-  const [activeTab, setActiveTab] = useState<'explore' | 'compare' | 'finder' | 'guides' | 'ai'>('explore');
+  const [activeTab, setActiveTab] = useState<NavTabType>('explore');
   
   // Filter state
   const [filterState, setFilterState] = useState<FilterState>({
@@ -34,7 +36,7 @@ export default function App() {
     brands: [],
     pickTypes: [],
     minPrice: 0,
-    maxPrice: 3000000,
+    maxPrice: 10000000,
     onlyPicks: false,
     sortBy: 'nosearch',
     selectedFeatures: [],
@@ -408,6 +410,13 @@ export default function App() {
         />
       )}
 
+      {/* VIEW: Mall & Department Store Sales Exhibition */}
+      {activeTab === 'sales' && (
+        <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 w-full flex-1">
+          <MallSalesView onOpenDetails={(p) => setSelectedProduct(p)} />
+        </main>
+      )}
+
       {/* Persistent Floating Comparison Bottom Drawer (When ≥1 item selected and not in compare tab) */}
       {activeTab !== 'compare' && (
         <ComparisonDrawer
@@ -477,11 +486,12 @@ export default function App() {
               <span className="font-bold text-gray-900 text-sm">가전비교연구소</span>
               <span className="text-gray-400">| 한번에 한눈에 비교하는 가전 스펙 플랫폼</span>
             </div>
-            <div className="flex items-center gap-4 text-gray-600">
+            <div className="flex items-center gap-4 text-gray-600 flex-wrap">
               <button onClick={() => setActiveTab('explore')} className="hover:text-blue-600">가전 탐색</button>
               <button onClick={() => setActiveTab('compare')} className="hover:text-blue-600">1:1 스펙비교</button>
               <button onClick={() => setActiveTab('finder')} className="hover:text-blue-600">맞춤 가전 찾기</button>
               <button onClick={() => setActiveTab('guides')} className="hover:text-blue-600">구매 가이드</button>
+              <button onClick={() => setActiveTab('sales')} className="hover:text-rose-600 font-semibold text-rose-600">백화점·몰 세일전</button>
               <button onClick={() => setActiveTab('ai')} className="hover:text-purple-600">AI 컨설턴트</button>
             </div>
           </div>
@@ -489,9 +499,12 @@ export default function App() {
             본 서비스는 실제 가전 사용자의 합리적인 구매를 돕기 위해 제작된 한번에 한눈에 비교하는 가전비교연구소 가전 스펙 비교 및 실험실 리뷰 웹 애플리케이션입니다. 
             모든 평가 점수와 실측치는 표준 시험 조건에 기반합니다.
           </p>
-          <div className="pt-2 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-400">
-            <span>© 2025 가전비교연구소 (gajun.kr). All rights reserved.</span>
-            <span>한번에 한눈에 비교하는 독립 연구소 실측 검증 데이터 탑재</span>
+          <div className="bg-slate-50 border border-slate-200/80 rounded-xl p-3 text-[11px] text-slate-500 leading-relaxed">
+            <span className="font-semibold text-slate-700">공정거래위원회 제휴 마케팅 안내:</span> 본 사이트는 쿠팡 파트너스 및 링크프라이스 등 제휴 마케팅 프로그램의 활동으로 일정액의 수수료를 제공받을 수 있으며, 추천 상품의 최종 구매 가격에는 어떠한 영향도 미치지 않습니다.
+          </div>
+          <div className="pt-2 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-400 flex-wrap gap-2">
+            <span>© 2026 가전비교연구소 (gajun.kr). All rights reserved.</span>
+            <span>독립 연구소 실측 검증 데이터 & 검증된 파트너십 딥링크 탑재</span>
           </div>
         </div>
       </footer>

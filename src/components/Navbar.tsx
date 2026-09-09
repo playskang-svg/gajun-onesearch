@@ -9,14 +9,17 @@ import {
   X, 
   SlidersHorizontal,
   Layers,
-  ArrowRight
+  ArrowRight,
+  ShoppingBag
 } from 'lucide-react';
 import { CategoryId } from '../types';
 import { CATEGORIES } from '../data/products';
 
+export type NavTabType = 'explore' | 'compare' | 'finder' | 'guides' | 'ai' | 'sales';
+
 interface NavbarProps {
-  activeTab: 'explore' | 'compare' | 'finder' | 'guides' | 'ai';
-  setActiveTab: (tab: 'explore' | 'compare' | 'finder' | 'guides' | 'ai') => void;
+  activeTab: NavTabType;
+  setActiveTab: (tab: NavTabType) => void;
   selectedCategory: CategoryId;
   setSelectedCategory: (cat: CategoryId) => void;
   searchQuery: string;
@@ -41,7 +44,9 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const handleCategoryClick = (catId: CategoryId) => {
     setSelectedCategory(catId);
-    if (activeTab !== 'explore') {
+    if (catId === 'mall_sales') {
+      setActiveTab('sales');
+    } else if (activeTab === 'sales' || activeTab !== 'explore') {
       setActiveTab('explore');
     }
   };
@@ -148,6 +153,23 @@ export const Navbar: React.FC<NavbarProps> = ({
               >
                 <BookOpen className="w-4 h-4 text-amber-600" />
                 <span>구매 가이드</span>
+              </button>
+
+              <button
+                id="nav-tab-sales"
+                onClick={() => {
+                  setSelectedCategory('mall_sales');
+                  setActiveTab('sales');
+                }}
+                className={`px-3 py-2 rounded-lg text-sm font-semibold transition flex items-center gap-1.5 ${
+                  activeTab === 'sales'
+                    ? 'text-rose-700 bg-rose-50 border border-rose-200 shadow-2xs'
+                    : 'text-rose-600 hover:text-rose-700 hover:bg-rose-50/70'
+                }`}
+              >
+                <ShoppingBag className="w-4 h-4 text-rose-600" />
+                <span>백화점·몰 세일</span>
+                <span className="bg-rose-100 text-rose-700 text-[10px] px-1.5 py-0.2 rounded-full font-bold">HOT</span>
               </button>
 
               <button
@@ -342,6 +364,23 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span>구매 가이드 & 랩 테스트</span>
             </div>
             <ArrowRight className="w-4 h-4 text-gray-400" />
+          </button>
+
+          <button
+            onClick={() => {
+              setSelectedCategory('mall_sales');
+              setActiveTab('sales');
+              setMobileMenuOpen(false);
+            }}
+            className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-semibold ${
+              activeTab === 'sales' ? 'bg-rose-50 text-rose-700' : 'text-rose-600 hover:bg-rose-50/60'
+            }`}
+          >
+            <div className="flex items-center gap-2">
+              <ShoppingBag className="w-4 h-4 text-rose-600" />
+              <span>백화점·몰 세일전 (특가 기획전)</span>
+            </div>
+            <span className="bg-rose-100 text-rose-700 text-[10px] px-1.5 py-0.5 rounded-full font-bold">HOT</span>
           </button>
 
           <button

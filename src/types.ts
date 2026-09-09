@@ -1,11 +1,19 @@
 export type CategoryId = 
   | 'all'
+  | 'refrigerator'
+  | 'washer_dryer'
+  | 'air_conditioner'
+  | 'tv'
+  | 'laptop'
+  | 'desktop_pc'
+  | 'kitchen_appliances'
   | 'robot_vacuum'
   | 'cordless_vacuum'
   | 'food_disposer'
   | 'dishwasher'
   | 'air_purifier'
-  | 'dehumidifier';
+  | 'dehumidifier'
+  | 'mall_sales';
 
 export type PickType = 'top' | 'value' | 'performance' | 'premium' | 'entry' | 'none';
 
@@ -59,6 +67,10 @@ export interface Product {
   bestSeller: boolean;
   releaseYear: number;
   buyUrl?: string;
+  mallName?: string;
+  isRocket?: boolean;
+  mallSaleBadge?: string;
+  isDepartmentSale?: boolean;
 }
 
 export interface BuyingGuide {
