@@ -56,14 +56,14 @@ export const Navbar: React.FC<NavbarProps> = ({
       {/* Top micro banner */}
       <div className="bg-slate-900 text-slate-200 text-xs py-1.5 px-4">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="bg-blue-600 text-white px-1.5 py-0.5 rounded text-[10px] font-semibold">LAB UPDATE</span>
-            <span className="truncate">2025 최신 가전 실측 데이터 & 1:1 비교 스펙 전면 업데이트 완료</span>
+          <div className="flex items-center gap-2 min-w-0">
+            <span className="bg-blue-600 text-white px-1.5 py-0.5 rounded text-[10px] font-semibold shrink-0">LAB UPDATE</span>
+            <span className="truncate">{new Date().getFullYear()} 최신 가전 실측 데이터 & 1:1 비교 스펙 전면 업데이트 완료</span>
           </div>
           <div className="hidden sm:flex items-center gap-3 text-slate-400 text-[11px]">
-            <span>실측 연구소 기준</span>
+            <span>독립 연구소 실측 기준</span>
             <span>•</span>
-            <span>광고 없는 객관적 분석</span>
+            <span>제조사 카탈로그 대신 실측 수치</span>
           </div>
         </div>
       </div>
@@ -73,7 +73,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="flex items-center justify-between h-16 gap-4">
           
           {/* Logo */}
-          <div className="flex items-center gap-6">
+          <div className="flex items-center gap-3 xl:gap-5 min-w-0">
             <button 
               id="logo-btn"
               onClick={() => {
@@ -81,28 +81,22 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setSelectedCategory('all');
                 setSearchQuery('');
               }}
-              className="flex items-center gap-2.5 text-left focus:outline-hidden group"
+              className="flex items-center gap-2.5 text-left focus:outline-hidden group shrink-0"
             >
-              <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white font-black text-xl shadow-md shadow-blue-500/20 group-hover:from-blue-700 group-hover:to-indigo-700 transition">
-                가
-              </div>
               <div>
                 <div className="flex items-center gap-1.5">
-                  <span className="text-xl font-black tracking-tight text-gray-900">가전비교연구소</span>
-                  <span className="text-[10px] font-bold text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded border border-blue-100">
-                    GAJUN.KR
-                  </span>
-                </div>
+                  <span className="text-base sm:text-lg xl:text-xl font-black tracking-tight text-gray-900 whitespace-nowrap">가전비교연구소</span>
+                  </div>
                 <p className="text-[11px] text-gray-500 hidden sm:block font-medium">한번에 한눈에 비교!</p>
               </div>
             </button>
 
             {/* Desktop Navigation Links */}
-            <nav className="hidden lg:flex items-center gap-1">
+            <nav className="hidden xl:flex items-center gap-0.5 2xl:gap-1">
               <button
                 id="nav-tab-explore"
                 onClick={() => setActiveTab('explore')}
-                className={`px-3 py-2 rounded-lg text-sm font-semibold transition ${
+                className={`px-2.5 2xl:px-3 py-2 rounded-lg text-sm font-semibold whitespace-nowrap transition ${
                   activeTab === 'explore'
                     ? 'text-blue-600 bg-blue-50/70'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
@@ -114,7 +108,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <button
                 id="nav-tab-compare"
                 onClick={() => setActiveTab('compare')}
-                className={`px-3 py-2 rounded-lg text-sm font-semibold transition flex items-center gap-1.5 ${
+                className={`px-2.5 2xl:px-3 py-2 rounded-lg text-sm font-semibold whitespace-nowrap transition flex items-center gap-1.5 ${
                   activeTab === 'compare'
                     ? 'text-blue-600 bg-blue-50/70'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
@@ -132,7 +126,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <button
                 id="nav-tab-finder"
                 onClick={() => setActiveTab('finder')}
-                className={`px-3 py-2 rounded-lg text-sm font-semibold transition flex items-center gap-1.5 ${
+                className={`px-2.5 2xl:px-3 py-2 rounded-lg text-sm font-semibold whitespace-nowrap transition flex items-center gap-1.5 ${
                   activeTab === 'finder'
                     ? 'text-blue-600 bg-blue-50/70'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
@@ -145,7 +139,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <button
                 id="nav-tab-guides"
                 onClick={() => setActiveTab('guides')}
-                className={`px-3 py-2 rounded-lg text-sm font-semibold transition flex items-center gap-1.5 ${
+                className={`px-2.5 2xl:px-3 py-2 rounded-lg text-sm font-semibold whitespace-nowrap transition flex items-center gap-1.5 ${
                   activeTab === 'guides'
                     ? 'text-blue-600 bg-blue-50/70'
                     : 'text-gray-600 hover:text-gray-900 hover:bg-gray-100'
@@ -161,7 +155,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   setSelectedCategory('mall_sales');
                   setActiveTab('sales');
                 }}
-                className={`px-3 py-2 rounded-lg text-sm font-semibold transition flex items-center gap-1.5 ${
+                className={`px-2.5 2xl:px-3 py-2 rounded-lg text-sm font-semibold whitespace-nowrap transition flex items-center gap-1.5 ${
                   activeTab === 'sales'
                     ? 'text-rose-700 bg-rose-50 border border-rose-200 shadow-2xs'
                     : 'text-rose-600 hover:text-rose-700 hover:bg-rose-50/70'
@@ -175,7 +169,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               <button
                 id="nav-tab-ai"
                 onClick={() => setActiveTab('ai')}
-                className={`px-3 py-2 rounded-lg text-sm font-semibold transition flex items-center gap-1.5 ${
+                className={`px-2.5 2xl:px-3 py-2 rounded-lg text-sm font-semibold whitespace-nowrap transition flex items-center gap-1.5 ${
                   activeTab === 'ai'
                     ? 'text-purple-700 bg-purple-50 border border-purple-200'
                     : 'text-purple-600 hover:text-purple-700 hover:bg-purple-50/60'
@@ -188,7 +182,7 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           {/* Search Bar */}
-          <div className="flex-1 max-w-md hidden md:block">
+          <div className="flex-1 max-w-xs 2xl:max-w-md hidden md:block min-w-0">
             <div className="relative">
               <input
                 id="global-search-input"
@@ -220,7 +214,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               title="비교함 열기"
             >
               <Scale className="w-4 h-4 text-blue-600" />
-              <span className="hidden sm:inline">비교함</span>
+              <span className="hidden sm:inline whitespace-nowrap">비교함</span>
               <span className={`text-xs font-bold px-1.5 py-0.5 rounded-full ${
                 compareCount > 0 ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-600'
               }`}>
@@ -240,7 +234,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             <button
               onClick={() => setMobileMenuOpen(true)}
-              className="p-2.5 text-gray-700 hover:text-gray-900 rounded-xl hover:bg-gray-100 lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center border border-gray-200"
+              className="p-2.5 text-gray-700 hover:text-gray-900 rounded-xl hover:bg-gray-100 xl:hidden min-w-[44px] min-h-[44px] flex items-center justify-center border border-gray-200"
               title="전체 메뉴 열기"
               aria-label="전체 메뉴 열기"
             >
@@ -282,7 +276,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 key={cat.id}
                 id={`cat-pill-${cat.id}`}
                 onClick={() => handleCategoryClick(cat.id)}
-                className={`px-3.5 py-2 text-xs sm:text-sm font-bold rounded-full transition flex items-center gap-1.5 min-h-[38px] ${
+                className={`px-3.5 py-2 text-xs sm:text-sm font-bold rounded-full whitespace-nowrap transition flex items-center gap-1.5 min-h-[38px] ${
                   isSelected
                     ? 'bg-blue-600 text-white shadow-xs'
                     : 'bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 hover:border-gray-300'

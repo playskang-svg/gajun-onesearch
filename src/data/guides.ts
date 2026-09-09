@@ -2,12 +2,12 @@ import { BuyingGuide } from '../types';
 
 export const BUYING_GUIDES: BuyingGuide[] = [
   {
-    id: 'guide-robot-vacuum-2025',
+    id: 'guide-robot-vacuum-2026',
     categoryId: 'robot_vacuum',
-    title: '2025년 로봇청소기 완벽 구매 가이드: 온수세척과 센서의 모든 것',
+    title: '2026년 로봇청소기 완벽 구매 가이드: 온수세척과 센서의 모든 것',
     subtitle: '150만원대 플래그십 vs 50만원대 가성비, 나에게 꼭 필요한 기능만 쏙쏙 고르기',
     readTime: '4분',
-    publishedAt: '2025.02.15',
+    publishedAt: '2026.08.11',
     thumbnail: 'https://images.unsplash.com/photo-1616401784845-180882ba9ba8?w=800&auto=format&fit=crop&q=80',
     summary: '단순 먼지 흡입을 넘어 물걸레 온수 세척, 열풍 건조, 직배수까지 진화한 로봇청소기 시장에서 핵심 체크포인트 4가지를 정리했습니다.',
     keyPoints: [
@@ -39,7 +39,7 @@ export const BUYING_GUIDES: BuyingGuide[] = [
     title: '음식물처리기 방식 비교: 건조분쇄 vs 미생물 vs 습식분쇄',
     subtitle: '여름철 날파리와 악취 지옥 탈출! 주거 환경별 최적의 처리기 선택법',
     readTime: '3분',
-    publishedAt: '2025.01.28',
+    publishedAt: '2026.06.18',
     thumbnail: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80',
     summary: '싱크대 하부 설치형(불법 논란) 대신 합법적이고 냄새 없는 스탠드형 건조분쇄와 미생물 처리기의 장단점을 객관적으로 비교합니다.',
     keyPoints: [
@@ -65,7 +65,7 @@ export const BUYING_GUIDES: BuyingGuide[] = [
     title: '식기세척기 용량 선택 가이드: 6인용 vs 12인용 vs 14인용',
     subtitle: '가족 수대로 사면 무조건 후회한다? 프라이팬과 냄비 수납의 진실',
     readTime: '5분',
-    publishedAt: '2025.02.05',
+    publishedAt: '2026.07.22',
     thumbnail: 'https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&auto=format&fit=crop&q=80',
     summary: '2인 가구라도 12인용/14인용을 사야 하는 이유와, 100℃ 고온 스팀 및 열풍 건조 유무가 만드는 세척 결과의 차이.',
     keyPoints: [
@@ -91,7 +91,7 @@ export const BUYING_GUIDES: BuyingGuide[] = [
     title: '제습기 평수 계산법: 10L vs 16L vs 20L 무엇을 사야 할까?',
     subtitle: '일일 제습량과 물통 크기, 인버터 1등급으로 전기세 폭탄 피하기',
     readTime: '3분',
-    publishedAt: '2025.01.12',
+    publishedAt: '2026.07.03',
     thumbnail: 'https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&auto=format&fit=crop&q=80',
     summary: '실제 아파트 평수 나누기 2 공식으로 내 집에 딱 맞는 제습 용량 찾기.',
     keyPoints: [

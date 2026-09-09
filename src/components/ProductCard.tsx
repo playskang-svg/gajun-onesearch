@@ -95,7 +95,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               title="비교함에 담기"
             >
               {isInCompare ? <Check className="w-3.5 h-3.5" /> : <Scale className="w-3.5 h-3.5" />}
-              <span className="hidden sm:inline">{isInCompare ? '담김' : '비교'}</span>
+              <span className="hidden sm:inline whitespace-nowrap">{isInCompare ? '담김' : '비교'}</span>
             </button>
           </div>
 

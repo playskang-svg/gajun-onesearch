@@ -240,7 +240,7 @@ export default function App() {
                 <span>한번에 한눈에 비교! 독립 연구소 실측 가전 플랫폼</span>
               </div>
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight leading-tight">
-                광고 없는 진짜 스펙 비교,<br />
+                홍보 문구 걷어낸 실측 스펙 비교,<br />
                 <span className="text-blue-400">가전비교연구소</span>에서 한번에 한눈에!
               </h1>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
@@ -349,7 +349,7 @@ export default function App() {
                   </button>
                 </div>
               ) : (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-5">
                   {filteredProducts.map((product) => {
                     const isInCompare = compareList.some((p) => p.id === product.id);
                     return (
@@ -481,9 +481,6 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-4">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
-              <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white flex items-center justify-center font-black text-xs">
-                가
-              </div>
               <span className="font-bold text-gray-900 text-sm">가전비교연구소</span>
               <span className="text-gray-400">| 한번에 한눈에 비교하는 가전 스펙 플랫폼</span>
             </div>

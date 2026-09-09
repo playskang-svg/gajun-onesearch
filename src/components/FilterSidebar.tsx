@@ -68,14 +68,14 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
     <aside className="w-full bg-white rounded-2xl border border-gray-200 p-4 sm:p-5 space-y-6">
       {/* Header */}
       <div className="flex items-center justify-between pb-3 border-b border-gray-100">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-2 min-w-0">
           <Filter className="w-4 h-4 text-blue-600" />
-          <h3 className="font-bold text-gray-900 text-sm sm:text-base">상세 필터</h3>
-          <span className="text-xs text-gray-500">({totalResultsCount}개)</span>
+          <h3 className="font-bold text-gray-900 text-sm sm:text-base whitespace-nowrap">상세 필터</h3>
+          <span className="text-xs text-gray-500 whitespace-nowrap">({totalResultsCount}개)</span>
         </div>
         <button
           onClick={onReset}
-          className="text-xs sm:text-sm text-gray-500 hover:text-blue-600 flex items-center gap-1 font-medium transition py-1 px-2 rounded-lg hover:bg-gray-100"
+          className="text-xs sm:text-sm text-gray-500 hover:text-blue-600 flex items-center gap-1 font-medium whitespace-nowrap shrink-0 transition py-1 px-2 rounded-lg hover:bg-gray-100"
         >
           <RotateCcw className="w-3.5 h-3.5" />
           <span>초기화</span>
@@ -85,18 +85,18 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
       {/* GAJUN Pick Toggle */}
       <div>
         <label className="flex items-center justify-between p-3.5 bg-blue-50/70 border border-blue-100 rounded-xl cursor-pointer hover:bg-blue-50 transition">
-          <div className="flex items-center gap-2.5">
+          <div className="flex items-center gap-2.5 min-w-0">
             <Sparkles className="w-5 h-5 text-blue-600 shrink-0" />
-            <div>
-              <div className="text-sm font-bold text-blue-950">가전비교 PICK만 보기</div>
-              <div className="text-xs text-blue-700">연구소 실측 추천 등급 부여 모델</div>
+            <div className="min-w-0">
+              <div className="text-sm font-bold text-blue-950 whitespace-nowrap">가전비교 PICK만 보기</div>
+              <div className="text-xs text-blue-700 leading-snug">실측 추천 등급 모델</div>
             </div>
           </div>
           <input
             type="checkbox"
             checked={filterState.onlyPicks}
             onChange={(e) => setFilterState((prev) => ({ ...prev, onlyPicks: e.target.checked }))}
-            className="w-5 h-5 text-blue-600 rounded border-gray-300 focus:ring-blue-500"
+            className="w-5 h-5 shrink-0 ml-2 text-blue-600 rounded border-gray-300 focus:ring-blue-500"
           />
         </label>
       </div>
