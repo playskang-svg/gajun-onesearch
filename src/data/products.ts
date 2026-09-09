@@ -15,7 +15,7 @@ export const CATEGORIES: CategoryMeta[] = [
     name: '전체 가전',
     iconName: 'LayoutGrid',
     count: 18,
-    description: '원써치 연구소에서 철저히 검증한 가전제품 모음',
+    description: '가전비교연구소에서 철저히 검증한 가전제품 모음',
     availableFeatures: [],
   },
   {
@@ -81,7 +81,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 1790000,
     nosearchScore: 97,
     pickType: 'top',
-    pickLabel: '원써치 종합 1위',
+    pickLabel: '가전비교 종합 1위',
     scores: {
       performance: 98,
       convenience: 97,
@@ -142,7 +142,7 @@ export const PRODUCTS: Product[] = [
         date: '2025.02.04',
         verifiedBuyer: true,
         usageMonths: 2,
-        content: '원써치 리뷰 보고 고민 끝에 구매했는데 돈값 제대로 합니다. 바닥에 광이 나네요.',
+        content: '가전비교 리뷰 보고 고민 끝에 구매했는데 돈값 제대로 합니다. 바닥에 광이 나네요.',
         pros: '소음이 기존 청소기보다 훨씬 조용함',
         cons: '가격이 비쌈',
       },
@@ -408,7 +408,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 899000,
     nosearchScore: 96,
     pickType: 'top',
-    pickLabel: '원써치 1위 PICK',
+    pickLabel: '가전비교 1위 PICK',
     scores: {
       performance: 98,
       convenience: 97,
@@ -613,7 +613,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 629000,
     nosearchScore: 96,
     pickType: 'top',
-    pickLabel: '원써치 종합 1위',
+    pickLabel: '가전비교 종합 1위',
     scores: {
       performance: 97,
       convenience: 96,
@@ -768,7 +768,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 1590000,
     nosearchScore: 97,
     pickType: 'top',
-    pickLabel: '원써치 종합 1위',
+    pickLabel: '가전비교 종합 1위',
     scores: {
       performance: 99,
       convenience: 98,
@@ -923,7 +923,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 429000,
     nosearchScore: 96,
     pickType: 'top',
-    pickLabel: '원써치 1위 PICK',
+    pickLabel: '가전비교 1위 PICK',
     scores: {
       performance: 97,
       convenience: 96,
@@ -1075,7 +1075,7 @@ export const PRODUCTS: Product[] = [
     originalPrice: 429000,
     nosearchScore: 96,
     pickType: 'top',
-    pickLabel: '원써치 1위 PICK',
+    pickLabel: '가전비교 1위 PICK',
     scores: {
       performance: 98,
       convenience: 95,

@@ -47,7 +47,7 @@ export const ComparisonVisualizer: React.FC<ComparisonVisualizerProps> = ({
 
   // 1. Radar Chart Data Preparation
   const radarMetrics = [
-    { key: 'nosearchScore', label: '원써치 종합점수' },
+    { key: 'nosearchScore', label: '가전비교 종합점수' },
     { key: 'performance', label: '성능 지수' },
     { key: 'convenience', label: '사용 편의성' },
     { key: 'maintenance', label: '유지관리·소음' },
@@ -160,7 +160,7 @@ export const ComparisonVisualizer: React.FC<ComparisonVisualizerProps> = ({
                 <div className="text-[10px] text-slate-400 truncate">{product.brand}</div>
                 <div className="text-xs font-bold text-white truncate">{product.name}</div>
                 <div className="text-xs font-black" style={{ color: colorTheme.stroke }}>
-                  원써치 {product.nosearchScore}점
+                  가전비교 {product.nosearchScore}점
                 </div>
               </div>
             </div>

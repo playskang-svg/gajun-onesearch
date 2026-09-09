@@ -24,17 +24,17 @@ export const ComparisonShareModal: React.FC<ComparisonShareModalProps> = ({
   const [copiedSummary, setCopiedSummary] = useState(false);
 
   // Generate share URL (using current href)
-  const shareUrl = typeof window !== 'undefined' ? window.location.href : 'https://onesearch.app';
+  const shareUrl = typeof window !== 'undefined' ? window.location.href : 'https://gajun.kr';
 
   // Generate clean text summary for Kakao / SMS / Community
   const generateTextSummary = () => {
     const titles = compareList.map((p) => `[${p.brand}] ${p.name} (${p.nosearchScore}점, ₩${p.price.toLocaleString()})`).join(' VS ');
     const breakdown = compareList.map((p) => {
       const topPros = p.pros.slice(0, 2).join(', ');
-      return `\n📌 ${p.brand} ${p.name}\n- 원써치 점수: ${p.nosearchScore}점 | 최저가: ₩${p.price.toLocaleString()}\n- 핵심 강점: ${topPros}\n- 최종 판정: ${p.verdict}`;
+      return `\n📌 ${p.brand} ${p.name}\n- 가전비교 점수: ${p.nosearchScore}점 | 최저가: ₩${p.price.toLocaleString()}\n- 핵심 강점: ${topPros}\n- 최종 판정: ${p.verdict}`;
     }).join('\n');
 
-    return `[원써치 가전 1:1 스펙 맞대결 비교 리포트]\n\n🥊 비교 대상:\n${titles}\n${breakdown}\n\n한번에 한눈에 비교하는 원써치(OneSearch)에서 확인하세요!\n${shareUrl}`;
+    return `[가전비교연구소 1:1 스펙 맞대결 리포트]\n\n🥊 비교 대상:\n${titles}\n${breakdown}\n\n한번에 한눈에 비교하는 가전비교연구소에서 확인하세요!\n${shareUrl}`;
   };
 
   const handleCopyLink = async () => {

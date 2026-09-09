@@ -122,13 +122,13 @@ export const ApplianceFinder: React.FC<ApplianceFinderProps> = ({
       <div className="text-center mb-8">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-700 text-xs font-bold mb-3">
           <Compass className="w-4 h-4 text-emerald-600" />
-          <span>원써치 알고리즘 맞춤 추천 진단</span>
+          <span>가전비교 알고리즘 맞춤 추천 진단</span>
         </div>
         <h1 className="text-2xl sm:text-3xl font-black text-gray-900 mb-2">
           3분 만에 찾는 내 집 맞춤 가전
         </h1>
         <p className="text-sm text-gray-600 max-w-lg mx-auto">
-          가구 형태, 평수, 반려동물 유무, 예산에 맞춰 원써치 연구소 실측 데이터를 기반으로 한번에 한눈에 맞춤 모델을 진단해 드립니다.
+          가구 형태, 평수, 반려동물 유무, 예산에 맞춰 가전비교연구소 실측 데이터를 기반으로 한번에 한눈에 맞춤 모델을 진단해 드립니다.
         </p>
       </div>
 

@@ -79,13 +79,13 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="flex items-center gap-2.5 text-left focus:outline-hidden group"
             >
               <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 flex items-center justify-center text-white font-black text-xl shadow-md shadow-blue-500/20 group-hover:from-blue-700 group-hover:to-indigo-700 transition">
-                1
+                가
               </div>
               <div>
                 <div className="flex items-center gap-1.5">
-                  <span className="text-xl font-black tracking-tight text-gray-900">ONESEARCH</span>
+                  <span className="text-xl font-black tracking-tight text-gray-900">가전비교연구소</span>
                   <span className="text-[10px] font-bold text-blue-600 bg-blue-50 px-1.5 py-0.5 rounded border border-blue-100">
-                    원써치
+                    GAJUN.KR
                   </span>
                 </div>
                 <p className="text-[11px] text-gray-500 hidden sm:block font-medium">한번에 한눈에 비교!</p>

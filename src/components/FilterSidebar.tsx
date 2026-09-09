@@ -82,13 +82,13 @@ export const FilterSidebar: React.FC<FilterSidebarProps> = ({
         </button>
       </div>
 
-      {/* OneSearch Pick Toggle */}
+      {/* GAJUN Pick Toggle */}
       <div>
         <label className="flex items-center justify-between p-3 bg-blue-50/70 border border-blue-100 rounded-xl cursor-pointer hover:bg-blue-50 transition">
           <div className="flex items-center gap-2">
             <Sparkles className="w-4 h-4 text-blue-600" />
             <div>
-              <div className="text-xs font-bold text-blue-950">원써치 PICK만 보기</div>
+              <div className="text-xs font-bold text-blue-950">가전비교 PICK만 보기</div>
               <div className="text-[10px] text-blue-700">연구소 검증 추천 등급 부여 모델</div>
             </div>
           </div>

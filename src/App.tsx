@@ -238,7 +238,7 @@ export default function App() {
               </div>
               <h1 className="text-2xl sm:text-3xl lg:text-4xl font-black tracking-tight leading-tight">
                 광고 없는 진짜 스펙 비교,<br />
-                <span className="text-blue-400">원써치(ONESEARCH)</span>에서 한번에 한눈에!
+                <span className="text-blue-400">가전비교연구소</span>에서 한번에 한눈에!
               </h1>
               <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
                 제조사 카탈로그의 과장된 수치 대신, 연구소에서 직접 측정한 흡입력(AW), 실측 소음(dB), 
@@ -301,8 +301,8 @@ export default function App() {
                   aria-label="제품 정렬 기준"
                   className="pl-2 pr-8 py-2 text-xs font-bold text-gray-800 bg-transparent focus:outline-hidden cursor-pointer"
                 >
-                  <option value="nosearch">원써치 추천순 (기본)</option>
-                  <option value="score">원써치 점수 높은순</option>
+                  <option value="nosearch">가전비교 추천순 (기본)</option>
+                  <option value="score">가전비교 점수 높은순</option>
                   <option value="price_asc">가격 낮은순 (가성비)</option>
                   <option value="price_desc">가격 높은순 (프리미엄)</option>
                   <option value="reviews">검증 리뷰 많은순</option>
@@ -472,9 +472,9 @@ export default function App() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-2">
               <div className="w-6 h-6 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-white flex items-center justify-center font-black text-xs">
-                1
+                가
               </div>
-              <span className="font-bold text-gray-900 text-sm">ONESEARCH (원써치)</span>
+              <span className="font-bold text-gray-900 text-sm">가전비교연구소</span>
               <span className="text-gray-400">| 한번에 한눈에 비교하는 가전 스펙 플랫폼</span>
             </div>
             <div className="flex items-center gap-4 text-gray-600">
@@ -486,11 +486,11 @@ export default function App() {
             </div>
           </div>
           <p className="text-[11px] text-gray-400 leading-relaxed">
-            본 서비스는 실제 가전 사용자의 합리적인 구매를 돕기 위해 제작된 한번에 한눈에 비교하는 원써치(OneSearch) 가전 스펙 비교 및 실험실 리뷰 웹 애플리케이션입니다. 
+            본 서비스는 실제 가전 사용자의 합리적인 구매를 돕기 위해 제작된 한번에 한눈에 비교하는 가전비교연구소 가전 스펙 비교 및 실험실 리뷰 웹 애플리케이션입니다. 
             모든 평가 점수와 실측치는 표준 시험 조건에 기반합니다.
           </p>
           <div className="pt-2 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-400">
-            <span>© 2025 ONESEARCH. All rights reserved.</span>
+            <span>© 2025 가전비교연구소 (gajun.kr). All rights reserved.</span>
             <span>한번에 한눈에 비교하는 독립 연구소 실측 검증 데이터 탑재</span>
           </div>
         </div>

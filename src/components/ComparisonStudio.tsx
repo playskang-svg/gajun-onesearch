@@ -116,7 +116,7 @@ export const ComparisonStudio: React.FC<ComparisonStudioProps> = ({
             </div>
             <div>
               <h2 className="text-base sm:text-lg font-black text-gray-900">
-                원써치 1:1 스펙 맞대결 비교함
+                가전비교 1:1 스펙 맞대결 비교함
               </h2>
               <p className="text-xs text-gray-500 hidden sm:block">
                 한번에 한눈에 비교! 선택한 가전의 점수, 실측 성능, 장단점 차이를 한눈에 대조 분석합니다.
@@ -335,14 +335,14 @@ export const ComparisonStudio: React.FC<ComparisonStudioProps> = ({
                 </thead>
 
                 <tbody>
-                  {/* SECTION 1: 원써치 평가 점수 */}
+                  {/* SECTION 1: 가전비교 평가 점수 */}
                   <tr className="bg-slate-900 text-white">
                     <td colSpan={compareList.length + 2} className="py-2.5 px-4 font-bold text-xs uppercase tracking-wider">
-                      📊 원써치 종합 점수 및 4대 지표 평가
+                      📊 가전비교 종합 점수 및 4대 지표 평가
                     </td>
                   </tr>
 
-                  {/* 원써치 종합 점수 */}
+                  {/* 가전비교 종합 점수 */}
                   <tr className="border-b border-gray-200 hover:bg-gray-50/50">
                     <th className="p-3.5 text-xs font-bold text-gray-600 sticky left-0 bg-white z-10 border-r border-gray-200">
                       종합 점수
@@ -505,7 +505,7 @@ export const ComparisonStudio: React.FC<ComparisonStudioProps> = ({
                   {/* SECTION 3: 실측 랩 테스트 결과 */}
                   <tr className="bg-slate-100 text-slate-800">
                     <td colSpan={compareList.length + 2} className="py-2 px-4 font-bold text-xs uppercase">
-                      🔬 원써치 랩 실측 테스트 대조
+                      🔬 가전비교 랩 실측 테스트 대조
                     </td>
                   </tr>
 
@@ -575,10 +575,10 @@ export const ComparisonStudio: React.FC<ComparisonStudioProps> = ({
                     ))}
                   </tr>
 
-                  {/* 원써치 종합 판정 코멘트 */}
+                  {/* 가전비교 종합 판정 코멘트 */}
                   <tr className="bg-blue-50/40 border-b border-gray-200">
                     <th className="p-3 text-xs font-bold text-blue-900 sticky left-0 bg-blue-50/80 z-10 border-r border-gray-200">
-                      원써치 추천 총평
+                      가전비교 추천 총평
                     </th>
                     {compareList.map((p) => (
                       <td key={p.id} className="p-3 text-xs text-gray-800 font-medium italic border-r border-gray-100">
@@ -644,7 +644,7 @@ export const ComparisonStudio: React.FC<ComparisonStudioProps> = ({
                       <div>
                         <div className="text-xs text-gray-400">{p.brand}</div>
                         <div className="text-xs font-bold text-gray-900">{p.name}</div>
-                        <div className="text-[11px] text-blue-600 font-semibold">원써치 {p.nosearchScore}점</div>
+                        <div className="text-[11px] text-blue-600 font-semibold">가전비교 {p.nosearchScore}점</div>
                       </div>
                     </div>
                     <button className="text-xs bg-blue-600 text-white font-bold px-3 py-1.5 rounded-lg">

@@ -78,7 +78,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         {/* Modal Scrollable Body */}
         <div className="overflow-y-auto p-6 space-y-6">
           
-          {/* Top Hero: Image + Overview & OneSearch Scorecard */}
+          {/* Top Hero: Image + Overview & GAJUN Scorecard */}
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
             {/* Left: Product Image */}
             <div className="md:col-span-5 bg-gray-50 rounded-2xl p-4 border border-gray-100 flex items-center justify-center">
@@ -103,7 +103,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 </h2>
               </div>
 
-              {/* OneSearch Scorecard Box */}
+              {/* GAJUN Scorecard Box */}
               <div className="bg-slate-900 text-white rounded-xl p-4 flex items-center justify-between gap-4">
                 <div className="flex items-center gap-3">
                   <div className="w-14 h-14 rounded-xl bg-blue-600 flex flex-col items-center justify-center font-black">
@@ -111,7 +111,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                     <span className="text-2xl leading-none text-white">{product.nosearchScore}</span>
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-slate-200">원써치 종합 평가점수</div>
+                    <div className="text-sm font-bold text-slate-200">가전비교 종합 평가점수</div>
                     <div className="text-xs text-slate-400">동급 카테고리 실측 테스트 상위 3%</div>
                   </div>
                 </div>
@@ -232,11 +232,11 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           {/* Tab Content 1: Verdict & Pros/Cons */}
           {activeTab === 'verdict' && (
             <div className="space-y-6">
-              {/* 원써치 한줄평 */}
+              {/* 가전비교 한줄평 */}
               <div className="bg-blue-50/60 border border-blue-100 rounded-xl p-5">
                 <div className="flex items-center gap-2 text-blue-700 font-bold text-sm mb-1.5">
                   <ShieldCheck className="w-5 h-5" />
-                  <span>원써치 연구소 한줄 최종 판정</span>
+                  <span>가전비교연구소 한줄 최종 판정</span>
                 </div>
                 <p className="text-gray-800 text-base leading-relaxed font-medium">
                   "{product.verdict}"
@@ -297,8 +297,8 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           {activeTab === 'lab' && (
             <div className="space-y-4">
               <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-xs text-amber-900">
-                <span className="font-bold mr-1">🔬 원써치 실측 원칙:</span>
-                제조사 카탈로그 표기 스펙이 아닌, 원써치 가전 테스트 랩의 동일 환경 조건에서 실측한 데이터입니다.
+                <span className="font-bold mr-1">🔬 가전비교 실측 원칙:</span>
+                제조사 카탈로그 표기 스펙이 아닌, 가전비교연구소 테스트 랩의 동일 환경 조건에서 실측한 데이터입니다.
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

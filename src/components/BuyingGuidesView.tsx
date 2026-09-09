@@ -40,7 +40,7 @@ export const BuyingGuidesView: React.FC<BuyingGuidesViewProps> = ({
             <header className="space-y-3">
               <div className="inline-flex items-center gap-1.5 text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-md">
                 <BookOpen className="w-3.5 h-3.5" />
-                <span>원써치 공식 구매 리포트</span>
+                <span>가전비교 공식 구매 리포트</span>
               </div>
               <h1 className="text-2xl sm:text-3xl font-black text-gray-950 leading-tight">
                 {selectedGuide.title}
@@ -64,7 +64,7 @@ export const BuyingGuidesView: React.FC<BuyingGuidesViewProps> = ({
             <div className="bg-blue-50/70 border border-blue-100 rounded-2xl p-6 space-y-3">
               <h3 className="font-bold text-blue-950 text-sm flex items-center gap-2">
                 <Lightbulb className="w-4 h-4 text-blue-600" />
-                <span>원써치 30초 핵심 요약</span>
+                <span>가전비교 30초 핵심 요약</span>
               </h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {selectedGuide.keyPoints.map((point, idx) => (
@@ -104,7 +104,7 @@ export const BuyingGuidesView: React.FC<BuyingGuidesViewProps> = ({
                 <h3 className="text-lg font-black text-gray-900">
                   가이드 본문 추천 모델
                 </h3>
-                <span className="text-xs text-gray-500">원써치 랩 실측 검증 완료</span>
+                <span className="text-xs text-gray-500">가전비교 랩 실측 검증 완료</span>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -135,7 +135,7 @@ export const BuyingGuidesView: React.FC<BuyingGuidesViewProps> = ({
                           {p.name}
                         </h4>
                         <div className="text-xs font-bold text-blue-600 mt-1">
-                          원써치 {p.nosearchScore}점
+                          가전비교 {p.nosearchScore}점
                         </div>
                       </div>
 
@@ -172,13 +172,13 @@ export const BuyingGuidesView: React.FC<BuyingGuidesViewProps> = ({
           <div className="text-center">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold mb-3">
               <BookOpen className="w-4 h-4 text-amber-600" />
-              <span>원써치 가전 분석 리포트 & 구매 가이드</span>
+              <span>가전비교연구소 분석 리포트 & 구매 가이드</span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-black text-gray-900 mb-2">
               가전 구매 전 꼭 읽어야 할 체크리스트
             </h1>
             <p className="text-sm text-gray-600 max-w-lg mx-auto">
-              마케팅 문구에 현혹되지 마세요. 한번에 한눈에 비교하는 원써치 연구소의 분해 분석과 실측 테스트를 통해 알짜 정보를 투명하게 공개합니다.
+              마케팅 문구에 현혹되지 마세요. 한번에 한눈에 비교하는 가전비교연구소의 분해 분석과 실측 테스트를 통해 알짜 정보를 투명하게 공개합니다.
             </p>
           </div>
 

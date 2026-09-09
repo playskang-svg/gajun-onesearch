@@ -26,7 +26,7 @@ export const AiConsultantView: React.FC<AiConsultantViewProps> = ({
     {
       id: 'init-1',
       sender: 'ai',
-      text: '안녕하세요! 원써치(OneSearch) 연구소 AI 가전 전문 컨설턴트입니다. 🏠\n거주 평수, 예산, 가족 구성원이나 고민 중인 모델명을 편하게 말씀해 주시면, 한번에 한눈에 비교할 수 있도록 실측 스펙과 랩 테스트 데이터를 기반으로 가장 합리적인 가전을 추천해 드립니다.',
+      text: '안녕하세요! 가전비교연구소 AI 가전 전문 컨설턴트입니다. 🏠\n거주 평수, 예산, 가족 구성원이나 고민 중인 모델명을 편하게 말씀해 주시면, 한번에 한눈에 비교할 수 있도록 실측 스펙과 랩 테스트 데이터를 기반으로 가장 합리적인 가전을 추천해 드립니다.',
     },
   ]);
   const [isTyping, setIsTyping] = useState(false);
@@ -76,7 +76,7 @@ export const AiConsultantView: React.FC<AiConsultantViewProps> = ({
         responseText = `제습기는 아파트 평수 ÷ 2 공식으로 일일 제습량을 맞추고, 전기세를 아끼려면 '스마트 인버터 1등급' 필수입니다.\n\n🏆 국민 제습기: [위닉스 뽀송 인버터 16L]\n- 1등급 에너지 효율과 신발 건조 전용 호스 포함으로 25~35평형에서 가장 무난하고 실패 없는 선택입니다.\n\n⚡ 대용량 끝판왕: [LG 휘센 듀얼 인버터 20L]\n- 40평대 거실도 20분 만에 쾌적권으로 낮추는 강력 모터와 UV 팬 살균 탑재.`;
         recommendedIds = ['dh-winix-bbosong-16', 'dh-lg-whisen-dual-inverter-20'];
       } else {
-        responseText = `질문해주신 '${query}' 관련 원써치 가전 분석 결과입니다.\n가전제품은 제조사의 과장 광고보다 독립 연구소의 실측 데이터(흡입력 실측 AW/Pa, 작동 소음 dB, 소비전력, 필터 등급)를 기준으로 선택하셔야 중복 투자를 막을 수 있습니다.\n\n아래 검증된 대표 모델들을 비교함에 담아 1:1 스펙 차이를 한번에 한눈에 확인해 보세요!`;
+        responseText = `질문해주신 '${query}' 관련 가전비교연구소 분석 결과입니다.\n가전제품은 제조사의 과장 광고보다 독립 연구소의 실측 데이터(흡입력 실측 AW/Pa, 작동 소음 dB, 소비전력, 필터 등급)를 기준으로 선택하셔야 중복 투자를 막을 수 있습니다.\n\n아래 검증된 대표 모델들을 비교함에 담아 1:1 스펙 차이를 한번에 한눈에 확인해 보세요!`;
         recommendedIds = ['rv-roborock-s8-pro', 'dw-lg-dios-objet-14', 'dh-winix-bbosong-16'];
       }
 
@@ -103,7 +103,7 @@ export const AiConsultantView: React.FC<AiConsultantViewProps> = ({
           </div>
           <div>
             <h1 className="text-lg font-black flex items-center gap-2">
-              <span>원써치 AI 가전 컨설턴트</span>
+              <span>가전비교연구소 AI 컨설턴트</span>
               <span className="text-[10px] bg-purple-400/20 text-purple-200 border border-purple-300/30 px-2 py-0.5 rounded-full font-bold">
                 실측 데이터 기반
               </span>
@@ -210,7 +210,7 @@ export const AiConsultantView: React.FC<AiConsultantViewProps> = ({
               <span className="w-2 h-2 bg-purple-500 rounded-full animate-bounce" />
               <span className="w-2 h-2 bg-purple-500 rounded-full animate-bounce [animation-delay:0.2s]" />
               <span className="w-2 h-2 bg-purple-500 rounded-full animate-bounce [animation-delay:0.4s]" />
-              <span className="text-gray-500 text-xs ml-1">원써치 스펙 데이터 분석 중...</span>
+              <span className="text-gray-500 text-xs ml-1">가전비교 스펙 데이터 분석 중...</span>
             </div>
           </div>
         )}

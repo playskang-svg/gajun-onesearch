@@ -21,7 +21,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         return (
           <span className="inline-flex items-center gap-1 bg-blue-600 text-white text-[11px] font-bold px-2 py-0.5 rounded shadow-xs">
             <Award className="w-3 h-3" />
-            {product.pickLabel || '원써치 종합 1위'}
+            {product.pickLabel || '가전비교 종합 1위'}
           </span>
         );
       case 'performance':
@@ -147,7 +147,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             </h3>
             
             <div className={`flex flex-col items-center justify-center px-2 py-1 rounded-lg border shrink-0 ${getScoreColor(product.nosearchScore)}`}>
-              <span className="text-[10px] font-bold uppercase tracking-wider opacity-80">원써치점수</span>
+              <span className="text-[10px] font-bold uppercase tracking-wider opacity-80">가전비교점수</span>
               <span className="text-base font-black leading-none">{product.nosearchScore}</span>
             </div>
           </div>
@@ -201,7 +201,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             ))}
           </div>
 
-          {/* 1-Line OneSearch Verdict */}
+          {/* 1-Line GAJUN Verdict */}
           <p className="text-xs text-gray-600 line-clamp-2 mb-4 bg-slate-50/70 p-2.5 rounded-lg border-l-2 border-blue-500 italic">
             "{product.verdict}"
           </p>
