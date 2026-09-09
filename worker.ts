@@ -1,0 +1,57 @@
+interface Fetcher {
+  fetch(input: Request | string, init?: RequestInit): Promise<Response>;
+}
+
+interface ExecutionContext {
+  waitUntil(promise: Promise<unknown>): void;
+  passThroughOnException(): void;
+}
+
+export interface Env {
+  ASSETS: Fetcher;
+}
+
+export default {
+  async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+    const url = new URL(request.url);
+
+    // Common CORS headers
+    const corsHeaders: Record<string, string> = {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+      'Access-Control-Allow-Headers': 'Content-Type',
+    };
+
+    if (request.method === 'OPTIONS') {
+      return new Response(null, { headers: corsHeaders });
+    }
+
+    // 1. Health check endpoint
+    if (url.pathname === '/api/health') {
+      return new Response(
+        JSON.stringify({
+          status: 'ok',
+          service: 'gajun-onesearch',
+          timestamp: Date.now(),
+        }),
+        {
+          headers: {
+            'Content-Type': 'application/json; charset=utf-8',
+            ...corsHeaders,
+          },
+        }
+      );
+    }
+
+    // 2. Serve static assets via Cloudflare Assets
+    let response = await env.ASSETS.fetch(request);
+
+    // 3. SPA Fallback: If asset not found for a GET page request, serve index.html
+    if (response.status === 404 && request.method === 'GET' && !url.pathname.startsWith('/api/')) {
+      const fallbackUrl = new URL('/index.html', request.url);
+      response = await env.ASSETS.fetch(new Request(fallbackUrl, request));
+    }
+
+    return response;
+  },
+};

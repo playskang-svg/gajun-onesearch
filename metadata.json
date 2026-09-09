@@ -1,0 +1,6 @@
+{
+  "name": "원써치 (OneSearch) - 한번에 한눈에 비교!",
+  "description": "한번에 한눈에 비교하는 가전제품 스펙 비교 및 독립 연구소 리뷰 플랫폼, 원써치 (OneSearch)",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

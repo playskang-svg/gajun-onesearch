@@ -1,0 +1,423 @@
+import React, { useState } from 'react';
+import { 
+  X, 
+  CheckCircle2, 
+  AlertCircle, 
+  Scale, 
+  Check, 
+  ExternalLink, 
+  Star, 
+  FlaskConical, 
+  ShieldCheck,
+  Share2
+} from 'lucide-react';
+import { Product } from '../types';
+
+interface ProductDetailModalProps {
+  product: Product | null;
+  isOpen: boolean;
+  onClose: () => void;
+  isInCompare: boolean;
+  onToggleCompare: (product: Product) => void;
+}
+
+export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
+  product,
+  isOpen,
+  onClose,
+  isInCompare,
+  onToggleCompare,
+}) => {
+  const [activeTab, setActiveTab] = useState<'verdict' | 'lab' | 'specs' | 'reviews'>('verdict');
+  const [copied, setCopied] = useState(false);
+
+  if (!isOpen || !product) return null;
+
+  const discountPercent = Math.round(
+    ((product.originalPrice - product.price) / product.originalPrice) * 100
+  );
+
+  const handleShare = () => {
+    navigator.clipboard?.writeText(window.location.href);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
+
+  return (
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 md:p-6 animate-in fade-in duration-200">
+      <div 
+        className="bg-white w-full max-w-4xl rounded-2xl shadow-2xl border border-gray-200 overflow-hidden flex flex-col max-h-[92vh]"
+        onClick={(e) => e.stopPropagation()}
+      >
+        {/* Modal Top Header */}
+        <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between bg-white sticky top-0 z-20">
+          <div className="flex items-center gap-2">
+            <span className="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded border border-blue-100">
+              {product.brand}
+            </span>
+            <span className="text-xs text-gray-400 font-mono">모델명: {product.modelCode}</span>
+          </div>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={handleShare}
+              className="p-2 text-gray-400 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition text-xs flex items-center gap-1"
+              title="링크 복사"
+            >
+              <Share2 className="w-4 h-4" />
+              <span className="hidden sm:inline">{copied ? '복사됨!' : '공유'}</span>
+            </button>
+            <button
+              onClick={onClose}
+              className="p-2 text-gray-400 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition"
+            >
+              <X className="w-5 h-5" />
+            </button>
+          </div>
+        </div>
+
+        {/* Modal Scrollable Body */}
+        <div className="overflow-y-auto p-6 space-y-6">
+          
+          {/* Top Hero: Image + Overview & OneSearch Scorecard */}
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
+            {/* Left: Product Image */}
+            <div className="md:col-span-5 bg-gray-50 rounded-2xl p-4 border border-gray-100 flex items-center justify-center">
+              <img
+                src={product.image}
+                alt={product.name}
+                referrerPolicy="no-referrer"
+                className="max-h-64 object-contain rounded-lg"
+              />
+            </div>
+
+            {/* Right: Score, Title, Price */}
+            <div className="md:col-span-7 space-y-4">
+              <div>
+                {product.pickLabel && (
+                  <span className="inline-block bg-blue-600 text-white text-xs font-bold px-2.5 py-1 rounded-md mb-2">
+                    {product.pickLabel}
+                  </span>
+                )}
+                <h2 className="text-xl sm:text-2xl font-black text-gray-900 leading-tight">
+                  {product.name}
+                </h2>
+              </div>
+
+              {/* OneSearch Scorecard Box */}
+              <div className="bg-slate-900 text-white rounded-xl p-4 flex items-center justify-between gap-4">
+                <div className="flex items-center gap-3">
+                  <div className="w-14 h-14 rounded-xl bg-blue-600 flex flex-col items-center justify-center font-black">
+                    <span className="text-[10px] uppercase font-bold text-blue-200">SCORE</span>
+                    <span className="text-2xl leading-none text-white">{product.nosearchScore}</span>
+                  </div>
+                  <div>
+                    <div className="text-sm font-bold text-slate-200">원써치 종합 평가점수</div>
+                    <div className="text-xs text-slate-400">동급 카테고리 실측 테스트 상위 3%</div>
+                  </div>
+                </div>
+
+                <div className="text-right">
+                  <div className="text-xs text-slate-400">출시 연도</div>
+                  <div className="text-sm font-semibold text-slate-200">{product.releaseYear}년</div>
+                </div>
+              </div>
+
+              {/* 4 Score Metrics */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+                <div className="bg-gray-50 p-2.5 rounded-lg border border-gray-100 text-center">
+                  <div className="text-xs text-gray-500">성능</div>
+                  <div className="text-base font-black text-blue-600">{product.scores.performance}점</div>
+                </div>
+                <div className="bg-gray-50 p-2.5 rounded-lg border border-gray-100 text-center">
+                  <div className="text-xs text-gray-500">편의성</div>
+                  <div className="text-base font-black text-indigo-600">{product.scores.convenience}점</div>
+                </div>
+                <div className="bg-gray-50 p-2.5 rounded-lg border border-gray-100 text-center">
+                  <div className="text-xs text-gray-500">관리/소음</div>
+                  <div className="text-base font-black text-teal-600">{product.scores.maintenance}점</div>
+                </div>
+                <div className="bg-gray-50 p-2.5 rounded-lg border border-gray-100 text-center">
+                  <div className="text-xs text-gray-500">가성비</div>
+                  <div className="text-base font-black text-amber-600">{product.scores.valueForMoney}점</div>
+                </div>
+              </div>
+
+              {/* Price Row */}
+              <div className="flex items-baseline justify-between pt-2 border-t border-gray-100">
+                <div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-sm text-red-500 font-bold">{discountPercent}% 할인</span>
+                    <span className="text-sm text-gray-400 line-through">₩{product.originalPrice.toLocaleString()}</span>
+                  </div>
+                  <div className="text-2xl font-black text-gray-900">
+                    ₩{product.price.toLocaleString()}
+                    <span className="text-xs font-normal text-gray-500 ml-1.5">온라인 최저가</span>
+                  </div>
+                </div>
+
+                <button
+                  onClick={() => onToggleCompare(product)}
+                  className={`px-4 py-2.5 rounded-xl font-bold text-sm flex items-center gap-2 transition ${
+                    isInCompare
+                      ? 'bg-blue-600 text-white shadow-xs'
+                      : 'bg-gray-100 hover:bg-gray-200 text-gray-800'
+                  }`}
+                >
+                  {isInCompare ? (
+                    <>
+                      <Check className="w-4 h-4 stroke-[3]" />
+                      <span>비교함 담김</span>
+                    </>
+                  ) : (
+                    <>
+                      <Scale className="w-4 h-4" />
+                      <span>비교함 담기</span>
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Navigation Tabs */}
+          <div className="flex border-b border-gray-200 text-sm font-semibold">
+            <button
+              onClick={() => setActiveTab('verdict')}
+              className={`pb-3 px-4 border-b-2 transition ${
+                activeTab === 'verdict'
+                  ? 'border-blue-600 text-blue-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-900'
+              }`}
+            >
+              종합 분석 & 장단점
+            </button>
+            <button
+              onClick={() => setActiveTab('lab')}
+              className={`pb-3 px-4 border-b-2 transition flex items-center gap-1.5 ${
+                activeTab === 'lab'
+                  ? 'border-blue-600 text-blue-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-900'
+              }`}
+            >
+              <FlaskConical className="w-4 h-4" />
+              <span>실측 랩 테스트</span>
+              <span className="bg-blue-100 text-blue-700 text-[10px] px-1.5 py-0.2 rounded-full font-bold">
+                {product.labTests.length}
+              </span>
+            </button>
+            <button
+              onClick={() => setActiveTab('specs')}
+              className={`pb-3 px-4 border-b-2 transition ${
+                activeTab === 'specs'
+                  ? 'border-blue-600 text-blue-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-900'
+              }`}
+            >
+              전체 스펙 제원
+            </button>
+            <button
+              onClick={() => setActiveTab('reviews')}
+              className={`pb-3 px-4 border-b-2 transition flex items-center gap-1.5 ${
+                activeTab === 'reviews'
+                  ? 'border-blue-600 text-blue-600'
+                  : 'border-transparent text-gray-500 hover:text-gray-900'
+              }`}
+            >
+              <Star className="w-4 h-4 text-amber-500 fill-amber-500" />
+              <span>검증 리뷰</span>
+              <span className="text-xs text-gray-400">({product.reviews.length})</span>
+            </button>
+          </div>
+
+          {/* Tab Content 1: Verdict & Pros/Cons */}
+          {activeTab === 'verdict' && (
+            <div className="space-y-6">
+              {/* 원써치 한줄평 */}
+              <div className="bg-blue-50/60 border border-blue-100 rounded-xl p-5">
+                <div className="flex items-center gap-2 text-blue-700 font-bold text-sm mb-1.5">
+                  <ShieldCheck className="w-5 h-5" />
+                  <span>원써치 연구소 한줄 최종 판정</span>
+                </div>
+                <p className="text-gray-800 text-base leading-relaxed font-medium">
+                  "{product.verdict}"
+                </p>
+              </div>
+
+              {/* 장점 vs 단점 */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {/* Pros */}
+                <div className="bg-emerald-50/50 border border-emerald-100 rounded-xl p-5">
+                  <h4 className="text-sm font-bold text-emerald-800 mb-3 flex items-center gap-2">
+                    <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+                    <span>이런 점이 특히 뛰어납니다 (장점)</span>
+                  </h4>
+                  <ul className="space-y-2.5 text-sm text-gray-700">
+                    {product.pros.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <span className="text-emerald-600 font-bold">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Cons */}
+                <div className="bg-rose-50/50 border border-rose-100 rounded-xl p-5">
+                  <h4 className="text-sm font-bold text-rose-800 mb-3 flex items-center gap-2">
+                    <AlertCircle className="w-4 h-4 text-rose-600" />
+                    <span>구매 전 꼭 알아야 할 아쉬운 점 (단점)</span>
+                  </h4>
+                  <ul className="space-y-2.5 text-sm text-gray-700">
+                    {product.cons.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-2">
+                        <span className="text-rose-600 font-bold">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              {/* Key Specs Pills */}
+              <div>
+                <h4 className="text-sm font-bold text-gray-900 mb-3">핵심 스펙 하이라이트</h4>
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                  {product.keySpecs.map((spec, idx) => (
+                    <div key={idx} className="p-3 bg-gray-50 rounded-xl border border-gray-200">
+                      <div className="text-xs text-gray-500 font-medium">{spec.label}</div>
+                      <div className="text-sm font-bold text-gray-900 mt-0.5">{spec.value}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* Tab Content 2: Lab Test Data */}
+          {activeTab === 'lab' && (
+            <div className="space-y-4">
+              <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 text-xs text-amber-900">
+                <span className="font-bold mr-1">🔬 원써치 실측 원칙:</span>
+                제조사 카탈로그 표기 스펙이 아닌, 원써치 가전 테스트 랩의 동일 환경 조건에서 실측한 데이터입니다.
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                {product.labTests.map((test, idx) => (
+                  <div key={idx} className="bg-white p-5 rounded-xl border border-gray-200 shadow-xs">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-semibold text-gray-500">{test.title}</span>
+                      <span className={`text-xs font-bold px-2 py-0.5 rounded-full ${
+                        test.rating === '최상' 
+                          ? 'bg-blue-100 text-blue-700' 
+                          : test.rating === '우수'
+                          ? 'bg-emerald-100 text-emerald-700'
+                          : 'bg-gray-100 text-gray-700'
+                      }`}>
+                        {test.rating}
+                      </span>
+                    </div>
+                    <div className="text-xl font-black text-gray-900 mb-1">{test.value}</div>
+                    {test.detail && (
+                      <p className="text-xs text-gray-600">{test.detail}</p>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Tab Content 3: Full Detailed Specs */}
+          {activeTab === 'specs' && (
+            <div className="border border-gray-200 rounded-xl overflow-hidden">
+              <table className="w-full text-left text-xs sm:text-sm">
+                <tbody>
+                  {Object.entries(product.detailedSpecs).map(([key, val], idx) => (
+                    <tr 
+                      key={key} 
+                      className={`border-b border-gray-100 ${idx % 2 === 0 ? 'bg-gray-50/50' : 'bg-white'}`}
+                    >
+                      <th className="py-3 px-4 font-semibold text-gray-600 w-1/3 bg-gray-50/80 border-r border-gray-100">
+                        {key}
+                      </th>
+                      <td className="py-3 px-4 text-gray-900 font-medium">
+                        {val}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          )}
+
+          {/* Tab Content 4: Verified Reviews */}
+          {activeTab === 'reviews' && (
+            <div className="space-y-4">
+              {product.reviews.length === 0 ? (
+                <div className="text-center py-12 bg-gray-50 rounded-xl">
+                  <p className="text-gray-500 text-sm">아직 등록된 실사용 검증 리뷰가 없습니다.</p>
+                </div>
+              ) : (
+                product.reviews.map((rev) => (
+                  <div key={rev.id} className="p-4 bg-gray-50 rounded-xl border border-gray-100 space-y-2">
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <span className="font-bold text-sm text-gray-900">{rev.author}</span>
+                        {rev.verifiedBuyer && (
+                          <span className="bg-emerald-100 text-emerald-700 text-[10px] font-bold px-1.5 py-0.5 rounded">
+                            실구매 인증
+                          </span>
+                        )}
+                        <span className="text-xs text-gray-400">사용기간 {rev.usageMonths}개월</span>
+                      </div>
+                      <div className="flex items-center text-amber-500">
+                        {Array.from({ length: rev.rating }).map((_, i) => (
+                          <Star key={i} className="w-3.5 h-3.5 fill-amber-500" />
+                        ))}
+                      </div>
+                    </div>
+
+                    <p className="text-sm text-gray-800">{rev.content}</p>
+
+                    <div className="pt-2 grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs">
+                      <div className="text-emerald-700 bg-emerald-50/80 p-2 rounded">
+                        <span className="font-bold">좋았던 점: </span>{rev.pros}
+                      </div>
+                      <div className="text-rose-700 bg-rose-50/80 p-2 rounded">
+                        <span className="font-bold">아쉬웠던 점: </span>{rev.cons}
+                      </div>
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+          )}
+        </div>
+
+        {/* Modal Bottom Sticky CTA */}
+        <div className="p-4 bg-gray-50 border-t border-gray-200 flex items-center justify-between gap-4 sticky bottom-0 z-20">
+          <button
+            onClick={() => onToggleCompare(product)}
+            className={`flex-1 py-3 px-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition ${
+              isInCompare 
+                ? 'bg-blue-600 text-white hover:bg-blue-700' 
+                : 'bg-white border border-gray-300 text-gray-800 hover:bg-gray-100'
+            }`}
+          >
+            <Scale className="w-4 h-4" />
+            <span>{isInCompare ? '비교함에서 제거' : '비교함에 추가하기'}</span>
+          </button>
+
+          <a
+            href="https://m.search.naver.com/search.naver?query=가전제품+최저가"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 py-3 px-4 rounded-xl font-bold text-sm bg-gray-900 text-white hover:bg-gray-800 flex items-center justify-center gap-2 transition text-center shadow-xs"
+          >
+            <span>최저가 쇼핑몰 바로가기</span>
+            <ExternalLink className="w-4 h-4" />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
