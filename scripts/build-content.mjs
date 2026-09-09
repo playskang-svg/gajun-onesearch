@@ -146,9 +146,7 @@ Sitemap: ${SITE.domain}/sitemap.xml
 // ── ads.txt (Google AdSense crawler compliance)
 write(
   'ads.txt',
-  `# Google AdSense ads.txt for gajun.kr
-# Replace pub-XXXXXXXXXXXXXXXX with your actual Google AdSense Publisher ID when approved
-google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+  `google.com, pub-4030620718116834, DIRECT, f08c47fec0942fa0
 `
 );
 

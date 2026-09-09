@@ -175,7 +175,8 @@ ${keywords ? `<meta name="keywords" content="${esc(keywords)}">` : ''}
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${esc(canonical)}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">
+<meta name="google-adsense-account" content="ca-pub-4030620718116834">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4030620718116834" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
 <style>${CSS}</style>
