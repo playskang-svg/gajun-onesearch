@@ -4,6 +4,8 @@ import { fileURLToPath } from 'node:url';
 import { SITE, CATEGORIES } from '../content/site.mjs';
 import { posts } from '../content/posts.mjs';
 import { pages } from '../content/pages.mjs';
+import { figures } from '../content/figures-map.mjs';
+import { faqs } from '../content/faqs.mjs';
 import { renderPost, renderList, renderPage } from './template.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
@@ -24,7 +26,8 @@ function relatedFor(post) {
 
 // ── 글 상세
 for (const post of posts) {
-  write(`guide/${post.slug}/index.html`, renderPost(post, relatedFor(post)));
+  const fig = figures[post.slug] ? figures[post.slug]() : '';
+  write(`guide/${post.slug}/index.html`, renderPost(post, relatedFor(post), fig, faqs[post.slug] ?? []));
 }
 
 // ── 허브

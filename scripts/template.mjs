@@ -21,10 +21,10 @@ a:hover{text-decoration:underline}
 .topbar .meta{display:none;color:#94a3b8;white-space:nowrap}
 header.site{background:#fff;border-bottom:1px solid #e5e7eb;position:sticky;top:0;z-index:20}
 header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px}
-.brand{font-weight:900;font-size:18px;color:#111827;white-space:nowrap;letter-spacing:-.02em}
-.brand span{display:block;font-size:11px;font-weight:600;color:#6b7280}
-nav.main{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
-nav.main a{padding:7px 11px;border-radius:9px;font-size:14px;font-weight:700;color:#4b5563;white-space:nowrap}
+.brand{font-weight:900;font-size:16px;color:#111827;white-space:nowrap;letter-spacing:-.02em;flex:0 0 auto}
+.brand span{display:none;font-size:11px;font-weight:600;color:#6b7280}
+nav.main{display:flex;gap:2px;flex-wrap:nowrap;justify-content:flex-end;min-width:0}
+nav.main a{padding:7px 8px;border-radius:9px;font-size:13px;font-weight:700;color:#4b5563;white-space:nowrap}
 nav.main a:hover{background:#f3f4f6;color:#111827;text-decoration:none}
 nav.main a.cta{background:#2563eb;color:#fff}
 nav.main a.cta:hover{background:#1d4ed8}
@@ -68,6 +68,64 @@ th{background:#f9fafb;font-weight:800;white-space:nowrap}
 .sec-title{font-size:21px;font-weight:900;margin:34px 0 6px;letter-spacing:-.02em}
 .sec-desc{color:#6b7280;font-size:14px;margin:0 0 16px}
 
+/* 도해 */
+.fig{margin:0 0 26px;background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px 16px 12px}
+.fig-t{font-size:15px;font-weight:800;color:#111827;padding-bottom:11px;margin-bottom:14px;border-bottom:1px solid #e5e7eb}
+.fig figcaption{font-size:12.5px;color:#6b7280;margin-top:12px;line-height:1.6}
+.fig ul,.fig ol{list-style:none;margin:0;padding:0}
+
+.fl{display:flex;flex-direction:column;gap:8px;counter-reset:none}
+.fl-step{display:flex;align-items:center;gap:10px;background:#f8fafc;border:1px solid #e5e7eb;border-radius:10px;padding:11px 13px;margin:0}
+.fl-step:first-child{background:#eff6ff;border-color:#bfdbfe}
+.fl-n{flex:0 0 auto;width:22px;height:22px;border-radius:50%;background:#2563eb;color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.fl-l{font-size:14px;font-weight:700;color:#111827;line-height:1.45}
+
+.pts{display:flex;flex-direction:column;gap:9px}
+.pt{display:flex;gap:11px;padding:12px 13px;border-radius:10px;margin:0;border:1px solid}
+.pt-high{background:#fef2f2;border-color:#fecaca}
+.pt-mid{background:#fffbeb;border-color:#fde68a}
+.pt-low{background:#eff6ff;border-color:#bfdbfe}
+.pt-n{flex:0 0 auto;width:24px;height:24px;border-radius:50%;color:#fff;font-size:12px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.pt-high .pt-n{background:#dc2626}
+.pt-mid .pt-n{background:#d97706}
+.pt-low .pt-n{background:#2563eb}
+.pt-b{min-width:0;flex:1}
+.pt-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px;margin-bottom:3px}
+.pt-h b{font-size:14.5px;color:#111827}
+.pt-tag{font-size:11.5px;font-weight:800}
+.pt-high .pt-tag{color:#dc2626}
+.pt-mid .pt-tag{color:#b45309}
+.pt-low .pt-tag{color:#1d4ed8}
+.pt-d{font-size:13px;color:#4b5563;line-height:1.6}
+
+.scs{display:flex;flex-direction:column;gap:9px}
+.sc{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;padding:11px 13px;margin:0;border-radius:10px;background:#f8fafc;border:1px solid #e5e7eb;border-left:5px solid var(--sc)}
+.sc-k{font-size:14px;font-weight:800;color:var(--sc)}
+.sc-r{font-size:14px;font-weight:800;color:#111827}
+.sc-n{font-size:13px;color:#6b7280;flex:1 1 100%}
+
+.cps{display:flex;flex-direction:column;gap:10px}
+.cp{border-radius:10px;padding:13px 15px;border:1px solid}
+.cp-blue{background:#eff6ff;border-color:#bfdbfe}
+.cp-green{background:#ecfdf5;border-color:#a7f3d0}
+.cp-n{font-size:15px;font-weight:800;margin-bottom:2px}
+.cp-blue .cp-n{color:#1d4ed8}
+.cp-green .cp-n{color:#047857}
+.cp-w{font-size:12.5px;font-weight:700;color:#6b7280;margin-bottom:9px}
+.cp ul{display:flex;flex-direction:column;gap:5px}
+.cp li{font-size:13.5px;color:#1f2937;padding-left:13px;position:relative;margin:0}
+.cp li::before{content:"·";position:absolute;left:2px;font-weight:800}
+
+.dc-q{background:#eff6ff;border:1.5px solid #2563eb;border-radius:10px;padding:13px 15px;font-size:14.5px;font-weight:800;color:#111827;text-align:center;margin-bottom:12px;line-height:1.5}
+.dc-r{display:flex;flex-direction:column;gap:9px}
+.dc-y,.dc-n{border-radius:10px;padding:12px 14px;border:1px solid}
+.dc-y{background:#ecfdf5;border-color:#a7f3d0}
+.dc-n{background:#fffbeb;border-color:#fde68a}
+.dc-r b{display:block;font-size:12.5px;margin-bottom:3px}
+.dc-y b{color:#047857}
+.dc-n b{color:#b45309}
+.dc-r span{font-size:14px;font-weight:700;color:#111827}
+
 /* 푸터 */
 footer{background:#fff;border-top:1px solid #e5e7eb;padding:26px 0 40px;font-size:13px;color:#6b7280}
 footer .fnav{display:flex;gap:14px;flex-wrap:wrap;margin:0 0 14px}
@@ -76,8 +134,24 @@ footer .fnav a{color:#4b5563;font-weight:600}
 
 @media (min-width:640px){
   .topbar .meta{display:block}
+  .brand{font-size:18px}
+  .brand span{display:block}
+  nav.main{gap:4px}
+  nav.main a{padding:7px 11px;font-size:14px}
   h1{font-size:31px}
   .grid{grid-template-columns:1fr 1fr}
+  .fig{padding:18px 20px 14px}
+  /* 흐름도를 가로로 펴고 단계 사이에 화살표를 넣는다 */
+  .fl{flex-direction:row;align-items:stretch}
+  .fl-step{flex:1;flex-direction:column;align-items:flex-start;gap:8px;position:relative}
+  .fl-step+.fl-step{margin-left:16px}
+  .fl-step+.fl-step::before{content:"";position:absolute;left:-12px;top:50%;width:8px;height:8px;
+    border-top:2px solid #cbd5e1;border-right:2px solid #cbd5e1;transform:translateY(-50%) rotate(45deg)}
+  .cps{flex-direction:row}
+  .cp{flex:1;min-width:0}
+  .dc-r{flex-direction:row}
+  .dc-y,.dc-n{flex:1;min-width:0}
+  .sc-n{flex:1 1 auto}
 }
 @media (min-width:1024px){
   h1{font-size:34px}
@@ -149,8 +223,30 @@ function footer() {
 </body></html>`;
 }
 
+/** 도입부 다음(첫 h2 직전)에 그림을 넣는다. 읽기 흐름을 끊지 않는 자리다. */
+function insertFigure(body, figure) {
+  if (!figure) return body;
+  const at = body.indexOf('<h2>');
+  if (at === -1) return body + figure;
+  return body.slice(0, at) + figure + '\n' + body.slice(at);
+}
+
+/** FAQ 섹션 HTML */
+function faqSection(list) {
+  if (!list?.length) return '';
+  return `<h2>자주 묻는 질문</h2>
+${list
+  .map(
+    (f) => `<div class="box">
+  <div class="bt">Q. ${esc(f.q)}</div>
+  <p style="margin:0">${esc(f.a)}</p>
+</div>`
+  )
+  .join('\n')}`;
+}
+
 /** 글 상세 페이지 */
-export function renderPost(post, related = []) {
+export function renderPost(post, related = [], figure = '', faqList = []) {
   const url = `${SITE.domain}/guide/${post.slug}/`;
   const rel = related.length
     ? `<h2>함께 보면 좋은 글</h2><div class="grid">${related
@@ -163,17 +259,44 @@ export function renderPost(post, related = []) {
         .join('')}</div>`
     : '';
 
-  const ld = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: post.title,
-    description: post.summary,
-    datePublished: post.date,
-    dateModified: post.date,
-    author: { '@type': 'Organization', name: SITE.name },
-    publisher: { '@type': 'Organization', name: SITE.name },
-    mainEntityOfPage: url,
-  };
+  const iso = post.date.replace(/\./g, '-');
+  const graph = [
+    {
+      '@type': 'Article',
+      headline: post.title,
+      description: post.summary,
+      datePublished: iso,
+      dateModified: iso,
+      inLanguage: 'ko',
+      author: { '@type': 'Organization', name: SITE.name, url: SITE.domain },
+      publisher: { '@type': 'Organization', name: SITE.name, url: SITE.domain },
+      mainEntityOfPage: url,
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        { '@type': 'ListItem', position: 1, name: '가전 상식', item: `${SITE.domain}/guide/` },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: catName(post.category),
+          item: `${SITE.domain}/guide/category/${post.category}/`,
+        },
+        { '@type': 'ListItem', position: 3, name: post.title, item: url },
+      ],
+    },
+  ];
+  if (faqList?.length) {
+    graph.push({
+      '@type': 'FAQPage',
+      mainEntity: faqList.map((f) => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    });
+  }
+  const ld = { '@context': 'https://schema.org', '@graph': graph };
 
   return (
     head({
@@ -189,7 +312,8 @@ export function renderPost(post, related = []) {
     )} 작성</span></div>
   <h1>${esc(post.title)}</h1>
   <div class="lead">${esc(post.summary)}</div>
-  ${post.body}
+  ${insertFigure(post.body, figure)}
+  ${faqSection(faqList)}
   ${rel}
 </div></main>` +
     `<script type="application/ld+json">${JSON.stringify(ld)}</script>` +
