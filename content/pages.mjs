@@ -44,7 +44,7 @@ export const pages = [
 <p>가전비교연구소는 다음을 통해 운영 비용을 충당합니다.</p>
 <ul>
   <li><strong>제휴 마케팅</strong> — 쿠팡 파트너스 등의 제휴 링크를 통해 구매가 발생하면 일정액의 수수료를 받습니다.</li>
-  <li><strong>광고</strong> — 향후 광고를 게재할 수 있습니다.</li>
+  <li><strong>광고</strong> — Google 애드센스 광고를 게재합니다.</li>
 </ul>
 <div class="box warn">
   <div class="bt">고지</div>
@@ -86,7 +86,7 @@ export const pages = [
 </ul>
 
 <h2>3. 광고 및 제3자 제공 서비스</h2>
-<p>사이트는 향후 <strong>Google 애드센스를 포함한 제3자 광고</strong>를 게재할 수 있습니다. 이 경우 다음 사항이 적용됩니다.</p>
+<p>사이트는 <strong>Google 애드센스를 포함한 제3자 광고</strong>를 게재합니다. 다음 사항이 적용됩니다.</p>
 <ul>
   <li>Google을 포함한 제3자 공급업체는 쿠키를 사용하여 이용자의 이전 방문 기록을 바탕으로 광고를 게재할 수 있습니다.</li>
   <li>Google이 광고 쿠키를 사용함으로써 이용자에게 맞춤 광고가 표시될 수 있습니다.</li>
@@ -199,7 +199,7 @@ export const pages = [
 
 <h2>이메일</h2>
 <div class="box">
-  <div class="bt">${SITE.email}</div>
+  <div class="bt"><a href="mailto:${SITE.email}">${SITE.email}</a></div>
   <p style="margin:0">평일 기준으로 확인하며, 내용에 따라 답변에 시간이 걸릴 수 있습니다.</p>
 </div>
 
