@@ -11,7 +11,8 @@ import {
   Download,
   BarChart3,
   Sparkles,
-  Zap
+  Zap,
+  ExternalLink
 } from 'lucide-react';
 import { Product } from '../types';
 import { PRODUCTS } from '../data/products';
@@ -241,14 +242,19 @@ export const ComparisonStudio: React.FC<ComparisonStudioProps> = ({
           </div>
         ) : (
           <div className="bg-white rounded-2xl shadow-xl border border-gray-200 overflow-hidden">
+            {/* Mobile swipe helper */}
+            <div className="md:hidden bg-blue-50/90 text-blue-800 text-xs px-4 py-2.5 flex items-center justify-between border-b border-blue-100">
+              <span className="font-bold">👉 좌우로 스크롤하여 {compareList.length}개 모델을 비교하세요</span>
+              <span className="text-[10px] text-blue-600 font-semibold bg-white px-2 py-0.5 rounded-full border border-blue-200">스와이프 지원</span>
+            </div>
             
-            <div className="overflow-x-auto">
+            <div className="overflow-x-auto scrollbar-thin">
               <table className="w-full border-collapse">
                 
                 {/* 1. Header: Product Top Cards */}
                 <thead>
                   <tr className="border-b-2 border-gray-200 bg-gray-50/70">
-                    <th className="p-4 w-40 sm:w-48 text-left text-xs font-bold text-gray-500 uppercase tracking-wider shrink-0 sticky left-0 bg-gray-50 z-10 border-r border-gray-200">
+                    <th className="p-3 sm:p-4 w-28 sm:w-44 text-left text-xs font-bold text-gray-500 uppercase tracking-wider shrink-0 sticky left-0 bg-gray-50 z-10 border-r border-gray-200">
                       비교 대상 모델 ({compareList.length}개)
                     </th>
                     {compareList.map((product) => (
@@ -298,19 +304,31 @@ export const ComparisonStudio: React.FC<ComparisonStudioProps> = ({
                             </div>
                           </div>
 
-                          {/* Price */}
-                          <div className="pt-2 border-t border-gray-100 flex items-baseline justify-between">
-                            <span className="text-xs text-gray-400">최저가</span>
-                            <div className="text-right">
-                              <span className="text-base font-black text-gray-950">
-                                ₩{product.price.toLocaleString()}
-                              </span>
-                              {highlightItems && getLowestPriceId() === product.id && (
-                                <div className="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded mt-0.5 inline-block">
-                                  💰 최저가 우위
-                                </div>
-                              )}
+                          {/* Price & Buy Link */}
+                          <div className="pt-2 border-t border-gray-100 space-y-2">
+                            <div className="flex items-baseline justify-between">
+                              <span className="text-xs text-gray-400">최저가</span>
+                              <div className="text-right">
+                                <span className="text-base font-black text-gray-950">
+                                  ₩{product.price.toLocaleString()}
+                                </span>
+                                {highlightItems && getLowestPriceId() === product.id && (
+                                  <div className="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded mt-0.5 inline-block">
+                                    💰 최저가 우위
+                                  </div>
+                                )}
+                              </div>
                             </div>
+
+                            <a
+                              href={product.buyUrl || 'https://link.coupang.com/a/AF5563346?subid=gajun&subid2=studio_th'}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="w-full py-2 px-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-lg text-xs font-bold transition flex items-center justify-center gap-1 shadow-2xs text-center"
+                            >
+                              <span>{product.mallName || '최저가'} 바로가기</span>
+                              <ExternalLink className="w-3 h-3" />
+                            </a>
                           </div>
                         </div>
                       </th>

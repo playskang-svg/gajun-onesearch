@@ -23,6 +23,7 @@ import { ApplianceFinder } from './components/ApplianceFinder';
 import { BuyingGuidesView } from './components/BuyingGuidesView';
 import { AiConsultantView } from './components/AiConsultantView';
 import { MallSalesView } from './components/MallSalesView';
+import { MobileBottomNav } from './components/MobileBottomNav';
 import { NavTabType } from './components/Navbar';
 
 export default function App() {
@@ -248,17 +249,17 @@ export default function App() {
               </p>
 
               {/* Quick stats counter */}
-              <div className="pt-2 flex flex-wrap items-center gap-4 sm:gap-8 text-xs text-slate-300">
+              <div className="pt-2 flex flex-wrap items-center gap-3 sm:gap-8 text-xs sm:text-sm text-slate-300">
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-emerald-400" />
-                  <span>실측 테스트 완료 <strong>18개 핵심 가전</strong></span>
+                  <div className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
+                  <span>실측 테스트 완료 <strong>70여 개 인기 가전</strong></span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-blue-400" />
-                  <span>4대 평가 지표 종합</span>
+                  <div className="w-2.5 h-2.5 rounded-full bg-blue-400" />
+                  <span>4대 평가 지표 실측</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-amber-400" />
+                  <div className="w-2.5 h-2.5 rounded-full bg-amber-400" />
                   <span>1:1 무제한 스펙 맞대결</span>
                 </div>
               </div>
@@ -271,43 +272,43 @@ export default function App() {
           {/* Category Banner Title & Meta */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
             <div>
-              <div className="flex items-center gap-2">
-                <h2 className="text-xl font-black text-gray-950">
+              <div className="flex items-center gap-2.5">
+                <h2 className="text-xl sm:text-2xl font-black text-gray-950">
                   {currentCatMeta?.name || '가전 탐색'}
                 </h2>
-                <span className="text-xs text-gray-500 font-semibold bg-gray-200/70 px-2 py-0.5 rounded-full">
+                <span className="text-xs sm:text-sm text-gray-600 font-bold bg-gray-200/80 px-2.5 py-0.5 rounded-full">
                   {filteredProducts.length}개 모델
                 </span>
               </div>
-              <p className="text-xs text-gray-500 mt-0.5">
+              <p className="text-xs sm:text-sm text-gray-500 mt-1">
                 {currentCatMeta?.description}
               </p>
             </div>
 
             {/* Sort & Mobile filter button */}
-            <div className="flex items-center gap-2 self-start sm:self-auto">
+            <div className="flex items-center gap-2 w-full sm:w-auto">
               <button
                 onClick={() => setIsMobileFilterOpen(true)}
-                className="flex items-center gap-1.5 px-3 py-2 bg-white border border-gray-200 hover:bg-gray-50 rounded-xl text-xs font-bold text-gray-700 md:hidden shadow-2xs"
+                className="flex-1 sm:flex-none flex items-center justify-center gap-2 px-4 py-3 bg-white border border-gray-200 hover:bg-gray-50 rounded-xl text-sm font-bold text-gray-800 md:hidden shadow-xs min-h-[46px]"
               >
                 <SlidersHorizontal className="w-4 h-4 text-blue-600" />
-                <span>필터</span>
+                <span>필터 설정</span>
               </button>
 
-              <div className="relative flex items-center bg-white border border-gray-200 rounded-xl shadow-2xs">
-                <ArrowUpDown className="w-3.5 h-3.5 text-gray-400 ml-3 pointer-events-none" />
+              <div className="flex-1 sm:flex-none relative flex items-center bg-white border border-gray-200 rounded-xl shadow-xs min-h-[46px]">
+                <ArrowUpDown className="w-4 h-4 text-gray-400 ml-3.5 pointer-events-none" />
                 <select
                   id="sort-select"
                   value={filterState.sortBy}
                   onChange={(e) => setFilterState((prev) => ({ ...prev, sortBy: e.target.value as any }))}
                   aria-label="제품 정렬 기준"
-                  className="pl-2 pr-8 py-2 text-xs font-bold text-gray-800 bg-transparent focus:outline-hidden cursor-pointer"
+                  className="w-full pl-2.5 pr-8 py-3 text-sm font-bold text-gray-800 bg-transparent focus:outline-hidden cursor-pointer min-h-[46px]"
                 >
-                  <option value="nosearch">가전비교 추천순 (기본)</option>
-                  <option value="score">가전비교 점수 높은순</option>
+                  <option value="nosearch">추천순 (기본)</option>
+                  <option value="score">평가점수 높은순</option>
                   <option value="price_asc">가격 낮은순 (가성비)</option>
                   <option value="price_desc">가격 높은순 (프리미엄)</option>
-                  <option value="reviews">검증 리뷰 많은순</option>
+                  <option value="reviews">리뷰 많은순</option>
                 </select>
               </div>
             </div>
@@ -508,6 +509,14 @@ export default function App() {
           </div>
         </div>
       </footer>
+
+      {/* Mobile Bottom Navigation Bar */}
+      <MobileBottomNav
+        activeTab={activeTab}
+        setActiveTab={setActiveTab}
+        compareCount={compareList.length}
+        openCompareStudio={() => setIsStudioOpen(true)}
+      />
 
     </div>
   );

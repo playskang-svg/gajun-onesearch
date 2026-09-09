@@ -216,7 +216,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <button
               id="compare-tray-btn"
               onClick={openCompareStudio}
-              className="relative flex items-center gap-2 px-3 py-2 text-sm font-semibold bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-lg transition"
+              className="relative flex items-center gap-2 px-3 py-2 text-sm font-semibold bg-gray-100 hover:bg-gray-200 text-gray-800 rounded-xl transition min-h-[44px]"
               title="비교함 열기"
             >
               <Scale className="w-4 h-4 text-blue-600" />
@@ -231,19 +231,20 @@ export const Navbar: React.FC<NavbarProps> = ({
             {onToggleMobileFilter && (
               <button
                 onClick={onToggleMobileFilter}
-                className="p-2 text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100 md:hidden"
+                className="p-2.5 text-gray-700 hover:text-gray-900 rounded-xl hover:bg-gray-100 md:hidden min-w-[44px] min-h-[44px] flex items-center justify-center border border-gray-200"
                 title="스펙 필터 열기"
               >
-                <SlidersHorizontal className="w-5 h-5" />
+                <SlidersHorizontal className="w-5 h-5 text-blue-600" />
               </button>
             )}
 
             <button
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-gray-600 hover:text-gray-900 rounded-lg hover:bg-gray-100 lg:hidden"
-              title="메뉴"
+              onClick={() => setMobileMenuOpen(true)}
+              className="p-2.5 text-gray-700 hover:text-gray-900 rounded-xl hover:bg-gray-100 lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center border border-gray-200"
+              title="전체 메뉴 열기"
+              aria-label="전체 메뉴 열기"
             >
-              {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              <Menu className="w-6 h-6" />
             </button>
           </div>
         </div>
@@ -256,15 +257,15 @@ export const Navbar: React.FC<NavbarProps> = ({
               placeholder="모델명, 브랜드, 스펙 키워드 검색..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full pl-9 pr-8 py-2 text-sm bg-gray-100 border border-transparent rounded-lg focus:bg-white focus:border-blue-500 focus:outline-hidden"
+              className="w-full pl-10 pr-10 py-2.5 text-base bg-gray-100 border border-transparent rounded-xl focus:bg-white focus:border-blue-500 focus:outline-hidden min-h-[44px]"
             />
-            <Search className="w-4 h-4 text-gray-400 absolute left-3 top-1/2 -translate-y-1/2" />
+            <Search className="w-4 h-4 text-gray-400 absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
+                className="absolute right-2.5 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600 p-1.5 min-w-[36px] min-h-[36px] flex items-center justify-center"
               >
-                <X className="w-3.5 h-3.5" />
+                <X className="w-4 h-4" />
               </button>
             )}
           </div>
@@ -272,7 +273,7 @@ export const Navbar: React.FC<NavbarProps> = ({
       </div>
 
       {/* Category Pills Strip */}
-      <div className="bg-gray-50 border-t border-gray-100 overflow-x-auto scrollbar-none py-2 px-4 sm:px-6 lg:px-8">
+      <div className="bg-gray-50 border-t border-gray-100 overflow-x-auto scrollbar-none py-2.5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex items-center gap-2 min-w-max">
           {CATEGORIES.map((cat) => {
             const isSelected = selectedCategory === cat.id;
@@ -281,15 +282,15 @@ export const Navbar: React.FC<NavbarProps> = ({
                 key={cat.id}
                 id={`cat-pill-${cat.id}`}
                 onClick={() => handleCategoryClick(cat.id)}
-                className={`px-3 py-1.5 text-xs font-semibold rounded-full transition flex items-center gap-1.5 ${
+                className={`px-3.5 py-2 text-xs sm:text-sm font-bold rounded-full transition flex items-center gap-1.5 min-h-[38px] ${
                   isSelected
                     ? 'bg-blue-600 text-white shadow-xs'
                     : 'bg-white text-gray-700 border border-gray-200 hover:bg-gray-100 hover:border-gray-300'
                 }`}
               >
                 <span>{cat.name}</span>
-                <span className={`text-[10px] px-1 rounded-full ${
-                  isSelected ? 'bg-blue-700 text-blue-100' : 'bg-gray-100 text-gray-500'
+                <span className={`text-[11px] px-1.5 py-0.2 rounded-full ${
+                  isSelected ? 'bg-blue-700 text-blue-100' : 'bg-gray-100 text-gray-600'
                 }`}>
                   {cat.count}
                 </span>
@@ -299,105 +300,224 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
       </div>
 
-      {/* Mobile Dropdown Menu */}
+      {/* Modern Mobile Slide-Over Drawer Sheet */}
       {mobileMenuOpen && (
-        <div className="lg:hidden border-t border-gray-200 bg-white px-4 py-4 space-y-2">
-          <button
-            onClick={() => {
-              setActiveTab('explore');
-              setMobileMenuOpen(false);
-            }}
-            className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-semibold ${
-              activeTab === 'explore' ? 'bg-blue-50 text-blue-600' : 'text-gray-700 hover:bg-gray-50'
-            }`}
-          >
-            <div className="flex items-center gap-2">
-              <Layers className="w-4 h-4" />
-              <span>가전 탐색 & 스펙</span>
-            </div>
-            <ArrowRight className="w-4 h-4 text-gray-400" />
-          </button>
+        <div className="fixed inset-0 z-50 lg:hidden animate-fade-in">
+          {/* Backdrop */}
+          <div 
+            className="fixed inset-0 bg-black/60 backdrop-blur-xs transition-opacity"
+            onClick={() => setMobileMenuOpen(false)}
+          />
 
-          <button
-            onClick={() => {
-              setActiveTab('compare');
-              setMobileMenuOpen(false);
-            }}
-            className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-semibold ${
-              activeTab === 'compare' ? 'bg-blue-50 text-blue-600' : 'text-gray-700 hover:bg-gray-50'
-            }`}
-          >
-            <div className="flex items-center gap-2">
-              <Scale className="w-4 h-4 text-blue-600" />
-              <span>스펙 1:1 비교함 ({compareCount})</span>
-            </div>
-            <ArrowRight className="w-4 h-4 text-gray-400" />
-          </button>
+          {/* Drawer Panel */}
+          <div className="fixed inset-y-0 right-0 max-w-sm w-[88%] bg-white shadow-2xl flex flex-col z-10 overflow-hidden">
+            {/* Drawer Header */}
+            <div className="px-5 py-4 border-b border-gray-100 flex items-center justify-between bg-slate-950 text-white">
+              <div className="flex items-center gap-2.5">
+                <div className="w-8 h-8 rounded-xl bg-blue-600 flex items-center justify-center font-black text-sm text-white">
+                  가
+                </div>
+                <div>
+                  <div className="font-black text-base text-white">가전비교연구소</div>
+                  <div className="text-[10px] text-blue-300">GAJUN.KR 메뉴</div>
+                </div>
+              </div>
 
-          <button
-            onClick={() => {
-              setActiveTab('finder');
-              setMobileMenuOpen(false);
-            }}
-            className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-semibold ${
-              activeTab === 'finder' ? 'bg-blue-50 text-blue-600' : 'text-gray-700 hover:bg-gray-50'
-            }`}
-          >
-            <div className="flex items-center gap-2">
-              <Compass className="w-4 h-4 text-emerald-600" />
-              <span>맞춤 가전 찾기 진단</span>
+              <button
+                onClick={() => setMobileMenuOpen(false)}
+                className="p-2 text-slate-400 hover:text-white hover:bg-slate-800 rounded-xl transition min-w-[44px] min-h-[44px] flex items-center justify-center"
+                title="메뉴 닫기"
+              >
+                <X className="w-6 h-6" />
+              </button>
             </div>
-            <ArrowRight className="w-4 h-4 text-gray-400" />
-          </button>
 
-          <button
-            onClick={() => {
-              setActiveTab('guides');
-              setMobileMenuOpen(false);
-            }}
-            className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-semibold ${
-              activeTab === 'guides' ? 'bg-blue-50 text-blue-600' : 'text-gray-700 hover:bg-gray-50'
-            }`}
-          >
-            <div className="flex items-center gap-2">
-              <BookOpen className="w-4 h-4 text-amber-600" />
-              <span>구매 가이드 & 랩 테스트</span>
-            </div>
-            <ArrowRight className="w-4 h-4 text-gray-400" />
-          </button>
+            {/* Drawer Scrollable Content */}
+            <div className="flex-1 overflow-y-auto p-4 space-y-5">
+              {/* Quick Service Navigation */}
+              <div>
+                <div className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 px-1">
+                  핵심 서비스
+                </div>
+                <div className="space-y-1.5">
+                  <button
+                    onClick={() => {
+                      setActiveTab('explore');
+                      setMobileMenuOpen(false);
+                    }}
+                    className={`w-full flex items-center justify-between p-3 rounded-xl text-sm font-bold transition min-h-[48px] ${
+                      activeTab === 'explore' ? 'bg-blue-50 text-blue-700' : 'text-gray-800 hover:bg-gray-50'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center shrink-0">
+                        <Layers className="w-4 h-4" />
+                      </div>
+                      <div className="text-left">
+                        <div className="text-sm font-bold">가전 탐색 & 랭킹</div>
+                        <div className="text-[11px] font-normal text-gray-400">70여 개 실측 가전 비교</div>
+                      </div>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-gray-400 shrink-0" />
+                  </button>
 
-          <button
-            onClick={() => {
-              setSelectedCategory('mall_sales');
-              setActiveTab('sales');
-              setMobileMenuOpen(false);
-            }}
-            className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-semibold ${
-              activeTab === 'sales' ? 'bg-rose-50 text-rose-700' : 'text-rose-600 hover:bg-rose-50/60'
-            }`}
-          >
-            <div className="flex items-center gap-2">
-              <ShoppingBag className="w-4 h-4 text-rose-600" />
-              <span>백화점·몰 세일전 (특가 기획전)</span>
-            </div>
-            <span className="bg-rose-100 text-rose-700 text-[10px] px-1.5 py-0.5 rounded-full font-bold">HOT</span>
-          </button>
+                  <button
+                    onClick={() => {
+                      setActiveTab('compare');
+                      setMobileMenuOpen(false);
+                    }}
+                    className={`w-full flex items-center justify-between p-3 rounded-xl text-sm font-bold transition min-h-[48px] ${
+                      activeTab === 'compare' ? 'bg-blue-50 text-blue-700' : 'text-gray-800 hover:bg-gray-50'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0">
+                        <Scale className="w-4 h-4" />
+                      </div>
+                      <div className="text-left">
+                        <div className="flex items-center gap-1.5 text-sm font-bold">
+                          <span>스펙 1:1 비교함</span>
+                          {compareCount > 0 && (
+                            <span className="bg-blue-600 text-white text-[10px] px-1.5 py-0.2 rounded-full font-bold">
+                              {compareCount}
+                            </span>
+                          )}
+                        </div>
+                        <div className="text-[11px] font-normal text-gray-400">무제한 스펙 맞대결</div>
+                      </div>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-gray-400 shrink-0" />
+                  </button>
 
-          <button
-            onClick={() => {
-              setActiveTab('ai');
-              setMobileMenuOpen(false);
-            }}
-            className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm font-semibold ${
-              activeTab === 'ai' ? 'bg-purple-50 text-purple-700' : 'text-purple-600 hover:bg-purple-50'
-            }`}
-          >
-            <div className="flex items-center gap-2">
-              <Sparkles className="w-4 h-4 text-purple-600" />
-              <span>AI 맞춤 가전 컨설턴트</span>
+                  <button
+                    onClick={() => {
+                      setSelectedCategory('mall_sales');
+                      setActiveTab('sales');
+                      setMobileMenuOpen(false);
+                    }}
+                    className={`w-full flex items-center justify-between p-3 rounded-xl text-sm font-bold transition min-h-[48px] ${
+                      activeTab === 'sales' ? 'bg-rose-50 text-rose-700' : 'text-gray-800 hover:bg-gray-50'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-rose-100 text-rose-600 flex items-center justify-center shrink-0">
+                        <ShoppingBag className="w-4 h-4" />
+                      </div>
+                      <div className="text-left">
+                        <div className="flex items-center gap-1.5 text-sm font-bold">
+                          <span>백화점·몰 세일전</span>
+                          <span className="bg-rose-600 text-white text-[9px] px-1.5 py-0.2 rounded-full font-bold">HOT</span>
+                        </div>
+                        <div className="text-[11px] font-normal text-gray-400">롯데·현대·신세계 정기세일</div>
+                      </div>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-gray-400 shrink-0" />
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      setActiveTab('finder');
+                      setMobileMenuOpen(false);
+                    }}
+                    className={`w-full flex items-center justify-between p-3 rounded-xl text-sm font-bold transition min-h-[48px] ${
+                      activeTab === 'finder' ? 'bg-emerald-50 text-emerald-700' : 'text-gray-800 hover:bg-gray-50'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0">
+                        <Compass className="w-4 h-4" />
+                      </div>
+                      <div className="text-left">
+                        <div className="text-sm font-bold">맞춤 가전 찾기 진단</div>
+                        <div className="text-[11px] font-normal text-gray-400">평수·가구원수 1분 추천</div>
+                      </div>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-gray-400 shrink-0" />
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      setActiveTab('guides');
+                      setMobileMenuOpen(false);
+                    }}
+                    className={`w-full flex items-center justify-between p-3 rounded-xl text-sm font-bold transition min-h-[48px] ${
+                      activeTab === 'guides' ? 'bg-amber-50 text-amber-700' : 'text-gray-800 hover:bg-gray-50'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center shrink-0">
+                        <BookOpen className="w-4 h-4" />
+                      </div>
+                      <div className="text-left">
+                        <div className="text-sm font-bold">구매 가이드 & 랩 리포트</div>
+                        <div className="text-[11px] font-normal text-gray-400">실패 없는 가전 구매 공식</div>
+                      </div>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-gray-400 shrink-0" />
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      setActiveTab('ai');
+                      setMobileMenuOpen(false);
+                    }}
+                    className={`w-full flex items-center justify-between p-3 rounded-xl text-sm font-bold transition min-h-[48px] ${
+                      activeTab === 'ai' ? 'bg-purple-50 text-purple-700' : 'text-purple-700 hover:bg-purple-50/50'
+                    }`}
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center shrink-0">
+                        <Sparkles className="w-4 h-4" />
+                      </div>
+                      <div className="text-left">
+                        <div className="text-sm font-bold">AI 맞춤 가전 컨설턴트</div>
+                        <div className="text-[11px] font-normal text-purple-400">실시간 조건 분석 & 추천</div>
+                      </div>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-gray-400 shrink-0" />
+                  </button>
+                </div>
+              </div>
+
+              {/* 15 Categories 2-Column Grid */}
+              <div>
+                <div className="text-xs font-bold text-gray-400 uppercase tracking-wider mb-2 px-1">
+                  15대 가전 카테고리 바로가기
+                </div>
+                <div className="grid grid-cols-2 gap-2">
+                  {CATEGORIES.map((cat) => {
+                    const isSelected = selectedCategory === cat.id;
+                    return (
+                      <button
+                        key={cat.id}
+                        onClick={() => {
+                          handleCategoryClick(cat.id);
+                          setMobileMenuOpen(false);
+                        }}
+                        className={`p-2.5 rounded-xl text-left transition flex items-center justify-between border min-h-[42px] ${
+                          isSelected
+                            ? 'bg-blue-600 text-white border-blue-600 font-bold'
+                            : 'bg-gray-50 hover:bg-gray-100 text-gray-800 border-gray-100 font-medium'
+                        }`}
+                      >
+                        <span className="text-xs truncate">{cat.name}</span>
+                        <span className={`text-[10px] px-1.5 py-0.2 rounded-full shrink-0 ${
+                          isSelected ? 'bg-blue-700 text-blue-100' : 'bg-white text-gray-500'
+                        }`}>
+                          {cat.count}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
-            <ArrowRight className="w-4 h-4 text-gray-400" />
-          </button>
+
+            {/* Drawer Footer */}
+            <div className="p-4 border-t border-gray-100 bg-gray-50 text-xs text-gray-500 text-center">
+              가전비교연구소 • 독립 연구소 실측 데이터 기반
+            </div>
+          </div>
         </div>
       )}
     </header>

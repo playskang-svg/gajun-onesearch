@@ -44,23 +44,28 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
   };
 
   return (
-    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-xs flex items-center justify-center p-3 sm:p-4 md:p-6 animate-in fade-in duration-200">
+    <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-xs flex items-end sm:items-center justify-center p-0 sm:p-4 md:p-6 animate-in fade-in duration-200">
       <div 
-        className="bg-white w-full max-w-4xl rounded-2xl shadow-2xl border border-gray-200 overflow-hidden flex flex-col max-h-[92vh]"
+        className="bg-white w-full max-w-4xl rounded-t-3xl sm:rounded-2xl shadow-2xl border border-gray-200 overflow-hidden flex flex-col h-[94vh] sm:h-auto sm:max-h-[92vh]"
         onClick={(e) => e.stopPropagation()}
       >
+        {/* Mobile Pull Bar Indicator */}
+        <div className="sm:hidden w-full flex items-center justify-center pt-2 pb-1 bg-white">
+          <div className="w-12 h-1.5 rounded-full bg-gray-300" />
+        </div>
+
         {/* Modal Top Header */}
-        <div className="px-6 py-4 border-b border-gray-100 flex items-center justify-between bg-white sticky top-0 z-20">
+        <div className="px-5 py-3 sm:px-6 sm:py-4 border-b border-gray-100 flex items-center justify-between bg-white sticky top-0 z-20">
           <div className="flex items-center gap-2">
-            <span className="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded border border-blue-100">
+            <span className="text-xs font-bold text-blue-700 bg-blue-50 px-2.5 py-1 rounded-lg border border-blue-100">
               {product.brand}
             </span>
-            <span className="text-xs text-gray-400 font-mono">모델명: {product.modelCode}</span>
+            <span className="text-xs text-gray-500 font-mono">모델명: {product.modelCode}</span>
           </div>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5">
             <button
               onClick={handleShare}
-              className="p-2 text-gray-400 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition text-xs flex items-center gap-1"
+              className="p-2.5 text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded-xl transition text-xs flex items-center gap-1 min-w-[40px] min-h-[40px] justify-center"
               title="링크 복사"
             >
               <Share2 className="w-4 h-4" />
@@ -68,7 +73,8 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
             </button>
             <button
               onClick={onClose}
-              className="p-2 text-gray-400 hover:text-gray-700 hover:bg-gray-100 rounded-lg transition"
+              className="p-2.5 text-gray-500 hover:text-gray-900 hover:bg-gray-100 rounded-xl transition min-w-[44px] min-h-[44px] flex items-center justify-center"
+              aria-label="닫기"
             >
               <X className="w-5 h-5" />
             </button>
@@ -207,10 +213,10 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
           </div>
 
           {/* Navigation Tabs */}
-          <div className="flex border-b border-gray-200 text-sm font-semibold">
+          <div className="overflow-x-auto scrollbar-none flex border-b border-gray-200 text-sm sm:text-base font-bold min-w-max gap-1">
             <button
               onClick={() => setActiveTab('verdict')}
-              className={`pb-3 px-4 border-b-2 transition ${
+              className={`pb-3 px-3.5 border-b-2 transition ${
                 activeTab === 'verdict'
                   ? 'border-blue-600 text-blue-600'
                   : 'border-transparent text-gray-500 hover:text-gray-900'
@@ -220,7 +226,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
             </button>
             <button
               onClick={() => setActiveTab('lab')}
-              className={`pb-3 px-4 border-b-2 transition flex items-center gap-1.5 ${
+              className={`pb-3 px-3.5 border-b-2 transition flex items-center gap-1.5 ${
                 activeTab === 'lab'
                   ? 'border-blue-600 text-blue-600'
                   : 'border-transparent text-gray-500 hover:text-gray-900'
@@ -228,13 +234,13 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
             >
               <FlaskConical className="w-4 h-4" />
               <span>실측 랩 테스트</span>
-              <span className="bg-blue-100 text-blue-700 text-[10px] px-1.5 py-0.2 rounded-full font-bold">
+              <span className="bg-blue-100 text-blue-700 text-xs px-1.5 py-0.2 rounded-full font-bold">
                 {product.labTests.length}
               </span>
             </button>
             <button
               onClick={() => setActiveTab('specs')}
-              className={`pb-3 px-4 border-b-2 transition ${
+              className={`pb-3 px-3.5 border-b-2 transition ${
                 activeTab === 'specs'
                   ? 'border-blue-600 text-blue-600'
                   : 'border-transparent text-gray-500 hover:text-gray-900'
@@ -244,7 +250,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
             </button>
             <button
               onClick={() => setActiveTab('reviews')}
-              className={`pb-3 px-4 border-b-2 transition flex items-center gap-1.5 ${
+              className={`pb-3 px-3.5 border-b-2 transition flex items-center gap-1.5 ${
                 activeTab === 'reviews'
                   ? 'border-blue-600 text-blue-600'
                   : 'border-transparent text-gray-500 hover:text-gray-900'
@@ -421,31 +427,31 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
         </div>
 
         {/* Modal Bottom Sticky CTA */}
-        <div className="p-4 bg-gray-50 border-t border-gray-200 flex flex-col gap-2.5 sticky bottom-0 z-20">
+        <div className="p-4 sm:p-5 bg-gray-50 border-t border-gray-200 flex flex-col gap-2.5 sticky bottom-0 z-20 pb-[max(1.25rem,env(safe-area-inset-bottom))] shadow-lg">
           <div className="flex items-center justify-between gap-3">
             <button
               onClick={() => onToggleCompare(product)}
-              className={`flex-1 py-3 px-4 rounded-xl font-bold text-sm flex items-center justify-center gap-2 transition ${
+              className={`flex-1 py-3.5 px-4 rounded-xl font-bold text-sm sm:text-base flex items-center justify-center gap-2 transition min-h-[48px] ${
                 isInCompare 
                   ? 'bg-blue-600 text-white hover:bg-blue-700' 
                   : 'bg-white border border-gray-300 text-gray-800 hover:bg-gray-100'
               }`}
             >
               <Scale className="w-4 h-4" />
-              <span>{isInCompare ? '비교함에서 제거' : '비교함에 추가하기'}</span>
+              <span>{isInCompare ? '비교함에서 제거' : '비교함에 담기'}</span>
             </button>
 
             <a
               href={product.buyUrl || 'https://link.coupang.com/a/AF5563346?subid=gajun&subid2=modal_bottom'}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 py-3 px-4 rounded-xl font-bold text-sm bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-700 hover:to-indigo-800 text-white flex items-center justify-center gap-2 transition text-center shadow-md shadow-blue-500/20"
+              className="flex-1 py-3.5 px-4 rounded-xl font-bold text-sm sm:text-base bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-700 hover:to-indigo-800 text-white flex items-center justify-center gap-2 transition text-center shadow-md shadow-blue-500/20 min-h-[48px]"
             >
-              <span>{product.mallName || '쿠팡'} 최저가 바로가기</span>
+              <span>{product.mallName || '쿠팡'} 바로가기</span>
               <ExternalLink className="w-4 h-4" />
             </a>
           </div>
-          <p className="text-[10px] text-gray-400 text-center">
+          <p className="text-[11px] text-gray-500 text-center">
             ※ 이 포스팅은 쿠팡 파트너스 및 제휴 마케팅 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받을 수 있습니다.
           </p>
         </div>

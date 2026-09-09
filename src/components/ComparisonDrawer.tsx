@@ -18,9 +18,9 @@ export const ComparisonDrawer: React.FC<ComparisonDrawerProps> = ({
   if (compareList.length === 0) return null;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 z-40 bg-slate-900/95 text-white backdrop-blur-md border-t border-slate-800 shadow-2xl transition-all duration-300">
-      <div className="max-w-7xl mx-auto px-4 py-3 sm:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3">
+    <div className="fixed bottom-[58px] md:bottom-0 left-0 right-0 z-30 bg-slate-950/95 text-white backdrop-blur-md border-t border-slate-800 shadow-2xl transition-all duration-300">
+      <div className="max-w-7xl mx-auto px-4 py-2.5 sm:py-3 sm:px-6 lg:px-8">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-2.5 sm:gap-3">
           
           {/* Left info & items tray */}
           <div className="flex items-center gap-3 overflow-x-auto w-full sm:w-auto py-1">

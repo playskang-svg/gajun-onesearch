@@ -119,61 +119,61 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           </div>
 
           {/* Product Name & Score */}
-          <div className="flex items-start justify-between gap-3 mb-2.5">
+          <div className="flex items-start justify-between gap-3 mb-3">
             <h3 
               onClick={() => onOpenDetails(product)}
-              className="font-bold text-gray-950 text-base leading-snug cursor-pointer hover:text-blue-600 transition line-clamp-2"
+              className="font-bold text-gray-950 text-base sm:text-lg leading-snug cursor-pointer hover:text-blue-600 transition line-clamp-2"
             >
               {product.name}
             </h3>
             
-            <div className={`flex flex-col items-center justify-center px-2 py-1 rounded-lg border shrink-0 ${getScoreColor(product.nosearchScore)}`}>
-              <span className="text-[10px] font-bold uppercase tracking-wider opacity-80">가전비교점수</span>
-              <span className="text-base font-black leading-none">{product.nosearchScore}</span>
+            <div className={`flex flex-col items-center justify-center px-2.5 py-1.5 rounded-xl border shrink-0 ${getScoreColor(product.nosearchScore)}`}>
+              <span className="text-[10px] font-bold uppercase tracking-wider opacity-80">평가점수</span>
+              <span className="text-lg font-black leading-none">{product.nosearchScore}</span>
             </div>
           </div>
 
           {/* 4 Score Micro Bars */}
-          <div className="grid grid-cols-4 gap-1.5 py-2.5 px-3 bg-gray-50 rounded-xl mb-3 text-center border border-gray-100">
+          <div className="grid grid-cols-4 gap-2 py-3 px-3 bg-gray-50/90 rounded-xl mb-3.5 text-center border border-gray-100">
             <div>
-              <div className="text-[10px] text-gray-500 font-medium">성능</div>
-              <div className="text-xs font-bold text-gray-900">{product.scores.performance}</div>
-              <div className="w-full bg-gray-200 h-1 rounded-full overflow-hidden mt-1">
+              <div className="text-[11px] text-gray-500 font-medium">성능</div>
+              <div className="text-xs sm:text-sm font-bold text-gray-900">{product.scores.performance}</div>
+              <div className="w-full bg-gray-200 h-1.5 rounded-full overflow-hidden mt-1">
                 <div className="bg-blue-600 h-full rounded-full" style={{ width: `${product.scores.performance}%` }} />
               </div>
             </div>
             <div>
-              <div className="text-[10px] text-gray-500 font-medium">편의성</div>
-              <div className="text-xs font-bold text-gray-900">{product.scores.convenience}</div>
-              <div className="w-full bg-gray-200 h-1 rounded-full overflow-hidden mt-1">
+              <div className="text-[11px] text-gray-500 font-medium">편의성</div>
+              <div className="text-xs sm:text-sm font-bold text-gray-900">{product.scores.convenience}</div>
+              <div className="w-full bg-gray-200 h-1.5 rounded-full overflow-hidden mt-1">
                 <div className="bg-indigo-600 h-full rounded-full" style={{ width: `${product.scores.convenience}%` }} />
               </div>
             </div>
             <div>
-              <div className="text-[10px] text-gray-500 font-medium">관리/소음</div>
-              <div className="text-xs font-bold text-gray-900">{product.scores.maintenance}</div>
-              <div className="w-full bg-gray-200 h-1 rounded-full overflow-hidden mt-1">
+              <div className="text-[11px] text-gray-500 font-medium">관리/소음</div>
+              <div className="text-xs sm:text-sm font-bold text-gray-900">{product.scores.maintenance}</div>
+              <div className="w-full bg-gray-200 h-1.5 rounded-full overflow-hidden mt-1">
                 <div className="bg-teal-600 h-full rounded-full" style={{ width: `${product.scores.maintenance}%` }} />
               </div>
             </div>
             <div>
-              <div className="text-[10px] text-gray-500 font-medium">가성비</div>
-              <div className="text-xs font-bold text-gray-900">{product.scores.valueForMoney}</div>
-              <div className="w-full bg-gray-200 h-1 rounded-full overflow-hidden mt-1">
+              <div className="text-[11px] text-gray-500 font-medium">가성비</div>
+              <div className="text-xs sm:text-sm font-bold text-gray-900">{product.scores.valueForMoney}</div>
+              <div className="w-full bg-gray-200 h-1.5 rounded-full overflow-hidden mt-1">
                 <div className="bg-amber-500 h-full rounded-full" style={{ width: `${product.scores.valueForMoney}%` }} />
               </div>
             </div>
           </div>
 
           {/* Key Specs Tags */}
-          <div className="flex flex-wrap gap-1.5 mb-3">
+          <div className="flex flex-wrap gap-1.5 mb-3.5">
             {product.keySpecs.slice(0, 4).map((spec, idx) => (
               <span
                 key={idx}
-                className={`text-[11px] px-2 py-0.5 rounded-md font-medium ${
+                className={`text-xs py-1 px-2.5 rounded-lg font-medium ${
                   spec.highlight
                     ? 'bg-blue-50 text-blue-700 font-semibold border border-blue-100'
-                    : 'bg-gray-100 text-gray-600'
+                    : 'bg-gray-100 text-gray-700'
                 }`}
               >
                 <span className="text-gray-400 mr-1">{spec.label}</span>
@@ -183,55 +183,67 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           </div>
 
           {/* 1-Line GAJUN Verdict */}
-          <p className="text-xs text-gray-600 line-clamp-2 mb-4 bg-slate-50/70 p-2.5 rounded-lg border-l-2 border-blue-500 italic">
+          <p className="text-xs sm:text-sm text-gray-700 line-clamp-2 mb-4 bg-slate-50/90 p-3 rounded-xl border-l-3 border-blue-600 italic">
             "{product.verdict}"
           </p>
         </div>
 
         {/* Pricing & Footer Actions */}
-        <div className="pt-3 border-t border-gray-100 space-y-2">
-          <div className="flex items-center justify-between">
+        <div className="pt-3.5 border-t border-gray-100 space-y-3">
+          <div className="flex items-baseline justify-between flex-wrap gap-1">
             <div>
-              <div className="flex items-center gap-1.5">
+              <div className="flex items-center gap-1.5 flex-wrap">
                 {discountPercent > 0 && (
-                  <span className="text-red-500 text-xs font-bold">{discountPercent}%</span>
+                  <span className="text-red-500 text-xs sm:text-sm font-black">{discountPercent}%</span>
                 )}
-                <span className="text-xs text-gray-400 line-through">
+                <span className="text-xs sm:text-sm text-gray-400 line-through">
                   ₩{product.originalPrice.toLocaleString()}
                 </span>
                 {product.mallSaleBadge && (
-                  <span className="text-[10px] bg-blue-50 text-blue-700 px-1.5 py-0.5 rounded font-bold border border-blue-100">
+                  <span className="text-[11px] bg-rose-50 text-rose-700 px-2 py-0.5 rounded-md font-bold border border-rose-200">
                     {product.mallSaleBadge}
                   </span>
                 )}
+                {product.isRocket && (
+                  <span className="text-[11px] bg-sky-50 text-sky-700 px-1.5 py-0.5 rounded-md font-bold border border-sky-200">
+                    🚀 로켓배송
+                  </span>
+                )}
               </div>
-              <div className="text-lg font-black text-gray-950 leading-tight">
+              <div className="text-xl sm:text-2xl font-black text-gray-950 leading-tight mt-0.5">
                 ₩{product.price.toLocaleString()}
-                <span className="text-xs font-normal text-gray-500 ml-1">최저가</span>
+                <span className="text-xs font-normal text-gray-500 ml-1.5">최저가</span>
               </div>
             </div>
 
+            {product.mallName && (
+              <span className="text-xs font-bold text-blue-700 bg-blue-50 px-2 py-1 rounded-lg border border-blue-100">
+                {product.mallName}
+              </span>
+            )}
+          </div>
+
+          {/* 2-Button Action Row */}
+          <div className="flex items-center gap-2 pt-1">
             <button
               id={`view-detail-btn-${product.id}`}
               onClick={() => onOpenDetails(product)}
-              className="flex items-center gap-1 px-3 py-2 text-xs font-bold text-gray-700 bg-gray-100 hover:bg-gray-200 hover:text-gray-900 rounded-xl transition"
+              className="flex-1 py-3 px-3 text-xs sm:text-sm font-bold text-gray-800 bg-gray-100 hover:bg-gray-200 rounded-xl transition flex items-center justify-center gap-1 min-h-[44px]"
             >
               <span>상세분석</span>
-              <ChevronRight className="w-3.5 h-3.5" />
+              <ChevronRight className="w-4 h-4" />
             </button>
-          </div>
 
-          {product.buyUrl && (
             <a
-              href={product.buyUrl}
+              href={product.buyUrl || 'https://link.coupang.com/a/AF5563346?subid=gajun&subid2=card'}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full py-2 px-3 text-xs font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition flex items-center justify-center gap-1.5 shadow-xs"
+              className="flex-1 py-3 px-3 text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 rounded-xl transition flex items-center justify-center gap-1.5 shadow-xs min-h-[44px] text-center"
             >
-              <span>{product.mallName || '최저가 바로가기'}</span>
+              <span>{product.mallName || '최저가'} 구매</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
-          )}
+          </div>
         </div>
       </div>
     </div>
