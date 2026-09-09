@@ -308,12 +308,9 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Drawer Header */}
             <div className="px-5 py-4 border-b border-gray-100 flex items-center justify-between bg-slate-950 text-white">
               <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-xl bg-blue-600 flex items-center justify-center font-black text-sm text-white">
-                  가
-                </div>
                 <div>
                   <div className="font-black text-base text-white">가전비교연구소</div>
-                  <div className="text-[10px] text-blue-300">GAJUN.KR 메뉴</div>
+                  <div className="text-[10px] text-blue-300">전체 메뉴</div>
                 </div>
               </div>
 
