@@ -9,11 +9,14 @@ import {
   Info,
   Layers,
   ChevronDown,
+  BookOpen,
+  ArrowRight,
   X
 } from 'lucide-react';
 import { Product, CategoryId, FilterState } from './types';
 import { PRODUCTS, CATEGORIES } from './data/products';
 import { Navbar } from './components/Navbar';
+import { GUIDE_POSTS } from './data/guideIndex';
 import { ProductCard } from './components/ProductCard';
 import { ProductDetailModal } from './components/ProductDetailModal';
 import { ComparisonDrawer } from './components/ComparisonDrawer';
@@ -268,6 +271,37 @@ export default function App() {
             {/* Subtle decorative background glow */}
             <div className="absolute right-0 top-0 bottom-0 w-1/3 bg-blue-500/10 blur-3xl pointer-events-none" />
           </div>
+
+          {/* 가전 상식 — 정보 콘텐츠 전면 배치 */}
+          <section className="mb-8">
+            <div className="flex items-end justify-between gap-4 mb-4">
+              <div>
+                <h2 className="text-xl sm:text-2xl font-black text-gray-950 flex items-center gap-2">
+                  <BookOpen className="w-5 h-5 text-emerald-600" />
+                  가전 상식
+                </h2>
+                <p className="text-xs sm:text-sm text-gray-600 mt-1">
+                  냄새·물샘·전기요금까지, 쓰면서 부딪히는 문제를 기준과 함께 정리했습니다
+                </p>
+              </div>
+              <a href="/guide/" className="text-sm font-bold text-emerald-700 hover:text-emerald-800 whitespace-nowrap flex items-center gap-1">
+                전체 {GUIDE_POSTS.length}편 <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {GUIDE_POSTS.slice(0, 6).map((g) => (
+                <a
+                  key={g.slug}
+                  href={`/guide//`}
+                  className="block bg-white border border-gray-200 rounded-2xl p-4 hover:border-emerald-300 hover:shadow-xs transition"
+                >
+                  <div className="text-[11px] font-bold text-emerald-700 mb-1.5">{g.categoryName}</div>
+                  <div className="text-[15px] font-bold text-gray-900 leading-snug mb-1.5">{g.title}</div>
+                  <p className="text-[13px] text-gray-600 leading-relaxed line-clamp-2">{g.summary}</p>
+                </a>
+              ))}
+            </div>
+          </section>
 
           {/* Category Banner Title & Meta */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">

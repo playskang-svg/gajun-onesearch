@@ -93,6 +93,14 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             {/* Desktop Navigation Links */}
             <nav className="hidden xl:flex items-center gap-0.5 2xl:gap-1">
+              <a
+                href="/guide/"
+                className="px-2.5 2xl:px-3 py-2 rounded-lg text-sm font-bold whitespace-nowrap transition flex items-center gap-1.5 text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200"
+              >
+                <BookOpen className="w-4 h-4 text-emerald-600" />
+                <span>가전 상식</span>
+              </a>
+
               <button
                 id="nav-tab-explore"
                 onClick={() => setActiveTab('explore')}
@@ -269,6 +277,14 @@ export const Navbar: React.FC<NavbarProps> = ({
       {/* Category Pills Strip */}
       <div className="bg-gray-50 border-t border-gray-100 overflow-x-auto scrollbar-none py-2.5 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto flex items-center gap-2 min-w-max">
+          <a
+            href="/guide/"
+            className="px-3.5 py-2 text-xs sm:text-sm font-bold rounded-full whitespace-nowrap transition flex items-center gap-1.5 min-h-[38px] bg-emerald-600 text-white hover:bg-emerald-700 shrink-0"
+          >
+            <BookOpen className="w-3.5 h-3.5" />
+            <span>가전 상식</span>
+          </a>
+          <span className="w-px h-6 bg-gray-300 shrink-0" aria-hidden="true"></span>
           {CATEGORIES.map((cat) => {
             const isSelected = selectedCategory === cat.id;
             return (
@@ -331,6 +347,19 @@ export const Navbar: React.FC<NavbarProps> = ({
                   핵심 서비스
                 </div>
                 <div className="space-y-1.5">
+                  <a
+                    href="/guide/"
+                    className="w-full flex items-center justify-between p-3 rounded-xl text-sm font-bold transition min-h-[48px] bg-emerald-50 text-emerald-800 hover:bg-emerald-100 border border-emerald-200"
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
+                        <BookOpen className="w-4 h-4" />
+                      </div>
+                      <span>가전 상식</span>
+                    </div>
+                    <ArrowRight className="w-4 h-4 text-emerald-600 shrink-0" />
+                  </a>
+
                   <button
                     onClick={() => {
                       setActiveTab('explore');
