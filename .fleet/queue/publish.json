@@ -1,0 +1,418 @@
+{
+  "site": "gajun",
+  "label": "가전비교연구소",
+  "domain": "gajun.kr",
+  "repo": "playskang-svg/gajun-onesearch",
+  "type": "publish",
+  "createdAt": "2026-09-10T22:42:37.089Z",
+  "updatedAt": "2026-09-10T22:42:37.089Z",
+  "createdBy": "actions/34538513290",
+  "titles": [
+    {
+      "keyword": "전기레인지인덕션",
+      "volume": 1400,
+      "grade": "1위가능",
+      "title": "전기레인지인덕션, 평수·인원별로 딱 맞는 용량 고르는 법",
+      "hook": "공간·인원 대비 용량",
+      "intent": "모델이 너무 많아 못 고르는 독자",
+      "alternatives": [
+        "전기레인지인덕션, 한 달 전기요금 실제 차이 계산해보니",
+        "전기레인지인덕션, 설치 조건 모르고 사면 반품되는 경우",
+        "전기레인지인덕션, 구형 vs 신형 체감 차이와 바꿀 시점"
+      ]
+    },
+    {
+      "keyword": "1등급제습기",
+      "volume": 1390,
+      "grade": "1위가능",
+      "title": "1등급제습기, 평수·인원별로 딱 맞는 용량 고르는 법",
+      "hook": "공간·인원 대비 용량",
+      "intent": "모델이 너무 많아 못 고르는 독자",
+      "alternatives": [
+        "1등급제습기, 한 달 전기요금 실제 차이 계산해보니",
+        "1등급제습기, 설치 조건 모르고 사면 반품되는 경우",
+        "1등급제습기, 구형 vs 신형 체감 차이와 바꿀 시점"
+      ]
+    },
+    {
+      "keyword": "가열가습기",
+      "volume": 1470,
+      "grade": "1위가능",
+      "title": "가열가습기, 평수·인원별로 딱 맞는 용량 고르는 법",
+      "hook": "공간·인원 대비 용량",
+      "intent": "모델이 너무 많아 못 고르는 독자",
+      "alternatives": [
+        "가열가습기, 한 달 전기요금 실제 차이 계산해보니",
+        "가열가습기, 설치 조건 모르고 사면 반품되는 경우",
+        "가열가습기, 구형 vs 신형 체감 차이와 바꿀 시점"
+      ]
+    },
+    {
+      "keyword": "TV모니터",
+      "volume": 1420,
+      "grade": "1위가능",
+      "title": "TV모니터, 평수·인원별로 딱 맞는 용량 고르는 법",
+      "hook": "공간·인원 대비 용량",
+      "intent": "모델이 너무 많아 못 고르는 독자",
+      "alternatives": [
+        "TV모니터, 한 달 전기요금 실제 차이 계산해보니",
+        "TV모니터, 설치 조건 모르고 사면 반품되는 경우",
+        "TV모니터, 구형 vs 신형 체감 차이와 바꿀 시점"
+      ]
+    },
+    {
+      "keyword": "가벼운청소기",
+      "volume": 1350,
+      "grade": "상위가능",
+      "title": "가벼운청소기, 비용 항목별로 쪼개본 실제 견적",
+      "hook": "기본비·추가비 항목",
+      "intent": "견적이 맞는지 모르는 독자",
+      "alternatives": [
+        "가벼운청소기, 렌탈 vs 구매 3년 총비용 비교",
+        "가벼운청소기, 기사 부르기 전 직접 확인할 것"
+      ]
+    },
+    {
+      "keyword": "원룸건조기",
+      "volume": 1480,
+      "grade": "상위가능",
+      "title": "원룸건조기, 평수·인원별로 딱 맞는 용량 고르는 법",
+      "hook": "공간·인원 대비 용량",
+      "intent": "모델이 너무 많아 못 고르는 독자",
+      "alternatives": [
+        "원룸건조기, 한 달 전기요금 실제 차이 계산해보니",
+        "원룸건조기, 설치 조건 모르고 사면 반품되는 경우",
+        "원룸건조기, 구형 vs 신형 체감 차이와 바꿀 시점"
+      ]
+    },
+    {
+      "keyword": "지멘스인덕션",
+      "volume": 1390,
+      "grade": "상위가능",
+      "title": "지멘스인덕션, 평수·인원별로 딱 맞는 용량 고르는 법",
+      "hook": "공간·인원 대비 용량",
+      "intent": "모델이 너무 많아 못 고르는 독자",
+      "alternatives": [
+        "지멘스인덕션, 한 달 전기요금 실제 차이 계산해보니",
+        "지멘스인덕션, 설치 조건 모르고 사면 반품되는 경우",
+        "지멘스인덕션, 구형 vs 신형 체감 차이와 바꿀 시점"
+      ]
+    },
+    {
+      "keyword": "저소음제습기",
+      "volume": 1440,
+      "grade": "상위가능",
+      "title": "저소음제습기, 평수·인원별로 딱 맞는 용량 고르는 법",
+      "hook": "공간·인원 대비 용량",
+      "intent": "모델이 너무 많아 못 고르는 독자",
+      "alternatives": [
+        "저소음제습기, 한 달 전기요금 실제 차이 계산해보니",
+        "저소음제습기, 설치 조건 모르고 사면 반품되는 경우",
+        "저소음제습기, 구형 vs 신형 체감 차이와 바꿀 시점"
+      ]
+    },
+    {
+      "keyword": "스탠드형김치냉장고",
+      "volume": 1390,
+      "grade": "상위가능",
+      "title": "스탠드형김치냉장고, 평수·인원별로 딱 맞는 용량 고르는 법",
+      "hook": "공간·인원 대비 용량",
+      "intent": "모델이 너무 많아 못 고르는 독자",
+      "alternatives": [
+        "스탠드형김치냉장고, 구형 vs 신형 체감 차이와 바꿀 시점",
+        "스탠드형김치냉장고, 한 달 전기요금 실제 차이 계산해보니",
+        "스탠드형김치냉장고, 설치 조건 모르고 사면 반품되는 경우"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "collected_at": "2026-09-10T22:42:32.501Z",
+      "site": "gajun",
+      "domain": "gajun.kr",
+      "keyword": "전기레인지인덕션",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "8090581916",
+          "name": "키친아트 허브 인덕션 1구",
+          "price": 39900,
+          "priceFormatted": "39,900원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/49AiYXunSKK7mC6P41RWTNEzIIV_t5gHG0sTKK4p9SCPmx-_Y8V9Qh7m8bwDlSRp9vDgUjs2PPwNXGk49aTUI6pk4nwQyd9GfoeAY9PPEpPMqYdtx0NktF2sWrP4Cy4ddRcRMGV5sazqMv-Lp442RZv7AmXsze9ZYTZTfsL88krukvMDee_5G4faw-klrglSZ4pL26vts108aoFa28qTKji_3yhNFv_tKyqERbfu1vKpSn6OONvrxTj1CgCy2G-RqvAfGtUq4pIn1JuTyhlvWeZp_ULzJpiuBF0jyZOyLt76qSfN-VyXfduUCIh7x7slwwHpLR-JhCnWAm4nxtZNnR-rT9vzbpyQxl7v3lpBI-uh0ucCB7-sowu5y16yK8XQ1WkKgvB51uXKxR7sKm1RIKFm9Ym7IEk8fNdA4jixDX6J2WMrqcq3LeDrxMVI-lwtswfghmaaslsKmRfHXXTOWwoNe481sQHKbyI7LiyahJVtzhzES8Dq_smeF9fmwlnlxa1oMXdOG-Qio0nXJCBaRCK4Bza23fP47g4=",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=8090581916&itemId=25612665109&vendorItemId=93627150660&traceid=V0-153-a73fba33b149234f&requestid=20260911074231889303249310&token=31850C%7CMIXED&pt=0&slot=1",
+          "isRocket": true,
+          "isFreeShipping": false
+        },
+        {
+          "id": "8487607453",
+          "name": "쿠첸 IH BLACK 3400 3구 인덕션 방문설치",
+          "price": 279000,
+          "priceFormatted": "279,000원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/2ug1hV9Ldncu6aA-2uyQ6FXPJqhKltKpL7yO-LrNMgjw02rCvvGxqhH0PCYjY3DWnmKnSHbnyr5eshRcebUNkFVY6WbZgIi3azcZePB7WfGciYvz5J7Ld2SqSR3DF1w0v5tOXb6GbIwGZ9xvXxbo-iy-TE6_bWDwPZmayNRwTA4dyR-s6fUNrfIl6NkoyE7uog7PDUEWMArkPJqWmipZx6CasoEB0-fxPYwqoE12eXVAxhA9isXj0bY1jcVmqFv112Nb5Ncae-F7DEYJD8wgl5na7AfV2aZKTBp_jpZl8HHUgI1urgLzQ-wla88QfKCQC8qW9zGvO4FsQ7O5gag6IG9QAy9kgMcGJTwnHrrMrqqv8JQ9FWnlRm2osOAdEOEGgqFhEuL-KLQN8YCT95sezo590_osPOZSRQk-a9W_kvgcgqBAVH5owENnJc2aWEIBYiiGVIdYfcKLfGAxCIJ4gp0MP001-tueD02TH-JWHRuJWcqVIHu0oHUVY5AaoEUQpkS1WXbSzftsxCnz0e4s6kTT-iQO002tcJca",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=8487607453&itemId=25746973641&vendorItemId=92735304323&traceid=V0-153-a5dfd6155065e420&requestid=20260911074231889303249310&token=31850C%7CMIXED&pt=0&slot=2",
+          "isRocket": true,
+          "isFreeShipping": true
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-10T22:42:33.286Z",
+      "site": "gajun",
+      "domain": "gajun.kr",
+      "keyword": "1등급제습기",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "8791572921",
+          "name": "쿠첸 퓨어슬립 1등급 제습기 20L, CDH-EF200W",
+          "price": 270750,
+          "priceFormatted": "270,750원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/jdCHsNQ0RqP47uvpja5JmUaYgE_JgoEQFJ-rBIl_1f0d3pJ-SMuQWykbrrkbOn4z9--bp7XweTIJlMGcYL4p8Kq6xWtafSm44Xz4kyM7QhPRiIrXzR_pO3OgJw-8OxkR-3C7-EOEvpfLpjjs4v2HC10BFeMr63iutTepGM6KOWjkYdRDrnYV0ruyv6xVHbJkwcoR9QhHAlgnjxzjGRpROguwXHJKhlPMbIZNJdsIsaAdPlG-QRDDsKXD1PwvDhGCqDcUh8HaSaJgbrpf4MGMhqz_p_IH8ofBgX4AELb0U4HtpAjmjEuT_gX4_zhSiULPWcmc0Lfa6_9fpDaVj6CvkuHJCWuC3vH6EIdfxEEwWeIKF_ex9K-y3xK2kb1YZ7iJM8WyRSc_1hG8ybLC4Vp6TrDZ0fn9qR50XfrtWWgWWDj4MVehVcDH6iO_CrjtGPvlmxQ8aYirQXm1kBnos5luZfLQmZPT53D2l1pYhd2odQfr8Fqh_uC5p4tW98-Qhk-vECcsHe3CHhHrCFGGnBw=",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=8791572921&itemId=25589061236&vendorItemId=95349066418&traceid=V0-153-3bd705d0c03f92bb&clickBeacon=e981fbd0-ad68-11f1-89ad-5839df64c48e%7E3&requestid=20260911074233040237021046&token=31850C%7CMIXED&pt=1&slot=1",
+          "isRocket": true,
+          "isFreeShipping": false
+        },
+        {
+          "id": "9474141664",
+          "name": "대성셀틱 1등급 제습기 일19리터 가정용 저소음 원룸 미니 소형 제습기",
+          "price": 198940,
+          "priceFormatted": "198,940원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/oMYZd_1fFfQmkCXtoBQGf0iY9ycaNbh2KhmSH86l9rBGsKfGHairgAvKVxVek1_vLDMXecKvKguxhgQva0OxBD7LvzQpnO-KdueYxjI5Iq9WPkAiLNNOd97OlLzta-FZ3O5dqQXSsM5jxYcpmEvs19K30xIU8ysKNY9JWaURxJHW4I5pgBvOPMwtH6x9CoKBs_YJ4B8nYl4GxVhPy5cPkWiXgz2HxcbxqJqHfniF4HwzXGWqLkZBAJoYdFber0Lcxmin-RE5-cVzqSOJNBVxdst7vvNT5rfMohUico8dfBQZUeC0LVgsYMnsrtwLSeBiSl0l2iVmenvFOIs1XuYsdIs2aCao490r_JXjefKgLNlx0p5QWJJaJ32FwtXAoV_Wa5-be9_OgPDteH2dFIvoQbYuYgDjldJpAbUbfCd-Zy35qcqpoNlMyHHnjRSnYUa9sbe5k7n90PWiMSoXy5nDWMpGxFV6U4QYAqM0HYHiRcpZ2ufpPQaFmX14MegYwaJX7SwmQ5obm8OLzyg9aKtEAoMb02MT2MZMKZ65vRqMQK5r1Q2gIryGMig=",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=9474141664&itemId=28201709264&vendorItemId=95155997105&traceid=V0-153-fdc6a1eee9ae0848&requestid=20260911074233040237021046&token=31850C%7CMIXED&pt=0&slot=2",
+          "isRocket": true,
+          "isFreeShipping": false
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-10T22:42:34.034Z",
+      "site": "gajun",
+      "domain": "gajun.kr",
+      "keyword": "가열가습기",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "8389643072",
+          "name": "끌리젠 가열식 올스텐 대용량 가습기 6L, klz-hh01, 혼합색상",
+          "price": 298000,
+          "priceFormatted": "298,000원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/T9d1YdKVv4w703fPT18y2oBCj5rGvEtddAjbT6XbL6gNnWcL_WYHvHacOrnTiDKrUMVaJK1Qeu4ociYVH8D9ipr2SL9AFIxFmdOoLkUlRnvW-abt53fawI-Lrr02POM11rFWLEId5g3mqpW4Lxr6GIecBZCJIqWzwxmjmqrLnTP4-3xNmXnAgsQPqtl-fM7OO3WIm3qcY4Hlc6SL0Dgfs-P677QzvPZ_vPRd0_4DruDYdu6uti6NQfzFAoqXhvpAXFTn_3qSApGkhui04wTzV9_uLCk_1f29INarxNwHWsMeiOUq5bMrKheNhmfh0UuVF4emYK_q1t2O8KD4QDyGrQCwBzLS8itBKp8yRTbh0G7lYIe1NUn4QL-zgWsiHSN1HyRAgTi_9tyYKt7-GBEjDaxQlv0VB-BXhkjMt8EUSGmcWYanJiKwSBq4Y_1E0QCsvasPaSWfex_MNv1w6tqkaNb72YkMa4qUB6lYdikwYLQQFafCWmw1DhQ3CHtx6LpMydGGf6oHkjnWG9T8TB0u",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=8389643072&itemId=24250480043&vendorItemId=93255684713&traceid=V0-153-d0934d80111a7f8b&clickBeacon=e9fbe6c0-ad68-11f1-b65a-f4cb4325c56f%7E3&requestid=20260911074233827324763093&token=31850C%7CMIXED&pt=1&slot=1",
+          "isRocket": true,
+          "isFreeShipping": false
+        },
+        {
+          "id": "9058266545",
+          "name": "브리브 가열식 가습기 저소음 물멍 대용량 글라스 무드등 신생아 아기 가습기 4L",
+          "price": 98000,
+          "priceFormatted": "98,000원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/rP41Oy4gHfd8WuabrHa3v-l_ounMcIDpUsqt-ka2dZ-9-Oeov2owbX-jFJCvlAqbyynj7_uePnDNYXh6QEqueIuK2NlYMXh77j6Id3xgB8addNsDv_Op0adivQE4_kvmgdiZ3NNsBiYJVpmxOsgauCYI0n-wkZQTYd1gKEefgmU_WdBSZNsnuYXZT4AMnkXhEPGHJl_Wy14Dk79wvYt1qvagwwYLOVO0iJQ08XojeH1Pkbk7vrszKswZwvxGNykcd9dw3_d7FMTX9eIZojiQG9_XqCl6Btr_whM95sa6t9qHxK_Ob2l3chmVzS70UHzVw43obQ4O-FRd1DFf10QHk1We5XQDFNs_9Eg0EjW9rac9L7cUIuOBrIMLKpb0T91yOvUFRZ7c3U2oa4vXTrXfGOENy37UPwQ17tWnhcO0102-iXUZLJtncrUcGB-ZlNd5NLGHEKlySYEEY1Zhg3byRVOkW_C03ogSqoWmpZofbdQ64iuEyo0bsy-DeHYypDtzLaIYewd9a6FRk6xVHmHqiBuopvpRDtDJzaMT18aqx-J4UWUmd424pWiA",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=9058266545&itemId=26592448514&vendorItemId=93811945481&traceid=V0-153-82114426bdba5b70&requestid=20260911074233827324763093&token=31850C%7CMIXED&pt=0&slot=2",
+          "isRocket": false,
+          "isFreeShipping": true
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-10T22:42:34.501Z",
+      "site": "gajun",
+      "domain": "gajun.kr",
+      "keyword": "TV모니터",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "8461952163",
+          "name": "위드라이프 32인치 HD TV 대기업정품패널 에너지1등급 고화질티비, 81cm/32인치, WN321HD, 스탠드형, 고객직접설치",
+          "price": 112700,
+          "priceFormatted": "112,700원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/q6EXi5wR2pc9kJVJqzz5hDtQnw3rfV0VjG7vp7sfgvXvsuMFZfPFV0hFSUVMGiWtEo3KqJ-1e9v_2xKpwiLPG29t05PXvWMFZ-xRsKXj6AwdhIpDsoUfc6SQrdn7_rzRr3ZDHp3wobu-6jsQBDgUp3pVSG26mEx7VJzkSMvq3_oOBlgK6CVJteUtaMOUANXhUifnP53wuO0-PLiNnUzPPe0wU9QnUjZEAcN8pxEhrz8GNCF_U_NqQsufnSg54xqMgzPSNwLAhrPj7P-eFM0Wp-F3c6MBCKXLv7kT5nXfBxPSNQfxcfDqN35P5JhCH8dfhe6tASjZKJyWoAYay8o3K1CtbgdcJ5bIhLW3z1-KF0Y2xL9zsltdGcs6BcWjf1ZRjfNr97Oj2XbnSZNYPrCu_GnG0AXq9hTESZYBMaznW-EBiYA6Z7prB30vjL-OnpL8MnRq-_RvtxwJwU0robTiCrzhh-PzzyyitSk65gKOJLxNz8s9xHVbBSPuDtLT3A_sjwePtgM2vD9V4SUHCBmweRfEujQbZnXyAOtrsOtecQ==",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=8461952163&itemId=24480297620&vendorItemId=87749846237&traceid=V0-153-3093975c5d951517&clickBeacon=ea435000-ad68-11f1-aa9b-0e14e2564abb%7E3&requestid=20260911074234279170362101&token=31850C%7CMIXED&pt=1&slot=1",
+          "isRocket": true,
+          "isFreeShipping": false
+        },
+        {
+          "id": "1301437224",
+          "name": "와이드뷰 FHD LED TV",
+          "price": 112000,
+          "priceFormatted": "112,000원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/jgY3jo9t9yYvLpT2juLWOZFSTL0K8PniFata0SIuSnbaiD21EzTc1BrpfXqobba1b8--lTUJzhSoBoFzye1c7FXJLLZ1pPHXb4-44wPxKEEcLAVFozTjFbQ73ps53axuRgkn-CL5MVd_caI-C51gb026s9OLw9WaYZ1I6VfRv-Gcsf6phfWWSzztjETm2fRGemMuzGDsCVQA4nE_HL1h36tYJyig-UCEHNABszfN1A4i1sm_vUhqBFA6hkzCtu0ppGJtzrqDWpiylpEy5BNCovHgxCf3uL4-3yQM_3yza0rcoR6xmi4fhedOO-NXOJNHaV2qtKVwdfJrjd35jVA3xCzLSsMxmpCDe91TLaigjMxhewF4EJphsUq6OmEkOeBiFX31T7Zu7dKZasUath_IE_WFslfJHzOJpGOiI6yM5U31UMDEDGpVWK1xwBTe4Y85zx4npOSyX4s9WVSbABx-IXMMd-4GqfdG86F6umq5NrGw6Cav51ZjRLwB0B5noyXrUOu4jDtSKfgO86igw6rOh1o_-RcOwRbD4g==",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=1301437224&itemId=2315275446&vendorItemId=70312009223&traceid=V0-153-6367347baf5f6c06&requestid=20260911074234279170362101&token=31850C%7CMIXED&pt=0&slot=2",
+          "isRocket": true,
+          "isFreeShipping": false
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-10T22:42:34.982Z",
+      "site": "gajun",
+      "domain": "gajun.kr",
+      "keyword": "가벼운청소기",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "8323146542",
+          "name": "로켓 아토케어 더 심플 초경량 800g 핸디 BLDC 원터치 미니 소형 원룸 무선 청소기",
+          "price": 100530,
+          "priceFormatted": "100,530원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/0d1_UqwGnxP-mHc60abndPHWYiCa5Z85Hv09fcsbQa86AOjpc2zNBSlNGvIJ0slQNnQHt3WTBBof6ZxxXA3Yk6KKpbfXuG1szPvBrErV4tVHjObnY_hMrj1cT2Vb1i1rKi6C7XUG2pVWAgeJPoZF7kztHHK7DAiQD_kHaYyN6pWGrhhO_euqk5ef9IKBUr0lz0Z3FFvRd_yynLJWFYB_8QeetumLHT8z3fFN1C2dK9BihkQIUVS2KMpK5QA1tPWUtt7Z4nHTQhHYHSocFFa3CoJp0DTOGgq6PFJFdRwqyJWhzaR6W5D9pZZvLUSnW66_eV2VW8xsnQaLN2jVmZC-MmE11fKaIiq52dvW4v6VrNaHBvkzboopTDkijn82CoRbuDjZKO5s67HVGmWm4WQ-tsAeu0aJZZsjdOWkXXU5JfXXjbiwvBCFmreLn217NVz8KG9BYDZBHja9z1a5SyB8HAciUWwi6ddQSE6Fd11LfghoQt5oRm9y7IqNr0YpJZjWe5PHMPfYbjUoDjLOQApc95hFPypq1W3RYGptZHFHDQ==",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=8323146542&itemId=24025051004&vendorItemId=91045523572&traceid=V0-153-ec4a3208f59afec9&clickBeacon=ea8784f0-ad68-11f1-ba64-f3aad1b36aa7%7E3&requestid=20260911074234746258547522&token=31850C%7CMIXED&pt=1&slot=1",
+          "isRocket": true,
+          "isFreeShipping": false
+        },
+        {
+          "id": "4548468621",
+          "name": "클래파 DC모터 다용도 미니 핸디형 무선청소기",
+          "price": 39800,
+          "priceFormatted": "39,800원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/uiiADg-ZqZdMXNyOumwMWI0gnnG7qAlARcvdFeYYhDDifQzEMU8sUh2IOOiLBZ4oiRtQTuyqqeJmk6de-BBH_p8OG7OJ-rioH4QwAkxjzS0SjdanDlNCVeCZFzLZpgFAn-1Jh-pFD8dgK3lboHs4XJtKxz4noDhV7iK4Wd-_rw9PgB2b3cHIeMPa_EMYUvo-OTfAuwh_vv7Yi55kc3vA0qa99U9imx09CYIT4adjF0sMUo-AjWYbH7oo-MfyxRkg8ZmFpFgIwPv7xcLWdfSb262L1TTeEDNsR_aITSeXxawJh5Tyjxw_I3ZD-5Ql3LLjcdLEUkgb8nFBxdOcmivYdu3cuKJs9sCT7pgZ1K3vjHAhszdzOt0PdEMQvH2DYK5ktNtv8_Lz38qZUEXgsQuoXvzlgk_lvVHkC1RIYVioovXFsv_t9K_1cfvYqODpsjODu21LvRBa9Erk0UJVgS1USm4gWl87sV1RKJVm-2Z1f1uvbBR9Y5mSc5HCA1VW_XF3BFKjh1dI3tNLOwjccOm40AOV5gWo-cvvjnRgdj8Zueqj9qobKPgIY1Mb_A==",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=4548468621&itemId=13569079594&vendorItemId=80822526378&traceid=V0-153-72a25cb68e8007fa&requestid=20260911074234746258547522&token=31850C%7CMIXED&pt=0&slot=2",
+          "isRocket": true,
+          "isFreeShipping": false
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-10T22:42:35.631Z",
+      "site": "gajun",
+      "domain": "gajun.kr",
+      "keyword": "원룸건조기",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "8332811371",
+          "name": "한일전기 한일 UV살균 미니 의류건조기 5kg, HLD-5100W, 화이트",
+          "price": 359000,
+          "priceFormatted": "359,000원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/JqdQX4NTXvvlDKKoJizChZerVqq6I5vbM1F_4AeQE5Ut3r3lPAUWMue41g6Ks_iqT-sWnKKY0CX_8XrP657Q0ZVWSWViaX3EMGaLCr2X9hpORlevT-La3ssFnzHQP0uXKO0jJka3Oz7QEEgGckKIJXZHTG0LqBD5nAv6WReIEmV_zaLW3l1JrpduXGxGVH4uyeWeJnEoIk9_aAJ9nLABcwdf6RaM-vLf90K7grSHzxOtB6Z4PZN0aGLDU5VWWmy0VMQn-kaUsWAwj6ccoopfA1XoGVdZ4N_8IKl1dAt0V31_dHi5iyE9c47-Rn7iQDuojMXqA0oZxzjdYt9tWbAKqzBSy6PdTU8kKKf6LyhitoJhu97cANx3knJf6uJykG9GSwIp_BM-oKeTsX6SKcv55yOUCLz-aVgW-pEV9jfTn0LH2z8aTdYtKv0n5aEhLmKaaYJiWlcg2-9Z2V74QaW-QiFakuA-76oWTQYgjlTyOnP4g-r_D1Yx3mJwc0plnkZ7EsrICI5jXsGfHNlpN6Y=",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=8332811371&itemId=24058932389&vendorItemId=91347709248&traceid=V0-153-98af4053a058988a&clickBeacon=eaedc0d0-ad68-11f1-adde-d59e124c823a%7E3&requestid=20260911074235406303240526&token=31850C%7CMIXED&pt=1&slot=1",
+          "isRocket": true,
+          "isFreeShipping": false
+        },
+        {
+          "id": "8090724268",
+          "name": "위닉스 인버터 컴팩트 건조기 4kg 고객직접설치",
+          "price": 321390,
+          "priceFormatted": "321,390원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/hlOF41KdMPljAgbBhksPg9ZCe4N-3DcgdSleiPr0NnrT6VBBNA7rQmlmi25eeXDrbJdAwX7wogMmLrebsiH-BlHwrf5GjTjKM0NSIH0pSiJ6ihFSbQlrUeAMR55D7wD4LLZrkw4_LPCDQnchZBKgyajYQeTk-4-p2ww5YrYAqtRt9-52LfGJMTPR3LsIAg3tfANH0iFDOUHeA6RWm686uShkuIeko0FqBCL12pAJgF8csxPrsc9hepsgLn6od64PR0eiF6aOF2wnMWZlELsF_w-flwwcVp6MPyKXvTOlPupMWmcHnj6AitXk9eziijqf8G08fLU92SnV88AjqTkIkvMcvGpMX9jat8GmINs8Y_iAF7UY8AyW0VWp4hT9c-PpbDRdKuzMt1VqPDuJQfVK6XuoEGqDWBIWm_GWk_YP5Ps0mg7KYdLo5qZ0uuFaitNYZCQWn14wSCK38cZj94akt5mxxjpEH-XvlE2hzbvi9VmCwaQOQdpehwb621IAQ-7jgC2_H1ECcQj463S1GOs3Pgkw8BF3EVx4JBo=",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=8090724268&itemId=24880186317&vendorItemId=91886979841&traceid=V0-153-e7d7dbd94ea4b733&requestid=20260911074235406303240526&token=31850C%7CMIXED&pt=0&slot=2",
+          "isRocket": true,
+          "isFreeShipping": false
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-10T22:42:36.071Z",
+      "site": "gajun",
+      "domain": "gajun.kr",
+      "keyword": "지멘스인덕션",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "9537105425",
+          "name": "린나이 1등급 3구 인덕션 빌트인 초고화력 전기레인지 독일 쇼트상판, 빌트인, 자가설치",
+          "price": 369000,
+          "priceFormatted": "369,000원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/_4vnx47FzGLD8y9Z_5MHjJBsmhfThRVWwnkz47jVhpzHX0xAN5ftIKwdG9eZ5X7e1Z6oBGD09z2wnbj7a_O3vSCN87DjskyuMhVUNTwYZ9ptGUlvMUKD9DweC9cLRx8HDD4ZEUs80SJ-vcNT0l4B56KoFUBd33lHUsP3ThAOef5eEVwGWnTm0gs3O6_DMNcIPNPZ6oHi0LTp6kQCZSqBuEpvexTe2tZcoLTCYiRonV8HRtUSyVXnZE-reb55IcPGkR4N6HviRtJCevuAWrf9WiXqLmDTrdVBUxxLBWWyDyHHg5Fzxlz6lQKdB_qU-76cJSxWHds4HpA7-FTsKTGlivnBBAKhD3j5HHg9jDpSMkPmZh4Z2wq_dB2Ryv1C-QQuj6egbwv_cQ3geJkRVrifCqkqtOl6WMfZizxaLRHLnrTNfyHzk5jrTFq1gLCQo3L6P9_TKlz-izN91bDimywasQsSXqXnoZGJU4hB9dWmKJYN3MrjNE3NO6e_5O-C5qUGazr9vbZSCZGFlgwr3-QGyGH9N_8DY9fruXbpJ7mItHY=",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=9537105425&itemId=28446044533&vendorItemId=94093937263&traceid=V0-153-59b2b7c2eee9e9f4&clickBeacon=eb31ceb0-ad68-11f1-8ba2-beebf710ebf3%7E3&requestid=20260911074235859246947472&token=31850C%7CMIXED&pt=1&slot=1",
+          "isRocket": true,
+          "isFreeShipping": false
+        },
+        {
+          "id": "4591098966",
+          "name": "지멘스 인덕션 EH631BJB6E,28cm 확장형 대화구,직접납부,직접설치",
+          "price": 1109000,
+          "priceFormatted": "1,109,000원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/XLKtlDy8ZRisNP0dXPmNW13PynNaAmdnNgyjucua8H3LPuxhoJ0Uza5SrqSkgujxGWsGPE49zgdYHz2ERbPpOhRJnEGx18LbiepNiVlLxSip9heBttfr5DMYvBu7j1B86pmgtLQA2_HXyf5XHh4xXpfRXNyvsb2mizzw6w0uvtqSDA2dclv-_FXsCLe652P4_0PiPI7_cIoAeMqJSKO1i8ZvfDCVspHxpoaUU5FHto3e8pZ3gCGlutVnBdiSIQ2q7uTzS1zNThcijV9Y4bWtnMyIw9-LVUSOuK8hZxfhMN3C1LfXkNnoNSERpXVntD3GZC4xxnkl4V_ZHzHZh66r_e3PZNa3yWWeMI7T8usTyUZMLUJHvo1z33FdCQZHxWopi0Aug6vWm5WBMmKi237bACgrklMBiiQ6recn5TyE6kmCYDNhDZ7AWyObyIgF0IESZuSLAyPtGsLtTMsVq2M3WYoHi_i-I2Rjvrjg-_mzZfXqNwTNQ6_2epYCm2-XtPf3fUgugsgfQEyhlssA1dftV736_HvnR2XE_Jzd2Zl_67ecYlOVy0hK4_B_zw==",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=4591098966&itemId=5645770574&vendorItemId=92060459872&traceid=V0-153-b60195b42c64526a&requestid=20260911074235859246947472&token=31850C%7CMIXED&pt=0&slot=2",
+          "isRocket": false,
+          "isFreeShipping": false
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-10T22:42:36.579Z",
+      "site": "gajun",
+      "domain": "gajun.kr",
+      "keyword": "저소음제습기",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "9546099946",
+          "name": "몽트라드 12L 제습기 저소음 의류건조, MDF-3012L",
+          "price": 108000,
+          "priceFormatted": "108,000원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/IscMR9rhXUPss5mxIqtJD5fT7oXp1QuKnUcz6LV6q826O-lT3hJ_FTCmPnrDnUZyg4vIB4zrRpcIbSRuPkJdhhXxMMxrWPq04bcmKmyt3nj6pC4iNMF0IBnAk5zFCqZSklRqUwabN53c0B_Q8hx9ZFzetEaSiahq2UOvsvI02x8zQTpTtny6tvDphMxUDxJ949pnoeRLstVpZRyxH0j6wY-Keu7Itm7gJz6IxRu2ai4sqpRoAmAiKatIpgfV7xwuZEfoaww2Pv-Gj5fP7bYMMBBX6mWJb3yPl9Yiuh3OdD43gLqBaQdcP6iCPVvnCDEua6arGJ0PBXbxH8hbg8gH2oNVfYaMeNCIAX4EPyJ-8gx4R9xoJQJ2D5RH-7kbZWgYGqk3TEx5YK2kP6mf_69_uyB5roCGQcy4DPVnoyaDz3gQC30Y8TmNlybqu5mHdZkzmo6d4A2sZrtQQdscvUV4Gx5867IsyMyhVzoKOXmcANDJhAbcBs7M1kISqVMFVriGX4b-23QCj208cjGuhPIBGnCZHlI13u62T9K7Wh1v",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=9546099946&itemId=28479417927&vendorItemId=95429587712&traceid=V0-153-5da771ba131982d9&clickBeacon=eb7fa090-ad68-11f1-a8a9-e8b33d73d5d8%7E3&requestid=20260911074236331121426380&token=31850C%7CMIXED&pt=1&slot=1",
+          "isRocket": true,
+          "isFreeShipping": false
+        },
+        {
+          "id": "9442303907",
+          "name": "Qicco 저소음 12L 제습기 LM-CSJ-01",
+          "price": 119000,
+          "priceFormatted": "119,000원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/P4ZWnFDK7T9Q5_RtPycl3KxhjmEaH1wyP4Uk14YLYZIZGZnXwi1b9VjNHdei3zCnbR3rnNYI4KvGb8BUR1AhG75_yx12dIghAmluIeZo1qtzcny4RPiqTco8pW9uB7JNEpWa-8OregYP0HxlM2TMwZNYQGPYwQwnG-WO70FleBg2xyk1fvCZopyZ3I8xC1ByKgZcAgKR35Z0W5C7qdst1t7XRr4_OkiVMOjXWElsmz4-_3uQRU3JeVR54pDygo-EQtEIle1IoTAnmSljxpzawTHGEbaYaC_uAPqFqf6Ok_fkQvND0PVkkCsplIJmxjLQvjlRhM1DrA7KL053fJy607Szua_WZVe5gM025YVH4RoFyILm5M9c0vn5g3kDZhVcL7NfuTLaqF-QNR7QvoWk9-MoeciglCEgA1C4lBY42yps8o3ftZhNl_JploQwSyrnjv3zuz30pdtdsY3NPoYZDV6EQFELeO6NoLyRhqYFBslGxWY93540ftdYjdtrTDgbY31MfxIYKTSkwbEPuu_Xl9k_7uVhoa50UNAQZYHZXhTO5p8jmZHh7N5C",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=9442303907&itemId=28085160581&vendorItemId=95431948416&traceid=V0-153-096f840b8d9f203a&requestid=20260911074236331121426380&token=31850C%7CMIXED&pt=0&slot=2",
+          "isRocket": true,
+          "isFreeShipping": false
+        }
+      ]
+    },
+    {
+      "collected_at": "2026-09-10T22:42:37.049Z",
+      "site": "gajun",
+      "domain": "gajun.kr",
+      "keyword": "스탠드형김치냉장고",
+      "slug": null,
+      "internal": [],
+      "external": [],
+      "affiliate": [],
+      "coupang": [
+        {
+          "id": "9213082942",
+          "name": "풀무원건강생활 김치간 168L 1도어 스탠드형 김치냉장고 방문설치, 루미화이트, KS166EG1W1",
+          "price": 719000,
+          "priceFormatted": "719,000원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/uRiIjXyUcbFMiUbnuds68Vax3y2CyhQC6YhKP6GdJFCHOCV2G_pin5ax7Qsb4-tz8RpEdsqWqIIM3pakKSz-5fvCYQl_nkEgNS_h4CiSizQFJiRLxvyJN4hyBFsx0BceHbsJIjpk7gUU4WyCkvimGnlBYh4LPSrqrsYm4bRWdGAkVraAV7uwD6DXlD_CZwB49SiVIdQYXN9XzfS2Lg8-79fHHaIUiavPYHtJpZecL6k958UU7sWCX8gTFHoEyy4rN-IQxKV3X0bPlxj5kce7A-dqNtacjBVUD2_D0mpY4vNL7KYX8IujtoKhhrcOjkCA-DIbjzFG6pFtv11uMFCE0G-xBSTyblVdglWg6Mwf6kApcTuJ7bESlDscgdbPiGjwpkL1OfPTbb-hcYr5KxavPgpo7mPieYt2hYApOmoGGvZ1AIaHfvk2IC9reyB_XD_pjUj1GPfINWHFSuSG4iN_pc5rrDt5qXZicIX5qxkPWHl-0rjCmp4F4VCS_D34VCGL2c6VvNxhP6clx44VKm4=",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=9213082942&itemId=27217336244&vendorItemId=94184549048&traceid=V0-153-f98726164ca94fdc&clickBeacon=ebc694a0-ad68-11f1-ba50-dbaf1793fb64%7E3&requestid=20260911074236848291320204&token=31850C%7CMIXED&pt=1&slot=1",
+          "isRocket": false,
+          "isFreeShipping": true
+        },
+        {
+          "id": "9145532845",
+          "name": "LG전자 디오스 김치톡톡 3도어 327L 스탠드형 김치냉장고 방문설치",
+          "price": 1426400,
+          "priceFormatted": "1,426,400원",
+          "imageUrl": "https://ads-partners.coupang.com/image1/uOWaf7fcujkl5MXquKXwy8nFQHfApGuYpJcUs-G4Jad15prWcyOB83qGvZyCtwMSYDbtJrnzsylrSOi2mzcgWwVR-srhdpy3Cj75dKYCmwsMoLo75LMvgvg9mJynaK8d-nb2wnIMvb3h6DTSewk_0OwjzSdZpXKw4XvSCQsmVWZMW9-idPwr5FMG480TMu9BQxC8Fa8Z5PZtT8io_qGcTA1nPZ5kWKUzLEK0Pu50hN0zq5S1nWtIx_d3jVdPx0swHtwPsyZ9HcTy0Uljt9NfvmMJsoUJEmzDvsMzxNCnzWcnFP8LUmALmPcBoLhF-7gDHVlfDcCpnLrCnLBVhMErSAaZzxp6DVzhoV6sk0pF3UYeP6GPnOA5ciAlrK14Tewoul9FWPBLxICnfMTl3FCw5Q6mgnWi7XXDga2QC0Spry1_Wrlidkgu753yaelKVeDFy3oVV2KJ3E0dtSQqwkMameb3tNPeo_c5fpCJWCb3GGjbE7xPRnQIbAhwhB8GVnbOhnMef-YuuJ7paTE8Iunkv_Krg9xRihNLTSf2",
+          "url": "https://link.coupang.com/re/AFFSDP?lptag=AF5563346&subid=linkmgr&pageKey=9145532845&itemId=26924074730&vendorItemId=93893364873&traceid=V0-153-45cd23df5fcc4823&requestid=20260911074236848291320204&token=31850C%7CMIXED&pt=0&slot=2",
+          "isRocket": true,
+          "isFreeShipping": true
+        }
+      ]
+    }
+  ]
+}
