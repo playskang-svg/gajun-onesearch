@@ -1,0 +1,108 @@
+{
+  "site": "gajun",
+  "domain": "gajun.kr",
+  "checkedAt": "2026-09-11T22:40:24.438Z",
+  "engine": "naver",
+  "results": [
+    {
+      "keyword": "에어컨",
+      "hit": false
+    },
+    {
+      "keyword": "벽걸이에어컨",
+      "hit": false
+    },
+    {
+      "keyword": "스탠드에어컨",
+      "hit": false
+    },
+    {
+      "keyword": "시스템에어컨",
+      "hit": false
+    },
+    {
+      "keyword": "제습기",
+      "hit": false
+    },
+    {
+      "keyword": "가습기",
+      "hit": false
+    },
+    {
+      "keyword": "공기청정기",
+      "hit": false
+    },
+    {
+      "keyword": "냉장고",
+      "hit": false
+    },
+    {
+      "keyword": "김치냉장고",
+      "hit": false
+    },
+    {
+      "keyword": "정수기",
+      "hit": false
+    },
+    {
+      "keyword": "식기세척기",
+      "hit": false
+    },
+    {
+      "keyword": "인덕션",
+      "hit": false
+    },
+    {
+      "keyword": "전기레인지",
+      "hit": false
+    },
+    {
+      "keyword": "electric오븐",
+      "hit": false
+    },
+    {
+      "keyword": "전자레인지",
+      "hit": false
+    },
+    {
+      "keyword": "세탁기",
+      "hit": false
+    },
+    {
+      "keyword": "드럼세탁기",
+      "hit": false
+    },
+    {
+      "keyword": "통돌이세탁기",
+      "hit": false
+    },
+    {
+      "keyword": "건조기",
+      "hit": false
+    },
+    {
+      "keyword": "의류관리기",
+      "hit": false
+    },
+    {
+      "keyword": "스타일러",
+      "hit": false
+    },
+    {
+      "keyword": "TV",
+      "hit": false
+    },
+    {
+      "keyword": "OLEDTV",
+      "hit": false
+    },
+    {
+      "keyword": "QLEDTV",
+      "hit": false
+    },
+    {
+      "keyword": "사운드바",
+      "hit": false
+    }
+  ]
+}
