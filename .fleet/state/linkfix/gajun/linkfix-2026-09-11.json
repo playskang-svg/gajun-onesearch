@@ -1,0 +1,41 @@
+{
+  "site": "gajun",
+  "label": "가전비교연구소",
+  "domain": "gajun.kr",
+  "repo": "playskang-svg/gajun-onesearch",
+  "scannedAt": "2026-09-11T01:13:28.056Z",
+  "pagesCrawled": 45,
+  "sitemapUrls": 45,
+  "externalChecked": 2,
+  "summary": {
+    "low": 1
+  },
+  "occurrences": 1,
+  "findings": [
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/privacy",
+      "href": "https://www.aboutads.info/choices",
+      "status": 429,
+      "error": null,
+      "note": "429 — 일시적일 수 있어 다음 회차에 다시 본다"
+    }
+  ],
+  "detail": {},
+  "autoFixable": [
+    "dead-anchor",
+    "empty-href",
+    "javascript-void",
+    "placeholder-url",
+    "http-to-https",
+    "double-slash"
+  ],
+  "reportOnly": [
+    "dead-external-link",
+    "external-unreachable",
+    "orphan-page",
+    "redirect-chain",
+    "noindex"
+  ]
+}
