@@ -1,0 +1,43 @@
+# 수동 배포 전용 워크플로 — agents-*.yml(중앙 템플릿 관리) 대상이 아닙니다.
+#
+# agents-release.yml은 배포 전에 자체 키워드 재고(.fleet/queue)에서 새 글을
+# 하나 뽑아 함께 발행합니다. 그래서 "지금 main에 이미 merge된 내용만" 그대로
+# 빌드해서 올리고 싶을 때는 맞지 않습니다 — 이 워크플로는 재고를 건드리지 않고
+# main을 그대로 빌드해 배포만 합니다. Actions 탭에서 수동으로만 실행됩니다.
+name: deploy-manual (가전비교연구소)
+
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: gajun-deploy-manual
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: 의존성 설치
+        run: npm ci
+
+      - name: 타입검사
+        run: npx tsc --noEmit
+
+      - name: 빌드
+        run: node scripts/gen-index.mjs && vite build && node scripts/build-content.mjs
+
+      - name: 배포 (wrangler)
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: npx wrangler deploy
