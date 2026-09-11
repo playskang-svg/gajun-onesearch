@@ -11,6 +11,15 @@ export interface GuidePost {
 
 export const GUIDE_POSTS: GuidePost[] = [
   {
+    "slug": "washer-smell-remove",
+    "title": "세탁기 냄새 제거, 원인 세 가지 구별법과 상황별 해결 순서",
+    "summary": "세탁기 냄새는 원인에 따라 해결법이 전혀 다릅니다. 곰팡이·세제 찌꺼기·하수구 역류 중 무엇인지 구별하는 법부터, 지금 당장 할 일과 재발 방지 습관까지 질문 순서대로 정리했습니다.",
+    "category": "washer",
+    "categoryName": "세탁기·건조기",
+    "keyword": "세탁기냄새제거",
+    "date": "2026.09.11"
+  },
+  {
     "slug": "tv-oled-vs-qled",
     "title": "OLED 번인 현상과 수명, QLED와의 실사용 차이와 거실 조도별 선택 기준",
     "summary": "OLED의 완벽한 블랙과 무한대 명암비는 압도적이지만, 고정 화면에서 생기는 번인 우려가 여전합니다. 백라이트 방식의 QLED와의 물리적 차이와 거실 채광에 맞춘 선택법을 정리했습니다.",
@@ -296,7 +305,7 @@ export const GUIDE_CATEGORIES = [
     "id": "washer",
     "name": "세탁기·건조기",
     "desc": "세탁조 세척, 쉰내, 먼지 관리와 수명",
-    "count": 7
+    "count": 8
   },
   {
     "id": "aircon",
