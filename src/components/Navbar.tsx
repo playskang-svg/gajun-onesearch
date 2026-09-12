@@ -100,7 +100,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 className="px-2.5 2xl:px-3 py-2 rounded-lg text-sm font-bold whitespace-nowrap transition flex items-center gap-1.5 text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200"
               >
                 <BookOpen className="w-4 h-4 text-emerald-600" />
-                <span>가전 상식</span>
+                <span>가전 꿀팁</span>
               </a>
 
               <button
@@ -284,7 +284,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             className="px-3.5 py-2 text-xs sm:text-sm font-bold rounded-full whitespace-nowrap transition flex items-center gap-1.5 min-h-[38px] bg-emerald-600 text-white hover:bg-emerald-700 shrink-0"
           >
             <BookOpen className="w-3.5 h-3.5" />
-            <span>가전 상식</span>
+            <span>가전 꿀팁</span>
           </a>
           <span className="w-px h-6 bg-gray-300 shrink-0" aria-hidden="true"></span>
           {CATEGORIES.map((cat) => {
@@ -357,7 +357,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                       <div className="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0">
                         <BookOpen className="w-4 h-4" />
                       </div>
-                      <span>가전 상식</span>
+                      <span>가전 꿀팁</span>
                     </div>
                     <ArrowRight className="w-4 h-4 text-emerald-600 shrink-0" />
                   </a>
@@ -538,7 +538,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Drawer Footer with Legal & Policy Shortcuts */}
             <div className="p-4 border-t border-gray-100 bg-gray-50 text-xs text-gray-500 space-y-3">
               <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 text-xs font-semibold text-gray-600">
-                <a href="/guide/" className="hover:text-blue-600 text-blue-600 font-bold">가전 상식(31편)</a>
+                <a href="/guide/" className="hover:text-blue-600 text-blue-600 font-bold">가전 꿀팁(31편)</a>
                 <span>•</span>
                 {onOpenPolicy ? (
                   <>
