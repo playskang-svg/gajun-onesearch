@@ -191,13 +191,13 @@ function header(activeCat) {
   ).join('');
   return `
 <div class="topbar"><div class="wrap wide">
-  <span class="t"><b>가전 상식</b> 사용설명서와 공개 자료로 확인한 가전 관리·수명 정보</span>
+  <span class="t"><b>가전 꿀팁</b> 사용설명서와 공개 자료로 확인한 가전 관리·수명 정보</span>
   <span class="meta">제조사 공개 사양 기준</span>
 </div></div>
 <header class="site"><div class="wrap wide">
   <a class="brand" href="/">${esc(SITE.name)}<span>${esc(SITE.tagline)}</span></a>
   <nav class="main">
-    <a href="/guide/"${activeCat === 'hub' ? ' style="color:#2563eb;background:#eff6ff"' : ''}>가전 상식</a>
+    <a href="/guide/"${activeCat === 'hub' ? ' style="color:#2563eb;background:#eff6ff"' : ''}>가전 꿀팁</a>
     <a href="/">스펙 비교</a>
     <a href="/guide/about/">사이트 소개</a>
   </nav>
@@ -212,7 +212,7 @@ function footer() {
 <footer><div class="wrap wide">
   <div class="notice">${esc(SITE.affiliateNotice)}</div>
   <div class="fnav">
-    <a href="/guide/">가전 상식</a>
+    <a href="/guide/">가전 꿀팁</a>
     <a href="/">스펙 비교</a>
     <a href="/guide/about/">사이트 소개</a>
     <a href="/guide/privacy/">개인정보처리방침</a>

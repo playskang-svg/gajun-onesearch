@@ -220,7 +220,7 @@ export const BuyingGuidesView: React.FC<BuyingGuidesViewProps> = ({
                 }`}
               >
                 <BookOpen className="w-4 h-4" />
-                <span>가전 상식 백과 ({GUIDE_POSTS.length}편)</span>
+                <span>가전 꿀팁 백과 ({GUIDE_POSTS.length}편)</span>
               </button>
               <button
                 onClick={() => setActiveMode('reports')}
@@ -344,7 +344,7 @@ export const BuyingGuidesView: React.FC<BuyingGuidesViewProps> = ({
               <div className="p-4 bg-slate-900 text-white rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div className="space-y-1 text-center sm:text-left">
                   <div className="font-black text-sm sm:text-base">
-                    가전 상식 백과 웹 표준 독립 허브 (구글 검색엔진 최적화)
+                    가전 꿀팁 백과 웹 표준 독립 허브 (구글 검색엔진 최적화)
                   </div>
                   <p className="text-xs text-slate-400">
                     광고 없는 정적 HTML 문서로 인쇄하거나 즐겨찾기에 등록해 언제든 열어보실 수 있습니다.
