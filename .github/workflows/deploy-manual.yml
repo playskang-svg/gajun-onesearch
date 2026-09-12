@@ -34,7 +34,10 @@ jobs:
         run: npx tsc --noEmit
 
       - name: 빌드
-        run: node scripts/gen-index.mjs && vite build && node scripts/build-content.mjs
+        # package.json의 build 스크립트(gen-index → vite build → build-content)를
+        # 그대로 재사용. bare `vite build`는 node_modules/.bin이 PATH에 없어
+        # "command not found"로 실패하므로 npm run을 통해 호출해야 함.
+        run: npm run build
 
       - name: 배포 (wrangler)
         env:
