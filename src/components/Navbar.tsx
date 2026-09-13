@@ -14,6 +14,7 @@ import {
 } from 'lucide-react';
 import { CategoryId } from '../types';
 import { CATEGORIES } from '../data/products';
+import { GUIDE_POSTS } from '../data/guideIndex';
 
 export type NavTabType = 'explore' | 'compare' | 'finder' | 'guides' | 'ai' | 'sales';
 
@@ -538,7 +539,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Drawer Footer with Legal & Policy Shortcuts */}
             <div className="p-4 border-t border-gray-100 bg-gray-50 text-xs text-gray-500 space-y-3">
               <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1.5 text-xs font-semibold text-gray-600">
-                <a href="/guide/" className="hover:text-blue-600 text-blue-600 font-bold">가전 꿀팁(31편)</a>
+                <a href="/guide/" className="hover:text-blue-600 text-blue-600 font-bold">가전 꿀팁({GUIDE_POSTS.length}편)</a>
                 <span>•</span>
                 {onOpenPolicy ? (
                   <>

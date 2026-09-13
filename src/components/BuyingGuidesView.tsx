@@ -204,11 +204,11 @@ export const BuyingGuidesView: React.FC<BuyingGuidesViewProps> = ({
             </h1>
             <p className="text-sm text-gray-600 leading-relaxed">
               제조사의 광고 문구 대신 사용설명서와 공개된 시험 기준 자료를 근거로 정리했습니다. 
-              냄새, 고장 징후, 소음, 전기요금 계산법까지 31편의 알짜 지식을 투명하게 공개합니다.
+              냄새, 고장 징후, 소음, 전기요금 계산법까지 {GUIDE_POSTS.length}편의 알짜 지식을 투명하게 공개합니다.
             </p>
           </div>
 
-          {/* Mode Tabs: Encyclopedia (31) vs Reports (8) */}
+          {/* Mode Tabs: Encyclopedia (GUIDE_POSTS.length) vs Reports (BUYING_GUIDES.length) */}
           <div className="flex items-center justify-center">
             <div className="bg-gray-100 p-1.5 rounded-2xl flex items-center gap-1 w-full max-w-md shadow-inner">
               <button

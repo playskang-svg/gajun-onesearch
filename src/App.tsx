@@ -545,7 +545,7 @@ export default function App() {
           {/* Legal & Compliance Policy Links (Google AdSense 필수 승인 요건) */}
           <div className="pt-4 border-t border-gray-100 flex flex-wrap items-center justify-between gap-3 text-xs">
             <div className="flex items-center gap-3 sm:gap-4 flex-wrap text-gray-700 font-bold">
-              <a href="/guide/" className="text-blue-600 hover:underline">가전 꿀팁 백과 (31편)</a>
+              <a href="/guide/" className="text-blue-600 hover:underline">가전 꿀팁 백과 (42편)</a>
               <span className="text-gray-300">|</span>
               <button onClick={() => handleOpenPolicy('about')} className="hover:text-blue-600 cursor-pointer">사이트 소개 (About)</button>
               <span className="text-gray-300">|</span>

@@ -11,6 +11,96 @@ export interface GuidePost {
 
 export const GUIDE_POSTS: GuidePost[] = [
   {
+    "slug": "air-styler-guide",
+    "title": "에어스타일러, 세탁이 아니라 살균·건조 기기인 이유",
+    "summary": "스타일러는 세탁기를 대신하는 기기가 아닙니다. 뜨거운 스팀과 바람으로 옷의 냄새와 구김, 세균을 줄여주는 관리 기기라는 점을 알면 실제로 필요한지 판단하기 쉽습니다.",
+    "category": "washer",
+    "categoryName": "세탁기·건조기",
+    "keyword": "에어스타일러",
+    "date": "2026.09.13"
+  },
+  {
+    "slug": "energy-grade1-aircon",
+    "title": "1등급에어컨, 비싼 만큼 전기요금이 줄어들까",
+    "summary": "1등급 에어컨은 가격이 더 비쌉니다. 그 차액을 전기요금 절감으로 회수하려면 얼마나 오래, 얼마나 자주 써야 하는지가 관건입니다.",
+    "category": "aircon",
+    "categoryName": "에어컨",
+    "keyword": "1등급에어컨",
+    "date": "2026.09.13"
+  },
+  {
+    "slug": "daewoo-aircon-guide",
+    "title": "대우에어컨, AS와 부품 수급부터 확인하세요",
+    "summary": "대우 브랜드 에어컨을 고려한다면 가격보다 먼저 AS 서비스센터 위치와 부품 수급 상황을 확인하는 것이 안전합니다.",
+    "category": "aircon",
+    "categoryName": "에어컨",
+    "keyword": "대우에어컨",
+    "date": "2026.09.13"
+  },
+  {
+    "slug": "mini-fridge-guide",
+    "title": "작은냉장고, 1인 가구라면 몇 리터가 맞을까",
+    "summary": "소형 냉장고는 용량만 보고 고르면 막상 자취방에서 좁게 느껴지거나, 반대로 냉동실이 부족할 수 있습니다. 생활 패턴에 맞춰 용량을 고르는 기준을 정리했습니다.",
+    "category": "fridge",
+    "categoryName": "냉장고",
+    "keyword": "작은냉장고",
+    "date": "2026.09.13"
+  },
+  {
+    "slug": "low-noise-dehumidifier",
+    "title": "저소음제습기, 데시벨 숫자보다 먼저 볼 것",
+    "summary": "제품에 적힌 데시벨(dB) 숫자만 보고 고르면 실망하기 쉽습니다. 어떤 모드에서 측정한 값인지, 압축기 소음까지 포함된 값인지가 실제 체감을 좌우합니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "저소음제습기",
+    "date": "2026.09.13"
+  },
+  {
+    "slug": "energy-grade1-dehumidifier",
+    "title": "1등급제습기, 어떤 기준으로 매겨질까",
+    "summary": "제습기의 에너지 소비효율 등급은 제습량 대비 소비전력으로 매겨집니다. 등급만 보지 말고 우리 집에 필요한 제습량을 먼저 정하는 순서가 맞습니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "1등급제습기",
+    "date": "2026.09.13"
+  },
+  {
+    "slug": "tv-as-monitor-guide",
+    "title": "TV를 모니터로 쓸 수 있을까, 확인할 3가지",
+    "summary": "연결은 대부분 문제없이 됩니다. 다만 글자 선명도, 반응 속도, 눈 거리라는 세 가지를 확인하지 않으면 막상 써보고 후회하기 쉽습니다.",
+    "category": "tv",
+    "categoryName": "TV·영상가전",
+    "keyword": "TV모니터",
+    "date": "2026.09.13"
+  },
+  {
+    "slug": "cordless-car-vacuum-guide",
+    "title": "무선차량청소기, 흡입력보다 먼저 봐야 할 조건",
+    "summary": "차량청소기는 숫자로 표시된 흡입력만 비교하면 실패하기 쉽습니다. 좁은 좌석 틈과 매트를 실제로 청소할 수 있는지가 더 중요한 기준입니다.",
+    "category": "cleaner",
+    "categoryName": "청소기·로봇청소기",
+    "keyword": "무선차량청소기",
+    "date": "2026.09.13"
+  },
+  {
+    "slug": "electric-range-vs-induction",
+    "title": "전기레인지와 인덕션, 같은 제품이 아닙니다",
+    "summary": "두 제품 모두 상판이 평평하고 불꽃이 없어 비슷해 보이지만, 가열 방식이 다르기 때문에 쓸 수 있는 냄비와 예열 속도가 완전히 달라집니다.",
+    "category": "kitchen",
+    "categoryName": "주방가전",
+    "keyword": "전기레인지인덕션",
+    "date": "2026.09.13"
+  },
+  {
+    "slug": "siemens-induction-guide",
+    "title": "지멘스 인덕션, 국내 브랜드와 다른 점",
+    "summary": "지멘스 인덕션은 화구 배치나 터치 조작 방식이 국내 브랜드와 다른 경우가 많습니다. 구매 전에는 AS 접근성과 국내 주방 규격 호환 여부를 함께 확인하세요.",
+    "category": "kitchen",
+    "categoryName": "주방가전",
+    "keyword": "지멘스인덕션",
+    "date": "2026.09.13"
+  },
+  {
     "slug": "washer-smell-remove",
     "title": "세탁기 냄새 제거, 원인 세 가지 구별법과 상황별 해결 순서",
     "summary": "세탁기 냄새는 원인에 따라 해결법이 전혀 다릅니다. 곰팡이·세제 찌꺼기·하수구 역류 중 무엇인지 구별하는 법부터, 지금 당장 할 일과 재발 방지 습관까지 질문 순서대로 정리했습니다.",
@@ -305,37 +395,37 @@ export const GUIDE_CATEGORIES = [
     "id": "washer",
     "name": "세탁기·건조기",
     "desc": "세탁조 세척, 쉰내, 먼지 관리와 수명",
-    "count": 8
+    "count": 9
   },
   {
     "id": "aircon",
     "name": "에어컨",
     "desc": "청소, 냄새, 물 떨어짐, 설치·전기요금",
-    "count": 7
+    "count": 9
   },
   {
     "id": "fridge",
     "name": "냉장고",
     "desc": "적정 온도, 정리, 수명과 전기요금",
-    "count": 4
+    "count": 5
   },
   {
     "id": "tv",
     "name": "TV·영상가전",
     "desc": "OLED/QLED 번인 방지, 시청거리별 인치 계산과 화질",
-    "count": 2
+    "count": 3
   },
   {
     "id": "cleaner",
     "name": "청소기·로봇청소기",
     "desc": "물걸레 쉰내 방지, 배터리 수명 연장과 필터 관리",
-    "count": 2
+    "count": 3
   },
   {
     "id": "kitchen",
     "name": "주방가전",
     "desc": "식기세척기 물얼룩, 인덕션 상판 탄자국, 오븐 청소",
-    "count": 3
+    "count": 5
   },
   {
     "id": "digital",
@@ -347,6 +437,6 @@ export const GUIDE_CATEGORIES = [
     "id": "common",
     "name": "가전 공통 상식",
     "desc": "효율등급, 소비전력, 고르는 기준",
-    "count": 4
+    "count": 6
   }
 ];
