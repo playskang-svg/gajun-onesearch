@@ -85,7 +85,7 @@ jobs:
 
       - name: 빌드
         if: steps.rel.outputs.released > 0
-        run: node scripts/gen-index.mjs && vite build && node scripts/build-content.mjs
+        run: node scripts/gen-index.mjs && npx vite build && node scripts/build-content.mjs
 
       - name: 발행 커밋
         id: commit
