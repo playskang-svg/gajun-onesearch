@@ -11,6 +11,15 @@ export interface GuidePost {
 
 export const GUIDE_POSTS: GuidePost[] = [
   {
+    "slug": "induction-capacity-guide",
+    "title": "전기레인지인덕션, 평수·인원별로 딱 맞는 용량 고르는 법",
+    "summary": "2구·3구·빌트인까지 모델이 너무 많아 고르기 어렵다면 구 수부터 정하지 마세요. 조리 인원과 평수로 필요한 화구 수를 정한 뒤, 전용 회선과 차단기 용량으로 설치 가능 여부를 걸러내는 순서를 정리했습니다.",
+    "category": "kitchen",
+    "categoryName": "주방가전",
+    "keyword": "전기레인지인덕션",
+    "date": "2026.09.14"
+  },
+  {
     "slug": "air-styler-guide",
     "title": "에어스타일러, 세탁이 아니라 살균·건조 기기인 이유",
     "summary": "스타일러는 세탁기를 대신하는 기기가 아닙니다. 뜨거운 스팀과 바람으로 옷의 냄새와 구김, 세균을 줄여주는 관리 기기라는 점을 알면 실제로 필요한지 판단하기 쉽습니다.",
@@ -88,7 +97,7 @@ export const GUIDE_POSTS: GuidePost[] = [
     "summary": "두 제품 모두 상판이 평평하고 불꽃이 없어 비슷해 보이지만, 가열 방식이 다르기 때문에 쓸 수 있는 냄비와 예열 속도가 완전히 달라집니다.",
     "category": "kitchen",
     "categoryName": "주방가전",
-    "keyword": "전기레인지인덕션",
+    "keyword": "전기레인지",
     "date": "2026.09.13"
   },
   {
@@ -425,7 +434,7 @@ export const GUIDE_CATEGORIES = [
     "id": "kitchen",
     "name": "주방가전",
     "desc": "식기세척기 물얼룩, 인덕션 상판 탄자국, 오븐 청소",
-    "count": 5
+    "count": 6
   },
   {
     "id": "digital",
