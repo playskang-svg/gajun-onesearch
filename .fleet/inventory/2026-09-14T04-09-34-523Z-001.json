@@ -1,0 +1,16 @@
+{
+  "site": "gajun",
+  "label": "가전비교연구소",
+  "domain": "gajun.kr",
+  "title": "전기레인지인덕션, 평수·인원별로 딱 맞는 용량 고르는 법",
+  "slug": null,
+  "keyword": "전기레인지인덕션",
+  "createdAt": "2026-09-14T04:09:34.528Z",
+  "createdOn": "b296cd61208af9ddb819bc48fb02449b7bab7bf0",
+  "files": [
+    "content/posts-kitchen.mjs",
+    "index.html",
+    "src/data/guideIndex.ts"
+  ],
+  "patch": "2026-09-14T04-09-34-523Z-001.patch"
+}
