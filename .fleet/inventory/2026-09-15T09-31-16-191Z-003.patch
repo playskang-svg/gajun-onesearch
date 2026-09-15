@@ -29,7 +29,7 @@ index d2b1df2..065b22a 100644
      {
        q: '전자레인지에 호일이나 금속 그릇을 넣고 스팀 청소하면 어떻게 되나요?',
 diff --git a/content/posts-kitchen.mjs b/content/posts-kitchen.mjs
-index 9e82d8b..3f5b023 100644
+index f9220ca..f2650df 100644
 --- a/content/posts-kitchen.mjs
 +++ b/content/posts-kitchen.mjs
 @@ -125,37 +125,81 @@ export const kitchenPosts = [
@@ -37,7 +37,7 @@ index 9e82d8b..3f5b023 100644
      slug: 'electric-range-vs-induction',
      category: 'kitchen',
 -    date: '2026.09.13',
--    keywords: ['전기레인지인덕션', '전기레인지', '인덕션차이'],
+-    keywords: ['전기레인지', '인덕션차이', '하이라이트인덕션'],
 -    title: '전기레인지와 인덕션, 같은 제품이 아닙니다',
 +    date: '2026.09.15',
 +    keywords: ['인덕션하이라이트차이', '인덕션하이라이트', '하이라이트인덕션', '전기레인지인덕션', '전기레인지', '인덕션차이'],
