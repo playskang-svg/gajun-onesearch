@@ -1,0 +1,15 @@
+{
+  "site": "gajun",
+  "label": "가전비교연구소",
+  "domain": "gajun.kr",
+  "title": "인덕션 하이라이트 차이, 쓰던 냄비와 설치 조건으로 갈리는 선택 기준",
+  "slug": "electric-range-vs-induction",
+  "keyword": "인덕션하이라이트차이",
+  "createdAt": "2026-09-15T09:24:40.685Z",
+  "createdOn": "787efc1cf8a97f52f700f651e75afbdf8adbea6b",
+  "files": [
+    "content/faqs.mjs",
+    "content/posts-kitchen.mjs"
+  ],
+  "patch": "2026-09-15T09-24-40-681Z-001.patch"
+}
