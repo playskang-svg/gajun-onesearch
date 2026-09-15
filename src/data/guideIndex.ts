@@ -56,6 +56,15 @@ export const GUIDE_POSTS: GuidePost[] = [
     "date": "2026.09.15"
   },
   {
+    "slug": "dehumidifier-air-purifier-combo",
+    "title": "제습기 공기청정기 겸용, 하나로 되는 집과 따로 사야 하는 집",
+    "summary": "겸용 제품은 공간을 아끼는 대신 가동 조건이 겹치지 않는다는 구조적 한계가 있습니다. 평수와 놓을 자리, 사계절 가동 여부로 겸용과 분리를 가르는 기준과 사양표에서 확인할 숫자를 정리했습니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "제습기공기청정기",
+    "date": "2026.09.15"
+  },
+  {
     "slug": "soundbar-guide",
     "title": "TV 스피커만으로 부족했다면, 사운드바 필요성과 고르는 기준",
     "summary": "TV가 얇아질수록 내장 스피커가 들어갈 공간은 줄어듭니다. 대사가 잘 안 들리거나 저음이 밋밋하게 느껴진다면 스펙 문제가 아니라 구조적인 한계일 수 있습니다.",
@@ -536,6 +545,6 @@ export const GUIDE_CATEGORIES = [
     "id": "common",
     "name": "가전 공통 상식",
     "desc": "효율등급, 소비전력, 고르는 기준",
-    "count": 10
+    "count": 11
   }
 ];
