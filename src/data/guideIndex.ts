@@ -11,6 +11,105 @@ export interface GuidePost {
 
 export const GUIDE_POSTS: GuidePost[] = [
   {
+    "slug": "kimchi-fridge-type-guide",
+    "title": "김치냉장고 뚜껑형 vs 스탠드형, 김장철 전에 정하는 기준",
+    "summary": "온도와 모드를 다루기 전에, 구조부터 정해야 합니다. 뚜껑형과 스탠드형은 저장력과 꺼내기 편의성에서 정반대 장단점을 갖고 있어 주방 동선에 따라 선택이 갈립니다.",
+    "category": "fridge",
+    "categoryName": "냉장고",
+    "keyword": "뚜껑형김치냉장고",
+    "date": "2026.09.15"
+  },
+  {
+    "slug": "humidifier-types-guide",
+    "title": "가습기 종류 4가지, 초음파·가열식·기화식·복합식 뭐가 다를까",
+    "summary": "가습기는 물을 공기 중으로 내보내는 방식에 따라 네 갈래로 나뉩니다. 방식마다 위생 관리 난이도와 전기요금, 소음이 다르므로 사기 전에 원리부터 알아야 후회가 적습니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "가습기종류",
+    "date": "2026.09.15"
+  },
+  {
+    "slug": "humidifier-hygiene",
+    "title": "가습기 안 씻고 그냥 트셨다면, 매일 청소해야 하는 이유",
+    "summary": "가습기 물통에 남은 물은 하루만 지나도 세균이 번식하기 좋은 환경이 됩니다. 방치된 가습기가 그 세균을 공기 중으로 그대로 내보낼 수 있다는 점에서 관리 주기는 선택이 아닙니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "가습기청소",
+    "date": "2026.09.15"
+  },
+  {
+    "slug": "humidifier-humidity-placement",
+    "title": "가습기 습도 40%? 60%? 방마다 다른 이유와 놓는 위치",
+    "summary": "적정 습도는 공간의 용도에 따라 다릅니다. 습도계 없이 감으로 틀면 과습으로 곰팡이를 부르거나, 반대로 효과 없이 전기만 쓰는 경우가 흔합니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "가습기적정습도",
+    "date": "2026.09.15"
+  },
+  {
+    "slug": "mini-humidifier-guide",
+    "title": "미니가습기, 사무실·차량에서 효과 있을까 — 용량별 실사용 기준",
+    "summary": "미니가습기는 넓은 방 전체를 채우는 용도가 아니라 책상 반경처럼 좁은 개인 공간을 겨냥한 보조 가전입니다. 용량별로 체감되는 범위가 다릅니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "미니가습기",
+    "date": "2026.09.15"
+  },
+  {
+    "slug": "dehumidifier-air-purifier-combo",
+    "title": "제습기 공기청정기 겸용, 하나로 되는 집과 따로 사야 하는 집",
+    "summary": "겸용 제품은 공간을 아끼는 대신 가동 조건이 겹치지 않는다는 구조적 한계가 있습니다. 평수와 놓을 자리, 사계절 가동 여부로 겸용과 분리를 가르는 기준과 사양표에서 확인할 숫자를 정리했습니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "제습기공기청정기",
+    "date": "2026.09.15"
+  },
+  {
+    "slug": "soundbar-guide",
+    "title": "TV 스피커만으로 부족했다면, 사운드바 필요성과 고르는 기준",
+    "summary": "TV가 얇아질수록 내장 스피커가 들어갈 공간은 줄어듭니다. 대사가 잘 안 들리거나 저음이 밋밋하게 느껴진다면 스펙 문제가 아니라 구조적인 한계일 수 있습니다.",
+    "category": "tv",
+    "categoryName": "TV·영상가전",
+    "keyword": "사운드바",
+    "date": "2026.09.15"
+  },
+  {
+    "slug": "vacuum-type-guide",
+    "title": "로봇청소기·무선청소기·물걸레청소기, 우리집엔 뭐가 맞을까",
+    "summary": "세 가지는 서로 대체하는 관계가 아니라 역할이 다른 도구입니다. 집 구조와 생활 패턴에 따라 하나만으로 충분한 집이 있고, 두 가지를 함께 써야 편한 집이 있습니다.",
+    "category": "cleaner",
+    "categoryName": "청소기·로봇청소기",
+    "keyword": "로봇청소기추천",
+    "date": "2026.09.15"
+  },
+  {
+    "slug": "water-purifier-rental-vs-buy",
+    "title": "정수기 렌탈 vs 구매, 5년 기준으로 계산해보니",
+    "summary": "렌탈료엔 필터 교체와 정기 점검이 포함되고, 구매는 초기 비용이 크지만 장기로 보면 다를 수 있습니다. 어느 쪽이 유리한지는 사용 기간과 셀프 관리 의향에 달려 있습니다.",
+    "category": "kitchen",
+    "categoryName": "주방가전",
+    "keyword": "정수기렌탈",
+    "date": "2026.09.15"
+  },
+  {
+    "slug": "water-purifier-filter-hygiene",
+    "title": "정수기 필터 교체 주기 놓치면 생기는 일, 직수형·저수조형 차이",
+    "summary": "필터는 정수기의 소모품입니다. 교체 주기를 넘기면 정수력이 떨어지는 데 그치지 않고 필터 자체가 오염원이 될 수 있습니다.",
+    "category": "kitchen",
+    "categoryName": "주방가전",
+    "keyword": "정수기필터교체",
+    "date": "2026.09.15"
+  },
+  {
+    "slug": "dishwasher-capacity-guide",
+    "title": "식기세척기 6인용 vs 12인용, 빌트인 앞두고 헷갈리는 선택 기준",
+    "summary": "인용수는 식구 수를 그대로 뜻하지 않습니다. 국제 표준 세팅 기준 표시라 냄비·프라이팬을 넣으면 표시된 인용수보다 실제로 들어가는 양이 적습니다.",
+    "category": "kitchen",
+    "categoryName": "주방가전",
+    "keyword": "식기세척기6인용",
+    "date": "2026.09.15"
+  },
+  {
     "slug": "induction-capacity-guide",
     "title": "전기레인지인덕션, 평수·인원별로 딱 맞는 용량 고르는 법",
     "summary": "2구·3구·빌트인까지 모델이 너무 많아 고르기 어렵다면 구 수부터 정하지 마세요. 조리 인원과 평수로 필요한 화구 수를 정한 뒤, 전용 회선과 차단기 용량으로 설치 가능 여부를 걸러내는 순서를 정리했습니다.",
@@ -416,25 +515,25 @@ export const GUIDE_CATEGORIES = [
     "id": "fridge",
     "name": "냉장고",
     "desc": "적정 온도, 정리, 수명과 전기요금",
-    "count": 5
+    "count": 6
   },
   {
     "id": "tv",
     "name": "TV·영상가전",
     "desc": "OLED/QLED 번인 방지, 시청거리별 인치 계산과 화질",
-    "count": 3
+    "count": 4
   },
   {
     "id": "cleaner",
     "name": "청소기·로봇청소기",
     "desc": "물걸레 쉰내 방지, 배터리 수명 연장과 필터 관리",
-    "count": 3
+    "count": 4
   },
   {
     "id": "kitchen",
     "name": "주방가전",
     "desc": "식기세척기 물얼룩, 인덕션 상판 탄자국, 오븐 청소",
-    "count": 6
+    "count": 9
   },
   {
     "id": "digital",
@@ -446,6 +545,6 @@ export const GUIDE_CATEGORIES = [
     "id": "common",
     "name": "가전 공통 상식",
     "desc": "효율등급, 소비전력, 고르는 기준",
-    "count": 6
+    "count": 11
   }
 ];
