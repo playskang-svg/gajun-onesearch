@@ -402,6 +402,14 @@ export const washerPosts = [
   <div class="bt">참고</div>
   <p style="margin:0">수리비와 부품 보유 기간은 제조사·모델·지역에 따라 다릅니다. 실제 견적은 공식 서비스센터에서 모델명으로 확인하시기 바랍니다.</p>
 </div>
+
+<h2>교체로 결론 났다면</h2>
+<p>수리비 40% 기준을 넘겨 교체를 결정했다면, 이번 기회에 세탁+건조를 한 번에 해결하는 것도 방법입니다. <a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=linkmgr&amp;pageKey=8574563430&amp;itemId=24846366292&amp;vendorItemId=91853508689&amp;traceid=V0-153-402b15f609da4b5b&amp;clickBeacon=ff91ace0-ac0f-11f1-a8ad-f332d6cf1051%7E3&amp;requestid=20260909143333694204771900&amp;token=31850C%7CMIXED&amp;pt=1&amp;slot=1" target="_blank" rel="nofollow sponsored noopener">12kg+8kg 건조겸용 드럼세탁기</a>는 76만 원대, 대용량 <a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=linkmgr&amp;pageKey=7360629428&amp;itemId=18962994717&amp;vendorItemId=86088854738&amp;traceid=V0-153-86dc7683f7655b37&amp;requestid=20260909143333694204771900&amp;token=31850C%7CMIXED&amp;pt=0&amp;slot=3" target="_blank" rel="nofollow sponsored noopener">24kg+20kg 세탁기+건조기 세트</a>는 200만 원대 초반입니다. 세탁기만 단독으로 교체할지, 이 기회에 건조기까지 묶을지는 위에서 계산한 수리비 대비 손익 기준과 함께 따져보세요. 가격과 재고는 수시로 바뀌므로 구매 시점에 직접 확인하세요.</p>
+
+<div class="box">
+  <div class="bt">고지</div>
+  <p style="margin:0">이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다. 수수료는 제품 평가 내용에 영향을 주지 않으며, 가격과 재고는 수시로 변동되므로 구매 시점에 직접 확인하시기 바랍니다.</p>
+</div>
 `,
   },
 
@@ -457,6 +465,14 @@ export const washerPosts = [
 <div class="box warn">
   <div class="bt">참고</div>
   <p style="margin:0">수리비·보증 조건은 제조사와 모델에 따라 다릅니다. 정확한 내용은 공식 서비스센터에서 확인하시기 바랍니다.</p>
+</div>
+
+<h2>독립형 건조기만 교체하는 경우</h2>
+<p>세탁기는 멀쩡한데 건조기만 수명이 다했다면 소형·미니 건조기로 대체하는 방법도 있습니다. <a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=linkmgr&amp;pageKey=8332811371&amp;itemId=24058932389&amp;vendorItemId=91347709248&amp;traceid=V0-153-98af4053a058988a&amp;clickBeacon=07281e80-ac10-11f1-96de-509c1bc520e8%7E3&amp;requestid=20260909143346402198952033&amp;token=31850C%7CMIXED&amp;pt=1&amp;slot=1" target="_blank" rel="nofollow sponsored noopener">5kg UV살균 미니건조기</a>는 35만 원대이고, 더 작은 3kg대 모델은 27만 원대까지 내려갑니다. 1~2인 가구가 세탁기와 별도로 건조기만 놓는 자리에 적당한 크기이며, 가격과 재고는 수시로 바뀌므로 구매 시점에 직접 확인하세요.</p>
+
+<div class="box">
+  <div class="bt">고지</div>
+  <p style="margin:0">이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다. 수수료는 제품 평가 내용에 영향을 주지 않으며, 가격과 재고는 수시로 변동되므로 구매 시점에 직접 확인하시기 바랍니다.</p>
 </div>
 `,
   },
