@@ -11,6 +11,96 @@ export interface GuidePost {
 
 export const GUIDE_POSTS: GuidePost[] = [
   {
+    "slug": "baby-washer-guide",
+    "title": "아기세탁기 따로 사야 할까, 살균 세탁 기준으로 판단하기",
+    "summary": "아기 옷을 어른 옷과 같이 빨아도 되는지 고민하는 분들을 위해, 별도 세탁기가 필요한 경우와 기존 세탁기로 충분한 경우를 나눠 정리했습니다.",
+    "category": "washer",
+    "categoryName": "세탁기·건조기",
+    "keyword": "아기세탁기",
+    "date": "2026.09.16"
+  },
+  {
+    "slug": "washer-capacity-10kg-vs-12kg",
+    "title": "세탁기 10kg vs 12kg, 가족 수 아니라 이불 빨래 기준으로 골라야",
+    "summary": "세탁기 용량은 가족 인원수로 단순 계산하기 쉽지만, 실제 체감 차이는 이불이나 패딩처럼 부피가 큰 빨래를 얼마나 자주 돌리는지에서 갈립니다.",
+    "category": "washer",
+    "categoryName": "세탁기·건조기",
+    "keyword": "세탁기10KG",
+    "date": "2026.09.16"
+  },
+  {
+    "slug": "air-styler-electricity-cost",
+    "title": "스타일러 전기요금, 하루 한 번 돌리면 한 달에 얼마",
+    "summary": "스타일러는 24시간 켜두는 가전이 아니라 필요할 때만 짧게 돌리는 기기입니다. 전기요금이 부담스러운 수준인지 계산 방법과 함께 정리했습니다.",
+    "category": "washer",
+    "categoryName": "세탁기·건조기",
+    "keyword": "스타일러전기요금",
+    "date": "2026.09.16"
+  },
+  {
+    "slug": "mini-kimchi-fridge-necessity",
+    "title": "1인가구 김치냉장고, 굳이 따로 사야 할까",
+    "summary": "이미 작은 냉장고가 있는 1인 가구라면 김치냉장고를 또 들이는 게 맞는지 고민됩니다. 일반 냉장고 채소칸으로 대신할 수 있는 경우와 아닌 경우를 나눠봤습니다.",
+    "category": "fridge",
+    "categoryName": "냉장고",
+    "keyword": "김치냉장고소형",
+    "date": "2026.09.16"
+  },
+  {
+    "slug": "commercial-fridge-at-home",
+    "title": "업소용냉장고, 가정에서 써도 될까 — 가정용과 다른 점",
+    "summary": "업소용냉장고는 대용량에 가격도 저렴해 보여 가정에서 쓰려는 경우가 있습니다. 하지만 설계 목적 자체가 달라 미리 확인해야 할 차이가 있습니다.",
+    "category": "fridge",
+    "categoryName": "냉장고",
+    "keyword": "업소용냉장고",
+    "date": "2026.09.16"
+  },
+  {
+    "slug": "humidifier-newborn-safety",
+    "title": "신생아가습기 고를 때, 브랜드보다 먼저 볼 인증 기준",
+    "summary": "아기방 가습기는 디자인이나 브랜드가 아니라 안전 인증과 위생 관리 편의성으로 먼저 걸러야 합니다. 확인할 표시와 구조를 정리했습니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "신생아가습기",
+    "date": "2026.09.16"
+  },
+  {
+    "slug": "tv-size-price-guide",
+    "title": "TV 인치별 가격대, 65·75·85인치 살 때 예산 기준 잡는 법",
+    "summary": "몇 인치가 맞는지는 시청거리로 정하더라도, 실제 구매는 예산이 갈립니다. 인치가 올라갈 때 가격이 어떤 요인으로 뛰는지 정리했습니다.",
+    "category": "tv",
+    "categoryName": "TV·영상가전",
+    "keyword": "65인치TV",
+    "date": "2026.09.16"
+  },
+  {
+    "slug": "vacuum-spec-reading",
+    "title": "청소기 흡입력 단위, Pa·AW·W 뭐가 다르고 뭘 봐야 하나",
+    "summary": "제조사마다 다른 단위로 흡입력을 표시해 숫자만으로는 비교가 안 됩니다. 단위별로 무엇을 재는 값인지 알아야 스펙표를 제대로 읽을 수 있습니다.",
+    "category": "cleaner",
+    "categoryName": "청소기·로봇청소기",
+    "keyword": "진공청소기",
+    "date": "2026.09.16"
+  },
+  {
+    "slug": "steam-vs-mop-vacuum",
+    "title": "스팀청소기와 물걸레청소기, 살균 원리부터 다르다",
+    "summary": "둘 다 바닥을 닦는 기기로 보이지만 물을 데우느냐 아니냐에서 갈립니다. 살균력과 사용 용도가 다르므로 목적에 맞게 골라야 합니다.",
+    "category": "cleaner",
+    "categoryName": "청소기·로봇청소기",
+    "keyword": "스팀청소기",
+    "date": "2026.09.16"
+  },
+  {
+    "slug": "handheld-vacuum-role",
+    "title": "핸디청소기, 메인 청소기 대신 차 안·소파에서만 써도 될까",
+    "summary": "핸디청소기는 바닥 전체를 청소하는 기기가 아니라 좁고 손이 닿기 힘든 자리를 위한 보조 기기입니다. 메인 청소기의 대체재로 기대하면 만족도가 떨어집니다.",
+    "category": "cleaner",
+    "categoryName": "청소기·로봇청소기",
+    "keyword": "핸디청소기",
+    "date": "2026.09.16"
+  },
+  {
     "slug": "kimchi-fridge-type-guide",
     "title": "김치냉장고 뚜껑형 vs 스탠드형, 김장철 전에 정하는 기준",
     "summary": "온도와 모드를 다루기 전에, 구조부터 정해야 합니다. 뚜껑형과 스탠드형은 저장력과 꺼내기 편의성에서 정반대 장단점을 갖고 있어 주방 동선에 따라 선택이 갈립니다.",
@@ -80,6 +170,15 @@ export const GUIDE_POSTS: GuidePost[] = [
     "category": "cleaner",
     "categoryName": "청소기·로봇청소기",
     "keyword": "로봇청소기추천",
+    "date": "2026.09.15"
+  },
+  {
+    "slug": "electric-range-vs-induction",
+    "title": "인덕션 하이라이트 차이, 쓰던 냄비와 설치 조건으로 갈리는 선택 기준",
+    "summary": "인덕션과 하이라이트는 이름만 다른 비슷한 제품이 아니라 열을 만드는 위치가 다른 기기입니다. 쓰던 냄비를 그대로 쓸지, 전용 회로 공사를 감수할지, 뚝배기를 올릴지에 따라 답이 갈립니다. 조건별 선택 기준과 전기요금을 직접 계산하는 방법을 정리했습니다.",
+    "category": "kitchen",
+    "categoryName": "주방가전",
+    "keyword": "인덕션하이라이트차이",
     "date": "2026.09.15"
   },
   {
@@ -188,15 +287,6 @@ export const GUIDE_POSTS: GuidePost[] = [
     "category": "cleaner",
     "categoryName": "청소기·로봇청소기",
     "keyword": "무선차량청소기",
-    "date": "2026.09.13"
-  },
-  {
-    "slug": "electric-range-vs-induction",
-    "title": "전기레인지와 인덕션, 같은 제품이 아닙니다",
-    "summary": "두 제품 모두 상판이 평평하고 불꽃이 없어 비슷해 보이지만, 가열 방식이 다르기 때문에 쓸 수 있는 냄비와 예열 속도가 완전히 달라집니다.",
-    "category": "kitchen",
-    "categoryName": "주방가전",
-    "keyword": "전기레인지",
     "date": "2026.09.13"
   },
   {
@@ -503,7 +593,7 @@ export const GUIDE_CATEGORIES = [
     "id": "washer",
     "name": "세탁기·건조기",
     "desc": "세탁조 세척, 쉰내, 먼지 관리와 수명",
-    "count": 9
+    "count": 12
   },
   {
     "id": "aircon",
@@ -515,19 +605,19 @@ export const GUIDE_CATEGORIES = [
     "id": "fridge",
     "name": "냉장고",
     "desc": "적정 온도, 정리, 수명과 전기요금",
-    "count": 6
+    "count": 8
   },
   {
     "id": "tv",
     "name": "TV·영상가전",
     "desc": "OLED/QLED 번인 방지, 시청거리별 인치 계산과 화질",
-    "count": 4
+    "count": 5
   },
   {
     "id": "cleaner",
     "name": "청소기·로봇청소기",
     "desc": "물걸레 쉰내 방지, 배터리 수명 연장과 필터 관리",
-    "count": 4
+    "count": 7
   },
   {
     "id": "kitchen",
@@ -545,6 +635,6 @@ export const GUIDE_CATEGORIES = [
     "id": "common",
     "name": "가전 공통 상식",
     "desc": "효율등급, 소비전력, 고르는 기준",
-    "count": 11
+    "count": 12
   }
 ];
