@@ -280,7 +280,7 @@ export const PRODUCTS: Product[] = [
     "salesRank": 2,
     "bestSeller": true,
     "releaseYear": 2026,
-    "buyUrl": "https://lpweb.kr/click.php?m=thehyundai&a=A100702444&l=9999&l_cd1=3&l_cd2=0&tu=https%3A%2F%2Fwww.thehyundai.com%2FFD%2Fdp%2FdptCategory.do%3FsectId%3D103",
+    "buyUrl": "https://www.thehyundai.com/FD/dp/dptCategory.do?sectId=103",
     "mallName": "현대백화점 더현대닷컴",
     "mallSaleBadge": "H.Point 15만점 적립",
     "isDepartmentSale": true
@@ -356,7 +356,7 @@ export const PRODUCTS: Product[] = [
     "salesRank": 3,
     "bestSeller": true,
     "releaseYear": 2026,
-    "buyUrl": "https://lpweb.kr/click.php?m=ssg&a=A100702444&l=9999&l_cd1=3&l_cd2=0&tu=https%3A%2F%2Fwww.ssg.com%2Fdisp%2Fcategory.ssg%3FctgId%3D6000092881",
+    "buyUrl": "https://www.ssg.com/disp/category.ssg?ctgId=6000092881",
     "mallName": "신세계몰 SSG.COM",
     "mallSaleBadge": "12% 전용할인쿠폰",
     "isDepartmentSale": true
@@ -508,7 +508,7 @@ export const PRODUCTS: Product[] = [
     "salesRank": 5,
     "bestSeller": false,
     "releaseYear": 2026,
-    "buyUrl": "https://lpweb.kr/click.php?m=etland&a=A100702444&l=9999&l_cd1=3&l_cd2=0&tu=https%3A%2F%2Fwww.etland.co.kr%2Fkor%2Fdisplay%2Fcategory.do%3Fdisp_no%3D1011000000",
+    "buyUrl": "https://www.etland.co.kr/kor/display/category.do?disp_no=1011000000",
     "mallName": "전자랜드",
     "mallSaleBadge": "최대 36개월 무이자",
     "isDepartmentSale": true
