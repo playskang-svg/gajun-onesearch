@@ -11,6 +11,11 @@ fi
 
 cd "$CLAUDE_PROJECT_DIR"
 
+# Async: let the session start immediately while deps install in the
+# background. Trade-off vs. sync: faster session start, at the cost of a
+# race if Claude runs lint/build before npm install finishes.
+echo '{"async": true, "asyncTimeout": 300000}'
+
 # npm install is idempotent and reuses the lockfile (package-lock.json);
 # it also updates node_modules in place if the lockfile changed, which
 # plays well with the container-state cache.
