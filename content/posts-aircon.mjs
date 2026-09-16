@@ -420,6 +420,14 @@ export const airconPosts = [
   <div class="bt">참고</div>
   <p style="margin:0">추가 비용 항목과 기본 설치 범위는 제조사·판매처·설치 업체에 따라 다릅니다. 구매 전 판매처에 기본 설치 범위를 문서로 확인하시기 바랍니다.</p>
 </div>
+
+<h2>평형별 가격 감을 먼저 잡아두면 견적 비교가 쉬워집니다</h2>
+<p>원룸이나 방 하나에 다는 <a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=linkmgr&amp;pageKey=7188832765&amp;itemId=18145772315&amp;vendorItemId=85296130827&amp;traceid=V0-153-645ee7f050cf684a&amp;clickBeacon=ff9cf780-ac0f-11f1-b5dd-8cc8dd0f1c25%7E3&amp;requestid=20260909143333797251763006&amp;token=31850C%7CMIXED&amp;pt=1&amp;slot=1" target="_blank" rel="nofollow sponsored noopener">5.7평형 벽걸이 에어컨(일반배관형)</a>은 40만 원 안팎이며, 거실까지 커버하는 10평형대로 올라가면 본체 값 자체가 50만 원대로 뛰어오릅니다. 이 차이는 위 표의 배관·타공 조건과 별개로 제품 값에서부터 벌어지는 부분이라, 견적을 받을 때 이 가격대를 기준점으로 두면 과다 청구 여부를 가늠하기 쉽습니다. 가격과 재고는 수시로 바뀌므로 구매 시점에 직접 확인하세요.</p>
+
+<div class="box">
+  <div class="bt">고지</div>
+  <p style="margin:0">이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다. 수수료는 제품 평가 내용에 영향을 주지 않으며, 가격과 재고는 수시로 변동되므로 구매 시점에 직접 확인하시기 바랍니다.</p>
+</div>
 `,
   },
 
@@ -446,6 +454,13 @@ export const airconPosts = [
 
 <h2>결론적으로 확인해야 할 것</h2>
 <p>등급만 보지 말고, 우리 집에 필요한 냉방 용량(평형)을 먼저 정한 뒤 그 용량 안에서 등급별 가격과 소비전력을 비교하는 순서가 정확합니다. 사용 시간이 길수록 1등급의 이점이 커진다는 점을 기준으로 판단하세요.</p>
+
+<p>참고로 인버터 방식 자체가 정속형보다 에너지 소비효율 등급에서 유리한 경우가 많습니다. <a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=linkmgr&amp;pageKey=9397567149&amp;itemId=27911534062&amp;vendorItemId=94870227850&amp;traceid=V0-153-6617f83b13ffa7d1&amp;requestid=20260909143333797251763006&amp;token=31850C%7CMIXED&amp;pt=0&amp;slot=3" target="_blank" rel="nofollow sponsored noopener">LG 인버터 휘센 벽걸이 에어컨(5.7평형)</a> 같은 제품의 판매 페이지에서 에너지 소비효율 라벨의 월간 소비전력량 표시를 실제로 비교해보면 등급 표기가 어떤 기준으로 매겨지는지 감을 잡기 쉽습니다. 이 글을 쓴 시점의 판매가는 59만 원 안팎이었고, 가격과 재고는 수시로 바뀌므로 구매 시점에 직접 확인하세요.</p>
+
+<div class="box">
+  <div class="bt">고지</div>
+  <p style="margin:0">이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다. 수수료는 제품 평가 내용에 영향을 주지 않으며, 가격과 재고는 수시로 변동되므로 구매 시점에 직접 확인하시기 바랍니다.</p>
+</div>
 `,
   },
 

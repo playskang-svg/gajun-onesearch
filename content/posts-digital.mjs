@@ -36,6 +36,14 @@ export const digitalPosts = [
   <div class="bt">침대나 이불 위에서 노트북을 쓰지 마세요</div>
   <p style="margin:0">이불이나 무릎 위에 노트북을 올려두면 푹신한 섬유가 바닥 흡기구를 밀폐시켜 온도가 90℃를 넘어갑니다. 이는 CPU 성능을 강제로 떨어뜨리는 서멀 쓰로틀링과 메인보드 납땜 크랙의 1등 원인입니다. 반드시 단단한 테이블이나 거치대 위에서 쓰세요.</p>
 </div>
+
+<h2>이미 배터리가 부풀었다면 교체 시점</h2>
+<p>하판이 눈에 띄게 들뜨거나 배터리 성능 상태가 이미 "서비스 권장"으로 표시된다면 설정을 아무리 조정해도 되돌릴 수 없고, 부풀어 오른 파우치는 눌리면 발화 위험이 있어 자가 분해보다 교체가 먼저입니다. 배터리 보호 모드를 처음부터 지원하는 <a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=linkmgr&amp;pageKey=9311781498&amp;itemId=27634996654&amp;vendorItemId=94341787943&amp;traceid=V0-153-b11f1ba419a61e20&amp;clickBeacon=efb528b0-ac0f-11f1-84e0-83e6034d29ca%7E3&amp;requestid=20260909143307105153424316&amp;token=31850C%7CMIXED&amp;pt=1&amp;slot=1" target="_blank" rel="nofollow sponsored noopener">LG 그램 15 코어Ultra5</a>는 LG Smart Assistant의 80% 제한 기능이 기본 내장되어 있으며, 이 글을 쓴 시점의 판매가는 230만 원대 초반이었습니다. 예산을 낮춰 사무용으로만 쓸 계획이라면 <a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=linkmgr&amp;pageKey=9471973483&amp;itemId=28193732145&amp;vendorItemId=95148174228&amp;traceid=V0-153-c3a76ee08a46b9f1&amp;clickBeacon=efb528b0-ac0f-11f1-bbc2-c86d34018566%7E3&amp;requestid=20260909143307105153424316&amp;token=31850C%7CMIXED&amp;pt=1&amp;slot=2" target="_blank" rel="nofollow sponsored noopener">베이직북 16 프로</a> 같은 라이젠 노트북도 107만 원 안팎에 있습니다. 가격과 재고는 수시로 바뀌므로 구매 시점에 직접 확인하세요.</p>
+
+<div class="box">
+  <div class="bt">고지</div>
+  <p style="margin:0">이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다. 수수료는 제품 평가 내용에 영향을 주지 않으며, 가격과 재고는 수시로 변동되므로 구매 시점에 직접 확인하시기 바랍니다.</p>
+</div>
 `,
   },
   {
@@ -71,6 +79,14 @@ export const digitalPosts = [
 
 <h2>블루라이트 차단 필터의 진실</h2>
 <p>화면을 지나치게 누렇게 만드는 블루라이트 차단 앱은 색상 왜곡을 불러와 오히려 그래픽 작업이나 영상 감상 시 눈을 찌푸리게 만듭니다. 가장 중요한 것은 <strong>50분 작업 후 5분간 6m 먼 곳을 바라보는 20-20-20 휴식 규칙</strong>과 적절한 실내 간접 조명(모니터 뒤편 백라이트 바) 설치입니다.</p>
+
+<h2>기존 모니터가 60Hz 고정 패널이라면</h2>
+<p>설정을 바꿔도 144Hz 옵션 자체가 뜨지 않는다면 패널 스펙이 60Hz로 고정된 제품이라는 뜻이라 교체가 유일한 해법입니다. <a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=linkmgr&amp;pageKey=8548561064&amp;itemId=24407399545&amp;vendorItemId=90066002765&amp;traceid=V0-153-7697136d44038b64&amp;clickBeacon=07f1fe30-ac10-11f1-9cd8-f50c17cec4a9%7E3&amp;requestid=20260909143347737293668573&amp;token=31850C%7CMIXED&amp;pt=1&amp;slot=1" target="_blank" rel="nofollow sponsored noopener">LG 울트라기어 24GS50F</a>처럼 144Hz를 기본 지원하는 보급형 게이밍 모니터는 20만 원대 초반이면 구할 수 있어, 지금 쓰는 모니터보다 오히려 저렴하게 바꾸는 경우도 흔합니다. 27인치 이상 대화면을 원한다면 같은 가격대에서 인치수만 비교해봐도 충분히 후보를 좁힐 수 있습니다. 가격과 재고는 수시로 바뀌므로 구매 시점에 직접 확인하세요.</p>
+
+<div class="box">
+  <div class="bt">고지</div>
+  <p style="margin:0">이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다. 수수료는 제품 평가 내용에 영향을 주지 않으며, 가격과 재고는 수시로 변동되므로 구매 시점에 직접 확인하시기 바랍니다.</p>
+</div>
 `,
   },
 ];
