@@ -26,8 +26,10 @@ export default {
       return new Response(null, { headers: corsHeaders });
     }
 
-    // SEO Canonical Domain: Redirect www.gajun.kr or any other host to https://gajun.kr (301 Permanent)
-    if (url.hostname !== 'gajun.kr' && !url.hostname.includes('localhost') && !url.hostname.endsWith('.workers.dev')) {
+    // SEO Canonical Domain + HTTPS: redirect http:// or any non-canonical host to https://gajun.kr (301 Permanent)
+    const isLocal = url.hostname.includes('localhost') || url.hostname.endsWith('.workers.dev');
+    if (!isLocal && (url.protocol !== 'https:' || url.hostname !== 'gajun.kr')) {
+      url.protocol = 'https:';
       url.hostname = 'gajun.kr';
       return Response.redirect(url.toString(), 301);
     }
