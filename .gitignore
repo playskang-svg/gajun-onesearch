@@ -6,6 +6,7 @@ dist/
 
 # Environment variables & secrets
 .env*
+!.env.example
 .dev.vars*
 
 # Cloudflare Wrangler state
