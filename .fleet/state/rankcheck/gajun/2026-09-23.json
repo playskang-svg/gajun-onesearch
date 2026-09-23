@@ -1,0 +1,108 @@
+{
+  "site": "gajun",
+  "domain": "gajun.kr",
+  "checkedAt": "2026-09-23T22:59:48.200Z",
+  "engine": "naver",
+  "results": [
+    {
+      "keyword": "에어컨",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "벽걸이에어컨",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "스탠드에어컨",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "시스템에어컨",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "제습기",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "가습기",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "공기청정기",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "냉장고",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "김치냉장고",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "정수기",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "식기세척기",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "인덕션",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "전기레인지",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "electric오븐",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "전자레인지",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "세탁기",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "드럼세탁기",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "통돌이세탁기",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "건조기",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "의류관리기",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "스타일러",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "TV",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "OLEDTV",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "QLEDTV",
+      "error": "HTTP 403"
+    },
+    {
+      "keyword": "사운드바",
+      "error": "HTTP 403"
+    }
+  ]
+}
