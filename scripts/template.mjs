@@ -247,6 +247,13 @@ ${list
   .join('\n')}`;
 }
 
+/** 본문에 제휴(쿠팡 파트너스) 링크가 있는지 */
+export const hasAffiliate = (html) => /link\.coupang\.com|coupa\.ng/i.test(html);
+
+/** 제휴 링크가 있는 글 첫머리에 붙이는 고지 (공정위 추천·보증 심사지침: 글 앞부분에 눈에 띄게) */
+export const AFFILIATE_POST_NOTICE =
+  '이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다.';
+
 /** 글 상세 페이지 */
 export function renderPost(post, related = [], figure = '', faqList = []) {
   const url = `${SITE.domain}/guide/${post.slug}/`;
@@ -314,6 +321,7 @@ export function renderPost(post, related = [], figure = '', faqList = []) {
     )} 작성</span></div>
   <h1>${esc(post.title)}</h1>
   <div class="lead">${esc(post.summary)}</div>
+  ${hasAffiliate(post.body) ? `<div class="notice">${esc(AFFILIATE_POST_NOTICE)}</div>` : ''}
   ${insertFigure(post.body, figure)}
   ${faqSection(faqList)}
   ${rel}
@@ -359,6 +367,25 @@ export function renderPage({ title, description, slug, heading, html }) {
     head({ title: `${title} | ${SITE.name}`, description, canonical: url }) +
     header(null) +
     `<main><div class="wrap"><h1>${esc(heading)}</h1>${html}</div></main>` +
+    footer()
+  );
+}
+
+/** 존재하지 않는 주소용 404 페이지 (worker.ts가 404 상태로 내려준다) */
+export function renderNotFound() {
+  return (
+    head({
+      title: `페이지를 찾을 수 없습니다 | ${SITE.name}`,
+      description: '요청하신 페이지가 없거나 주소가 바뀌었습니다.',
+      canonical: `${SITE.domain}/`,
+    })
+      .replace('<meta charset="utf-8">', '<meta charset="utf-8">\n<meta name="robots" content="noindex">')
+      .replace(/<link rel="canonical"[^>]*>\n?/, '')
+      .replace(/<meta property="og:url"[^>]*>\n?/, '') +
+    header(null) +
+    `<main><div class="wrap"><h1>페이지를 찾을 수 없습니다</h1>
+<div class="lead">요청하신 주소의 페이지가 없거나 주소가 바뀌었습니다.</div>
+<p><a href="/guide/">가전 꿀팁 전체 글 보기</a> · <a href="/">스펙 비교 홈으로</a></p></div></main>` +
     footer()
   );
 }

@@ -125,7 +125,7 @@ export const MallSalesView: React.FC<MallSalesViewProps> = ({ onOpenDetails }) =
                 <a
                   href={mall.buyUrl}
                   target="_blank"
-                  rel="noopener noreferrer"
+                  rel="sponsored nofollow noopener noreferrer"
                   className="w-full py-3 px-4 rounded-xl font-bold text-xs sm:text-sm bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white flex items-center justify-center gap-2 transition shadow-xs text-center"
                 >
                   <span>{mall.brand} 공식몰 혜택 바로가기</span>

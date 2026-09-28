@@ -471,7 +471,7 @@ export const ApplianceFinder: React.FC<ApplianceFinderProps> = ({
                   {/* Right Price & Actions */}
                   <div className="shrink-0 flex flex-col items-end justify-between w-full md:w-auto pt-4 md:pt-0 border-t md:border-t-0 border-gray-100 gap-3">
                     <div className="text-right">
-                      <div className="text-xs text-gray-400">온라인 최저가</div>
+                      <div className="text-xs text-gray-400">참고가 · 수집 시점 기준</div>
                       <div className="text-lg font-black text-gray-900">
                         ₩{p.price.toLocaleString()}
                       </div>
