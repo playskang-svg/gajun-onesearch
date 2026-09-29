@@ -157,7 +157,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   </div>
                   <div className="text-2xl font-black text-gray-900 flex items-center gap-2 flex-wrap">
                     ₩{product.price.toLocaleString()}
-                    <span className="text-xs font-normal text-gray-500">온라인 최저가</span>
+                    <span className="text-xs font-normal text-gray-500">참고가 · 수집 시점 기준</span>
                     {product.mallName && (
                       <span className="text-[11px] font-bold text-blue-700 bg-blue-50 px-2 py-0.5 rounded border border-blue-100">
                         {product.mallName}
@@ -201,7 +201,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   <a
                     href={product.buyUrl || 'https://link.coupang.com/a/AF5563346?subid=gajun&subid2=modal_hero'}
                     target="_blank"
-                    rel="noopener noreferrer"
+                    rel="sponsored nofollow noopener noreferrer"
                     className="px-4 py-2 rounded-xl font-bold text-xs sm:text-sm bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white flex items-center gap-1.5 transition shadow-sm"
                   >
                     <span>{product.mallName || '쿠팡'} 바로가기</span>
@@ -391,7 +391,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
             <a
               href={product.buyUrl || 'https://link.coupang.com/a/AF5563346?subid=gajun&subid2=modal_bottom'}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="sponsored nofollow noopener noreferrer"
               className="flex-1 py-3.5 px-4 rounded-xl font-bold text-sm sm:text-base bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700 hover:from-blue-700 hover:to-indigo-800 text-white flex items-center justify-center gap-2 transition text-center shadow-md shadow-blue-500/20 min-h-[48px]"
             >
               <span>{product.mallName || '쿠팡'} 바로가기</span>
