@@ -785,7 +785,7 @@ export const commonPosts = [
         a: '40~60%가 적정 범위입니다. 60%를 넘으면 곰팡이·집먼지진드기가 번식하기 좋은 환경이 됩니다. 습도계를 함께 사용해 모니터링하세요.',
       },
     ],
-  },,
+  },
 
   {
     slug: 'boiler-inspection-before-winter',
