@@ -46,6 +46,13 @@ export const tvPosts = [
 
 <h2>에디터 총평: 결론</h2>
 <p>넷플릭스 영화의 시네마틱 화질과 플레이스테이션5·엑스박스 등 콘솔 게임의 화려한 그래픽을 극한으로 즐기고 싶다면 <strong>OLED</strong>가 압도적인 만족감을 줍니다. 반면 낮 시간대 밝은 거실에서 아이들 애니메이션, 주말 예능, 뉴스 위주로 부담 없이 오래 쓰고 싶다면 <strong>QLED(또는 Neo QLED)</strong>가 마음 편한 선택입니다.</p>
+
+<p>실제 제품으로 감을 잡아보면 <a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=linkmgr&amp;pageKey=9129479346&amp;itemId=26861371497&amp;vendorItemId=93831049323&amp;traceid=V0-153-8a5c8e8148c89f81&amp;requestid=20260909143346796036150402&amp;token=31850C%7CGM&amp;pt=0&amp;slot=1" target="_blank" rel="nofollow sponsored noopener">LG 4K UHD 올레드 TV</a>는 화면 크기에 따라 110만~140만 원대에 걸쳐 있고, QLED 쪽은 <a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=linkmgr&amp;pageKey=9143509291&amp;itemId=26916400191&amp;vendorItemId=95323590679&amp;traceid=V0-153-3db8baef2e402b46&amp;clickBeacon=079deac0-ac10-11f1-be98-8f7cc3d3150c%7E3&amp;requestid=20260909143347173130057634&amp;token=31850C%7CMIXED&amp;pt=1&amp;slot=1" target="_blank" rel="nofollow sponsored noopener">삼성 65인치 QLED 65Q7F</a>가 76만 원 안팎으로, 같은 65인치대에서도 패널 방식에 따라 가격 차이가 크다는 점을 확인할 수 있습니다. 가격과 재고는 수시로 바뀌므로 구매 시점에 직접 확인하세요.</p>
+
+<div class="box">
+  <div class="bt">고지</div>
+  <p style="margin:0">이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다. 수수료는 제품 평가 내용에 영향을 주지 않으며, 가격과 재고는 수시로 변동되므로 구매 시점에 직접 확인하시기 바랍니다.</p>
+</div>
 `,
   },
   {
@@ -168,6 +175,14 @@ export const tvPosts = [
   <p style="margin:0">85인치 박스 가로 길이는 약 2.1m, 98인치는 2.4m를 초과합니다. 신축 아파트라 하더라도 일반 승객용 엘리베이터(15인승 이하) 코너에 박스가 들어가지 않아 <strong>사다리차 비용(10~15만 원)이 추가</strong>되거나 저층이 아니면 설치가 불가할 수 있으니 엘리베이터 내부 대각선 길이를 사전 측정하세요.</p>
 </div>
 <p>이 크기가 부담스럽거나 쓰지 않을 때는 치워 두고 싶다면 <a href="/guide/home-projector-guide/">가정용 빔프로젝터의 밝기·투사거리 기준</a>을 함께 비교해 보세요.</p>
+
+<h2>20평대 거실 기준 실제 제품 예시</h2>
+<p>위 표에서 20평대 거실에 가장 만족도가 높다고 본 65인치 구간을 실제로 찾아보면 <a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=linkmgr&amp;pageKey=7070269952&amp;itemId=17555408786&amp;vendorItemId=84722236637&amp;traceid=V0-153-e0d19f15d75cd04f&amp;requestid=20260909143347173130057634&amp;token=31850C%7CMIXED&amp;pt=0&amp;slot=2" target="_blank" rel="nofollow sponsored noopener">65인치급 UHD HDR TV(시티브 제로베젤리스)</a>가 60만 원 안팎에 있습니다. 이 가격대를 기준으로 화면 크기별 예산을 잡으면 견적 비교가 수월해집니다. 가격과 재고는 수시로 바뀌므로 구매 시점에 직접 확인하세요.</p>
+
+<div class="box">
+  <div class="bt">고지</div>
+  <p style="margin:0">이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다. 수수료는 제품 평가 내용에 영향을 주지 않으며, 가격과 재고는 수시로 변동되므로 구매 시점에 직접 확인하시기 바랍니다.</p>
+</div>
 `,
   },
 
@@ -197,6 +212,13 @@ export const tvPosts = [
 
 <h2>결론</h2>
 <p>가끔 영상만 보는 용도라면 TV를 모니터로 써도 큰 불편이 없습니다. 다만 문서 작업이나 게임처럼 매일 오래 쓸 용도라면, 위 세 가지를 먼저 확인한 뒤 결정하는 것이 후회를 줄이는 방법입니다.</p>
+
+<p>책상에 두고 쓸 보급형 스마트TV를 찾는다면 <a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=linkmgr&amp;pageKey=8814674744&amp;itemId=24514303781&amp;vendorItemId=87770472927&amp;traceid=V0-153-e439d181fdfb198f&amp;clickBeacon=ffa7a5e0-ac0f-11f1-92e4-e934a01fac80%7E3&amp;requestid=20260909143333864130053728&amp;token=31850C%7CMIXED&amp;pt=1&amp;slot=1" target="_blank" rel="nofollow sponsored noopener">50인치 구글 스마트TV</a>가 39만 원 안팎으로 이 정도 크기대의 보급형 기준가 역할을 합니다. 다만 PC 모드 지원 여부는 구매 전 판매 페이지에서 직접 확인이 필요하며, 가격과 재고도 수시로 바뀌므로 구매 시점에 다시 확인하세요.</p>
+
+<div class="box">
+  <div class="bt">고지</div>
+  <p style="margin:0">이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다. 수수료는 제품 평가 내용에 영향을 주지 않으며, 가격과 재고는 수시로 변동되므로 구매 시점에 직접 확인하시기 바랍니다.</p>
+</div>
 `,
   },
 

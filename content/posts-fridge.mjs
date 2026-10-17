@@ -103,6 +103,14 @@ export const fridgePosts = [
   <p style="margin:0">수리비가 새 제품의 <strong>40%를 넘고</strong> 사용 <strong>10년 이상</strong>이면 교체가 유리한 경우가 많습니다. 부품이 단종이면 선택지가 없습니다.</p>
 </div>
 
+<h2>교체를 검토한다면 참고할 가격대</h2>
+<p>압축기 고장으로 교체를 결정했다면 용량과 형태에 따라 가격 차이가 큽니다. 일반적인 4인 가구 기준 양문형은 <a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=linkmgr&amp;pageKey=9311923223&amp;itemId=27231566942&amp;vendorItemId=94873034055&amp;traceid=V0-153-fe4584c32fb1a736&amp;clickBeacon=ee61a6a0-ac0f-11f1-9be7-6717fb759645%7E3&amp;requestid=20260909143304795001684422&amp;token=31850C%7CMIXED&amp;pt=1&amp;slot=1" target="_blank" rel="nofollow sponsored noopener">521리터급 양문형(위니아 클라쎄)</a>이 70만 원 안팎부터 시작하고, 상하칸이 분리된 4도어를 원한다면 <a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=linkmgr&amp;pageKey=9629576561&amp;itemId=28761565845&amp;vendorItemId=95699896013&amp;traceid=V0-153-02b20de07c2798f5&amp;requestid=20260909143333553294809041&amp;token=31850C%7CMIXED&amp;pt=0&amp;slot=1" target="_blank" rel="nofollow sponsored noopener">870L급 4도어(LG 디오스 오브제컬렉션)</a>은 200만 원 안팎으로 뛰어오릅니다. 압축기가 나간 구형 냉장고와 최신형은 소비전력 자체도 차이가 커서, 수리비 40% 기준을 계산할 때 이 가격대를 기준점으로 삼으면 판단이 쉬워집니다. 가격과 재고는 수시로 바뀌므로 구매 시점에 직접 확인하세요.</p>
+
+<div class="box">
+  <div class="bt">고지</div>
+  <p style="margin:0">이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다. 수수료는 제품 평가 내용에 영향을 주지 않으며, 가격과 재고는 수시로 변동되므로 구매 시점에 직접 확인하시기 바랍니다.</p>
+</div>
+
 <h2>수명을 늘리는 관리</h2>
 <ul>
   <li><strong>뒷면·옆면 간격 확보</strong> — 열이 빠져야 압축기 부담이 줄어듭니다</li>
@@ -267,6 +275,14 @@ export const fridgePosts = [
 
 <h2>중고보다 신제품이 유리한 경우</h2>
 <p>소형 냉장고는 오래될수록 냉매 효율이 떨어져 전기요금이 늘어나는 경향이 있습니다. 오래 쓸 계획이라면 초기 비용이 조금 더 들어도 에너지 소비효율이 높은 신제품이 장기적으로 유리할 수 있습니다.</p>
+
+<h2>용량대별 실제 제품 예시</h2>
+<p>표에서 소개한 150~200L대를 실제로 찾아보면 <a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=linkmgr&amp;pageKey=7925617524&amp;itemId=21787675277&amp;vendorItemId=91717204309&amp;traceid=V0-153-39e8baefb4fa315b&amp;clickBeacon=06e919b0-ac10-11f1-95bf-6fa0c6b66895%7E3&amp;requestid=20260909143346003217843897&amp;token=31850C%7CMIXED&amp;pt=1&amp;slot=1" target="_blank" rel="nofollow sponsored noopener">182L 슬림형 2도어(캐리어 클라윈드)</a>가 20만 원대 후반 선에 있고, 200L에 조금 못 미치는 일반형 2도어 제품들도 비슷한 가격대에서 폭넓게 나와 있습니다. 냉동실이 별도로 분리된 제품을 고르면 위 표 기준 "주말 장보기형" 생활 패턴에 맞는 용량대가 됩니다. 가격과 재고는 수시로 바뀌므로 구매 시점에 직접 확인하세요.</p>
+
+<div class="box">
+  <div class="bt">고지</div>
+  <p style="margin:0">이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다. 수수료는 제품 평가 내용에 영향을 주지 않으며, 가격과 재고는 수시로 변동되므로 구매 시점에 직접 확인하시기 바랍니다.</p>
+</div>
 `,
   },
 

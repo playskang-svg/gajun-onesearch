@@ -119,6 +119,14 @@ export const kitchenPosts = [
 
 <h2>평소 냄새 배임 방지 꿀팁</h2>
 <p>조리가 끝난 후 <strong>전자레인지 문을 5~10분간 열어두어 내부 습기와 냄새를 완전히 배출</strong>시키는 습관만 들여도 곰팡이와 찌든 냄새의 90%를 막을 수 있습니다.</p>
+
+<h2>마이카 플레이트가 이미 타버렸다면</h2>
+<p>스팀 청소로도 상단 마이카 플레이트가 눌어붙은 자국이 지워지지 않거나 이미 스파크가 튄 흔적이 있다면 청소보다 교체가 안전합니다. <a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=linkmgr&amp;pageKey=6431750629&amp;itemId=13883571890&amp;vendorItemId=93472532840&amp;traceid=V0-153-da23e8177058af59&amp;clickBeacon=084ec430-ac10-11f1-a30b-6b882270c69d%7E3&amp;requestid=20260909143348337198952625&amp;token=31850C%7CMIXED&amp;pt=1&amp;slot=1" target="_blank" rel="nofollow sponsored noopener">삼성 비스포크 터치식 23L</a>처럼 내부 마감이 매끈해 기름때가 덜 눌어붙는 제품은 20만 원 안팎이고, 단순 데움 용도로 저렴하게 바꾸려면 6만 원대 다이얼식 소형 모델도 충분합니다. 이 글을 쓴 시점 기준 가격이며, 가격과 재고는 수시로 바뀌므로 구매 시점에 직접 확인하세요.</p>
+
+<div class="box">
+  <div class="bt">고지</div>
+  <p style="margin:0">이 글에는 제휴 링크가 포함되어 있으며, 구매 시 일정액의 수수료를 받을 수 있습니다. 수수료는 제품 평가 내용에 영향을 주지 않으며, 가격과 재고는 수시로 변동되므로 구매 시점에 직접 확인하시기 바랍니다.</p>
+</div>
 `,
   },
 
