@@ -307,14 +307,14 @@ export const ComparisonStudio: React.FC<ComparisonStudioProps> = ({
                           {/* Price & Buy Link */}
                           <div className="pt-2 border-t border-gray-100 space-y-2">
                             <div className="flex items-baseline justify-between">
-                              <span className="text-xs text-gray-400">최저가</span>
+                              <span className="text-xs text-gray-400">참고가</span>
                               <div className="text-right">
                                 <span className="text-base font-black text-gray-950">
                                   ₩{product.price.toLocaleString()}
                                 </span>
                                 {highlightItems && getLowestPriceId() === product.id && (
                                   <div className="text-[10px] font-bold text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded mt-0.5 inline-block">
-                                    💰 최저가 우위
+                                    💰 참고가 우위
                                   </div>
                                 )}
                               </div>
@@ -323,10 +323,10 @@ export const ComparisonStudio: React.FC<ComparisonStudioProps> = ({
                             <a
                               href={product.buyUrl || 'https://link.coupang.com/a/AF5563346?subid=gajun&subid2=studio_th'}
                               target="_blank"
-                              rel="noopener noreferrer"
+                              rel="sponsored nofollow noopener noreferrer"
                               className="w-full py-2 px-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-lg text-xs font-bold transition flex items-center justify-center gap-1 shadow-2xs text-center"
                             >
-                              <span>{product.mallName || '최저가'} 바로가기</span>
+                              <span>{product.mallName || '판매처'} 바로가기</span>
                               <ExternalLink className="w-3 h-3" />
                             </a>
                           </div>

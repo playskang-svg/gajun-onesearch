@@ -303,7 +303,7 @@ export const ComparisonVisualizer: React.FC<ComparisonVisualizerProps> = ({
                 <Zap className="w-4 h-4" />
               </div>
               <div>
-                <div className="text-[11px] text-slate-400 font-bold">최저가 가성비 우위</div>
+                <div className="text-[11px] text-slate-400 font-bold">참고가 기준 가성비 우위</div>
                 <div className="text-xs font-bold text-white mt-0.5">
                   {lowestPriceProduct.name} (₩{lowestPriceProduct.price.toLocaleString()})
                 </div>

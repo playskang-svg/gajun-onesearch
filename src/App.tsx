@@ -545,15 +545,15 @@ export default function App() {
           {/* Legal & Compliance Policy Links (Google AdSense 필수 승인 요건) */}
           <div className="pt-4 border-t border-gray-100 flex flex-wrap items-center justify-between gap-3 text-xs">
             <div className="flex items-center gap-3 sm:gap-4 flex-wrap text-gray-700 font-bold">
-              <a href="/guide/" className="text-blue-600 hover:underline">가전 꿀팁 백과 (42편)</a>
+              <a href="/guide/" className="text-blue-600 hover:underline">가전 꿀팁 백과 ({GUIDE_POSTS.length}편)</a>
               <span className="text-gray-300">|</span>
-              <button onClick={() => handleOpenPolicy('about')} className="hover:text-blue-600 cursor-pointer">사이트 소개 (About)</button>
+              <a href="/guide/about/" className="hover:text-blue-600">사이트 소개 (About)</a>
               <span className="text-gray-300">|</span>
-              <button onClick={() => handleOpenPolicy('privacy')} className="text-gray-900 hover:text-blue-600 underline decoration-blue-500 cursor-pointer">개인정보처리방침 (Privacy)</button>
+              <a href="/guide/privacy/" className="text-gray-900 hover:text-blue-600 underline decoration-blue-500">개인정보처리방침 (Privacy)</a>
               <span className="text-gray-300">|</span>
-              <button onClick={() => handleOpenPolicy('terms')} className="hover:text-blue-600 cursor-pointer">이용약관 및 면책</button>
+              <a href="/guide/terms/" className="hover:text-blue-600">이용약관 및 면책</a>
               <span className="text-gray-300">|</span>
-              <button onClick={() => handleOpenPolicy('contact')} className="hover:text-blue-600 cursor-pointer">문의하기 (Contact)</button>
+              <a href="/guide/contact/" className="hover:text-blue-600">문의하기 (Contact)</a>
               <span className="text-gray-300">|</span>
               <button onClick={() => handleOpenPolicy('affiliate')} className="hover:text-blue-600 cursor-pointer">제휴·수익 고지</button>
             </div>
@@ -563,7 +563,7 @@ export default function App() {
           </div>
 
           <p className="text-[11px] text-gray-400 leading-relaxed">
-            본 서비스는 실제 가전 사용자의 합리적인 구매를 돕기 위해 제작된 한번에 한눈에 비교하는 가전비교연구소 가전 스펙 비교 및 실험실 리뷰 웹 애플리케이션입니다. 
+            본 서비스는 실제 가전 사용자의 합리적인 구매를 돕기 위해 제작된 한번에 한눈에 비교하는 가전비교연구소 가전 스펙 비교 웹 애플리케이션입니다. 자체 측정이나 사용 후기가 아니라 제조사 공개 사양을 같은 항목으로 정리한 자료입니다. 
             평가 점수는 공개 사양을 항목별로 환산한 자체 기준이며, 수치는 제조사 공개 자료를 따릅니다.
           </p>
 

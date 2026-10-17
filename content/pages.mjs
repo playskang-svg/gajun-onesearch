@@ -90,8 +90,10 @@ export const pages = [
 <ul>
   <li>Google을 포함한 제3자 공급업체는 쿠키를 사용하여 이용자의 이전 방문 기록을 바탕으로 광고를 게재할 수 있습니다.</li>
   <li>Google이 광고 쿠키를 사용함으로써 이용자에게 맞춤 광고가 표시될 수 있습니다.</li>
-  <li>이용자는 <a href="https://www.google.com/settings/ads" rel="nofollow noopener" target="_blank">Google 광고 설정</a>에서 맞춤 광고를 비활성화할 수 있습니다.</li>
-  <li>제3자 공급업체의 쿠키 사용을 거부하려면 <a href="https://www.aboutads.info/choices/" rel="nofollow noopener" target="_blank">www.aboutads.info</a>를 참고하시기 바랍니다.</li>
+  <li>Google은 광고 쿠키(DoubleClick DART 쿠키 포함)를 사용하여 이용자가 본 사이트 및 인터넷상의 다른 사이트를 방문한 기록을 바탕으로 광고를 게재할 수 있습니다.</li>
+  <li>이용자는 <a href="https://adssettings.google.com/" rel="nofollow noopener" target="_blank">Google 광고 설정(adssettings.google.com)</a>에서 맞춤 광고를 해제할 수 있습니다.</li>
+  <li>제3자 공급업체의 맞춤 광고용 쿠키 사용을 거부하려면 <a href="https://www.aboutads.info/choices/" rel="nofollow noopener" target="_blank">www.aboutads.info</a>를 참고하시기 바랍니다.</li>
+  <li>Google이 파트너 사이트에서 수집한 데이터를 사용하는 방식은 <a href="https://policies.google.com/technologies/partner-sites?hl=ko" rel="nofollow noopener" target="_blank">Google 파트너 사이트 데이터 사용 안내</a>에서 확인할 수 있습니다.</li>
 </ul>
 <p>또한 사이트는 방문 통계 분석을 위해 분석 도구를 사용할 수 있으며, 해당 도구는 자체 정책에 따라 정보를 처리합니다.</p>
 
@@ -120,7 +122,7 @@ export const pages = [
 <h2>10. 문의</h2>
 <p>개인정보 처리에 관한 문의는 <a href="/guide/contact/">문의하기</a> 페이지를 이용해 주시기 바랍니다.</p>
 
-<p style="color:#6b7280;font-size:14px;margin-top:28px">시행일: ${today}</p>
+<p style="color:#6b7280;font-size:14px;margin-top:28px">시행일: ${today} · 최종 수정일: 2026년 9월 28일</p>
 `,
   },
 

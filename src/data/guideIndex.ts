@@ -155,6 +155,15 @@ export const GUIDE_POSTS: GuidePost[] = [
     "date": "2026.09.15"
   },
   {
+    "slug": "home-projector-guide",
+    "title": "가정용 빔프로젝터, 거실에서 낮에도 보려면 몇 안시가 필요할까?",
+    "summary": "프로젝터 선택은 제품 비교가 아니라 방 조건 확인에서 시작합니다. 조명 상태별로 필요한 밝기, 화면 크기에서 역산하는 투사거리, 설치할 때 추가 비용이 붙는 지점을 정리했습니다.",
+    "category": "tv",
+    "categoryName": "TV·영상가전",
+    "keyword": "가정용빔프로젝터",
+    "date": "2026.09.15"
+  },
+  {
     "slug": "soundbar-guide",
     "title": "TV 스피커만으로 부족했다면, 사운드바 필요성과 고르는 기준",
     "summary": "TV가 얇아질수록 내장 스피커가 들어갈 공간은 줄어듭니다. 대사가 잘 안 들리거나 저음이 밋밋하게 느껴진다면 스펙 문제가 아니라 구조적인 한계일 수 있습니다.",
@@ -611,7 +620,7 @@ export const GUIDE_CATEGORIES = [
     "id": "tv",
     "name": "TV·영상가전",
     "desc": "OLED/QLED 번인 방지, 시청거리별 인치 계산과 화질",
-    "count": 5
+    "count": 6
   },
   {
     "id": "cleaner",

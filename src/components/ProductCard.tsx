@@ -212,7 +212,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               </div>
               <div className="text-xl sm:text-2xl font-black text-gray-950 leading-tight mt-0.5">
                 ₩{product.price.toLocaleString()}
-                <span className="text-xs font-normal text-gray-500 ml-1.5">최저가</span>
+                <span className="text-xs font-normal text-gray-500 ml-1.5">참고가 · 변동 가능</span>
               </div>
             </div>
 
@@ -237,10 +237,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             <a
               href={product.buyUrl || 'https://link.coupang.com/a/AF5563346?subid=gajun&subid2=card'}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="sponsored nofollow noopener noreferrer"
               className="flex-1 py-3 px-3 text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 rounded-xl transition flex items-center justify-center gap-1.5 shadow-xs min-h-[44px] text-center"
             >
-              <span>{product.mallName || '최저가'} 구매</span>
+              <span>{product.mallName || '판매처'}에서 가격 확인</span>
               <ExternalLink className="w-3.5 h-3.5" />
             </a>
           </div>
