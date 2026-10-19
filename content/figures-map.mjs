@@ -312,4 +312,24 @@ export const figures = {
         { label: '크기·분리\n난방 선택' },
       ],
     }),
+  'rechargeable-hand-warmer-guide': () =>
+    partsFigure({
+      title: '충전식 손난로 안 — 세 부분',
+      caption: '한국소비자원 「충전식 손난로 안전실태 조사」(2018) 내부 구조 설명 기준.',
+      parts: [
+        { name: '리튬 2차 전지', desc: '충전해서 다시 쓰는 에너지원. 열에 약합니다', tag: '배터리', level: 'high' },
+        { name: '컨트롤러', desc: '온도 조절과 보호회로(과충전·단락 차단)', tag: '보호회로', level: 'mid' },
+        { name: '발열판', desc: '손바닥이 닿는 가운데가 가장 뜨겁습니다', tag: '발열', level: 'mid' },
+      ],
+    }) +
+    flowFigure({
+      title: '충전식 손난로 사기 전 확인 순서',
+      caption: '2018년 조사에서 KC 미표시 6개, 60℃ 초과 3개 제품이 있었습니다.',
+      steps: [
+        { label: 'KC 인증번호\n조회' },
+        { label: '최고 온도\n확인' },
+        { label: '표시사항\n확인' },
+        { label: '천 사이에 두고\n사용' },
+      ],
+    }),
 };
