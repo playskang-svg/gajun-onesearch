@@ -292,4 +292,24 @@ export const figures = {
         { name: '방열판 먼지·낙엽', desc: '전원을 끄고 부드럽게 걷어냅니다. 물은 금물', tag: '주기 관리', level: 'low' },
       ],
     }),
+  'heating-mat-compare': () =>
+    partsFigure({
+      title: '난방 매트 3종 — 열을 내는 방식',
+      caption: '방식이 달라도 KC 표시, 시간 예약, 소비전력은 모두 확인해야 합니다.',
+      parts: [
+        { name: '전기장판', desc: '내장 열선에 전기를 흘립니다. 가볍고 접기 쉽습니다', tag: '열선', level: 'mid' },
+        { name: '카본매트', desc: '탄소 발열체로 빠르게 데웁니다. 온도편차는 제품별로 차이가 큽니다', tag: '탄소 발열', level: 'high' },
+        { name: '온수매트', desc: '보일러로 데운 물을 순환시킵니다. 분리난방·물 관리를 확인하세요', tag: '물 순환', level: 'low' },
+      ],
+    }) +
+    flowFigure({
+      title: '난방 매트 고르는 순서',
+      caption: '안전 확인을 먼저 하고, 크기와 요금은 그다음에 비교합니다.',
+      steps: [
+        { label: 'KC 표시\n확인' },
+        { label: '시간 예약\n기능 확인' },
+        { label: '소비전력\n비교' },
+        { label: '크기·분리\n난방 선택' },
+      ],
+    }),
 };
