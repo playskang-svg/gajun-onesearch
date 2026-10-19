@@ -29,6 +29,15 @@ export const GUIDE_POSTS: GuidePost[] = [
     "date": "2026.10.19"
   },
   {
+    "slug": "winter-condensation-dehumidifier",
+    "title": "겨울 결로 제습기 꼭 필요할까, 창문 물방울 막는 습도 기준과 고르는 법",
+    "summary": "겨울 창문 결로는 가습기·빨래·닫힌 창에서 생깁니다. 국토교통부 결로 관리 안내와 한국소비자원 제습기 시험 수치로, 제습기 전에 할 일과 겨울에 고르는 기준 4가지를 정리했습니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "겨울결로제습기",
+    "date": "2026.10.19"
+  },
+  {
     "slug": "boiler-inspection-before-winter",
     "title": "보일러 가동 전 점검 안 하면 일산화탄소 중독? 겨울 전 필수 점검 5가지",
     "summary": "매년 가을 보일러 첫 가동 직후 일산화탄소 중독 사고가 집중됩니다. 전문가 호출 없이 직접 확인할 수 있는 5가지 점검 항목과, 반드시 업체를 불러야 하는 위험 신호를 정리했습니다.",
@@ -689,6 +698,6 @@ export const GUIDE_CATEGORIES = [
     "id": "common",
     "name": "가전 공통 상식",
     "desc": "효율등급, 소비전력, 고르는 기준",
-    "count": 17
+    "count": 18
   }
 ];
