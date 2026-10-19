@@ -11,6 +11,15 @@ export interface GuidePost {
 
 export const GUIDE_POSTS: GuidePost[] = [
   {
+    "slug": "winter-laundry-dryer-vs-indoor-drying",
+    "title": "겨울 빨래 건조기 vs 실내건조, 전기요금은 얼마나 차이 날까?",
+    "summary": "겨울 빨래는 건조기로 말릴지 제습기와 건조대로 말릴지 고민됩니다. 한국소비자원 시험과 에너지공단 효율등급 수치로 1회 전기요금을 계산하고, 건조기를 사야 하는 집의 기준을 정리했습니다.",
+    "category": "washer",
+    "categoryName": "세탁기·건조기",
+    "keyword": "겨울 빨래 건조기 전기요금",
+    "date": "2026.10.20"
+  },
+  {
     "slug": "heating-mat-compare",
     "title": "온수매트 추천 전에 보는 전기장판·카본매트 차이, 크기·온도·전기요금 고르는 기준",
     "summary": "전기장판은 열선, 카본매트는 탄소 발열체, 온수매트는 데운 물을 순환시킵니다. 한국소비자원 시험 수치와 전기요금 계산식으로 내 집에 맞는 난방 매트를 고르는 기준을 정리했습니다.",
@@ -656,7 +665,7 @@ export const GUIDE_CATEGORIES = [
     "id": "washer",
     "name": "세탁기·건조기",
     "desc": "세탁조 세척, 쉰내, 먼지 관리와 수명",
-    "count": 12
+    "count": 13
   },
   {
     "id": "aircon",

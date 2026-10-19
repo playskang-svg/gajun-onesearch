@@ -606,4 +606,84 @@ export const washerPosts = [
 <p>스타일러는 매일 짧게 쓰는 용도라 전기요금 부담이 크지 않은 편이지만, 정확한 금액이 궁금하다면 본인 집 단가를 기준으로 직접 계산해보는 것이 가장 확실합니다.</p>
 `,
   },
+  {
+    slug: 'winter-laundry-dryer-vs-indoor-drying',
+    category: 'washer',
+    date: '2026.10.20',
+    keywords: ['겨울 빨래 건조기 전기요금', '건조기 전기요금', '겨울 실내건조 건조기', '건조기 제습기 비교', '건조기 효율등급'],
+    title: '겨울 빨래 건조기 vs 실내건조, 전기요금은 얼마나 차이 날까?',
+    summary:
+      '겨울 빨래는 건조기로 말릴지 제습기와 건조대로 말릴지 고민됩니다. 한국소비자원 시험과 에너지공단 효율등급 수치로 1회 전기요금을 계산하고, 건조기를 사야 하는 집의 기준을 정리했습니다.',
+    body: `
+<p><strong>겨울에 빨래가 이틀 걸려도 안 마르고 창문에는 물방울이 맺힌다면, 건조기를 살지 실내건조를 이어갈지 따져 볼 때입니다.</strong> 전기요금만 보면 의외로 차이가 크지 않습니다. 이 글은 한국소비자원 비교공감 2019-1호(의류건조기)·2023-19호(소형 의류건조기)와 한국에너지공단 효율등급 조회 결과를 2026년 10월 20일에 확인해 정리했습니다.</p>
+
+<div class="box tip">
+  <div class="bt">제휴 링크 안내</div>
+  <p style="margin:0">이 글에는 쿠팡 파트너스 활동의 일환으로 일정액의 수수료를 받을 수 있는 링크가 포함되어 있습니다. 구매자가 내는 가격은 달라지지 않습니다.</p>
+</div>
+
+<p>건조기 값이 얼마나 하는지부터 궁금하다면, 에너지소비효율 2등급으로 조회되는 10kg 히트펌프 건조기의 현재 가격과 설치 구성을 아래 버튼에서 확인할 수 있습니다. 10월 20일 조회 기준 표시가는 527,500원이었고, 가격과 쿠폰은 수시로 바뀝니다.</p>
+<p style="text-align:center;margin:18px 0"><a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=gajun&amp;pageKey=9651389268&amp;itemId=28847421071&amp;vendorItemId=95781319392&amp;traceid=V0-153-ea700b8e377ff7e6&amp;clickBeacon=f27f4ec0-cbd8-11f1-86d6-7e0183771cce%7E3&amp;requestid=20261020012006622201434305&amp;token=31850C%7CMIXED&amp;pt=1&amp;slot=1" target="_blank" rel="nofollow sponsored noopener"><img src="/img/btn_plain.webp" alt="쿠팡에서 쿠오레 10kg 히트펌프 건조기 가격 확인하기" width="320" height="92" style="max-width:100%;height:auto" loading="lazy"></a></p>
+
+<figure class="fig" style="margin:18px 0"><img src="/img/winter-window-indoor-drying.jpg" alt="겨울 아침 창문에 결로가 맺힌 거실에서 빨래건조대에 옷을 말리는 모습" width="1080" height="806" style="max-width:100%;height:auto;border-radius:8px" loading="lazy"><figcaption>겨울 실내건조는 빨래 습기가 창문 결로로 이어지기 쉽습니다. (AI 생성 이미지)</figcaption></figure>
+
+<h2>건조기를 쓰면 전기요금이 한 번에 얼마나 나오나요?</h2>
+<p>한국에너지공단은 의류건조기에 1kg당 소비전력량(Wh/kg)을 기준으로 1~5등급을 매깁니다. 에너지공단 효율등급 조회에 올라 있는 10kg 제품 두 가지로 한 번 빨래할 때의 전기요금을 계산해 보았습니다. 단가는 한국소비자원이 건조기 전기요금을 계산할 때 쓰는 1kWh당 160원을 빌렸습니다.</p>
+<div class="tscroll">
+<table>
+  <tr><th>제품(표준건조용량 10kg)</th><th>효율등급</th><th>1kg당 소비전력량</th><th>10kg 한 번 건조</th><th>1회 전기요금(계산)</th></tr>
+  <tr><td>마이디어 MD200H100B/TT-KR</td><td>1등급</td><td>182.1Wh/kg</td><td>약 1.82kWh</td><td>약 290원</td></tr>
+  <tr><td>쿠오레 CTD-HP100W</td><td>2등급</td><td>261.7Wh/kg</td><td>약 2.62kWh</td><td>약 420원</td></tr>
+</table>
+</div>
+<p>계산 예시입니다. 실제 청구액은 주택용 누진제와 그 달 총 사용량에 따라 달라지고, 에너지공단은 제조일자에 따라 등급이 달라질 수 있고 라벨 수치가 신고값보다 낮을 수 있다고 안내합니다. 10kg을 가득 채우지 않으면 소비전력량도 줄어듭니다.</p>
+<p>일주일에 세 번 돌린다고 가정하면 1등급과 2등급 제품의 한 해 전기요금 차이는 약 2만 원 수준(소비자원이 소형 건조기 연간 요금 계산에 쓴 연 160회 사용 기준으로는 약 4만 6천 원 대 약 6만 7천 원)입니다. 월로 나누면 2천 원 안팎이라, 구매가 차이가 크다면 등급만큼 용량과 설치 조건도 같이 보는 편이 합리적입니다. 등급 보는 법은 <a href="/guide/energy-grade/">에너지소비효율 등급 보는 법</a>에 있습니다.</p>
+
+<h2>제습기와 빨래건조대로 말리면 전기요금이 더 싼가요?</h2>
+<p>같은 계산 방식으로 비교해 보면 그렇습니다. 소비자원 제습기 시험에서 소비전력은 262~363W였습니다. 이 글에서는 소비전력 300W 제품을 빨래 한 번에 4시간 켠다고 가정했고, 이 시간은 방 크기와 빨래 양에 따라 크게 달라지는 가정값입니다.</p>
+<ul>
+  <li>300W × 4시간 = 1.2kWh</li>
+  <li>1.2kWh × 160원 = 약 190원</li>
+</ul>
+<p>전기요금만 보면 건조기와 큰 차이가 없습니다. 그래서 선택 기준은 전기요금보다 시간과 공간입니다. 건조대를 펴 둘 자리가 있는지, 빨래가 마르는 동안 창문 결로가 생기는지, 빨래를 매일 널고 걷는 수고를 감당할 수 있는지가 갈립니다. 빨래가 마르는 동안 생기는 결로는 <a href="/guide/winter-condensation-dehumidifier/">겨울 결로 제습기 글</a>에서 습도 기준으로 정리했습니다.</p>
+
+<figure class="fig" style="margin:18px 0"><img src="/img/rack-dehumidifier-living.jpg" alt="햇살이 드는 거실에 빨래건조대와 소형 제습기를 놓은 모습" width="1080" height="806" style="max-width:100%;height:auto;border-radius:8px" loading="lazy"><figcaption>건조대와 제습기를 같이 쓰면 건조기 없이도 겨울 빨래를 말릴 수 있습니다. (AI 생성 이미지)</figcaption></figure>
+
+<h2>겨울에는 건조기도 오래 걸리나요?</h2>
+<p>그럴 수 있습니다. 소비자원이 9~10kg 히트펌프 건조기 7종을 시험했을 때, 주위온도 5℃(사용설명서에 적힌 가장 낮은 사용 온도)에서는 23℃일 때보다 건조시간이 제품별로 최소 10분에서 최대 1시간 6분 늘었습니다. 소비자원은 건조기가 차가운 곳에 설치되면 건조시간이 늘 수 있다고 안내했습니다. 이 시험은 2019년 결과이므로 최신 모델 수치와는 다를 수 있습니다.</p>
+<p>베란다나 외부와 맞닿은 세탁실에 설치할 예정이라면 겨울 실온과 제품의 사용 가능 온도 범위를 설명서에서 확인하세요.</p>
+
+<figure class="fig" style="margin:18px 0"><img src="/img/dryer-dry-towels.jpg" alt="드럼 건조기에서 막 꺼낸 보송한 수건" width="1080" height="806" style="max-width:100%;height:auto;border-radius:8px" loading="lazy"><figcaption>건조기는 시간과 공간을 아끼는 대신 설치 공간과 가격을 요구합니다. (AI 생성 이미지)</figcaption></figure>
+
+<h2>건조기를 사기 전에 확인할 4가지는 무엇인가요?</h2>
+<ul>
+  <li><strong>설치 공간과 배수</strong>: 히트펌프식은 응축수가 나오므로 배수 방식을 확인하세요.</li>
+  <li><strong>용량</strong>: 에너지공단 조회에서 2.5~4kg 소형 제품은 1kg당 약 618~689Wh로 5등급이었고, 10kg 제품은 1~2등급이었습니다. 용량이 작다고 전기를 덜 쓰는 것은 아니니 1kg당 수치를 같이 보세요.</li>
+  <li><strong>소음</strong>: 소비자원의 소형 건조기 시험에서 소음은 58~66dB로 제품마다 달랐습니다.</li>
+  <li><strong>옷감</strong>: 소비자원은 고온 열풍으로 말리는 히터 방식이 자연건조보다 옷감 수축률이 높다고 밝혔습니다. 니트·기능성 의류는 세탁 라벨을 먼저 보세요.</li>
+</ul>
+<p>건조기를 이미 쓰고 있다면 필터 청소만으로 건조시간이 달라질 수 있습니다. 방법은 <a href="/guide/dryer-filter-clean/">건조기 필터 청소법</a>에, 수리·교체 판단은 <a href="/guide/dryer-lifespan/">건조기 수명과 고장 징후</a>에 정리해 두었습니다.</p>
+
+<figure class="fig" style="margin:18px 0"><img src="/img/dryer-lint-filter.jpg" alt="건조기 필터에서 먼지 뭉치를 떼어내는 손" width="1080" height="806" style="max-width:100%;height:auto;border-radius:8px" loading="lazy"><figcaption>필터에 쌓인 먼지는 건조 효율과 안전 모두에 영향을 줍니다. (AI 생성 이미지)</figcaption></figure>
+
+<div class="box warn">
+  <div class="bt">건조기에 넣으면 안 되는 것</div>
+  <p style="margin:0">소비자원은 동작 중 건조기 문을 열지 말고(화상 위험), 드라이클리닝 세제 등 가연성·인화성 물질이 묻은 건조물과 탈수가 덜 되어 물이 흐르는 의류는 넣지 말라고 안내합니다.</p>
+</div>
+
+<h2>그래서 어떤 집이 건조기를 사는 편이 나은가요?</h2>
+<ul>
+  <li>빨래를 주 3회 이상 하고, 겨울마다 건조대 자리와 결로가 부담인 집</li>
+  <li>외부 공기와 닿지 않는 실내(세탁실·다용도실)에 설치 공간이 확보된 집</li>
+  <li>10kg 안팎 용량을 한 번에 돌릴 때가 잦은 집</li>
+</ul>
+<p>반대로 빨래가 적고 건조대를 둘 햇빛 좋은 자리가 있다면 제습기와 건조대 조합이 더 가볍습니다.</p>
+
+<h2>결론</h2>
+<div class="box tip">
+  <div class="bt">✅ 한 줄 정리</div>
+  <p style="margin:0">전기요금은 건조기(10kg 한 번 약 290~420원 계산)와 제습기 건조(약 190원, 가정값)가 크게 다르지 않으니, 겨울에는 빨래 횟수·공간·결로 부담으로 고르세요.</p>
+</div>
+`,
+  },
 ];

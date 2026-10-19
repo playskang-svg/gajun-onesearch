@@ -343,4 +343,15 @@ export const figures = {
         { label: '그래도 안 되면\n제습기' },
       ],
     }),
+  'winter-laundry-dryer-vs-indoor-drying': () =>
+    flowFigure({
+      title: '겨울 빨래, 건조기를 살지 정하는 순서',
+      caption: '한국소비자원·한국에너지공단 자료 기준 확인 순서.',
+      steps: [
+        { label: '빨래 횟수와\n건조대 자리' },
+        { label: '설치 공간\n겨울 실온' },
+        { label: '효율등급\n용량 확인' },
+        { label: '그래도 고민이면\n제습기와 건조대' },
+      ],
+    }),
 };
