@@ -332,4 +332,15 @@ export const figures = {
         { label: '천 사이에 두고\n사용' },
       ],
     }),
+  'winter-condensation-dehumidifier': () =>
+    flowFigure({
+      title: '겨울 결로 관리 순서',
+      caption: '국토교통부 「결로 저감 위한 공동주택 생활환경 홍보물」 안내 순서 기준.',
+      steps: [
+        { label: '물방울\n즉시 닦기' },
+        { label: '선풍기로\n말리기' },
+        { label: '환기\n습도 50% 이하' },
+        { label: '그래도 안 되면\n제습기' },
+      ],
+    }),
 };
