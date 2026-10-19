@@ -354,4 +354,15 @@ export const figures = {
         { label: '그래도 고민이면\n제습기와 건조대' },
       ],
     }),
+  'home-fan-heater-electricity-cost': () =>
+    flowFigure({
+      title: '온풍기 사기 전 전기세 확인 순서',
+      caption: '한국전력 요금표와 공정거래위원회·한국소비자원 안내 기준 순서.',
+      steps: [
+        { label: '라벨의\n소비전력 확인' },
+        { label: '내 집 월 사용량\n확인' },
+        { label: '하루 사용\n한도 시간 계산' },
+        { label: 'KC 인증\n안전 배치' },
+      ],
+    }),
 };

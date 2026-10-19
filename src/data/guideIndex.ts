@@ -20,6 +20,15 @@ export const GUIDE_POSTS: GuidePost[] = [
     "date": "2026.10.20"
   },
   {
+    "slug": "home-fan-heater-electricity-cost",
+    "title": "가정용 온풍기 전기세 얼마나 나올까? 사기 전 확인할 5가지 (2026년 10월 확인)",
+    "summary": "가정용 온풍기 전기세는 정격 소비전력(W)×사용 시간으로 정해집니다. 한국전력 요금표로 1,200W·2,000W 월 요금을 계산하고, 하루 몇 시간까지 써야 400kWh를 넘지 않는지 정리했습니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "가정용 온풍기 전기세",
+    "date": "2026.10.20"
+  },
+  {
     "slug": "heating-mat-compare",
     "title": "온수매트 추천 전에 보는 전기장판·카본매트 차이, 크기·온도·전기요금 고르는 기준",
     "summary": "전기장판은 열선, 카본매트는 탄소 발열체, 온수매트는 데운 물을 순환시킵니다. 한국소비자원 시험 수치와 전기요금 계산식으로 내 집에 맞는 난방 매트를 고르는 기준을 정리했습니다.",
@@ -707,6 +716,6 @@ export const GUIDE_CATEGORIES = [
     "id": "common",
     "name": "가전 공통 상식",
     "desc": "효율등급, 소비전력, 고르는 기준",
-    "count": 18
+    "count": 19
   }
 ];

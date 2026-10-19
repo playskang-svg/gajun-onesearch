@@ -201,4 +201,124 @@ export const heatingPosts = [
 </div>
 `,
   },
+  {
+    slug: 'home-fan-heater-electricity-cost',
+    category: 'common',
+    date: '2026.10.20',
+    keywords: ['가정용 온풍기 전기세', '가정용온풍기', '온풍기 전기요금', '온풍기 하루 사용시간', '온풍기 고르는 법', '전기온풍기 안전'],
+    title: '가정용 온풍기 전기세 얼마나 나올까? 사기 전 확인할 5가지 (2026년 10월 확인)',
+    summary:
+      '가정용 온풍기 전기세는 정격 소비전력(W)×사용 시간으로 정해집니다. 한국전력 요금표로 1,200W·2,000W 월 요금을 계산하고, 하루 몇 시간까지 써야 400kWh를 넘지 않는지 정리했습니다.',
+    body: `
+<div class="box tip">
+  <div class="bt">제휴 링크 안내</div>
+  <p style="margin:0">이 포스팅은 제휴마케팅이 포함된 광고로 커미션을 지급 받습니다. 쿠팡 파트너스 활동의 일환으로 일정액의 수수료를 받을 수 있으며, 구매자가 내는 가격은 달라지지 않습니다.</p>
+</div>
+
+<figure class="fig" style="margin:18px 0"><img src="/img/fan-heater-thumb.jpg" alt="가정용 온풍기 전기세 하루 몇 시간까지 써도 될까 요금 계산표 썸네일" width="1200" height="630" style="max-width:100%;height:auto;border-radius:8px" loading="lazy"></figure>
+
+<p><strong>가정용 온풍기 전기세는 정격 소비전력(W)에 쓴 시간을 곱해서 정해집니다.</strong><br>
+1,200W 제품을 하루 4시간, 30일 켜면 한 달 144kWh이고, 기존 사용량이 월 250kWh인 집은 전기요금이 약 30,900원 늘어납니다.<br>
+한국전력 주택용 저압 요금표를 2026년 10월 20일에 확인해 계산한 값입니다.</p>
+
+<p>온풍기는 켜자마자 따뜻해서 11월부터 손이 갑니다.<br>
+그런데 한 달 뒤 고지서에서 놀라는 집이 많습니다.<br>
+이유는 전기를 많이 먹어서가 아니라, 사용량이 어느 선을 넘으면 요금 단가가 올라가는 구조라서입니다.</p>
+
+<p>온풍기 전기세가 걱정된다면 먼저 상품 페이지에서 소비전력과 현재 가격을 확인하세요.<br>
+소형 PTC 팬히터 중 하나인 신일 SEH-P1600WS는 10월 20일 조회 기준 63,900원으로 표시됐습니다.<br>
+가격과 쿠폰은 수시로 바뀌니 눌러서 현재 값을 보세요.</p>
+<p style="text-align:center;margin:18px 0"><a href="https://link.coupang.com/re/AFFSDP?lptag=AF5563346&amp;subid=gajun&amp;pageKey=2354418566&amp;itemId=4084768911&amp;vendorItemId=91673218593&amp;traceid=V0-153-a614e1590add74e9&amp;clickBeacon=2e69f330-cbe9-11f1-97a1-0a1f2e100914%7E3&amp;requestid=20261020031619110320377110&amp;token=31850C%7CMIXED&amp;pt=1&amp;slot=1" target="_blank" rel="nofollow sponsored noopener"><img src="/img/btn_plain.webp" alt="쿠팡에서 신일 PTC 온풍 팬히터 SEH-P1600WS 가격과 소비전력 확인하기" width="320" height="92" style="max-width:100%;height:auto" loading="lazy"></a></p>
+
+<figure class="fig" style="margin:18px 0"><img src="/img/fan-heater-label-closeup.jpg" alt="온풍기 뒷면 정격 라벨의 소비전력 표기를 손가락으로 가리키는 모습" width="1080" height="810" style="max-width:100%;height:auto;border-radius:8px" loading="lazy"><figcaption>전기세를 계산하는 출발점은 제품 라벨의 정격 소비전력(W)입니다. (AI 생성 이미지)</figcaption></figure>
+
+<h2>가정용 온풍기 전기세는 어떻게 계산하나요?</h2>
+<p>계산식은 두 줄입니다.<br>
+<strong>소비전력(kW) × 하루 사용 시간 × 30일 = 한 달 사용량(kWh)</strong><br>
+그 사용량을 집 전체 사용량에 더해 요금 구간표에 대입합니다.</p>
+<p>한국전력 사이버지점의 주택용 저압 요금표에서 1~6월·9~12월(기타계절) 구간은 아래와 같습니다.</p>
+<div class="tscroll">
+<table>
+  <tr><th>월 사용량 구간</th><th>기본요금</th><th>전력량요금</th></tr>
+  <tr><td>200kWh 이하</td><td>910원</td><td>kWh당 120.0원</td></tr>
+  <tr><td>201~400kWh</td><td>1,600원</td><td>kWh당 214.6원</td></tr>
+  <tr><td>400kWh 초과</td><td>7,300원</td><td>kWh당 307.3원</td></tr>
+</table>
+</div>
+<p>한국전력 사이버지점 표의 최신 적용일자는 2023년 11월 9일이었습니다.<br>
+뉴스1은 2026년 9월 21일 4분기 전기요금이 동결되고 연료비조정단가는 kWh당 +5원이 유지된다고 보도했습니다.<br>
+아래 계산에는 기후환경요금·연료비조정요금·부가세 등이 빠져 있어 실제 고지서는 더 높게 나옵니다.</p>
+
+<h2>온풍기를 하루 4시간 쓰면 한 달에 얼마가 늘어날까요?</h2>
+<p>기존 사용량을 월 250kWh로 가정하고, 온풍기를 정격 소비전력으로 계속 켰을 때 늘어나는 요금입니다.<br>
+250kWh는 예시 가정값이니 내 고지서의 지난달 사용량으로 바꿔 보세요.</p>
+<div class="tscroll">
+<table>
+  <tr><th>정격 소비전력</th><th>하루 사용</th><th>한 달 사용량</th><th>늘어나는 요금(계산)</th></tr>
+  <tr><td>600W</td><td>4시간</td><td>72kWh</td><td>약 15,450원</td></tr>
+  <tr><td>1,200W</td><td>4시간</td><td>144kWh</td><td>약 30,900원</td></tr>
+  <tr><td>2,000W</td><td>4시간</td><td>240kWh</td><td>약 65,500원</td></tr>
+  <tr><td>1,200W</td><td>8시간</td><td>288kWh</td><td>약 80,300원</td></tr>
+</table>
+</div>
+<p>2,000W 제품은 합계가 490kWh가 되어 400kWh를 넘는 3구간에 들어갑니다.<br>
+소비전력은 1.7배인데 늘어나는 요금은 2.1배인 이유입니다.<br>
+온도조절로 켜졌다 꺼지는 제품은 실제 사용량이 이보다 적을 수 있습니다.</p>
+
+<figure class="fig" style="margin:18px 0"><img src="/img/fan-heater-tier-hours.jpg" alt="기본 사용량별 온풍기 하루 사용 가능 시간 표" width="1080" height="760" style="max-width:100%;height:auto;border-radius:8px" loading="lazy"><figcaption>400kWh를 넘기지 않는 하루 사용 시간(30일 기준 계산).</figcaption></figure>
+
+<h2>하루 몇 시간까지 쓰면 400kWh를 넘지 않을까요?</h2>
+<p>400kWh를 넘는 순간 초과분은 kWh당 307.3원으로 오릅니다.<br>
+2구간 단가 214.6원의 약 1.4배입니다.<br>
+그래서 요금 걱정은 하루 몇 시간까지만 켤지 정하는 것으로 줄일 수 있습니다.</p>
+<ul>
+  <li>기본 사용량 250kWh인 집: 1,200W는 하루 약 4.2시간, 2,000W는 약 2.5시간</li>
+  <li>기본 사용량 300kWh인 집: 1,200W는 하루 약 2.8시간, 2,000W는 약 1.7시간</li>
+</ul>
+<p>12월부터 2월까지는 월 1,000kWh를 넘는 가구에 kWh당 736.2원의 슈퍼유저요금이 적용됩니다.</p>
+
+<figure class="fig" style="margin:18px 0"><img src="/img/fan-heater-safe-placement.jpg" alt="벽 콘센트에 단독으로 연결하고 커튼과 거리를 둔 온풍기 배치" width="1080" height="810" style="max-width:100%;height:auto;border-radius:8px" loading="lazy"><figcaption>벽 콘센트에 단독으로 꽂고 커튼·이불과 거리를 두는 배치가 기본입니다. (AI 생성 이미지)</figcaption></figure>
+
+<h2>온풍기 사기 전에 확인할 5가지는 무엇인가요?</h2>
+<ol>
+  <li><strong>라벨의 정격 소비전력(W)</strong>: 위 표에 그대로 넣을 숫자입니다.</li>
+  <li><strong>KC 인증</strong>: 공정거래위원회와 한국소비자원은 난방용품을 살 때 KC 인증제품을 고르라고 당부했습니다.</li>
+  <li><strong>온도조절·타이머 기능</strong>: 하루 사용 시간을 정해 두려면 타이머와 온도조절이 있는 제품이 편합니다. 상품 상세에서 확인하세요.</li>
+  <li><strong>콘센트 연결 방식</strong>: 220V에서 2,000W 제품은 약 9.1A가 흐릅니다. 멀티탭 허용 전류 표기를 확인하고 가능하면 벽 콘센트에 단독으로 꽂으세요.</li>
+  <li><strong>둘 자리</strong>: 이불·옷 같은 가연성 물건 가까이에서 쓰지 않습니다.</li>
+</ol>
+<div class="box warn">
+  <div class="bt">안전 통계 (공정위·소비자원, 2025년 12월 발표)</div>
+  <p style="margin:0">2020~2024년 소비자위해감시시스템에 접수된 전기온풍기 사고는 161건이었고, 이 가운데 화재·과열 관련이 55건(34.2%), 제품 불량 관련이 73건(45.3%)이었습니다. 두 기관은 장시간 사용을 피하고 사용하지 않을 때는 플러그를 뽑아 두라고 안내했습니다.</p>
+</div>
+
+<h2>이런 집은 온풍기를 사지 않는 편이 낫습니다</h2>
+<ul>
+  <li>월 사용량이 이미 350kWh 안팎인 집: 1,200W를 하루 4시간 쓰면 늘어나는 요금이 약 45,300원이 됩니다.</li>
+  <li>집 전체를 데우려는 집: 보일러부터 점검하는 편이 먼저입니다. 순서는 <a href="/guide/boiler-inspection-before-winter/">겨울 전 보일러 점검 글</a>에 정리했습니다.</li>
+  <li>밤새 켜 두려는 집: 장시간 사용은 공정위·소비자원이 피하라고 안내한 사용법입니다.</li>
+</ul>
+<p>다른 난방기와 방식이 어떻게 다른지 궁금하다면 <a href="/guide/electric-heater-types-guide/">전기히터 5종 비교 글</a>을, 가전별 전기요금 계산법은 <a href="/guide/electricity-cost/">가전 전기요금 글</a>을 참고하세요.<br>
+난방을 켰는데 창문에 물이 맺힌다면 <a href="/guide/winter-condensation-dehumidifier/">겨울 결로 제습기 글</a>이 이어서 도움이 됩니다.</p>
+
+<figure class="fig" style="margin:18px 0"><img src="/img/fan-heater-small-room.jpg" alt="겨울 아침 창가 책상 옆에 놓인 작은 전기난방기" width="1080" height="810" style="max-width:100%;height:auto;border-radius:8px" loading="lazy"><figcaption>방 전체가 아니라 앉는 자리 주변만 데울 때는 짧게 쓰는 편이 요금에 유리합니다. (AI 생성 이미지)</figcaption></figure>
+
+<p>방 전체가 아니라 책상 아래나 발밑만 데울 생각이라면, 미니 온풍기 전기세를 따로 풀어 쓴 네이버 블로그 글이 있습니다.<br>
+제목은 「발밑 미니 온풍기 PTC 전기세 얼마나 나올까, 사무실·캠핑용 고르는 법」입니다.</p>
+<p style="text-align:center;margin:18px 0"><a href="https://blog.naver.com/stillsk/224441106211" target="_blank" rel="noopener"><img src="/img/btn_blog.webp" alt="네이버 블로그에서 미니 온풍기 PTC 전기세 정리글 보기" width="320" height="92" style="max-width:100%;height:auto" loading="lazy"></a></p>
+
+<h2>결론</h2>
+<div class="box tip">
+  <div class="bt">✅ 한 줄 정리</div>
+  <p style="margin:0">온풍기 전기세는 소비전력(W)×사용 시간으로 정해지니, 사기 전에 라벨의 W와 내 집 월 사용량으로 하루 사용 한도 시간을 먼저 정하고 KC 인증제품을 고르세요.</p>
+</div>
+
+<h2>출처</h2>
+<ul>
+  <li>한국전력공사 사이버지점, 주택용 전력(저압) 전기요금표 — <a href="https://cyber.kepco.co.kr/ckepco/front/jsp/CY/E/E/CYEEHP00101.jsp" target="_blank" rel="noopener">cyber.kepco.co.kr</a> (2026년 10월 20일 확인)</li>
+  <li>공정거래위원회·한국소비자원, 「겨울철 난방용품 화재 안전사고 주의보 발령」 보도자료(2025년 12월 4일 등록) — <a href="https://www.ftc.go.kr/www/selectBbsNttView.do?bordCd=3&amp;key=12&amp;searchCtgry=01,02&amp;nttSn=46724" target="_blank" rel="noopener">ftc.go.kr</a> (2026년 10월 20일 확인)</li>
+  <li>뉴스1, 「4분기 전기요금 동결…연료비조정단가 +5원 유지」(2026년 9월 21일) — <a href="https://www.news1.kr/economy/idustry-trade/6296797" target="_blank" rel="noopener">news1.kr</a></li>
+</ul>
+`,
+  },
 ];
