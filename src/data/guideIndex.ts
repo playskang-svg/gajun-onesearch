@@ -11,6 +11,51 @@ export interface GuidePost {
 
 export const GUIDE_POSTS: GuidePost[] = [
   {
+    "slug": "heating-mat-compare",
+    "title": "온수매트 추천 전에 보는 전기장판·카본매트 차이, 크기·온도·전기요금 고르는 기준",
+    "summary": "전기장판은 열선, 카본매트는 탄소 발열체, 온수매트는 데운 물을 순환시킵니다. 한국소비자원 시험 수치와 전기요금 계산식으로 내 집에 맞는 난방 매트를 고르는 기준을 정리했습니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "온수매트추천",
+    "date": "2026.10.19"
+  },
+  {
+    "slug": "rechargeable-hand-warmer-guide",
+    "title": "충전식 손난로 고르는 법, 왜 표면온도 60℃·KC 인증번호부터 봐야 할까?",
+    "summary": "충전식 손난로는 리튬 배터리로 열을 냅니다. 한국소비자원이 26개 제품을 조사했을 때 3개가 표면온도 60℃를 넘었고 6개는 KC 인증번호가 없었습니다. 사기 전에 볼 4가지와 저온화상을 피하는 사용법을 정리했습니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "충전식손난로",
+    "date": "2026.10.19"
+  },
+  {
+    "slug": "boiler-inspection-before-winter",
+    "title": "보일러 가동 전 점검 안 하면 일산화탄소 중독? 겨울 전 필수 점검 5가지",
+    "summary": "매년 가을 보일러 첫 가동 직후 일산화탄소 중독 사고가 집중됩니다. 전문가 호출 없이 직접 확인할 수 있는 5가지 점검 항목과, 반드시 업체를 불러야 하는 위험 신호를 정리했습니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "보일러점검",
+    "date": "2026.10.11"
+  },
+  {
+    "slug": "humidifier-types-comparison-guide",
+    "title": "가습기 48시간 안 씻으면 세균 10만 마리? 4종 비교 + 안전 관리법",
+    "summary": "초음파·가열·기화·복합, 같은 가습기인데 세균 위험이 10배 이상 차이 납니다. 종류별 원리·위생·전기요금·관리법을 한눈에 비교했습니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "가습기",
+    "date": "2026.10.05"
+  },
+  {
+    "slug": "electric-heater-types-guide",
+    "title": "전기히터 잘못 고르면 전기요금 3배? 난방기 5종 완전 비교",
+    "summary": "카본·할로겐·온풍기·컨벡터·라디에이터, 같은 전기난방인데 전기요금 차이가 3배까지 납니다. 방식별 원리·소비전력·안전성·적합 공간을 정리했습니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "전기히터",
+    "date": "2026.10.02"
+  },
+  {
     "slug": "baby-washer-guide",
     "title": "아기세탁기 따로 사야 할까, 살균 세탁 기준으로 판단하기",
     "summary": "아기 옷을 어른 옷과 같이 빨아도 되는지 고민하는 분들을 위해, 별도 세탁기가 필요한 경우와 기존 세탁기로 충분한 경우를 나눠 정리했습니다.",
@@ -152,6 +197,15 @@ export const GUIDE_POSTS: GuidePost[] = [
     "category": "common",
     "categoryName": "가전 공통 상식",
     "keyword": "제습기공기청정기",
+    "date": "2026.09.15"
+  },
+  {
+    "slug": "home-projector-guide",
+    "title": "가정용 빔프로젝터, 거실에서 낮에도 보려면 몇 안시가 필요할까?",
+    "summary": "프로젝터 선택은 제품 비교가 아니라 방 조건 확인에서 시작합니다. 조명 상태별로 필요한 밝기, 화면 크기에서 역산하는 투사거리, 설치할 때 추가 비용이 붙는 지점을 정리했습니다.",
+    "category": "tv",
+    "categoryName": "TV·영상가전",
+    "keyword": "가정용빔프로젝터",
     "date": "2026.09.15"
   },
   {
@@ -611,7 +665,7 @@ export const GUIDE_CATEGORIES = [
     "id": "tv",
     "name": "TV·영상가전",
     "desc": "OLED/QLED 번인 방지, 시청거리별 인치 계산과 화질",
-    "count": 5
+    "count": 6
   },
   {
     "id": "cleaner",
@@ -635,6 +689,6 @@ export const GUIDE_CATEGORIES = [
     "id": "common",
     "name": "가전 공통 상식",
     "desc": "효율등급, 소비전력, 고르는 기준",
-    "count": 12
+    "count": 17
   }
 ];

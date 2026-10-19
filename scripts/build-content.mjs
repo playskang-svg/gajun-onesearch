@@ -17,24 +17,36 @@ function write(relPath, html) {
   writeFileSync(full, html, 'utf8');
 }
 
-/** 같은 카테고리 우선, 부족하면 다른 글로 채워 3개 */
+// 애드센스·검색 품질 게이트: 짧은 초고를 지우지는 않되, 독자 판단에 필요한
+// 근거·비교·실행 순서를 보강하기 전까지 목록·사이트맵에서 제외하고 noindex 처리한다.
+const plainLength = (html) =>
+  String(html).replace(/<[^>]+>/g, ' ').replace(/&[^;]+;/g, ' ').replace(/\s+/g, ' ').trim().length;
+const QUALITY_MIN_CHARS = 1000;
+const publicPosts = posts.filter((p) => plainLength(p.body) >= QUALITY_MIN_CHARS);
+const heldPosts = posts.filter((p) => plainLength(p.body) < QUALITY_MIN_CHARS);
+
+/** 같은 카테고리 우선, 부족하면 다른 공개 글로 채워 3개 */
 function relatedFor(post) {
-  const same = posts.filter((p) => p.category === post.category && p.slug !== post.slug);
-  const other = posts.filter((p) => p.category !== post.category);
+  const same = publicPosts.filter((p) => p.category === post.category && p.slug !== post.slug);
+  const other = publicPosts.filter((p) => p.category !== post.category);
   return [...same, ...other].slice(0, 3);
 }
 
 // ── 글 상세
 for (const post of posts) {
   const fig = figures[post.slug] ? figures[post.slug]() : '';
-  write(`guide/${post.slug}/index.html`, renderPost(post, relatedFor(post), fig, faqs[post.slug] ?? []));
+  const noindex = !publicPosts.includes(post);
+  write(
+    `guide/${post.slug}/index.html`,
+    renderPost(post, relatedFor(post), fig, faqs[post.slug] ?? [], { noindex })
+  );
 }
 
 // ── 허브
 const groups = CATEGORIES.map((c) => ({
   name: c.name,
   desc: c.desc,
-  posts: posts.filter((p) => p.category === c.id),
+  posts: publicPosts.filter((p) => p.category === c.id),
 })).filter((g) => g.posts.length);
 
 write(
@@ -54,7 +66,7 @@ write(
 
 // ── 카테고리별
 for (const c of CATEGORIES) {
-  const list = posts.filter((p) => p.category === c.id);
+  const list = publicPosts.filter((p) => p.category === c.id);
   if (!list.length) continue;
   write(
     `guide/category/${c.id}/index.html`,
@@ -80,12 +92,12 @@ const today = new Date().toISOString().slice(0, 10);
 const urls = [
   { loc: `${SITE.domain}/`, pri: '1.0', freq: 'weekly' },
   { loc: `${SITE.domain}/guide/`, pri: '0.9', freq: 'weekly' },
-  ...CATEGORIES.filter((c) => posts.some((p) => p.category === c.id)).map((c) => ({
+  ...CATEGORIES.filter((c) => publicPosts.some((p) => p.category === c.id)).map((c) => ({
     loc: `${SITE.domain}/guide/category/${c.id}/`,
     pri: '0.7',
     freq: 'weekly',
   })),
-  ...posts.map((p) => ({ loc: `${SITE.domain}/guide/${p.slug}/`, pri: '0.8', freq: 'monthly' })),
+  ...publicPosts.map((p) => ({ loc: `${SITE.domain}/guide/${p.slug}/`, pri: '0.8', freq: 'monthly' })),
   ...pages.map((p) => ({ loc: `${SITE.domain}/guide/${p.slug}/`, pri: '0.3', freq: 'yearly' })),
 ];
 
@@ -104,7 +116,7 @@ ${urls
 );
 
 // ── rss.xml (글만, 최신순)
-const rssItems = posts
+const rssItems = publicPosts
   .slice(0, 20)
   .map((p) => {
     const d = new Date(p.date.replace(/\./g, '-') + 'T09:00:00+09:00');
@@ -151,5 +163,5 @@ write(
 );
 
 console.log(
-  `콘텐츠 생성 완료 — 글 ${posts.length}편, 카테고리 ${groups.length}개, 정책 ${pages.length}개, sitemap ${urls.length} URL`
+  `콘텐츠 생성 완료 — 공개 글 ${publicPosts.length}편, 보강 대기(noindex) ${heldPosts.length}편, 카테고리 ${groups.length}개, 정책 ${pages.length}개, sitemap ${urls.length} URL`
 );

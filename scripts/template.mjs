@@ -159,7 +159,7 @@ footer .fnav a{color:#4b5563;font-weight:600}
 }
 `;
 
-function head({ title, description, canonical, keywords }) {
+function head({ title, description, canonical, keywords, noindex = false }) {
   return `<!doctype html>
 <html lang="ko">
 <head>
@@ -170,6 +170,7 @@ function head({ title, description, canonical, keywords }) {
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
+<meta name="robots" content="${noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large'}">
 ${keywords ? `<meta name="keywords" content="${esc(keywords)}">` : ''}
 <link rel="canonical" href="${esc(canonical)}">
 <meta property="og:type" content="article">
@@ -218,6 +219,7 @@ function footer() {
     <a href="/guide/">가전 꿀팁</a>
     <a href="/">스펙 비교</a>
     <a href="/guide/about/">사이트 소개</a>
+    <a href="/guide/editorial/">편집 원칙</a>
     <a href="/guide/privacy/">개인정보처리방침</a>
     <a href="/guide/terms/">이용약관</a>
     <a href="/guide/contact/">문의하기</a>
@@ -251,7 +253,7 @@ ${list
 }
 
 /** 글 상세 페이지 */
-export function renderPost(post, related = [], figure = '', faqList = []) {
+export function renderPost(post, related = [], figure = '', faqList = [], options = {}) {
   const url = `${SITE.domain}/guide/${post.slug}/`;
   const rel = related.length
     ? `<h2>함께 보면 좋은 글</h2><div class="grid">${related
@@ -309,14 +311,19 @@ export function renderPost(post, related = [], figure = '', faqList = []) {
       description: post.summary,
       canonical: url,
       keywords: post.keywords.join(', '),
+      noindex: options.noindex ?? false,
     }) +
     header(post.category) +
     `<main><div class="wrap">
   <div class="meta"><span class="chip">${esc(catName(post.category))}</span><span>${esc(
       post.date
-    )} 작성</span></div>
+    )} 작성</span><span>가전비교연구소 편집팀</span></div>
   <h1>${esc(post.title)}</h1>
   <div class="lead">${esc(post.summary)}</div>
+  <div class="box tip" aria-label="글 검증 정보">
+    <div class="bt">이 글을 이렇게 확인했습니다</div>
+    <p style="margin:0">제조사 공개 사양·사용설명서와 공공기관 자료를 우선해 확인하고, 독자가 직접 할 수 있는 점검과 전문가에게 맡길 작업을 구분했습니다. 수치와 기준은 바뀔 수 있으므로 구매·수리 전 공식 안내를 다시 확인하세요.</p>
+  </div>
   ${insertFigure(post.body, figure)}
   ${faqSection(faqList)}
   ${rel}
