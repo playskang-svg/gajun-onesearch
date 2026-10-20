@@ -20,11 +20,18 @@ export const SRC = {
   samsung_dispute: { org: '삼성전자서비스 (소비자분쟁해결기준 별표 Ⅲ 전재)', doc: '품목별 품질보증기간 및 부품보유기간 (TV·냉장고 9년, 에어컨 8년, 세탁기·건조기·제습기·가습기 7년)', url: 'https://www.samsungsvc.co.kr/info/fee?tab=conflict' },
   kca_dispute: { org: '한국소비자원', doc: '소비자분쟁해결기준 목록 (별표 3 품질보증기간·부품보유기간, 별표 4 내용연수표)', url: 'https://www.kca.go.kr/odr/pg/pi/osPgBjResolvW.do' },
   safetykorea: { org: '국가기술표준원 제품안전정보센터', doc: '제품안전정보센터 (KC 인증·리콜 정보 조회)', url: 'https://www.safetykorea.kr' },
+  kca_dehum2024: { org: '한국소비자원 소비자24 (비교공감 제2024-12호)', doc: '제습기 품질비교 시험평가 결과 (2024.7.17 게시, 9개 제품: 제습량·소음·제습효율·전기요금)', url: 'https://www.consumer.go.kr/user/ftc/consumer/cnsmrBBS/79/selectInfoRptDetail.do?infoId=A1080439&cntntsId=00000566' },
+  kca_humid2025: { org: '한국소비자원 소비자24 (비교공감 제2025-18호)', doc: '가습기 품질비교 시험평가 결과 (2025.10.30 게시, 13개 제품: 가습량·소음·유지관리비용·화상·세척)', url: 'https://www.consumer.go.kr/user/ftc/consumer/cnsmrBBS/79/selectInfoRptDetail.do?infoId=A1081112' },
+  eep_aircon_list: { org: '한국에너지공단 효율관리제도', doc: '효율등급제도 제품검색: 전기냉방기 (월간소비전력량, 효율등급, 제조일자에 따른 등급 변동 안내)', url: 'https://eep.energy.or.kr/certification/certi_list_260.aspx' },
   dt_news: { org: '디지털타임스(다음 뉴스 전재, 공정위·소비자원 보도자료 인용)', doc: '겨울 난방용품 안전사고 1위? 전기장판…공정위, 소비자안전주의보 (2025.12.7, 2020~2024년 4,154건)', url: 'https://v.daum.net/v/PbYoZ1YCCj?f=p' },
 };
 
 // slug → 출처 id 목록 (본문이 이미 자체 출처 목록을 가진 글은 넣지 않는다)
 export const POST_SOURCES = {
+  'energy-grade1-dehumidifier': ['eep_summary', 'eep_compare', 'kca_dehum2024'],
+  'low-noise-dehumidifier': ['kca_dehum2024', 'kca_humid2025'],
+  'energy-grade1-aircon': ['eep_compare', 'eep_aircon_list'],
+  'humidifier-newborn-safety': ['kca_humid2025', 'safetykorea'],
   'fridge-temperature': ['fsk_temp', 'korea_fridge', 'fsk_fridge10'],
   'fridge-lifespan': ['law_dispute', 'samsung_dispute', 'kca_dispute', 'fsk_fridge10'],
   'electricity-cost': ['kepco', 'eep_summary', 'eep_compare'],

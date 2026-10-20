@@ -25,6 +25,11 @@ const QUALITY_MIN_CHARS = 1000;
 const publicPosts = posts.filter((p) => plainLength(p.body) >= QUALITY_MIN_CHARS);
 const heldPosts = posts.filter((p) => plainLength(p.body) < QUALITY_MIN_CHARS);
 
+/** 보강 대기(noindex) 글로 가는 본문 내부 링크는 글자만 남기고 링크를 제거한다 (보강 후 index 전환되면 자동으로 링크 복원) */
+const heldSlugs = new Set(heldPosts.map((p) => p.slug));
+const unlinkHeld = (html) =>
+  html.replace(/<a href="\/guide\/([a-z0-9-]+)\/?"[^>]*>([\s\S]*?)<\/a>/g, (m, slug, text) => (heldSlugs.has(slug) ? text : m));
+
 /** 같은 카테고리 우선, 부족하면 다른 공개 글로 채워 3개 */
 function relatedFor(post) {
   const same = publicPosts.filter((p) => p.category === post.category && p.slug !== post.slug);
@@ -38,7 +43,7 @@ for (const post of posts) {
   const noindex = !publicPosts.includes(post);
   write(
     `guide/${post.slug}/index.html`,
-    renderPost(post, relatedFor(post), fig, faqs[post.slug] ?? [], { noindex })
+    unlinkHeld(renderPost(post, relatedFor(post), fig, faqs[post.slug] ?? [], { noindex }))
   );
 }
 
