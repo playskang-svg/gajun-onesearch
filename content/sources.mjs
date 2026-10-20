@@ -29,11 +29,22 @@ export const SRC = {
   easylaw_purifier: { org: '생활법령정보(법제처, 환경부·국립환경과학원 먹는물 수질기준 해설서 인용)', doc: '정수기 설치·관리 (필터는 설명서에 따라 정기 교환, 다중이용시설 6개월 1회 이상 소독)', url: 'https://easylaw.go.kr/CSP/CnpClsMain.laf?csmSeq=1455&ccfNo=1&cciNo=2&cnpClsNo=1' },
   kca_styler2026: { org: '대한민국 정책브리핑(한국소비자원 브리핑)', doc: '의류관리기 3종 품질 비교정보 제공 (2026.9.16, 표준스타일링 소비전력량 332~397Wh, 연간 전기요금 7,600~9,100원)', url: 'https://www.korea.kr/briefing/policyBriefingView.do?newsId=156781885' },
   ehtis_indoor: { org: '환경보건종합정보시스템(한국환경산업기술원)', doc: '실내공기질 관리방법 (온도 18~22℃, 습도 40~60%, 결로·곰팡이 관리, 환기)', url: 'https://www.ehtis.or.kr/cmn/sym/mnu/mpm/60001024/htmlMenuView.do' },
+  kca_rental2026: { org: '한국소비자원', doc: '정수기 렌탈 계약서 개선 보도자료 (2026.1.14, 피해구제 1,654건·해지비용 83건 분석, 의무사용기간 종료 후 해지비용, 소비자 주의사항)', url: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003994596' },
+  cons24_rental_case: { org: '소비자24(한국소비자원·공정거래위원회)', doc: '소비자 상담사례 「렌탈 정수기 중도 계약해지에 따른 위약금 산정」 (소비자분쟁해결기준: 의무사용기간 1년 초과 시 남은 기간 임대료의 10%)', url: 'https://www.consumer.go.kr/user/ftc/consumer/cnsltcase/114/selectCnsltCaseView.do?prgnCnsltCaseSn=51921' },
+  cons24_rental_dispute: { org: '소비자24(한국소비자원 분쟁조정)', doc: '분쟁조정 사례 「렌탈 정수기 중도해지에 따른 위약금 및 미납 렌탈료 청구 취소 요구」 (계속거래, 위약금 10%, 철거비 조항)', url: 'https://www.consumer.go.kr/user/ftc/consumer/trublmdatcase/116/selectTrublMdatCaseView.do?trublMdatCaseSn=12412' },
+  kca_purifier2016: { org: '한국소비자원', doc: '정수기 관리서비스에 대한 소비자 불만 많아 (2016.12.13 보도자료, 2016년 1~9월 401건 유형: 관리서비스 154건 38.4%)', url: 'https://www.kca.go.kr/kca/sub.do?menukey=5084&mode=view&no=1001981160&page=58' },
+  kca_smalldw2025: { org: '한국소비자원 소비자24', doc: '소형 식기세척기 품질비교 결과 (2025.9.10 게시, 6개 제품: 연간 전기요금 25,000~47,000원, 건조방식, 4개 제품 무설치 사용 가능)', url: 'https://www.consumer.go.kr/user/ftc/consumer/cnsmrBBS/80/selectInfoCmprDetail.do?infoId=A1081045' },
+  korea_dw2021: { org: '대한민국 정책브리핑(한국소비자원 브리핑)', doc: '식기세척기 비교정보 생산결과 (2021.12.15, 12~14인용 5개 제품: 세척·건조·소비전력량·물 사용량)', url: 'https://www.korea.kr/news/policyNewsView.do?newsId=156486509' },
+  eep_dw_list: { org: '한국에너지공단 효율관리제도', doc: '효율등급제도 제품검색: 식기세척기 (세척용량 인용, 1회 세척 소비전력량 Wh/회, 효율등급, 제조일자에 따른 등급 변동 안내)', url: 'https://eep.energy.or.kr/certification/certi_list_292.aspx' },
   dt_news: { org: '디지털타임스(다음 뉴스 전재, 공정위·소비자원 보도자료 인용)', doc: '겨울 난방용품 안전사고 1위? 전기장판…공정위, 소비자안전주의보 (2025.12.7, 2020~2024년 4,154건)', url: 'https://v.daum.net/v/PbYoZ1YCCj?f=p' },
 };
 
 // slug → 출처 id 목록 (본문이 이미 자체 출처 목록을 가진 글은 넣지 않는다)
 export const POST_SOURCES = {
+  'mini-humidifier-guide': ['kca_humid2025', 'ehtis_indoor'],
+  'air-styler-guide': ['kca_styler2026'],
+  'water-purifier-rental-vs-buy': ['kca_rental2026', 'cons24_rental_case', 'cons24_rental_dispute', 'kca_purifier2016', 'kca_purifier2020', 'easylaw_purifier'],
+  'dishwasher-capacity-guide': ['kca_smalldw2025', 'korea_dw2021', 'eep_dw_list'],
   'wall-aircon-self-clean': ['kca_aircon2026', 'eep_knowhow4', 'safetykorea'],
   'water-purifier-filter-hygiene': ['kca_purifier2020', 'easylaw_purifier'],
   'air-styler-electricity-cost': ['kca_styler2026', 'kepco'],
