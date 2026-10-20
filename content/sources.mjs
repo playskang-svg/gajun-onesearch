@@ -62,6 +62,14 @@ export const SRC = {
   kca_drum2020: { org: '한국소비자원 소비자24 (비교공감 제2020-20호)', doc: '드럼세탁기 품질비교 시험 결과 (2020.12.7 게시, 21kg·14~15kg 5개 제품: 이불코스(퀸 사이즈 이불 약 3.0kg)·소비전력량·세탁시간·물 사용량·소음)', url: 'https://www.consumer.go.kr/user/ftc/consumer/cnsmrBBS/79/selectInfoRptDetail.do?cntntsId=00000566&infoId=A1078330' },
   eep_washer_top: { org: '한국에너지공단 효율관리제도', doc: '효율등급제도 제품검색: 전기세탁기(일반) (표준세탁 용량 kg, 1회 세탁 소비전력량 Wh, 효율등급, 총 760건)', url: 'https://eep.energy.or.kr/certification/certi_list_298.aspx' },
   eep_washer_drum: { org: '한국에너지공단 효율관리제도', doc: '효율등급제도 제품검색: 전기세탁기(드럼) (표준세탁 용량 kg, 1회 세탁 소비전력량 Wh, 효율등급, 총 1,031건)', url: 'https://eep.energy.or.kr/certification/certi_list_299.aspx' },
+  seoul_li: { org: '서울특별시 환경분야 누리집 (수정 2025.8.21)', doc: '리튬이온 배터리, 올바른 사용법 알아보고 화재 예방해요! (KC 인증 확인, 차 안·직사광선 보관 주의, 부풀거나 과열 시 사용 중지, 충전 중 방치 금지, 멀티탭 대신 벽면 콘센트)', url: 'https://news.seoul.go.kr/env/archives/564382' },
+  energynews_car: { org: '에너지뉴스 (아산소방서 재현 실험 보도)', doc: '차량 내 방치한 보조배터리, 여름철 폭염에 90도까지 치솟아 (완충 보조배터리를 대시보드에 3시간 둘 때 90.3도, 차량 내부 48.9도, 보조배터리 대상 실험이며 청소기는 아님)', url: 'https://www.2news.co.kr/news/articleView.html?idxno=12838' },
+  kca_drum2005: { org: '한국소비자원 보도자료 (2005.11.18)', doc: '드럼세탁기 비교시험 결과, 세균제거 99.9% 수준에서 제품간 차이 없어 (10kg급 4개 제품, 표준코스 물만으로도 99.9% 이상 제거, 세탁온도별 전력 3배·8배·19배, 오래된 자료)', url: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1000494919' },
+  kca_babydet2020: { org: '한국소비자원 KCA보고서 (2020.6.30)', doc: '유아용 세탁세제 품질 비교시험 결과 보고 (액체 유아용 10종: 안전성·세척성능·생분해도·표시·경제성(3.5kg 세탁 158~426원)·표준사용량 표시)', url: 'https://www.kca.go.kr/smartconsumer/board/download.do?bid=00000146&did=1002994865&fno=10027947&menukey=7301' },
+  kca_label2007: { org: '한국소비자원 소비자칼럼 (2007.4.30)', doc: '품질표시 안에 모든 정보가 다 있어요! (의류 라벨의 세탁방법 등 취급주의 표시 확인, 오래된 자료)', url: 'https://www.kca.go.kr/home/sub.do?menukey=4009&mode=view&no=1000647058' },
+  kca_warranty: { org: '한국소비자원 게시 소비자분쟁해결기준 별표 Ⅲ', doc: '품목별 품질보증기간 및 부품보유기간 (에어컨 냉방전용 2년·냉난방 겸용 1년, 부품보유 제조일로부터 8년, 전기(가스)오븐·가스레인지 6년, 전기조리기기 3년, 별도 기간 없는 경우 규정, 기산점은 제조일자. 고시 번호·시행일은 확인하지 못함)', url: 'https://www.kca.go.kr/home/board/downloadlink.do?bid=00000011&did=1003146556' },
+  dispute_reprint: { org: '삼성전자서비스 (소비자분쟁해결기준 고시 전재)', doc: '소비자분쟁해결기준 별표 Ⅱ 품목별 해결기준·별표 Ⅲ (품질보증기간 내 무상수리, 동일 하자 2회·여러 부위 4회 수리 후 재발 시 수리 불가능으로 봄, 부품보유기간 내 부품 부재 피해 환급, 2016.10.26 이후 구입 제품 부품보유기간 규정, 제조사 전재본이라 최신 개정 여부는 확인하지 못함)', url: 'https://www.samsungsvc.co.kr/info/fee?tab=conflict' },
+  kca_induction2018: { org: '대한민국 정책브리핑(한국소비자원 인덕션레인지 비교정보, 2018.8.28)', doc: '전기인덕션 관련 비교정보 생산결과 (1구 프리스탠딩 10종: 안전성·가열시간·에너지소비효율·소음·표시사항·보유 기능, 오래된 자료)', url: 'https://www.korea.kr/common/download.do?fileId=186243701' },
 };
 
 // slug → 출처 id 목록 (본문이 이미 자체 출처 목록을 가진 글은 넣지 않는다)
@@ -101,4 +109,8 @@ export const POST_SOURCES = {
   'soundbar-guide': ['kca_tv2022press', 'hdmi_earc'],
   'tv-as-monitor-guide': ['kca_tv2022press', 'hdmi_allm', 'hdmi_vrr', 'vdt_guide'],
   'washer-capacity-10kg-vs-12kg': ['kca_drum2020', 'eep_washer_drum', 'eep_washer_top'],
+  'cordless-car-vacuum-guide': ['kca_cordless2022', 'kca_cordless2018', 'kca_vacuum_suction2025', 'seoul_li', 'energynews_car'],
+  'baby-washer-guide': ['kca_drum2005', 'kca_babydet2020', 'kca_drum2020', 'eep_washer_top', 'eep_washer_drum', 'kca_label2007'],
+  'daewoo-aircon-guide': ['kca_warranty', 'dispute_reprint', 'kca_aircon2026', 'eep_aircon_list'],
+  'siemens-induction-guide': ['kca_induction2018', 'kca_warranty', 'safetykorea'],
 };
