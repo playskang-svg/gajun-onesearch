@@ -36,6 +36,14 @@ export const SRC = {
   kca_smalldw2025: { org: '한국소비자원 소비자24', doc: '소형 식기세척기 품질비교 결과 (2025.9.10 게시, 6개 제품: 연간 전기요금 25,000~47,000원, 건조방식, 4개 제품 무설치 사용 가능)', url: 'https://www.consumer.go.kr/user/ftc/consumer/cnsmrBBS/80/selectInfoCmprDetail.do?infoId=A1081045' },
   korea_dw2021: { org: '대한민국 정책브리핑(한국소비자원 브리핑)', doc: '식기세척기 비교정보 생산결과 (2021.12.15, 12~14인용 5개 제품: 세척·건조·소비전력량·물 사용량)', url: 'https://www.korea.kr/news/policyNewsView.do?newsId=156486509' },
   eep_dw_list: { org: '한국에너지공단 효율관리제도', doc: '효율등급제도 제품검색: 식기세척기 (세척용량 인용, 1회 세척 소비전력량 Wh/회, 효율등급, 제조일자에 따른 등급 변동 안내)', url: 'https://eep.energy.or.kr/certification/certi_list_292.aspx' },
+  kca_kimchi2023: { org: '한국소비자원', doc: '스탠드형·뚜껑형 김치냉장고, 용도에 맞는 제품 선택해야 (2023.10.31 보도자료, 6개 제품: 월간소비전력량·연간 전기요금·용량·주위온도 영향·부가기능)', url: 'https://www.kca.go.kr/smartconsumer/board/download.do?bid=00000180&did=1003582727&fno=10040505&menukey=7782' },
+  korea_fridge2022: { org: '대한민국 정책브리핑(한국소비자원 비교정보)', doc: '냉장고 비교정보 생산 결과 (2022.10.18, 6개 제품: 주위온도에 따라 월간소비전력량 최대 2.7배, 고효율 제품 교체 시 최대 36% 절감)', url: 'https://www.korea.kr/news/policyNewsView.do?newsId=156531271' },
+  kca_fridge2004: { org: '한국소비자원', doc: '전기냉장고, 소음·전기사용량 등 제품 간 차이 크고 표시치에 비해 실제 전기사용량은 훨씬 많아 (2004.10.6 보도자료, 오래된 자료)', url: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1000401246' },
+  eep_fridge_list: { org: '한국에너지공단 효율관리제도', doc: '효율등급제도 제품검색: 전기냉장고 (월간소비전력량 kWh/월, 용량 L, 효율등급, 신고 완료일)', url: 'https://eep.energy.or.kr/certification/certi_list_252.aspx' },
+  kca_cordless2022: { org: '한국소비자원 소비자시대 웹진 2022년 3월호', doc: '무선청소기 7종 비교 결과 (청소성능·연속사용시간·소음·배터리 내구성·충전시간, 구매 가이드와 사용 시 주의사항)', url: 'https://www.kca.go.kr/webzine/board/view?menuId=MENU00307&linkId=399&div=kca_2203' },
+  korea_robot2016: { org: '대한민국 정책브리핑(한국소비자원)', doc: '로봇청소기 비교정보 생산 결과 (2016.11.11, 5개 제품: 청소성능·자율주행·문턱넘김·추락방지·소음·배터리 교체비용, 오래된 자료)', url: 'https://www.korea.kr/briefing/policyBriefingView.do?newsId=156166668' },
+  eep_vacuum_list: { org: '한국에너지공단 효율관리제도', doc: '효율등급제도 제품검색: 전기진공청소기 (측정 소비전력 W, 최대 흡입일률 W, 효율등급, 제조일자에 따른 등급 변동 안내)', url: 'https://eep.energy.or.kr/certification/certi_list_115.aspx' },
+  kca_tv2022: { org: '한국소비자원', doc: '2022년 기획시험 「TV 품질 비교시험 결과」 (2022.12.1, 65인치 4K 6개 제품: 영상품질·음향·연간소비전력량·구입가격·부가기능, 구매 가이드)', url: 'https://www.kca.go.kr/smartconsumer/board/download.do?bid=00000146&did=1003440012&fno=10037306&menukey=7301' },
   dt_news: { org: '디지털타임스(다음 뉴스 전재, 공정위·소비자원 보도자료 인용)', doc: '겨울 난방용품 안전사고 1위? 전기장판…공정위, 소비자안전주의보 (2025.12.7, 2020~2024년 4,154건)', url: 'https://v.daum.net/v/PbYoZ1YCCj?f=p' },
 };
 
@@ -63,5 +71,9 @@ export const POST_SOURCES = {
   'electric-heater-types-guide': ['eep_knowhow7', 'kfsi', 'kca_mat2013', 'safetykorea'],
   'electric-range-vs-induction': ['kepco', 'eep_summary', 'safetykorea'],
   'induction-capacity-guide': ['kepco', 'eep_summary'],
+  'mini-fridge-guide': ['eep_fridge_list', 'korea_fridge2022', 'kca_fridge2004', 'fsk_fridge10'],
+  'kimchi-fridge-type-guide': ['kca_kimchi2023'],
+  'vacuum-type-guide': ['kca_cordless2022', 'korea_robot2016', 'eep_vacuum_list'],
+  'tv-size-price-guide': ['kca_tv2022'],
   'dehumidifier-air-purifier-combo': ['eep_summary', 'law_dispute', 'samsung_dispute'],
 };
