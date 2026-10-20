@@ -3,16 +3,50 @@
   "label": "가전비교연구소",
   "domain": "gajun.kr",
   "repo": "playskang-svg/gajun-onesearch",
-  "scannedAt": "2026-10-19T01:24:53.700Z",
-  "pagesCrawled": 83,
-  "sitemapUrls": 83,
-  "externalChecked": 14,
+  "scannedAt": "2026-10-20T01:57:33.119Z",
+  "pagesCrawled": 63,
+  "sitemapUrls": 61,
+  "externalChecked": 34,
   "summary": {
-    "medium": 2,
+    "high": 2,
+    "medium": 7,
     "low": 1
   },
-  "occurrences": 3,
+  "occurrences": 10,
   "findings": [
+    {
+      "severity": "high",
+      "kind": "noindex",
+      "page": "https://gajun.kr/guide/low-noise-dehumidifier",
+      "robots": "noindex, follow",
+      "note": "색인 차단이 걸려 있다. 의도한 것인지 확인"
+    },
+    {
+      "severity": "high",
+      "kind": "noindex",
+      "page": "https://gajun.kr/guide/energy-grade1-dehumidifier",
+      "robots": "noindex, follow",
+      "note": "색인 차단이 걸려 있다. 의도한 것인지 확인"
+    },
+    {
+      "severity": "medium",
+      "kind": "double-slash",
+      "page": "https://gajun.kr/guide/heating-mat-compare",
+      "href": "https://www.kca.go.kr/home//sub.do?menukey=4006&mode=view&no=1003052349",
+      "text": "www.kca.go.kr",
+      "nav": false,
+      "note": "경로에 슬래시가 겹쳤다"
+    },
+    {
+      "severity": "medium",
+      "kind": "dead-external-link",
+      "page": "https://gajun.kr/guide/heating-mat-compare",
+      "href": "https://eep.energy.or.kr/more/knowhow7.aspx",
+      "status": 404,
+      "refs": 2,
+      "text": "eep.energy.or.kr",
+      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
+    },
     {
       "severity": "medium",
       "kind": "dead-external-link",
@@ -26,11 +60,41 @@
     {
       "severity": "medium",
       "kind": "dead-external-link",
+      "page": "https://gajun.kr/guide/dehumidifier-air-purifier-combo",
+      "href": "https://eep.energy.or.kr/business_introduction/effi_summary.aspx",
+      "status": 404,
+      "refs": 5,
+      "text": "eep.energy.or.kr",
+      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
+    },
+    {
+      "severity": "medium",
+      "kind": "dead-external-link",
+      "page": "https://gajun.kr/guide/dehumidifier-air-purifier-combo",
+      "href": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000236196&chrClsCd=010201",
+      "status": 404,
+      "refs": 4,
+      "text": "www.law.go.kr",
+      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
+    },
+    {
+      "severity": "medium",
+      "kind": "dead-external-link",
       "page": "https://gajun.kr/guide/induction-capacity-guide",
       "href": "https://www.energy.or.kr",
       "status": 404,
       "refs": 1,
       "text": "한국에너지공단",
+      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
+    },
+    {
+      "severity": "medium",
+      "kind": "dead-external-link",
+      "page": "https://gajun.kr/guide/energy-grade",
+      "href": "https://eep.energy.or.kr/more/compare_efficiency.aspx",
+      "status": 404,
+      "refs": 2,
+      "text": "eep.energy.or.kr",
       "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
     },
     {
