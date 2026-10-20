@@ -1,0 +1,39 @@
+// 글별 "확인한 출처". 2026-10-20에 URL을 직접 열어 응답(200)과 해당 내용을 확인한 것만 넣는다.
+// 새 출처를 추가할 때는 반드시 직접 열어 확인한 뒤 CHECKED 날짜를 갱신한다.
+export const CHECKED = '2026-10-20';
+export const CHECKED_LABEL = '2026년 10월 20일';
+
+export const SRC = {
+  fsk_temp: { org: '식품의약품안전처 식품안전나라', doc: '온도, 시간 관리 (찬 음식 4℃ 이하 냉장, 4~60℃ 위험 온도 구간)', url: 'https://www.foodsafetykorea.go.kr/portalmobile/content/detail.do?bbs_no=bbs427&ntctxt_no=1069308' },
+  fsk_fridge10: { org: '식품의약품안전처 식품안전나라', doc: '냉장고 안전 10계명 (70% 이하로 채우기, 위치별 온도, 뜨거운 음식은 식힌 뒤 보관)', url: 'https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?bbs_no=bbs001&menu_grp=MENU_NEW01&menu_no=3120&ntctxt_no=21709' },
+  korea_fridge: { org: '대한민국 정책브리핑(식품의약품안전처 식중독 예방 6대 수칙 소개)', doc: '우리집 냉장고 보관온도가 궁금해졌다 (냉장 5℃, 냉동 -18℃ 이하)', url: 'https://www.korea.kr/news/customizedNewsView.do?newsId=148943131' },
+  kepco: { org: '한국전력공사 사이버지점', doc: '주요 전기요금제도(주택용전력 요금 누진제) (200kWh 단위 3단계, 계절별 요금표)', url: 'https://cyber.kepco.co.kr/ckepco/front/jsp/CY/H/C/CYHCHP00206.jsp' },
+  eep_summary: { org: '한국에너지공단 효율관리제도', doc: '효율등급제도 제도개요 (1~5등급, 최저소비효율기준)', url: 'https://eep.energy.or.kr/business_introduction/effi_summary.aspx' },
+  eep_compare: { org: '한국에너지공단 효율관리제도', doc: '에너지절약 효과 비교 (1·3·5등급 소비전력량 비교, 기준 강화에 따라 달라질 수 있음)', url: 'https://eep.energy.or.kr/more/compare_efficiency.aspx' },
+  eep_knowhow7: { org: '한국에너지공단 효율관리제도', doc: '전기장판, 전기온풍기 등 전기난방기기 사용을 자제하세요', url: 'https://eep.energy.or.kr/more/knowhow7.aspx' },
+  kca_mat2013: { org: '한국소비자원', doc: '소비자안전주의보 「전기장판류 안전사고 사례분석」 (2013.12.31)', url: 'https://www.kca.go.kr/home/sub.do?menukey=4006&mode=view&no=1001470015&page=4' },
+  kca_mat2020: { org: '한국소비자원', doc: '소비자안전주의보 「겨울철 전기장판 사용 시 저온화상 주의」 (2020.12.14)', url: 'https://www.kca.go.kr/home//sub.do?menukey=4006&mode=view&no=1003052349' },
+  kca_test2020: { org: '한국소비자원', doc: '『전기장판』 품질 비교시험 결과 (소비전력량 930Wh~1,503Wh)', url: 'https://www.kca.go.kr/smartconsumer/board/download.do?bid=00000146&did=1003056039&fno=10029050&menukey=7301' },
+  korea_carbon: { org: '대한민국 정책브리핑(한국소비자원 보도자료)', doc: '카본 전기매트 10개 제품 비교정보 제공 (2025.12)', url: 'https://www.korea.kr/briefing/policyBriefingView.do?newsId=156734593' },
+  kfsi: { org: '한국소방안전원', doc: '소방안전플러스 VOL.09 「겨울철 난방용품 안전하게 사용하기」', url: 'https://www.kfsi.or.kr/contents/webzine/201812/sub03-03.html' },
+  law_dispute: { org: '공정거래위원회 고시 (국가법령정보센터)', doc: '소비자분쟁해결기준 [공정거래위원회고시 제2023-28호]', url: 'https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000236196&chrClsCd=010201' },
+  samsung_dispute: { org: '삼성전자서비스 (소비자분쟁해결기준 별표 Ⅲ 전재)', doc: '품목별 품질보증기간 및 부품보유기간 (TV·냉장고 9년, 에어컨 8년, 세탁기·건조기·제습기·가습기 7년)', url: 'https://www.samsungsvc.co.kr/info/fee?tab=conflict' },
+  kca_dispute: { org: '한국소비자원', doc: '소비자분쟁해결기준 목록 (별표 3 품질보증기간·부품보유기간, 별표 4 내용연수표)', url: 'https://www.kca.go.kr/odr/pg/pi/osPgBjResolvW.do' },
+  safetykorea: { org: '국가기술표준원 제품안전정보센터', doc: '제품안전정보센터 (KC 인증·리콜 정보 조회)', url: 'https://www.safetykorea.kr' },
+  dt_news: { org: '디지털타임스(다음 뉴스 전재, 공정위·소비자원 보도자료 인용)', doc: '겨울 난방용품 안전사고 1위? 전기장판…공정위, 소비자안전주의보 (2025.12.7, 2020~2024년 4,154건)', url: 'https://v.daum.net/v/PbYoZ1YCCj?f=p' },
+};
+
+// slug → 출처 id 목록 (본문이 이미 자체 출처 목록을 가진 글은 넣지 않는다)
+export const POST_SOURCES = {
+  'fridge-temperature': ['fsk_temp', 'korea_fridge', 'fsk_fridge10'],
+  'fridge-lifespan': ['law_dispute', 'samsung_dispute', 'kca_dispute', 'fsk_fridge10'],
+  'electricity-cost': ['kepco', 'eep_summary', 'eep_compare'],
+  'energy-grade': ['eep_summary', 'eep_compare'],
+  'washer-lifespan': ['law_dispute', 'samsung_dispute', 'kca_dispute'],
+  'dryer-lifespan': ['law_dispute', 'samsung_dispute', 'kca_dispute'],
+  'heating-mat-compare': ['kca_mat2020', 'kca_test2020', 'korea_carbon', 'kca_mat2013', 'kfsi', 'eep_knowhow7', 'dt_news', 'safetykorea'],
+  'electric-heater-types-guide': ['eep_knowhow7', 'kfsi', 'kca_mat2013', 'safetykorea'],
+  'electric-range-vs-induction': ['kepco', 'eep_summary', 'safetykorea'],
+  'induction-capacity-guide': ['kepco', 'eep_summary'],
+  'dehumidifier-air-purifier-combo': ['eep_summary', 'law_dispute', 'samsung_dispute'],
+};

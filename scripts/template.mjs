@@ -1,4 +1,5 @@
 import { SITE, CATEGORIES } from '../content/site.mjs';
+import { SRC, POST_SOURCES, CHECKED, CHECKED_LABEL } from '../content/sources.mjs';
 
 const esc = (s) =>
   String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
@@ -214,12 +215,13 @@ function header(activeCat) {
 function footer() {
   return `
 <footer><div class="wrap wide">
-  <div class="notice">${esc(SITE.affiliateNotice)}</div>
+  <div class="notice">${esc(SITE.affiliateNotice)} <a href="/guide/disclosure/">자세히 보기</a></div>
   <div class="fnav">
     <a href="/guide/">가전 꿀팁</a>
     <a href="/">스펙 비교</a>
     <a href="/guide/about/">사이트 소개</a>
     <a href="/guide/editorial/">편집 원칙</a>
+    <a href="/guide/disclosure/">제휴·수익 고지</a>
     <a href="/guide/privacy/">개인정보처리방침</a>
     <a href="/guide/terms/">이용약관</a>
     <a href="/guide/contact/">문의하기</a>
@@ -252,6 +254,33 @@ ${list
   .join('\n')}`;
 }
 
+/** 글 하단 '확인한 출처' 섹션 (출처 URL은 직접 열어 확인한 것만 sources.mjs에 둔다) */
+function sourcesSection(slug) {
+  const ids = POST_SOURCES[slug];
+  if (!ids?.length) return '';
+  const items = ids
+    .map((id) => SRC[id])
+    .filter(Boolean)
+    .map(
+      (s) =>
+        `<li>${esc(s.org)} — ${esc(s.doc)}. <a href="${esc(s.url)}" target="_blank" rel="noopener nofollow">${esc(s.url.replace(/^https?:\/\//, '').split('/')[0])}</a> (확인일 ${CHECKED_LABEL})</li>`
+    )
+    .join('\n');
+  return `<h2>확인한 출처</h2>
+<div class="box">
+  <p style="margin:0 0 8px">아래 자료를 ${CHECKED_LABEL}에 직접 열어 내용을 확인했습니다. 수치와 기준은 이후 바뀔 수 있으니 중요한 결정 전에는 원문을 다시 확인하세요.</p>
+  <ul style="margin:0">
+${items}
+  </ul>
+</div>`;
+}
+
+/** 제휴 링크가 들어 있는 글 상단 고지 */
+function affiliateTop(body) {
+  if (!/link\.coupang\.com/.test(body)) return '';
+  return `<div class="notice" role="note"><strong>제휴 고지</strong> — 이 글에는 쿠팡 파트너스 제휴 링크가 포함되어 있으며, 링크를 통해 구매하시면 사이트가 일정액의 수수료를 받을 수 있습니다. 수수료는 구매 가격에 영향을 주지 않으며 글의 결론에도 영향을 주지 않습니다. <a href="/guide/disclosure/">자세히 보기</a></div>`;
+}
+
 /** 글 상세 페이지 */
 export function renderPost(post, related = [], figure = '', faqList = [], options = {}) {
   const url = `${SITE.domain}/guide/${post.slug}/`;
@@ -267,13 +296,15 @@ export function renderPost(post, related = [], figure = '', faqList = [], option
     : '';
 
   const iso = post.date.replace(/\./g, '-');
+  const hasSources = (POST_SOURCES[post.slug] ?? []).length > 0;
+  const modIso = hasSources ? CHECKED : iso;
   const graph = [
     {
       '@type': 'Article',
       headline: post.title,
       description: post.summary,
       datePublished: iso,
-      dateModified: iso,
+      dateModified: modIso,
       inLanguage: 'ko',
       author: { '@type': 'Organization', name: SITE.name, url: SITE.domain },
       publisher: { '@type': 'Organization', name: SITE.name, url: SITE.domain },
@@ -320,12 +351,18 @@ export function renderPost(post, related = [], figure = '', faqList = [], option
     )} 작성</span><span>가전비교연구소 편집팀</span></div>
   <h1>${esc(post.title)}</h1>
   <div class="lead">${esc(post.summary)}</div>
+  ${affiliateTop(post.body)}
   <div class="box tip" aria-label="글 검증 정보">
-    <div class="bt">이 글을 이렇게 확인했습니다</div>
-    <p style="margin:0">제조사 공개 사양·사용설명서와 공공기관 자료를 우선해 확인하고, 독자가 직접 할 수 있는 점검과 전문가에게 맡길 작업을 구분했습니다. 수치와 기준은 바뀔 수 있으므로 구매·수리 전 공식 안내를 다시 확인하세요.</p>
+    <div class="bt">${hasSources ? '확인한 출처와 확인일' : '이 글의 기준'}</div>
+    <p style="margin:0">${
+      hasSources
+        ? `이 글의 수치와 기준은 글 하단 '확인한 출처'에 적은 자료를 ${CHECKED_LABEL}에 직접 열어 확인했습니다. 구매·수리 전에는 제조사 공식 안내를 함께 확인하세요.`
+        : '제조사 공개 사양과 사용설명서를 기준으로 정리했습니다. 수치와 기준은 바뀔 수 있으므로 구매·수리 전에는 제조사 공식 안내를 다시 확인하세요.'
+    }</p>
   </div>
   ${insertFigure(post.body, figure)}
   ${faqSection(faqList)}
+  ${sourcesSection(post.slug)}
   ${rel}
 </div></main>` +
     `<script type="application/ld+json">${JSON.stringify(ld)}</script>` +

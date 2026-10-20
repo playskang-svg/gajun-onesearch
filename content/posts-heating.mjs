@@ -47,7 +47,7 @@ export const heatingPosts = [
   <li><strong>둘이 쓰고 온도 취향이 다를 때</strong>: 좌우 분리난방이 되는 온수매트를 비교하세요.</li>
   <li><strong>세탁이 잦을 때</strong>: 물세탁 가능 여부를 제품 상세 정보에서 확인하세요.</li>
 </ul>
-<p>제품별 가격대와 모델 비교는 네이버 블로그의 <a href="https://blog.naver.com/topclassbiz/224445562942" target="_blank" rel="noopener">전기장판 추천 안전 기준 5가지</a>와 <a href="https://blog.naver.com/topclassbiz/224445827802" target="_blank" rel="noopener">온수매트 추천 고르는 법</a>에 정리했습니다. 난방기 전체 비교는 <a href="/guide/electric-heater-types-guide/">전기히터 난방기 5종 비교</a>를 참고하세요.</p>
+<p>제품 가격은 판매처에서 수시로 바뀌므로 이 글에서는 다루지 않았습니다. 난방기 전체 비교는 <a href="/guide/electric-heater-types-guide/">전기히터 난방기 5종 비교</a>를 참고하세요.</p>
 
 <div class="box tip">
   <div class="bt">✅ 한 줄 정리</div>
@@ -191,9 +191,6 @@ export const heatingPosts = [
 </ul>
 <p>위 경우에 해당하고 우리 집 실온에서 쓸 수 있는 제품인지 확인했다면, 큰 용량보다 등급·소음·사용 온도 범위를 우선해서 고르세요.</p>
 
-<p>결로가 생기는 이유와 창문 결로 막는 방법을 더 풀어서 읽고 싶다면 네이버 블로그 정리글도 있습니다. 제목은 「겨울철 결로 생기는 이유, 제습기로 해결될까 창문 결로 막는 법」입니다.</p>
-<p style="text-align:center;margin:18px 0"><a href="https://blog.naver.com/stillsk/224441836998" target="_blank" rel="noopener"><img src="/img/btn_blog.webp" alt="네이버 블로그에서 겨울철 결로 정리글 자세히 보기" width="320" height="92" style="max-width:100%;height:auto" loading="lazy"></a></p>
-
 <h2>결론</h2>
 <div class="box tip">
   <div class="bt">✅ 한 줄 정리</div>
@@ -302,10 +299,6 @@ export const heatingPosts = [
 난방을 켰는데 창문에 물이 맺힌다면 <a href="/guide/winter-condensation-dehumidifier/">겨울 결로 제습기 글</a>이 이어서 도움이 됩니다.</p>
 
 <figure class="fig" style="margin:18px 0"><img src="/img/fan-heater-small-room.jpg" alt="겨울 아침 창가 책상 옆에 놓인 작은 전기난방기" width="1080" height="810" style="max-width:100%;height:auto;border-radius:8px" loading="lazy"><figcaption>방 전체가 아니라 앉는 자리 주변만 데울 때는 짧게 쓰는 편이 요금에 유리합니다. (AI 생성 이미지)</figcaption></figure>
-
-<p>방 전체가 아니라 책상 아래나 발밑만 데울 생각이라면, 미니 온풍기 전기세를 따로 풀어 쓴 네이버 블로그 글이 있습니다.<br>
-제목은 「발밑 미니 온풍기 PTC 전기세 얼마나 나올까, 사무실·캠핑용 고르는 법」입니다.</p>
-<p style="text-align:center;margin:18px 0"><a href="https://blog.naver.com/stillsk/224441106211" target="_blank" rel="noopener"><img src="/img/btn_blog.webp" alt="네이버 블로그에서 미니 온풍기 PTC 전기세 정리글 보기" width="320" height="92" style="max-width:100%;height:auto" loading="lazy"></a></p>
 
 <h2>결론</h2>
 <div class="box tip">
