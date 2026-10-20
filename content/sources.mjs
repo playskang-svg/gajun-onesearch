@@ -45,6 +45,14 @@ export const SRC = {
   eep_vacuum_list: { org: '한국에너지공단 효율관리제도', doc: '효율등급제도 제품검색: 전기진공청소기 (측정 소비전력 W, 최대 흡입일률 W, 효율등급, 제조일자에 따른 등급 변동 안내)', url: 'https://eep.energy.or.kr/certification/certi_list_115.aspx' },
   kca_tv2022: { org: '한국소비자원', doc: '2022년 기획시험 「TV 품질 비교시험 결과」 (2022.12.1, 65인치 4K 6개 제품: 영상품질·음향·연간소비전력량·구입가격·부가기능, 구매 가이드)', url: 'https://www.kca.go.kr/smartconsumer/board/download.do?bid=00000146&did=1003440012&fno=10037306&menukey=7301' },
   dt_news: { org: '디지털타임스(다음 뉴스 전재, 공정위·소비자원 보도자료 인용)', doc: '겨울 난방용품 안전사고 1위? 전기장판…공정위, 소비자안전주의보 (2025.12.7, 2020~2024년 4,154건)', url: 'https://v.daum.net/v/PbYoZ1YCCj?f=p' },
+  eep_standard: { org: '한국에너지공단 효율관리제도', doc: '효율등급제도 적용범위 및 기술기준 (전기냉장고·김치냉장고·전기진공청소기 대상품목 적용범위)', url: 'https://eep.energy.or.kr/business_introduction/effi_standard.aspx' },
+  eep_kimchi_list: { org: '한국에너지공단 효율관리제도', doc: '효율등급제도 제품검색: 김치냉장고 (김치저장실 유효내용적 L, 월간소비전력량 kWh/월, 효율등급, 신고 완료일, 총 4,049건)', url: 'https://eep.energy.or.kr/certification/certi_list_241.aspx' },
+  eep_commercial_list: { org: '한국에너지공단 효율관리제도', doc: '효율등급제도 제품검색: 상업용전기냉장고 (월간소비전력량 kWh/월, 냉동실 유효내용적 L, 효율등급, 신고 완료일, 총 1,340건)', url: 'https://eep.energy.or.kr/certification/certi_list_263.aspx' },
+  cc_eep_interview: { org: '콜드체인뉴스 (한국에너지공단 효율기술실장 인터뷰, 2025.9.2)', doc: '상업용 전기냉장고 효율등급 적용범위(유효내용적 300L 이상 2,000L 이하 냉장고·냉동고, 300L 이상 1,500L 이하 음료수용 직립형 냉장진열대). 언론 보도이며 고시 원문은 아님', url: 'https://www.coldchainnews.kr/news/article.html?no=27783' },
+  kca_vacuum_suction2025: { org: '한국소비자원 보도자료 (2025.9.18)', doc: '무선청소기 흡입력, 파스칼(Pa) 단위 표기한 제품은 오인의 여지 있어 (10개 제품 최대흡입력 W 측정, 표시 단위 W·AW·Pa 비교)', url: 'https://www.kca.go.kr/home/board/download.do?bid=00000013&did=1003922488&fno=10048269&menukey=4002' },
+  kca_vacuum2015: { org: '한국소비자원 백승일 연구원 (KDI 나라경제 2015년 2월호 칼럼)', doc: '진공청소기, 꼼꼼히 따져보고 선택하세요! (14개 제품 소음·최대흡입력 172~422W·소비전력과 흡입력 W 구분 표시, 오래된 자료)', url: 'https://eiec.kdi.re.kr/publish/columnView.do?cidx=9773&ccode=&pp=20&pg=&sel_year=2015&sel_month=02' },
+  kca_steam2006: { org: '한국소비자원 보도자료 (2006.2.28, 당시 한국소비자보호원)', doc: '스팀청소기 시험 결과 일부 제품은 구조 개선 등 보완 필요 (10개 제품 청소성능·살균 주장·안전성, 오래된 자료)', url: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1000549328' },
+  kca_mop2019: { org: '한국소비자원 보도자료 (2019.7.8)', doc: '무선물걸레청소기, 청소성능·사용시간 등 성능 차이 있어 (8개 제품: 청소성능·소음·배터리 내구성·사용시간·충전시간)', url: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1002818050' },
 };
 
 // slug → 출처 id 목록 (본문이 이미 자체 출처 목록을 가진 글은 넣지 않는다)
@@ -76,4 +84,8 @@ export const POST_SOURCES = {
   'vacuum-type-guide': ['kca_cordless2022', 'korea_robot2016', 'eep_vacuum_list'],
   'tv-size-price-guide': ['kca_tv2022'],
   'dehumidifier-air-purifier-combo': ['eep_summary', 'law_dispute', 'samsung_dispute'],
+  'mini-kimchi-fridge-necessity': ['kca_kimchi2023', 'eep_kimchi_list', 'fsk_fridge10'],
+  'commercial-fridge-at-home': ['eep_commercial_list', 'eep_summary', 'eep_standard', 'cc_eep_interview', 'fsk_fridge10', 'safetykorea'],
+  'vacuum-spec-reading': ['kca_vacuum_suction2025', 'kca_vacuum2015', 'eep_vacuum_list', 'eep_standard', 'kca_cordless2022'],
+  'steam-vs-mop-vacuum': ['kca_steam2006', 'kca_mop2019'],
 };
