@@ -23,11 +23,21 @@ export const SRC = {
   kca_dehum2024: { org: '한국소비자원 소비자24 (비교공감 제2024-12호)', doc: '제습기 품질비교 시험평가 결과 (2024.7.17 게시, 9개 제품: 제습량·소음·제습효율·전기요금)', url: 'https://www.consumer.go.kr/user/ftc/consumer/cnsmrBBS/79/selectInfoRptDetail.do?infoId=A1080439&cntntsId=00000566' },
   kca_humid2025: { org: '한국소비자원 소비자24 (비교공감 제2025-18호)', doc: '가습기 품질비교 시험평가 결과 (2025.10.30 게시, 13개 제품: 가습량·소음·유지관리비용·화상·세척)', url: 'https://www.consumer.go.kr/user/ftc/consumer/cnsmrBBS/79/selectInfoRptDetail.do?infoId=A1081112' },
   eep_aircon_list: { org: '한국에너지공단 효율관리제도', doc: '효율등급제도 제품검색: 전기냉방기 (월간소비전력량, 효율등급, 제조일자에 따른 등급 변동 안내)', url: 'https://eep.energy.or.kr/certification/certi_list_260.aspx' },
+  kca_aircon2026: { org: '한국소비자원', doc: '에어컨 사전 안전점검 캠페인 보도자료 (2026.3.3, 자가점검 항목·실외기 설치 수칙·화재 위해정보 267건)', url: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1004013059' },
+  eep_knowhow4: { org: '한국에너지공단 효율관리제도', doc: '에어컨 에너지 절약 노하우 (필터 청소 시 소비전력 3~5% 차이, 2주에 1번 중성세제 세척)', url: 'https://eep.energy.or.kr/more/knowhow4.aspx' },
+  kca_purifier2020: { org: '한국소비자원', doc: '가정용 정수기, 주기적인 위생관리 필요 (2020.10.13 보도자료, 40가구 수질 조사·취수부 소독 결과)', url: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003003350' },
+  easylaw_purifier: { org: '생활법령정보(법제처, 환경부·국립환경과학원 먹는물 수질기준 해설서 인용)', doc: '정수기 설치·관리 (필터는 설명서에 따라 정기 교환, 다중이용시설 6개월 1회 이상 소독)', url: 'https://easylaw.go.kr/CSP/CnpClsMain.laf?csmSeq=1455&ccfNo=1&cciNo=2&cnpClsNo=1' },
+  kca_styler2026: { org: '대한민국 정책브리핑(한국소비자원 브리핑)', doc: '의류관리기 3종 품질 비교정보 제공 (2026.9.16, 표준스타일링 소비전력량 332~397Wh, 연간 전기요금 7,600~9,100원)', url: 'https://www.korea.kr/briefing/policyBriefingView.do?newsId=156781885' },
+  ehtis_indoor: { org: '환경보건종합정보시스템(한국환경산업기술원)', doc: '실내공기질 관리방법 (온도 18~22℃, 습도 40~60%, 결로·곰팡이 관리, 환기)', url: 'https://www.ehtis.or.kr/cmn/sym/mnu/mpm/60001024/htmlMenuView.do' },
   dt_news: { org: '디지털타임스(다음 뉴스 전재, 공정위·소비자원 보도자료 인용)', doc: '겨울 난방용품 안전사고 1위? 전기장판…공정위, 소비자안전주의보 (2025.12.7, 2020~2024년 4,154건)', url: 'https://v.daum.net/v/PbYoZ1YCCj?f=p' },
 };
 
 // slug → 출처 id 목록 (본문이 이미 자체 출처 목록을 가진 글은 넣지 않는다)
 export const POST_SOURCES = {
+  'wall-aircon-self-clean': ['kca_aircon2026', 'eep_knowhow4', 'safetykorea'],
+  'water-purifier-filter-hygiene': ['kca_purifier2020', 'easylaw_purifier'],
+  'air-styler-electricity-cost': ['kca_styler2026', 'kepco'],
+  'humidifier-humidity-placement': ['ehtis_indoor', 'kca_humid2025'],
   'energy-grade1-dehumidifier': ['eep_summary', 'eep_compare', 'kca_dehum2024'],
   'low-noise-dehumidifier': ['kca_dehum2024', 'kca_humid2025'],
   'energy-grade1-aircon': ['eep_compare', 'eep_aircon_list'],
