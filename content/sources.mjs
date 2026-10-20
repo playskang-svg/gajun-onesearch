@@ -53,6 +53,15 @@ export const SRC = {
   kca_vacuum2015: { org: '한국소비자원 백승일 연구원 (KDI 나라경제 2015년 2월호 칼럼)', doc: '진공청소기, 꼼꼼히 따져보고 선택하세요! (14개 제품 소음·최대흡입력 172~422W·소비전력과 흡입력 W 구분 표시, 오래된 자료)', url: 'https://eiec.kdi.re.kr/publish/columnView.do?cidx=9773&ccode=&pp=20&pg=&sel_year=2015&sel_month=02' },
   kca_steam2006: { org: '한국소비자원 보도자료 (2006.2.28, 당시 한국소비자보호원)', doc: '스팀청소기 시험 결과 일부 제품은 구조 개선 등 보완 필요 (10개 제품 청소성능·살균 주장·안전성, 오래된 자료)', url: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1000549328' },
   kca_mop2019: { org: '한국소비자원 보도자료 (2019.7.8)', doc: '무선물걸레청소기, 청소성능·사용시간 등 성능 차이 있어 (8개 제품: 청소성능·소음·배터리 내구성·사용시간·충전시간)', url: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1002818050' },
+  kca_cordless2018: { org: '대한민국 정책브리핑(한국소비자원 무선청소기 비교정보 보도, 2018.1.19)', doc: '무선청소기 관련 비교정보 생산결과 (9개 제품: 청소성능·사용시간·소음·충전시간·배터리 교체비용·핸디형 사용 여부 구조 차이, 오래된 자료)', url: 'https://www.korea.kr/news/policyNewsView.do?newsId=156249445' },
+  kca_tv2022press: { org: '한국소비자원 보도자료 (2022.12.26 보도, TV 품질 비교시험)', doc: 'TV, 영상·음향품질 등 주요 성능 차이 있어 (65인치 6개 제품: 입력지연 9~14ms·동영상 끌림·해상도·음향품질·구매 가이드·사용 요령)', url: 'https://www.kca.go.kr/smartconsumer/board/download.do?menukey=7782&fno=10039855&bid=00000180&did=1003519424' },
+  hdmi_earc: { org: 'HDMI 공식 사이트(HDMI Licensing Administrator)', doc: 'Enhanced Audio Return Channel (eARC) 설명 (HDMI 케이블 한 가닥으로 TV 오디오를 사운드바·AV 리시버로 전송, 지원 음향 포맷)', url: 'https://www.hdmi.org/spec21sub/enhancedaudioreturnchannel' },
+  hdmi_allm: { org: 'HDMI 공식 사이트(HDMI Licensing Administrator)', doc: 'Auto Low Latency Mode (ALLM) 설명 (게임·PC 신호 시 자동 저지연 모드 전환)', url: 'https://www.hdmi.org/spec21sub/autolowlatencymode' },
+  hdmi_vrr: { org: 'HDMI 공식 사이트(HDMI Licensing Administrator)', doc: 'Variable Refresh Rate (VRR) 설명 (게임 화면 끊김·찢김 감소)', url: 'https://www.hdmi.org/spec21sub/variablerefreshrate' },
+  vdt_guide: { org: '고용노동부 고시 (국가법령정보센터)', doc: '영상표시단말기(VDT) 취급근로자 작업관리지침 [고용노동부고시 제2020-17호, 시행 2020.1.16] (제6조 시거리 40cm 이상·시선 아래 10~15도, 제7조 조도 300~700럭스)', url: 'https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000185801&chrClsCd=010201' },
+  kca_drum2020: { org: '한국소비자원 소비자24 (비교공감 제2020-20호)', doc: '드럼세탁기 품질비교 시험 결과 (2020.12.7 게시, 21kg·14~15kg 5개 제품: 이불코스(퀸 사이즈 이불 약 3.0kg)·소비전력량·세탁시간·물 사용량·소음)', url: 'https://www.consumer.go.kr/user/ftc/consumer/cnsmrBBS/79/selectInfoRptDetail.do?cntntsId=00000566&infoId=A1078330' },
+  eep_washer_top: { org: '한국에너지공단 효율관리제도', doc: '효율등급제도 제품검색: 전기세탁기(일반) (표준세탁 용량 kg, 1회 세탁 소비전력량 Wh, 효율등급, 총 760건)', url: 'https://eep.energy.or.kr/certification/certi_list_298.aspx' },
+  eep_washer_drum: { org: '한국에너지공단 효율관리제도', doc: '효율등급제도 제품검색: 전기세탁기(드럼) (표준세탁 용량 kg, 1회 세탁 소비전력량 Wh, 효율등급, 총 1,031건)', url: 'https://eep.energy.or.kr/certification/certi_list_299.aspx' },
 };
 
 // slug → 출처 id 목록 (본문이 이미 자체 출처 목록을 가진 글은 넣지 않는다)
@@ -88,4 +97,8 @@ export const POST_SOURCES = {
   'commercial-fridge-at-home': ['eep_commercial_list', 'eep_summary', 'eep_standard', 'cc_eep_interview', 'fsk_fridge10', 'safetykorea'],
   'vacuum-spec-reading': ['kca_vacuum_suction2025', 'kca_vacuum2015', 'eep_vacuum_list', 'eep_standard', 'kca_cordless2022'],
   'steam-vs-mop-vacuum': ['kca_steam2006', 'kca_mop2019'],
+  'handheld-vacuum-role': ['kca_cordless2022', 'kca_cordless2018', 'kca_vacuum_suction2025', 'eep_vacuum_list'],
+  'soundbar-guide': ['kca_tv2022press', 'hdmi_earc'],
+  'tv-as-monitor-guide': ['kca_tv2022press', 'hdmi_allm', 'hdmi_vrr', 'vdt_guide'],
+  'washer-capacity-10kg-vs-12kg': ['kca_drum2020', 'eep_washer_drum', 'eep_washer_top'],
 };
