@@ -11,6 +11,24 @@ export interface GuidePost {
 
 export const GUIDE_POSTS: GuidePost[] = [
   {
+    "slug": "air-purifier-compatible-filter-guide",
+    "title": "공기청정기 호환필터, 정품보다 싼데 써도 될까? 소비자원 20종 시험 결과로 보는 고르는 기준",
+    "summary": "한국소비자원이 2026년 7월 호환필터 20종을 시험했더니 유해가스 제거 기준을 넘은 것은 4개뿐이었고, 2개 제품에서는 함유금지물질 MIT가 나왔습니다. 가격 차이와 시험 결과, 사기 전에 확인할 순서를 정리했습니다.",
+    "category": "common",
+    "categoryName": "가전 공통 상식",
+    "keyword": "공기청정기 호환필터",
+    "date": "2026.10.21"
+  },
+  {
+    "slug": "washer-freeze-prevention-guide",
+    "title": "겨울에 세탁기가 얼면 어떻게 하나요? 영하 5℃ 전에 물 빼는 순서와 녹이는 방법",
+    "summary": "베란다나 실외에 둔 세탁기는 영하로 내려가면 호스와 내부 잔수가 얼어 작동하지 않을 수 있습니다. 삼성전자서비스·LG전자 고객지원 안내를 기준으로 미리 물 빼는 순서, 결빙방지 기능, 얼었을 때 안전하게 녹이는 온도와 순서를 정리했습니다.",
+    "category": "washer",
+    "categoryName": "세탁기·건조기",
+    "keyword": "세탁기 동파",
+    "date": "2026.10.21"
+  },
+  {
     "slug": "winter-laundry-dryer-vs-indoor-drying",
     "title": "겨울 빨래 건조기 vs 실내건조, 전기요금은 얼마나 차이 날까?",
     "summary": "겨울 빨래는 건조기로 말릴지 제습기와 건조대로 말릴지 고민됩니다. 한국소비자원 시험과 에너지공단 효율등급 수치로 1회 전기요금을 계산하고, 건조기를 사야 하는 집의 기준을 정리했습니다.",
@@ -674,7 +692,7 @@ export const GUIDE_CATEGORIES = [
     "id": "washer",
     "name": "세탁기·건조기",
     "desc": "세탁조 세척, 쉰내, 먼지 관리와 수명",
-    "count": 13
+    "count": 14
   },
   {
     "id": "aircon",
@@ -716,6 +734,6 @@ export const GUIDE_CATEGORIES = [
     "id": "common",
     "name": "가전 공통 상식",
     "desc": "효율등급, 소비전력, 고르는 기준",
-    "count": 19
+    "count": 20
   }
 ];
