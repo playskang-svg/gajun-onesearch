@@ -3,15 +3,15 @@
   "label": "가전비교연구소",
   "domain": "gajun.kr",
   "repo": "playskang-svg/gajun-onesearch",
-  "scannedAt": "2026-10-22T01:42:12.989Z",
+  "scannedAt": "2026-10-23T01:43:46.125Z",
   "pagesCrawled": 91,
   "sitemapUrls": 91,
   "externalChecked": 88,
   "summary": {
-    "medium": 17,
+    "medium": 15,
     "low": 1
   },
-  "occurrences": 18,
+  "occurrences": 16,
   "findings": [
     {
       "severity": "medium",
@@ -86,16 +86,6 @@
       "severity": "medium",
       "kind": "dead-external-link",
       "page": "https://gajun.kr/guide/dehumidifier-air-purifier-combo",
-      "href": "https://eep.energy.or.kr",
-      "status": 404,
-      "refs": 2,
-      "text": "한국에너지공단 효율관리제도",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "medium",
-      "kind": "dead-external-link",
-      "page": "https://gajun.kr/guide/dehumidifier-air-purifier-combo",
       "href": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000236196&chrClsCd=010201",
       "status": 404,
       "refs": 4,
@@ -120,16 +110,6 @@
       "status": 404,
       "refs": 1,
       "text": "한국에너지공단",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "medium",
-      "kind": "dead-external-link",
-      "page": "https://gajun.kr/guide/energy-grade1-aircon",
-      "href": "https://eep.energy.or.kr/more/compare_efficiency.aspx",
-      "status": 404,
-      "refs": 4,
-      "text": "eep.energy.or.kr",
       "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
     },
     {
