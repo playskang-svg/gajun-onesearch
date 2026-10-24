@@ -3,15 +3,15 @@
   "label": "가전비교연구소",
   "domain": "gajun.kr",
   "repo": "playskang-svg/gajun-onesearch",
-  "scannedAt": "2026-10-23T01:43:46.125Z",
+  "scannedAt": "2026-10-24T01:49:55.945Z",
   "pagesCrawled": 91,
   "sitemapUrls": 91,
   "externalChecked": 88,
   "summary": {
-    "medium": 15,
-    "low": 1
+    "medium": 14,
+    "low": 5
   },
-  "occurrences": 16,
+  "occurrences": 19,
   "findings": [
     {
       "severity": "medium",
@@ -27,6 +27,16 @@
       "kind": "dead-external-link",
       "page": "https://gajun.kr/guide/heating-mat-compare",
       "href": "https://eep.energy.or.kr/more/knowhow7.aspx",
+      "status": 404,
+      "refs": 2,
+      "text": "eep.energy.or.kr",
+      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
+    },
+    {
+      "severity": "medium",
+      "kind": "dead-external-link",
+      "page": "https://gajun.kr/guide/baby-washer-guide",
+      "href": "https://eep.energy.or.kr/certification/certi_list_298.aspx",
       "status": 404,
       "refs": 2,
       "text": "eep.energy.or.kr",
@@ -66,16 +76,6 @@
       "severity": "medium",
       "kind": "dead-external-link",
       "page": "https://gajun.kr/guide/commercial-fridge-at-home",
-      "href": "https://eep.energy.or.kr/business_introduction/effi_summary.aspx",
-      "status": 404,
-      "refs": 7,
-      "text": "eep.energy.or.kr",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "medium",
-      "kind": "dead-external-link",
-      "page": "https://gajun.kr/guide/commercial-fridge-at-home",
       "href": "https://eep.energy.or.kr/business_introduction/effi_standard.aspx",
       "status": 404,
       "refs": 2,
@@ -85,11 +85,11 @@
     {
       "severity": "medium",
       "kind": "dead-external-link",
-      "page": "https://gajun.kr/guide/dehumidifier-air-purifier-combo",
-      "href": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000236196&chrClsCd=010201",
+      "page": "https://gajun.kr/guide/vacuum-spec-reading",
+      "href": "https://eep.energy.or.kr/certification/certi_list_115.aspx",
       "status": 404,
-      "refs": 4,
-      "text": "www.law.go.kr",
+      "refs": 3,
+      "text": "eep.energy.or.kr",
       "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
     },
     {
@@ -153,14 +153,40 @@
       "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
     },
     {
-      "severity": "medium",
-      "kind": "dead-external-link",
-      "page": "https://gajun.kr/guide/wall-aircon-self-clean",
-      "href": "https://eep.energy.or.kr/more/knowhow4.aspx",
-      "status": 404,
-      "refs": 1,
-      "text": "eep.energy.or.kr",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/washer-freeze-prevention-guide",
+      "href": "https://www.samsungsvc.co.kr/solution/540620",
+      "status": 502,
+      "error": null,
+      "note": "502 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/washer-freeze-prevention-guide",
+      "href": "https://www.samsungsvc.co.kr/solution/38005",
+      "status": 502,
+      "error": null,
+      "note": "502 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/commercial-fridge-at-home",
+      "href": "https://eep.energy.or.kr/business_introduction/effi_summary.aspx",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/dehumidifier-air-purifier-combo",
+      "href": "https://www.samsungsvc.co.kr/info/fee?tab=conflict",
+      "status": 502,
+      "error": null,
+      "note": "502 — 일시적일 수 있어 다음 회차에 다시 본다"
     },
     {
       "severity": "low",
