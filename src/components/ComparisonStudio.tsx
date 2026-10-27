@@ -323,7 +323,7 @@ export const ComparisonStudio: React.FC<ComparisonStudioProps> = ({
                             <a
                               href={product.buyUrl || 'https://link.coupang.com/a/AF5563346?subid=gajun&subid2=studio_th'}
                               target="_blank"
-                              rel="noopener noreferrer"
+                              rel="sponsored noopener noreferrer"
                               className="w-full py-2 px-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white rounded-lg text-xs font-bold transition flex items-center justify-center gap-1 shadow-2xs text-center"
                             >
                               <span>{product.mallName || '최저가'} 바로가기</span>

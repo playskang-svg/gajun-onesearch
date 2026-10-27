@@ -5,6 +5,7 @@ import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { posts } from '../content/posts.mjs';
 import { CATEGORIES } from '../content/site.mjs';
+import { isPublicPost } from '../content/publication.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -43,9 +44,7 @@ console.log(`guideIndex.ts 생성 — ${index.length}편`);
 
 // ── index.html 크롤러용 정적 폴백(카테고리·최신글)을 실제 공개 글 기준으로 갱신한다.
 // build-content.mjs 와 같은 기준(본문 1,000자 이상만 공개)을 쓴다.
-const plainLength = (html) =>
-  String(html).replace(/<[^>]+>/g, ' ').replace(/&[^;]+;/g, ' ').replace(/\s+/g, ' ').trim().length;
-const pub = posts.filter((p) => plainLength(p.body) >= 1000);
+const pub = posts.filter(isPublicPost);
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const cats = CATEGORIES.map((c) => ({ c, n: pub.filter((p) => p.category === c.id).length }))
   .filter((x) => x.n)

@@ -237,7 +237,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             <a
               href={product.buyUrl || 'https://link.coupang.com/a/AF5563346?subid=gajun&subid2=card'}
               target="_blank"
-              rel="noopener noreferrer"
+              rel="sponsored noopener noreferrer"
               className="flex-1 py-3 px-3 text-xs sm:text-sm font-bold text-white bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 rounded-xl transition flex items-center justify-center gap-1.5 shadow-xs min-h-[44px] text-center"
             >
               <span>{product.mallName || '최저가'} 구매</span>

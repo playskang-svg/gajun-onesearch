@@ -46,7 +46,7 @@ h3{font-size:17px;font-weight:800;margin:26px 0 8px;color:#111827}
 p{margin:0 0 15px}
 ul,ol{margin:0 0 15px;padding-left:22px}
 li{margin:0 0 7px}
-.lead{font-size:17px;color:#374151;background:#fff;border:1px solid #e5e7eb;border-left:4px solid #2563eb;border-radius:10px;padding:16px 18px;margin:0 0 26px}
+.lead{font-size:17px;color:#374151;background:#fff;border:1px solid #e5e7eb;border-radius:10px;padding:16px 18px;margin:0 0 26px}
 .meta{color:#6b7280;font-size:13px;margin:0 0 22px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
 .chip{background:#eff6ff;color:#1d4ed8;border:1px solid #dbeafe;border-radius:999px;padding:2px 10px;font-size:12px;font-weight:700}
 .box{background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:16px 18px;margin:0 0 22px}
@@ -56,6 +56,18 @@ li{margin:0 0 7px}
 table{width:100%;border-collapse:collapse;margin:0 0 22px;font-size:14px;background:#fff}
 .tscroll{overflow-x:auto;margin:0 0 22px}
 .tscroll table{margin:0;min-width:420px}
+.skip-link{position:absolute;left:-999px;top:8px;background:#2563eb;color:#fff;padding:8px 12px;border-radius:8px;z-index:100}
+.skip-link:focus{left:8px}
+.tool-columns{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 16px}
+.tool-columns fieldset{border:1px solid #e5e7eb;border-radius:12px;padding:12px 14px;margin:0;background:#fff}
+.tool-columns legend{font-weight:800;padding:0 6px}
+.tool-columns label{display:block;font-size:13px;font-weight:700;color:#374151;margin:0 0 10px}
+.tool-columns input{display:block;width:100%;box-sizing:border-box;margin-top:4px;padding:9px 10px;border:1px solid #d1d5db;border-radius:8px;font:inherit;font-weight:400}
+.action{display:inline-block;background:#2563eb;color:#fff;border:0;border-radius:10px;padding:11px 18px;font:inherit;font-weight:800;cursor:pointer;margin:0 0 18px}
+.action.secondary{background:#fff;color:#1f2937;border:1px solid #d1d5db}
+.tool-result:not(:empty){background:#fff;border:1px solid #e5e7eb;border-radius:12px;padding:14px 16px;margin:0 0 22px}
+.home-intro p{font-size:16px}
+@media(max-width:640px){.tool-columns{grid-template-columns:1fr}}
 th,td{border:1px solid #e5e7eb;padding:9px 11px;text-align:left;vertical-align:top}
 th{background:#f9fafb;font-weight:800;white-space:nowrap}
 
@@ -160,7 +172,7 @@ footer .fnav a{color:#4b5563;font-weight:600}
 }
 `;
 
-function head({ title, description, canonical, keywords, noindex = false }) {
+function head({ title, description, canonical, keywords, noindex = false, type = 'article' }) {
   return `<!doctype html>
 <html lang="ko">
 <head>
@@ -169,24 +181,27 @@ function head({ title, description, canonical, keywords, noindex = false }) {
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-EZ5BGF36SW');</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="naver-site-verification" content="a87b8613b42ab0b92255599ec27bd41b66770f9f">
+<meta name="google-site-verification" content="7drVp4OLR6ICyDhzBLV0rR7vAP-ZpUEY2GxN9Y0m30Q">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(description)}">
 <meta name="robots" content="${noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large'}">
 ${keywords ? `<meta name="keywords" content="${esc(keywords)}">` : ''}
 <link rel="canonical" href="${esc(canonical)}">
-<meta property="og:type" content="article">
+<meta property="og:type" content="${type}">
 <meta property="og:site_name" content="${esc(SITE.name)}">
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(description)}">
 <meta property="og:url" content="${esc(canonical)}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="google-adsense-account" content="ca-pub-4030620718116834">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4030620718116834" crossorigin="anonymous"></script>
+${noindex ? '' : '<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4030620718116834" crossorigin="anonymous"></script>'}
+<link rel="alternate" type="application/rss+xml" title="가전비교연구소 RSS" href="${SITE.domain}/rss.xml">
 <link rel="preconnect" href="https://cdn.jsdelivr.net">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
 <style>${CSS}</style>
 </head>
-<body>`;
+<body><a class="skip-link" href="#main-content">본문 바로가기</a>`;
 }
 
 function header(activeCat) {
@@ -203,7 +218,7 @@ function header(activeCat) {
   <a class="brand" href="/">${esc(SITE.name)}<span>${esc(SITE.tagline)}</span></a>
   <nav class="main">
     <a href="/guide/"${activeCat === 'hub' ? ' style="color:#2563eb;background:#eff6ff"' : ''}>가전 꿀팁</a>
-    <a href="/">스펙 비교</a>
+    <a href="/compare/">비용 비교</a>
     <a href="/guide/about/">사이트 소개</a>
   </nav>
 </div></header>
@@ -218,7 +233,7 @@ function footer() {
   <div class="notice">${esc(SITE.affiliateNotice)} <a href="/guide/disclosure/">자세히 보기</a></div>
   <div class="fnav">
     <a href="/guide/">가전 꿀팁</a>
-    <a href="/">스펙 비교</a>
+    <a href="/compare/">비용 비교</a>
     <a href="/guide/about/">사이트 소개</a>
     <a href="/guide/editorial/">편집 원칙</a>
     <a href="/guide/disclosure/">제휴·수익 고지</a>
@@ -255,8 +270,9 @@ ${list
 }
 
 /** 글 하단 '확인한 출처' 섹션 (출처 URL은 직접 열어 확인한 것만 sources.mjs에 둔다) */
-function sourcesSection(slug) {
-  const ids = POST_SOURCES[slug];
+function sourcesSection(post) {
+  if (post.sources?.length) return `<h2>참고한 공식 자료</h2><div class="box"><p>확인일: ${esc(post.reviewed)}. 아래 자료는 해당 제조사·기관의 안내입니다. 모든 제품에 동일하게 적용되는 시험 결과로 해석하지 마세요.</p><ul>${post.sources.map(s=>`<li>${esc(s.org)} — <a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.doc)}</a></li>`).join('')}</ul></div>`;
+  const ids = POST_SOURCES[post.slug];
   if (!ids?.length) return '';
   const items = ids
     .map((id) => SRC[id])
@@ -273,6 +289,15 @@ function sourcesSection(slug) {
 ${items}
   </ul>
 </div>`;
+}
+
+/** 제휴 링크에 rel="sponsored nofollow" 표시 (Google 스팸 정책·쿠팡 파트너스 요건) */
+function markSponsored(html) {
+  return html.replace(/<a ([^>]*href="https?:\/\/(?:link\.coupang\.com|lpweb\.kr)[^"]*"[^>]*)>/g, (m, attrs) =>
+    /rel=/.test(attrs)
+      ? m.replace(/rel="([^"]*)"/, (_, r) => `rel="${/sponsored/.test(r) ? r : `sponsored nofollow ${r}`}"`)
+      : `<a ${attrs} rel="sponsored nofollow noopener">`
+  );
 }
 
 /** 제휴 링크가 들어 있는 글 상단 고지 */
@@ -296,8 +321,8 @@ export function renderPost(post, related = [], figure = '', faqList = [], option
     : '';
 
   const iso = post.date.replace(/\./g, '-');
-  const hasSources = (POST_SOURCES[post.slug] ?? []).length > 0;
-  const modIso = hasSources ? CHECKED : iso;
+  const hasSources = Boolean(post.sources?.length || (POST_SOURCES[post.slug] ?? []).length);
+  const modIso = post.reviewed ?? (hasSources && CHECKED > iso ? CHECKED : iso);
   const graph = [
     {
       '@type': 'Article',
@@ -345,10 +370,10 @@ export function renderPost(post, related = [], figure = '', faqList = [], option
       noindex: options.noindex ?? false,
     }) +
     header(post.category) +
-    `<main><div class="wrap">
+    `<main id="main-content"><div class="wrap">
   <div class="meta"><span class="chip">${esc(catName(post.category))}</span><span>${esc(
       post.date
-    )} 작성</span><span>가전비교연구소 편집팀</span></div>
+    )} 작성</span>${post.reviewed ? `<span>${esc(post.reviewed)} 내용 수정</span>` : ''}<a href="/guide/editorial/">가전비교연구소 · 편집 기준</a></div>
   <h1>${esc(post.title)}</h1>
   <div class="lead">${esc(post.summary)}</div>
   ${affiliateTop(post.body)}
@@ -356,13 +381,13 @@ export function renderPost(post, related = [], figure = '', faqList = [], option
     <div class="bt">${hasSources ? '확인한 출처와 확인일' : '이 글의 기준'}</div>
     <p style="margin:0">${
       hasSources
-        ? `이 글의 수치와 기준은 글 하단 '확인한 출처'에 적은 자료를 ${CHECKED_LABEL}에 직접 열어 확인했습니다. 구매·수리 전에는 제조사 공식 안내를 함께 확인하세요.`
-        : '제조사 공개 사양과 사용설명서를 기준으로 정리했습니다. 수치와 기준은 바뀔 수 있으므로 구매·수리 전에는 제조사 공식 안내를 다시 확인하세요.'
+        ? '참고한 자료와 확인일은 글 하단에 적었습니다. 공개 자료를 바탕으로 정리한 안내이며 자체 시험·실사용 후기가 아닙니다. 모델별 설명서와 다른 경우 해당 제품의 공식 안내를 우선하세요.'
+        : '일반적인 확인 순서를 정리한 안내입니다. 개별 모델을 직접 시험하거나 고장을 진단한 결과가 아니며, 작업 전 해당 모델의 설명서와 서비스센터 안내를 확인하세요.'
     }</p>
   </div>
-  ${insertFigure(post.body, figure)}
+  ${markSponsored(insertFigure(post.body, figure))}
   ${faqSection(faqList)}
-  ${sourcesSection(post.slug)}
+  ${sourcesSection(post)}
   ${rel}
 </div></main>` +
     `<script type="application/ld+json">${JSON.stringify(ld)}</script>` +
@@ -388,9 +413,9 @@ export function renderList({ title, description, canonical, heading, intro, grou
     .join('');
 
   return (
-    head({ title, description, canonical }) +
+    head({ title, description, canonical, type: 'website' }) +
     header(activeCat) +
-    `<main><div class="wrap wide">
+    `<main id="main-content"><div class="wrap wide">
   <h1>${esc(heading)}</h1>
   <div class="lead">${esc(intro)}</div>
   ${body}
@@ -400,12 +425,67 @@ export function renderList({ title, description, canonical, heading, intro, grou
 }
 
 /** 정책·소개 등 단일 문서 */
-export function renderPage({ title, description, slug, heading, html }) {
-  const url = `${SITE.domain}/guide/${slug}/`;
+export function renderPage({ title, description, slug, heading, html, path }) {
+  const url = `${SITE.domain}${path ?? `/guide/${slug}/`}`;
   return (
     head({ title: `${title} | ${SITE.name}`, description, canonical: url }) +
     header(null) +
-    `<main><div class="wrap"><h1>${esc(heading)}</h1>${html}</div></main>` +
+    `<main id="main-content"><div class="wrap"><h1>${esc(heading)}</h1>${html}</div></main>` +
+    footer()
+  );
+}
+
+/** 홈(/) — 서버에서 완성된 HTML. 제휴 링크 없이 소개·카테고리·최신 글만 싣는다. */
+export function renderHome({ categories, latest }) {
+  const card = (p) =>
+    `<a class="card" href="/guide/${p.slug}/"><div class="k">${esc(catName(p.category))}</div><div class="t">${esc(p.title)}</div><div class="d">${esc(p.summary)}</div></a>`;
+  const catSections = categories
+    .map(
+      ({ cat, posts, total }) => `<h2 class="sec-title">${esc(cat.name)}</h2>
+<p class="sec-desc">${esc(cat.intro)}</p>
+<div class="grid">${posts.map(card).join('')}</div>
+<p style="margin:-8px 0 26px"><a href="/guide/category/${cat.id}/">${esc(cat.name)} 글 ${total}편 모두 보기 →</a></p>`
+    )
+    .join('');
+  const ld = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: SITE.name,
+    url: SITE.domain,
+    description: SITE.description,
+    inLanguage: 'ko',
+    publisher: { '@type': 'Organization', name: SITE.name, url: SITE.domain, email: SITE.email },
+  };
+  return (
+    head({
+      title: `${SITE.name} | 가전 관리·수명·전기요금, 공식 자료로 정리한 가이드`,
+      description: SITE.description,
+      canonical: `${SITE.domain}/`,
+      type: 'website',
+    }) +
+    header('hub') +
+    `<main id="main-content"><div class="wrap wide home-intro">
+  <h1>${esc(SITE.name)}</h1>
+  <div class="lead">가전은 사는 순간보다 쓰는 기간이 훨씬 깁니다. 세탁기에서 쉰내가 날 때, 에어컨에서 물이 떨어질 때, 전기요금이 갑자기 오를 때 무엇부터 확인해야 하는지를 제조사 사용설명서와 공공기관 공개 자료를 근거로 정리합니다.</div>
+  <h2>이 사이트가 하는 일</h2>
+  <p>가전비교연구소는 광고 문구 대신 확인할 수 있는 수치와 공개 자료를 기준으로 가전 정보를 정리하는 사이트입니다. 글마다 참고한 자료와 확인한 날짜를 적고, 자체 시험이나 실사용 후기가 아니라는 점을 분명히 밝힙니다. 모델마다 다른 내용은 단정하지 않고 사용설명서에서 어디를 보면 되는지 확인 방법을 함께 적습니다.</p>
+  <p>안전과 관련된 작업은 직접 하도록 권하지 않습니다. 냉매, 전기 배선, 가스처럼 자격이 필요한 일은 서비스센터나 전문가에게 맡길 범위로 따로 표시하고, 수리비나 설치비처럼 지역과 업체에 따라 달라지는 금액은 보장하지 않고 비교 기준만 제시합니다. 자세한 기준은 <a href="/guide/editorial/">편집 원칙</a>과 <a href="/guide/about/">사이트 소개</a>에 있습니다.</p>
+  <h2>어떻게 읽으면 좋은가</h2>
+  <ol>
+    <li><strong>증상이 있다면</strong> 아래 카테고리에서 해당 가전을 고르고, 글의 확인 순서를 위에서부터 따라가 보세요. 대부분의 글은 원인 진단, 직접 할 수 있는 조치, 전문가에게 맡길 범위 순서로 적혀 있습니다.</li>
+    <li><strong>사기 전이라면</strong> <a href="/guide/category/common/">가전 공통 상식</a>에서 효율등급과 소비전력 읽는 법을 먼저 보고, <a href="/compare/">비용 비교 도구</a>에 두 제품의 구매가와 전력량을 넣어 사용 기간 전체의 비용을 견주어 보세요.</li>
+    <li><strong>전기요금이 걱정이라면</strong> 소비전력(W)과 전력량(kWh)을 구분하는 글부터 보세요. 실제 청구액은 가구 전체 사용량과 누진 구간에 따라 달라지므로, 이 사이트의 계산은 비교용 가정값입니다.</li>
+  </ol>
+  <h2>최근 올라온 글</h2>
+  <div class="grid">${latest.map(card).join('')}</div>
+  ${catSections}
+  <h2>도구</h2>
+  <div class="grid">
+    <a class="card" href="/compare/"><div class="k">계산기</div><div class="t">두 제품의 사용 비용 비교</div><div class="d">구매가, 설치비, 월 전력량, 소모품 비용을 넣으면 사용 기간 전체의 비용과 차액 회수 시점을 계산합니다. 입력값은 저장하지 않습니다.</div></a>
+    <a class="card" href="/finder/"><div class="k">사양 찾기</div><div class="t">제품 사양 한눈에 보기</div><div class="d">제조사 공개 사양을 같은 항목으로 나란히 놓고 보는 화면입니다. 판매처 링크는 제휴 링크이며, 이용 시 사이트가 수수료를 받을 수 있습니다.</div></a>
+  </div>
+</div></main>` +
+    `<script type="application/ld+json">${JSON.stringify(ld)}</script>` +
     footer()
   );
 }
