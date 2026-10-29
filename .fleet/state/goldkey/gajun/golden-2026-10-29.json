@@ -1,0 +1,536 @@
+{
+  "site": "gajun",
+  "scoredAt": "2026-10-29T00:05:37.863Z",
+  "rows": [
+    {
+      "keyword": "빔프로젝터대여",
+      "from": "평수별에어컨",
+      "volume": 1400,
+      "volumePc": 540,
+      "volumeMobile": 860,
+      "adComp": "높음",
+      "adDepth": 10,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "www.beamrental.com",
+          1
+        ],
+        [
+          "www.eshare.go.kr",
+          2
+        ],
+        [
+          "keyrental.co.kr",
+          5
+        ],
+        [
+          "kcmf.or.kr",
+          7
+        ],
+        [
+          "jooyonit.com",
+          8
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 14,
+      "ourRank": null,
+      "domainCount": 5,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 14건 · 1위 전문사이트(www.beamrental.com)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "냉장고중고",
+      "from": "식기세척기",
+      "volume": 1350,
+      "volumePc": 310,
+      "volumeMobile": 1040,
+      "adComp": "중간",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "m.bunjang.co.kr",
+          1
+        ],
+        [
+          "price.enuri.com",
+          2
+        ],
+        [
+          "www.1junggo.com",
+          6
+        ],
+        [
+          "ko.accio.com",
+          8
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 9,
+      "ourRank": null,
+      "domainCount": 4,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 9건 · 1위 전문사이트(m.bunjang.co.kr)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "벽걸이에어컨셀프청소",
+      "from": "에어컨청소",
+      "volume": 1270,
+      "volumePc": 140,
+      "volumeMobile": 1130,
+      "adComp": "높음",
+      "adDepth": 10,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "파세코창문형에어컨",
+      "from": "에어컨",
+      "volume": 1490,
+      "volumePc": 320,
+      "volumeMobile": 1170,
+      "adComp": "높음",
+      "adDepth": 9,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "BLDC무선청소기",
+      "from": "프로젝터",
+      "volume": 1490,
+      "volumePc": 440,
+      "volumeMobile": 1050,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "드럼세탁기10KG",
+      "from": "세탁기",
+      "volume": 1390,
+      "volumePc": 220,
+      "volumeMobile": 1170,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "비스포크식기세척기",
+      "from": "식기세척기",
+      "volume": 1270,
+      "volumePc": 130,
+      "volumeMobile": 1140,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "로봇물걸레청소기",
+      "from": "프로젝터",
+      "volume": 1470,
+      "volumePc": 290,
+      "volumeMobile": 1180,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "자동물걸레청소기",
+      "from": "프로젝터",
+      "volume": 1410,
+      "volumePc": 170,
+      "volumeMobile": 1240,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "차량용진공청소기",
+      "from": "프로젝터",
+      "volume": 1370,
+      "volumePc": 330,
+      "volumeMobile": 1040,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "매립형식기세척기",
+      "from": "식기세척기",
+      "volume": 1360,
+      "volumePc": 160,
+      "volumeMobile": 1200,
+      "adComp": "높음",
+      "adDepth": 7,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "휴대용빔프로젝터",
+      "from": "프로젝터",
+      "volume": 1350,
+      "volumePc": 360,
+      "volumeMobile": 990,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "인덕션후드일체형",
+      "from": "식기세척기",
+      "volume": 1320,
+      "volumePc": 280,
+      "volumeMobile": 1040,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "가열식가습기스텐",
+      "from": "가습기",
+      "volume": 1310,
+      "volumePc": 640,
+      "volumeMobile": 670,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "에어컨중고판매",
+      "from": "평수별에어컨",
+      "volume": 1500,
+      "volumePc": 270,
+      "volumeMobile": 1230,
+      "adComp": "높음",
+      "adDepth": 10,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "퓨리케어가습기",
+      "from": "가습기",
+      "volume": 1490,
+      "volumePc": 240,
+      "volumeMobile": 1250,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "소형공기청정기",
+      "from": "가습기",
+      "volume": 1450,
+      "volumePc": 450,
+      "volumeMobile": 1000,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "소형무선청소기",
+      "from": "프로젝터",
+      "volume": 1430,
+      "volumePc": 600,
+      "volumeMobile": 830,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "스텐전자레인지",
+      "from": "식기세척기",
+      "volume": 1420,
+      "volumePc": 120,
+      "volumeMobile": 1300,
+      "adComp": "중간",
+      "adDepth": 5,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "안드로이드TV",
+      "from": "스타일러",
+      "volume": 1420,
+      "volumePc": 330,
+      "volumeMobile": 1090,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "무선소형청소기",
+      "from": "프로젝터",
+      "volume": 1400,
+      "volumePc": 260,
+      "volumeMobile": 1140,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "초음파식가습기",
+      "from": "가습기",
+      "volume": 1360,
+      "volumePc": 300,
+      "volumeMobile": 1060,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "컴퓨터사운드바",
+      "from": "스타일러",
+      "volume": 1320,
+      "volumePc": 560,
+      "volumeMobile": 760,
+      "adComp": "높음",
+      "adDepth": 9,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "중고김치냉장고",
+      "from": "가습기",
+      "volume": 1300,
+      "volumePc": 210,
+      "volumeMobile": 1090,
+      "adComp": "높음",
+      "adDepth": 10,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "에어컨물떨어짐",
+      "from": "에어컨청소",
+      "volume": 1290,
+      "volumePc": 130,
+      "volumeMobile": 1160,
+      "adComp": "높음",
+      "adDepth": 10,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "에어컨청소가격",
+      "from": "에어컨",
+      "volume": 1270,
+      "volumePc": 180,
+      "volumeMobile": 1090,
+      "adComp": "높음",
+      "adDepth": 10,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "스탠드가습기",
+      "from": "가습기",
+      "volume": 1430,
+      "volumePc": 250,
+      "volumeMobile": 1180,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "가벼운청소기",
+      "from": "프로젝터",
+      "volume": 1430,
+      "volumePc": 490,
+      "volumeMobile": 940,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "코끼리에어컨",
+      "from": "에어컨",
+      "volume": 1370,
+      "volumePc": 510,
+      "volumeMobile": 860,
+      "adComp": "높음",
+      "adDepth": 10,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "TV55인치",
+      "from": "스타일러",
+      "volume": 1350,
+      "volumePc": 340,
+      "volumeMobile": 1010,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "인버터에어컨",
+      "from": "에어컨",
+      "volume": 1320,
+      "volumePc": 310,
+      "volumeMobile": 1010,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "미니스타일러",
+      "from": "에어컨",
+      "volume": 1310,
+      "volumePc": 280,
+      "volumeMobile": 1030,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "다르다인버터",
+      "from": "전기요금",
+      "volume": 1310,
+      "volumePc": 280,
+      "volumeMobile": 1030,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "틸만인덕션",
+      "from": "식기세척기",
+      "volume": 1500,
+      "volumePc": 190,
+      "volumeMobile": 1310,
+      "adComp": "중간",
+      "adDepth": 4,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "국산가습기",
+      "from": "가습기",
+      "volume": 1460,
+      "volumePc": 220,
+      "volumeMobile": 1240,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "롯데제습기",
+      "from": "에어컨",
+      "volume": 1440,
+      "volumePc": 880,
+      "volumeMobile": 560,
+      "adComp": "중간",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "TV모니터",
+      "from": "스타일러",
+      "volume": 1430,
+      "volumePc": 480,
+      "volumeMobile": 950,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "인덕션설치",
+      "from": "식기세척기",
+      "volume": 1380,
+      "volumePc": 310,
+      "volumeMobile": 1070,
+      "adComp": "높음",
+      "adDepth": 10,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "침실가습기",
+      "from": "가습기",
+      "volume": 1320,
+      "volumePc": 690,
+      "volumeMobile": 630,
+      "adComp": "높음",
+      "adDepth": 8,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    },
+    {
+      "keyword": "중고TV",
+      "from": "가습기",
+      "volume": 1480,
+      "volumePc": 380,
+      "volumeMobile": 1100,
+      "adComp": "높음",
+      "adDepth": 7,
+      "error": "HTTP 403",
+      "grade": "?",
+      "why": "HTTP 403"
+    }
+  ]
+}

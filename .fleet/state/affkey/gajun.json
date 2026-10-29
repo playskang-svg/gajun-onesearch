@@ -3,7 +3,7 @@
   "label": "가전비교연구소",
   "domain": "gajun.kr",
   "repo": "playskang-svg/gajun-onesearch",
-  "updatedAt": "2026-10-27T23:52:49.911Z",
+  "updatedAt": "2026-10-29T00:05:38.065Z",
   "updatedBy": "actions",
   "networks": [
     "쿠팡파트너스(가전)"
@@ -16,13 +16,6 @@
   },
   "needs": [],
   "history": [
-    {
-      "at": "2026-09-29T00:26:31.342Z",
-      "by": "actions",
-      "open": 0,
-      "new": 0,
-      "resolved": 0
-    },
     {
       "at": "2026-09-29T23:49:11.588Z",
       "by": "actions",
@@ -221,6 +214,13 @@
     },
     {
       "at": "2026-10-27T23:52:49.911Z",
+      "by": "actions",
+      "open": 0,
+      "new": 0,
+      "resolved": 0
+    },
+    {
+      "at": "2026-10-29T00:05:38.065Z",
       "by": "actions",
       "open": 0,
       "new": 0,
