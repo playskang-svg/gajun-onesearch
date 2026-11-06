@@ -3,16 +3,16 @@
   "label": "가전비교연구소",
   "domain": "gajun.kr",
   "repo": "playskang-svg/gajun-onesearch",
-  "scannedAt": "2026-11-05T03:37:55.992Z",
+  "scannedAt": "2026-11-06T03:35:24.201Z",
   "pagesCrawled": 92,
   "sitemapUrls": 91,
   "externalChecked": 89,
   "summary": {
     "high": 1,
-    "medium": 18,
+    "medium": 15,
     "low": 1
   },
-  "occurrences": 20,
+  "occurrences": 17,
   "findings": [
     {
       "severity": "high",
@@ -43,16 +43,6 @@
     {
       "severity": "medium",
       "kind": "dead-external-link",
-      "page": "https://gajun.kr/guide/heating-mat-compare",
-      "href": "https://eep.energy.or.kr/more/knowhow7.aspx",
-      "status": 404,
-      "refs": 2,
-      "text": "eep.energy.or.kr",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "medium",
-      "kind": "dead-external-link",
       "page": "https://gajun.kr/guide/baby-washer-guide",
       "href": "https://eep.energy.or.kr/certification/certi_list_298.aspx",
       "status": 404,
@@ -67,16 +57,6 @@
       "href": "https://eep.energy.or.kr/certification/certi_list_299.aspx",
       "status": 404,
       "refs": 2,
-      "text": "eep.energy.or.kr",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "medium",
-      "kind": "dead-external-link",
-      "page": "https://gajun.kr/guide/mini-kimchi-fridge-necessity",
-      "href": "https://eep.energy.or.kr/certification/certi_list_241.aspx",
-      "status": 404,
-      "refs": 1,
       "text": "eep.energy.or.kr",
       "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
     },
@@ -113,11 +93,11 @@
     {
       "severity": "medium",
       "kind": "dead-external-link",
-      "page": "https://gajun.kr/guide/vacuum-spec-reading",
-      "href": "https://eep.energy.or.kr/certification/certi_list_115.aspx",
+      "page": "https://gajun.kr/guide/dehumidifier-air-purifier-combo",
+      "href": "https://eep.energy.or.kr",
       "status": 404,
-      "refs": 3,
-      "text": "eep.energy.or.kr",
+      "refs": 2,
+      "text": "한국에너지공단 효율관리제도",
       "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
     },
     {
@@ -157,16 +137,6 @@
       "href": "https://eep.energy.or.kr/certification/certi_list_260.aspx",
       "status": 404,
       "refs": 2,
-      "text": "eep.energy.or.kr",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "medium",
-      "kind": "dead-external-link",
-      "page": "https://gajun.kr/guide/mini-fridge-guide",
-      "href": "https://eep.energy.or.kr/certification/certi_list_252.aspx",
-      "status": 404,
-      "refs": 1,
       "text": "eep.energy.or.kr",
       "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
     },
