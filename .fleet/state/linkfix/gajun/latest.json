@@ -3,16 +3,16 @@
   "label": "가전비교연구소",
   "domain": "gajun.kr",
   "repo": "playskang-svg/gajun-onesearch",
-  "scannedAt": "2026-11-08T02:39:38.469Z",
+  "scannedAt": "2026-11-09T02:50:03.453Z",
   "pagesCrawled": 92,
   "sitemapUrls": 91,
   "externalChecked": 89,
   "summary": {
     "high": 1,
     "medium": 16,
-    "low": 4
+    "low": 1
   },
-  "occurrences": 21,
+  "occurrences": 18,
   "findings": [
     {
       "severity": "high",
@@ -179,33 +179,6 @@
       "refs": 1,
       "text": "eep.energy.or.kr",
       "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://gajun.kr/guide/washer-freeze-prevention-guide",
-      "href": "https://www.samsungsvc.co.kr/solution/540620",
-      "status": 502,
-      "error": null,
-      "note": "502 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://gajun.kr/guide/washer-freeze-prevention-guide",
-      "href": "https://www.samsungsvc.co.kr/solution/38005",
-      "status": 502,
-      "error": null,
-      "note": "502 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://gajun.kr/guide/dehumidifier-air-purifier-combo",
-      "href": "https://www.samsungsvc.co.kr/info/fee?tab=conflict",
-      "status": 502,
-      "error": null,
-      "note": "502 — 일시적일 수 있어 다음 회차에 다시 본다"
     },
     {
       "severity": "low",
