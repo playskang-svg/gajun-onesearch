@@ -3,16 +3,16 @@
   "label": "가전비교연구소",
   "domain": "gajun.kr",
   "repo": "playskang-svg/gajun-onesearch",
-  "scannedAt": "2026-11-11T03:02:16.997Z",
+  "scannedAt": "2026-11-12T04:00:01.595Z",
   "pagesCrawled": 92,
   "sitemapUrls": 91,
   "externalChecked": 89,
   "summary": {
     "high": 1,
-    "medium": 15,
-    "low": 6
+    "medium": 18,
+    "low": 1
   },
-  "occurrences": 22,
+  "occurrences": 20,
   "findings": [
     {
       "severity": "high",
@@ -43,6 +43,26 @@
     {
       "severity": "medium",
       "kind": "dead-external-link",
+      "page": "https://gajun.kr/guide/heating-mat-compare",
+      "href": "https://eep.energy.or.kr/more/knowhow7.aspx",
+      "status": 404,
+      "refs": 2,
+      "text": "eep.energy.or.kr",
+      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
+    },
+    {
+      "severity": "medium",
+      "kind": "dead-external-link",
+      "page": "https://gajun.kr/guide/baby-washer-guide",
+      "href": "https://eep.energy.or.kr/certification/certi_list_298.aspx",
+      "status": 404,
+      "refs": 2,
+      "text": "eep.energy.or.kr",
+      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
+    },
+    {
+      "severity": "medium",
+      "kind": "dead-external-link",
       "page": "https://gajun.kr/guide/baby-washer-guide",
       "href": "https://eep.energy.or.kr/certification/certi_list_299.aspx",
       "status": 404,
@@ -55,16 +75,6 @@
       "kind": "dead-external-link",
       "page": "https://gajun.kr/guide/mini-kimchi-fridge-necessity",
       "href": "https://eep.energy.or.kr/certification/certi_list_241.aspx",
-      "status": 404,
-      "refs": 1,
-      "text": "eep.energy.or.kr",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "medium",
-      "kind": "dead-external-link",
-      "page": "https://gajun.kr/guide/commercial-fridge-at-home",
-      "href": "https://eep.energy.or.kr/certification/certi_list_263.aspx",
       "status": 404,
       "refs": 1,
       "text": "eep.energy.or.kr",
@@ -104,6 +114,16 @@
       "severity": "medium",
       "kind": "dead-external-link",
       "page": "https://gajun.kr/guide/dehumidifier-air-purifier-combo",
+      "href": "https://eep.energy.or.kr",
+      "status": 404,
+      "refs": 2,
+      "text": "한국에너지공단 효율관리제도",
+      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
+    },
+    {
+      "severity": "medium",
+      "kind": "dead-external-link",
+      "page": "https://gajun.kr/guide/dehumidifier-air-purifier-combo",
       "href": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000236196&chrClsCd=010201",
       "status": 404,
       "refs": 4,
@@ -134,9 +154,19 @@
       "severity": "medium",
       "kind": "dead-external-link",
       "page": "https://gajun.kr/guide/energy-grade1-aircon",
-      "href": "https://eep.energy.or.kr/certification/certi_list_260.aspx",
+      "href": "https://eep.energy.or.kr/more/compare_efficiency.aspx",
       "status": 404,
-      "refs": 2,
+      "refs": 4,
+      "text": "eep.energy.or.kr",
+      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
+    },
+    {
+      "severity": "medium",
+      "kind": "dead-external-link",
+      "page": "https://gajun.kr/guide/mini-fridge-guide",
+      "href": "https://eep.energy.or.kr/certification/certi_list_252.aspx",
+      "status": 404,
+      "refs": 1,
       "text": "eep.energy.or.kr",
       "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
     },
@@ -169,51 +199,6 @@
       "refs": 1,
       "text": "eep.energy.or.kr",
       "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://gajun.kr/guide/home-fan-heater-electricity-cost",
-      "href": "https://cyber.kepco.co.kr/ckepco/front/jsp/CY/E/E/CYEEHP00101.jsp",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://gajun.kr/guide/air-styler-electricity-cost",
-      "href": "https://cyber.kepco.co.kr/ckepco/front/jsp/CY/H/C/CYHCHP00206.jsp",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://gajun.kr/guide/dehumidifier-air-purifier-combo",
-      "href": "https://eep.energy.or.kr",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://gajun.kr/guide/electric-range-vs-induction",
-      "href": "https://cyber.kepco.co.kr",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://gajun.kr/guide/mini-fridge-guide",
-      "href": "https://eep.energy.or.kr/certification/certi_list_252.aspx",
-      "status": 0,
-      "error": "The operation was aborted due to timeout",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
     },
     {
       "severity": "low",
