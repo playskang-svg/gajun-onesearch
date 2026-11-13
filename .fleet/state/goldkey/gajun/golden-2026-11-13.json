@@ -1,0 +1,996 @@
+{
+  "site": "gajun",
+  "scoredAt": "2026-11-13T01:14:26.614Z",
+  "rows": [
+    {
+      "keyword": "로봇청소기비교",
+      "from": "프로젝터",
+      "volume": 1500,
+      "volumePc": 370,
+      "volumeMobile": 1130,
+      "adComp": "중간",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "namu.wiki",
+          1
+        ]
+      ],
+      "bigCount": 1,
+      "targeted": 3,
+      "ourRank": null,
+      "domainCount": 1,
+      "grade": "1위가능",
+      "why": "1위 백과(namu.wiki) — 정의만 있고 실행 정보가 없다.",
+      "incumbent": "백과"
+    },
+    {
+      "keyword": "사무실가습기추천",
+      "from": "가습기",
+      "volume": 1450,
+      "volumePc": 810,
+      "volumeMobile": 640,
+      "adComp": "높음",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [],
+      "bigCount": 0,
+      "targeted": 2,
+      "ourRank": null,
+      "domainCount": 0,
+      "grade": "상위가능",
+      "why": "겨냥한 글 2건"
+    },
+    {
+      "keyword": "안드로이드TV",
+      "from": "스타일러",
+      "volume": 1470,
+      "volumePc": 330,
+      "volumeMobile": 1140,
+      "adComp": "중간",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "www.android.com",
+          1
+        ],
+        [
+          "ko.wikipedia.org",
+          2
+        ],
+        [
+          "namu.wiki",
+          5
+        ]
+      ],
+      "bigCount": 2,
+      "targeted": 2,
+      "ourRank": null,
+      "domainCount": 3,
+      "grade": "상위가능",
+      "why": "겨냥한 글 2건 · 1위 전문사이트(www.android.com)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "드럼세탁기청소비용",
+      "from": "에어컨청소",
+      "volume": 1450,
+      "volumePc": 170,
+      "volumeMobile": 1280,
+      "adComp": "높음",
+      "adDepth": 10,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "miso.kr",
+          2
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 5,
+      "ourRank": null,
+      "domainCount": 1,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 5건 · 1위 대형플랫폼(miso.kr)",
+      "incumbent": "대형플랫폼"
+    },
+    {
+      "keyword": "신일초음파가습기",
+      "from": "가습기",
+      "volume": 1460,
+      "volumePc": 280,
+      "volumeMobile": 1180,
+      "adComp": "높음",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "www.shinil.kr",
+          1
+        ],
+        [
+          "www.e-himart.co.kr",
+          2
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 20,
+      "ourRank": null,
+      "domainCount": 2,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 20건 · 1위 전문사이트(www.shinil.kr)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "공기청정기가습기",
+      "from": "가습기",
+      "volume": 1440,
+      "volumePc": 300,
+      "volumeMobile": 1140,
+      "adComp": "중간",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "namu.wiki",
+          1
+        ]
+      ],
+      "bigCount": 1,
+      "targeted": 5,
+      "ourRank": null,
+      "domainCount": 1,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 5건 · 1위 백과(namu.wiki)",
+      "incumbent": "백과"
+    },
+    {
+      "keyword": "얼음정수기냉장고",
+      "from": "가습기",
+      "volume": 1440,
+      "volumePc": 230,
+      "volumeMobile": 1210,
+      "adComp": "높음",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "www.lge.co.kr",
+          1
+        ],
+        [
+          "caresolutionshop.com",
+          2
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 13,
+      "ourRank": null,
+      "domainCount": 2,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 13건 · 1위 전문사이트(www.lge.co.kr)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "휴대용미니가습기",
+      "from": "가습기",
+      "volume": 1430,
+      "volumePc": 700,
+      "volumeMobile": 730,
+      "adComp": "중간",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "sijang.epost.go.kr",
+          1
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 8,
+      "ourRank": null,
+      "domainCount": 1,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 8건 · 1위 관공서(sijang.epost.go.kr)",
+      "incumbent": "관공서"
+    },
+    {
+      "keyword": "김치냉장고김치통",
+      "from": "가습기",
+      "volume": 1420,
+      "volumePc": 270,
+      "volumeMobile": 1150,
+      "adComp": "높음",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [],
+      "bigCount": 0,
+      "targeted": 7,
+      "ourRank": null,
+      "domainCount": 0,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 7건"
+    },
+    {
+      "keyword": "매립형식기세척기",
+      "from": "식기세척기",
+      "volume": 1420,
+      "volumePc": 130,
+      "volumeMobile": 1290,
+      "adComp": "높음",
+      "adDepth": 7,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "cookpick.kr",
+          1
+        ],
+        [
+          "dishinstall.homecareland.co.kr",
+          1
+        ],
+        [
+          "www.coupang.com",
+          2
+        ],
+        [
+          "www.11st.co.kr",
+          3
+        ]
+      ],
+      "bigCount": 2,
+      "targeted": 11,
+      "ourRank": null,
+      "domainCount": 4,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 11건 · 1위 전문사이트(cookpick.kr)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "통돌이세탁기추천",
+      "from": "세탁기",
+      "volume": 1420,
+      "volumePc": 430,
+      "volumeMobile": 990,
+      "adComp": "중간",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [],
+      "bigCount": 0,
+      "targeted": 10,
+      "ourRank": null,
+      "domainCount": 0,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 10건"
+    },
+    {
+      "keyword": "스팀로봇청소기",
+      "from": "프로젝터",
+      "volume": 1500,
+      "volumePc": 280,
+      "volumeMobile": 1220,
+      "adComp": "높음",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "namu.wiki",
+          1
+        ]
+      ],
+      "bigCount": 1,
+      "targeted": 8,
+      "ourRank": null,
+      "domainCount": 1,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 8건 · 1위 백과(namu.wiki)",
+      "incumbent": "백과"
+    },
+    {
+      "keyword": "빔프로젝터대여",
+      "from": "평수별에어컨",
+      "volume": 1490,
+      "volumePc": 610,
+      "volumeMobile": 880,
+      "adComp": "높음",
+      "adDepth": 10,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "pjplus.com",
+          1
+        ],
+        [
+          "keyrental.co.kr",
+          2
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 7,
+      "ourRank": null,
+      "domainCount": 2,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 7건 · 1위 전문사이트(pjplus.com)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "스텐전자레인지",
+      "from": "식기세척기",
+      "volume": 1460,
+      "volumePc": 120,
+      "volumeMobile": 1340,
+      "adComp": "중간",
+      "adDepth": 5,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "www.yugacrew.com",
+          3
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 7,
+      "ourRank": null,
+      "domainCount": 1,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 7건 · 1위 전문사이트(www.yugacrew.com)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "김치냉장고렌탈",
+      "from": "가습기",
+      "volume": 1370,
+      "volumePc": 260,
+      "volumeMobile": 1110,
+      "adComp": "높음",
+      "adDepth": 10,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "www.lge.co.kr",
+          2
+        ],
+        [
+          "rental.lghellovision.net",
+          3
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 21,
+      "ourRank": null,
+      "domainCount": 2,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 21건 · 1위 전문사이트(www.lge.co.kr)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "전자레인지오븐",
+      "from": "식기세척기",
+      "volume": 1340,
+      "volumePc": 310,
+      "volumeMobile": 1030,
+      "adComp": "중간",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "www.samsung.com",
+          3
+        ],
+        [
+          "www.lge.co.kr",
+          3
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 5,
+      "ourRank": null,
+      "domainCount": 2,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 5건 · 1위 전문사이트(www.samsung.com)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "핸디형청소기",
+      "from": "프로젝터",
+      "volume": 1490,
+      "volumePc": 540,
+      "volumeMobile": 950,
+      "adComp": "중간",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "www.10x10.co.kr",
+          1
+        ],
+        [
+          "www.navimro.com",
+          2
+        ],
+        [
+          "support.kr.dyson.com",
+          3
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 6,
+      "ourRank": null,
+      "domainCount": 3,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 6건 · 1위 전문사이트(www.10x10.co.kr)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "영업용청소기",
+      "from": "프로젝터",
+      "volume": 1470,
+      "volumePc": 380,
+      "volumeMobile": 1090,
+      "adComp": "높음",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "www.ghcleaner.co.kr",
+          1
+        ],
+        [
+          "www.cleanstarmall.com",
+          2
+        ],
+        [
+          "www.upsonara.com",
+          3
+        ],
+        [
+          "www.coupang.com",
+          4
+        ],
+        [
+          "www.enuri.com",
+          4
+        ],
+        [
+          "price.enuri.com",
+          4
+        ],
+        [
+          "www.navimro.com",
+          5
+        ]
+      ],
+      "bigCount": 1,
+      "targeted": 5,
+      "ourRank": null,
+      "domainCount": 7,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 5건 · 1위 전문사이트(www.ghcleaner.co.kr)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "천정형에어컨",
+      "from": "에어컨",
+      "volume": 1410,
+      "volumePc": 430,
+      "volumeMobile": 980,
+      "adComp": "높음",
+      "adDepth": 10,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "www.lge.co.kr",
+          1
+        ],
+        [
+          "www.samsungsvc.co.kr",
+          2
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 5,
+      "ourRank": null,
+      "domainCount": 2,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 5건 · 1위 전문사이트(www.lge.co.kr)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "밥솥가습기",
+      "from": "가습기",
+      "volume": 1440,
+      "volumePc": 320,
+      "volumeMobile": 1120,
+      "adComp": "높음",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [],
+      "bigCount": 0,
+      "targeted": 16,
+      "ourRank": null,
+      "domainCount": 0,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 16건"
+    },
+    {
+      "keyword": "틸만인덕션",
+      "from": "식기세척기",
+      "volume": 1390,
+      "volumePc": 200,
+      "volumeMobile": 1190,
+      "adComp": "중간",
+      "adDepth": 4,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "www.thielmann.co.kr",
+          1
+        ],
+        [
+          "price.enuri.com",
+          1
+        ],
+        [
+          "www.costco.co.kr",
+          3
+        ],
+        [
+          "www.youtube.com",
+          4
+        ],
+        [
+          "m-shinsegaemall.ssg.com",
+          4
+        ],
+        [
+          "m.enuri.com",
+          5
+        ]
+      ],
+      "bigCount": 1,
+      "targeted": 23,
+      "ourRank": null,
+      "domainCount": 6,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 23건 · 1위 전문사이트(www.thielmann.co.kr)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "대우세탁기",
+      "from": "세탁기",
+      "volume": 1390,
+      "volumePc": 190,
+      "volumeMobile": 1200,
+      "adComp": "높음",
+      "adDepth": 10,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "manuall.kr",
+          14
+        ],
+        [
+          "xn--tv-224j22a.com",
+          15
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 16,
+      "ourRank": null,
+      "domainCount": 2,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 16건 · 1위 전문사이트(manuall.kr)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "인덕션설치",
+      "from": "식기세척기",
+      "volume": 1360,
+      "volumePc": 360,
+      "volumeMobile": 1000,
+      "adComp": "높음",
+      "adDepth": 10,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "www.lge.co.kr",
+          4
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 13,
+      "ourRank": null,
+      "domainCount": 1,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 13건 · 1위 전문사이트(www.lge.co.kr)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "1인인덕션",
+      "from": "식기세척기",
+      "volume": 1350,
+      "volumePc": 330,
+      "volumeMobile": 1020,
+      "adComp": "중간",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "eatreviewer.com",
+          1
+        ],
+        [
+          "deal.11st.co.kr",
+          2
+        ]
+      ],
+      "bigCount": 1,
+      "targeted": 9,
+      "ourRank": null,
+      "domainCount": 2,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 9건 · 1위 전문사이트(eatreviewer.com)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "중고TV",
+      "from": "가습기",
+      "volume": 1370,
+      "volumePc": 360,
+      "volumeMobile": 1010,
+      "adComp": "높음",
+      "adDepth": 7,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "www.1junggo.com",
+          1
+        ],
+        [
+          "www.accio.com",
+          2
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 13,
+      "ourRank": null,
+      "domainCount": 2,
+      "grade": "경쟁있음",
+      "why": "겨냥한 글 13건 · 1위 전문사이트(www.1junggo.com)",
+      "incumbent": "전문사이트"
+    },
+    {
+      "keyword": "단초점빔프로젝터",
+      "from": "스타일러",
+      "volume": 1400,
+      "volumePc": 430,
+      "volumeMobile": 970,
+      "adComp": "높음",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "dpg.danawa.com",
+          2
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 5,
+      "ourRank": null,
+      "domainCount": 1,
+      "grade": "의도불일치",
+      "why": "1위 쇼핑(dpg.danawa.com) — 상품을 사려는 질의다. 정보 글로 1위를 해도 전환되지 않는다.",
+      "incumbent": "쇼핑"
+    },
+    {
+      "keyword": "중고김치냉장고",
+      "from": "가습기",
+      "volume": 1500,
+      "volumePc": 240,
+      "volumeMobile": 1260,
+      "adComp": "높음",
+      "adDepth": 10,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "m.enuri.com",
+          1
+        ],
+        [
+          "www.auction.co.kr",
+          2
+        ],
+        [
+          "price.enuri.com",
+          2
+        ],
+        [
+          "www.enuri.com",
+          2
+        ],
+        [
+          "www.1junggo.com",
+          3
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 13,
+      "ourRank": null,
+      "domainCount": 5,
+      "grade": "의도불일치",
+      "why": "1위 쇼핑(m.enuri.com) — 상품을 사려는 질의다. 정보 글로 1위를 해도 전환되지 않는다.",
+      "incumbent": "쇼핑"
+    },
+    {
+      "keyword": "컴퓨터사운드바",
+      "from": "스타일러",
+      "volume": 1370,
+      "volumePc": 580,
+      "volumeMobile": 790,
+      "adComp": "높음",
+      "adDepth": 10,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "www.11st.co.kr",
+          4
+        ]
+      ],
+      "bigCount": 1,
+      "targeted": 2,
+      "ourRank": null,
+      "domainCount": 1,
+      "grade": "의도불일치",
+      "why": "1위 쇼핑(www.11st.co.kr) — 상품을 사려는 질의다. 정보 글로 1위를 해도 전환되지 않는다.",
+      "incumbent": "쇼핑"
+    },
+    {
+      "keyword": "로봇청소기순위",
+      "from": "프로젝터",
+      "volume": 1350,
+      "volumePc": 650,
+      "volumeMobile": 700,
+      "adComp": "높음",
+      "adDepth": 10,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "dpg.danawa.com",
+          2
+        ]
+      ],
+      "bigCount": 0,
+      "targeted": 4,
+      "ourRank": null,
+      "domainCount": 1,
+      "grade": "의도불일치",
+      "why": "1위 쇼핑(dpg.danawa.com) — 상품을 사려는 질의다. 정보 글로 1위를 해도 전환되지 않는다.",
+      "incumbent": "쇼핑"
+    },
+    {
+      "keyword": "TV모니터",
+      "from": "스타일러",
+      "volume": 1480,
+      "volumePc": 430,
+      "volumeMobile": 1050,
+      "adComp": "높음",
+      "adDepth": 8,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "www.11st.co.kr",
+          3
+        ],
+        [
+          "ko.wikihow.com",
+          4
+        ]
+      ],
+      "bigCount": 1,
+      "targeted": 5,
+      "ourRank": null,
+      "domainCount": 2,
+      "grade": "의도불일치",
+      "why": "1위 쇼핑(www.11st.co.kr) — 상품을 사려는 질의다. 정보 글로 1위를 해도 전환되지 않는다.",
+      "incumbent": "쇼핑"
+    },
+    {
+      "keyword": "무선인덕션",
+      "from": "식기세척기",
+      "volume": 1410,
+      "volumePc": 570,
+      "volumeMobile": 840,
+      "adComp": "높음",
+      "adDepth": 7,
+      "hasWebBlock": true,
+      "top": [
+        [
+          "prod.danawa.com",
+          1
+        ],
+        [
+          "www.danawa.com",
+          1
+        ],
+        [
+          "www.coupang.com",
+          3
+        ],
+        [
+          "aircook.co.kr",
+          3
+        ],
+        [
+          "www.11st.co.kr",
+          3
+        ],
+        [
+          "www.canadain.kr",
+          4
+        ]
+      ],
+      "bigCount": 2,
+      "targeted": 6,
+      "ourRank": null,
+      "domainCount": 6,
+      "grade": "의도불일치",
+      "why": "1위 쇼핑(prod.danawa.com) — 상품을 사려는 질의다. 정보 글로 1위를 해도 전환되지 않는다.",
+      "incumbent": "쇼핑"
+    },
+    {
+      "keyword": "가정용정수기추천",
+      "from": "가습기",
+      "volume": 1500,
+      "volumePc": 300,
+      "volumeMobile": 1200,
+      "adComp": "높음",
+      "adDepth": 10,
+      "hasWebBlock": false,
+      "top": [],
+      "bigCount": 0,
+      "targeted": 5,
+      "ourRank": null,
+      "domainCount": 0,
+      "grade": "진입불가",
+      "why": "웹사이트 블록 없음(블로그·카페 위주)"
+    },
+    {
+      "keyword": "가열식미니가습기",
+      "from": "가습기",
+      "volume": 1450,
+      "volumePc": 380,
+      "volumeMobile": 1070,
+      "adComp": "높음",
+      "adDepth": 8,
+      "hasWebBlock": false,
+      "top": [],
+      "bigCount": 0,
+      "targeted": 4,
+      "ourRank": null,
+      "domainCount": 0,
+      "grade": "진입불가",
+      "why": "웹사이트 블록 없음(블로그·카페 위주)"
+    },
+    {
+      "keyword": "스텐가열가습기",
+      "from": "가습기",
+      "volume": 1450,
+      "volumePc": 220,
+      "volumeMobile": 1230,
+      "adComp": "높음",
+      "adDepth": 7,
+      "hasWebBlock": false,
+      "top": [],
+      "bigCount": 0,
+      "targeted": 0,
+      "ourRank": null,
+      "domainCount": 0,
+      "grade": "진입불가",
+      "why": "웹사이트 블록 없음(블로그·카페 위주)"
+    },
+    {
+      "keyword": "무선청소기비교",
+      "from": "프로젝터",
+      "volume": 1440,
+      "volumePc": 210,
+      "volumeMobile": 1230,
+      "adComp": "높음",
+      "adDepth": 8,
+      "hasWebBlock": false,
+      "top": [],
+      "bigCount": 0,
+      "targeted": 1,
+      "ourRank": null,
+      "domainCount": 0,
+      "grade": "진입불가",
+      "why": "웹사이트 블록 없음(블로그·카페 위주)"
+    },
+    {
+      "keyword": "에어컨중고판매",
+      "from": "평수별에어컨",
+      "volume": 1390,
+      "volumePc": 250,
+      "volumeMobile": 1140,
+      "adComp": "높음",
+      "adDepth": 10,
+      "hasWebBlock": false,
+      "top": [],
+      "bigCount": 0,
+      "targeted": 5,
+      "ourRank": null,
+      "domainCount": 0,
+      "grade": "진입불가",
+      "why": "웹사이트 블록 없음(블로그·카페 위주)"
+    },
+    {
+      "keyword": "간편세척가습기",
+      "from": "가습기",
+      "volume": 1360,
+      "volumePc": 380,
+      "volumeMobile": 980,
+      "adComp": "높음",
+      "adDepth": 8,
+      "hasWebBlock": false,
+      "top": [],
+      "bigCount": 0,
+      "targeted": 15,
+      "ourRank": null,
+      "domainCount": 0,
+      "grade": "진입불가",
+      "why": "웹사이트 블록 없음(블로그·카페 위주)"
+    },
+    {
+      "keyword": "가벼운청소기",
+      "from": "프로젝터",
+      "volume": 1350,
+      "volumePc": 340,
+      "volumeMobile": 1010,
+      "adComp": "중간",
+      "adDepth": 8,
+      "hasWebBlock": false,
+      "top": [],
+      "bigCount": 0,
+      "targeted": 6,
+      "ourRank": null,
+      "domainCount": 0,
+      "grade": "진입불가",
+      "why": "웹사이트 블록 없음(블로그·카페 위주)"
+    },
+    {
+      "keyword": "침실가습기",
+      "from": "가습기",
+      "volume": 1420,
+      "volumePc": 740,
+      "volumeMobile": 680,
+      "adComp": "높음",
+      "adDepth": 8,
+      "hasWebBlock": false,
+      "top": [],
+      "bigCount": 0,
+      "targeted": 7,
+      "ourRank": null,
+      "domainCount": 0,
+      "grade": "진입불가",
+      "why": "웹사이트 블록 없음(블로그·카페 위주)"
+    },
+    {
+      "keyword": "스팀가습기",
+      "from": "가습기",
+      "volume": 1400,
+      "volumePc": 570,
+      "volumeMobile": 830,
+      "adComp": "높음",
+      "adDepth": 8,
+      "hasWebBlock": false,
+      "top": [],
+      "bigCount": 0,
+      "targeted": 9,
+      "ourRank": null,
+      "domainCount": 0,
+      "grade": "진입불가",
+      "why": "웹사이트 블록 없음(블로그·카페 위주)"
+    }
+  ]
+}
