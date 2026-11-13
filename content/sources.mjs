@@ -70,6 +70,14 @@ export const SRC = {
   kca_warranty: { org: '한국소비자원 게시 소비자분쟁해결기준 별표 Ⅲ', doc: '품목별 품질보증기간 및 부품보유기간 (에어컨 냉방전용 2년·냉난방 겸용 1년, 부품보유 제조일로부터 8년, 전기(가스)오븐·가스레인지 6년, 전기조리기기 3년, 별도 기간 없는 경우 규정, 기산점은 제조일자. 고시 번호·시행일은 확인하지 못함)', url: 'https://www.kca.go.kr/home/board/downloadlink.do?bid=00000011&did=1003146556' },
   dispute_reprint: { org: '삼성전자서비스 (소비자분쟁해결기준 고시 전재)', doc: '소비자분쟁해결기준 별표 Ⅱ 품목별 해결기준·별표 Ⅲ (품질보증기간 내 무상수리, 동일 하자 2회·여러 부위 4회 수리 후 재발 시 수리 불가능으로 봄, 부품보유기간 내 부품 부재 피해 환급, 2016.10.26 이후 구입 제품 부품보유기간 규정, 제조사 전재본이라 최신 개정 여부는 확인하지 못함)', url: 'https://www.samsungsvc.co.kr/info/fee?tab=conflict' },
   kca_induction2018: { org: '대한민국 정책브리핑(한국소비자원 인덕션레인지 비교정보, 2018.8.28)', doc: '전기인덕션 관련 비교정보 생산결과 (1구 프리스탠딩 10종: 안전성·가열시간·에너지소비효율·소음·표시사항·보유 기능, 오래된 자료)', url: 'https://www.korea.kr/common/download.do?fileId=186243701' },
+  lge_dw_guide: { org: 'LG전자', doc: '식기세척기 구매 가이드 (라인업별 용량·설치·트루스팀·건조 비교표, 2026.11.13 확인)', url: 'https://www.lge.co.kr/story/buying-guide/lg-dishwasher' },
+  lge_dw_install: { org: 'LG전자', doc: 'LG 디오스 식기세척기 설치가이드 (걸레받이 150/100mm, 프리스탠딩 겸용 DF 계열, 설치 공간 치수, 2026.11.13 확인)', url: 'https://www.lge.co.kr/story/user-guide/dishwashers-install-guide' },
+  lge_dw_product: { org: 'LG전자', doc: 'DUE6BGL1E 제품 페이지 (가격 표시, 빌트인 전용 프리스탠딩 불가, 상업 용도 설치 불가·공용 사용 보증 50% 단축, 2026.11.13 확인)', url: 'https://www.lge.co.kr/product/dishwashers/due6bgl1e' },
+  lge_dw_biz: { org: 'LG전자 사업자몰', doc: '식기세척기 분류(14인용·12인용·세트) 목록 (2026.11.13 확인)', url: 'https://www.lge.co.kr/business/dishwashers' },
+  mfds_pesticide2024: { org: '식품의약품안전처 식품안전나라', doc: '잔류농약을 줄이는 세척법으로 과일·채소 안전하게 먹기 (2024.08.08, 수돗물 세척 80% 이상 제거)', url: 'https://www.foodsafetykorea.go.kr/portal/board/boardDetail.do?bbs_no=bbs001&menu_grp=MENU_NEW01&menu_no=3120&ntctxt_no=1100621' },
+  kci_softlens2011: { org: '한국안광학회지 16권 1호(2011)', doc: '안경용 초음파세척기를 이용한 소프트렌즈 세척 실태 조사와 세척용기에 따른 단백질 제거 효과', url: 'https://kiss.kstudy.com/DetailOa/Ar?key=54030201' },
+  law_hygiene_items: { org: '국가법령정보센터(식품의약품안전처 고시)', doc: '위생용품의 규격 및 기준: 세척제 유형(과일·채소용, 식품용 기구·용기용-자동식기세척기용 포함), 헹굼보조제, 사용 후 헹굼', url: 'https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000283830&chrClsCd=010201' },
+  cbe_schoolmeal: { org: '충청북도교육청', doc: '학교급식 위생관리 자료: 식기세척기 식기 표면 71℃ 이상 확인·기록, 열탕 100℃ 30초, 전기살균 160~180℃ 30분', url: 'https://www.cbe.go.kr/upload/na_old/dc520bb5-50ad-48b0-94dc-cf1475f299ba/2022/16690843612.pdf' },
 };
 
 // slug → 출처 id 목록 (본문이 이미 자체 출처 목록을 가진 글은 넣지 않는다)
@@ -113,4 +121,7 @@ export const POST_SOURCES = {
   'baby-washer-guide': ['kca_drum2005', 'kca_babydet2020', 'kca_drum2020', 'eep_washer_top', 'eep_washer_drum', 'kca_label2007'],
   'daewoo-aircon-guide': ['kca_warranty', 'dispute_reprint', 'kca_aircon2026', 'eep_aircon_list'],
   'siemens-induction-guide': ['kca_induction2018', 'kca_warranty', 'safetykorea'],
+  'lg-dishwasher-buying-guide': ['lge_dw_guide', 'lge_dw_install', 'lge_dw_product', 'lge_dw_biz', 'kca_smalldw2025'],
+  'ultrasonic-cleaner-guide': ['kca_smalldw2025', 'mfds_pesticide2024', 'kci_softlens2011', 'law_hygiene_items'],
+  'commercial-dishwasher-guide': ['lge_dw_product', 'law_hygiene_items', 'cbe_schoolmeal'],
 };

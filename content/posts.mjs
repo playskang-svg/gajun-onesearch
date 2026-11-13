@@ -7,6 +7,7 @@ import { cleanerPosts } from './posts-cleaner.mjs';
 import { kitchenPosts } from './posts-kitchen.mjs';
 import { digitalPosts } from './posts-digital.mjs';
 import { heatingPosts } from './posts-heating.mjs';
+import { dishwasherPosts } from './posts-dishwasher.mjs';
 
 export const posts = [
   ...washerPosts,
@@ -18,6 +19,7 @@ export const posts = [
   ...kitchenPosts,
   ...digitalPosts,
   ...heatingPosts,
+  ...dishwasherPosts,
 ]
   // 최신순
   .sort((a, b) => b.date.localeCompare(a.date));

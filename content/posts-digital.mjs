@@ -36,6 +36,8 @@ export const digitalPosts = [
   <div class="bt">침대나 이불 위에서 노트북을 쓰지 마세요</div>
   <p style="margin:0">이불이나 무릎 위에 노트북을 올려두면 푹신한 섬유가 바닥 흡기구를 밀폐시켜 온도가 90℃를 넘어갑니다. 이는 CPU 성능을 강제로 떨어뜨리는 서멀 쓰로틀링과 메인보드 납땜 크랙의 1등 원인입니다. 반드시 단단한 테이블이나 거치대 위에서 쓰세요.</p>
 </div>
+
+<p>80% 충전 제한을 실제로 켜는 메뉴 위치는 제조사마다 다릅니다. LG 그램·갤럭시북·맥북별 설정 경로는 <a href="https://notebook.tipspedia.kr/posts/laptop-battery-charge-limit/">노트북 배터리 충전 제한 설정 방법</a>에 모델별로 정리돼 있습니다.</p>
 `,
   },
   {
