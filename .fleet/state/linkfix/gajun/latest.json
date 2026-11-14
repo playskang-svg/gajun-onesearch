@@ -3,16 +3,16 @@
   "label": "가전비교연구소",
   "domain": "gajun.kr",
   "repo": "playskang-svg/gajun-onesearch",
-  "scannedAt": "2026-11-12T04:00:01.595Z",
-  "pagesCrawled": 92,
-  "sitemapUrls": 91,
-  "externalChecked": 89,
+  "scannedAt": "2026-11-14T03:49:35.105Z",
+  "pagesCrawled": 97,
+  "sitemapUrls": 96,
+  "externalChecked": 101,
   "summary": {
     "high": 1,
-    "medium": 18,
-    "low": 1
+    "medium": 19,
+    "low": 23
   },
-  "occurrences": 20,
+  "occurrences": 43,
   "findings": [
     {
       "severity": "high",
@@ -20,6 +20,33 @@
       "page": "https://gajun.kr/finder",
       "robots": "noindex, follow",
       "note": "색인 차단이 걸려 있다. 의도한 것인지 확인"
+    },
+    {
+      "severity": "medium",
+      "kind": "double-slash",
+      "page": "https://gajun.kr/guide/dishwasher-detergent-guide",
+      "href": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000283830&chrClsCd=010201",
+      "text": "www.law.go.kr",
+      "nav": false,
+      "note": "경로에 슬래시가 겹쳤다"
+    },
+    {
+      "severity": "medium",
+      "kind": "double-slash",
+      "page": "https://gajun.kr/guide/ultrasonic-cleaner-guide",
+      "href": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000283830&chrClsCd=010201",
+      "text": "www.law.go.kr",
+      "nav": false,
+      "note": "경로에 슬래시가 겹쳤다"
+    },
+    {
+      "severity": "medium",
+      "kind": "double-slash",
+      "page": "https://gajun.kr/guide/commercial-dishwasher-guide",
+      "href": "https://www.law.go.kr/LSW//admRulInfoP.do?admRulSeq=2100000283830&chrClsCd=010201",
+      "text": "www.law.go.kr",
+      "nav": false,
+      "note": "경로에 슬래시가 겹쳤다"
     },
     {
       "severity": "medium",
@@ -123,16 +150,6 @@
     {
       "severity": "medium",
       "kind": "dead-external-link",
-      "page": "https://gajun.kr/guide/dehumidifier-air-purifier-combo",
-      "href": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000236196&chrClsCd=010201",
-      "status": 404,
-      "refs": 4,
-      "text": "www.law.go.kr",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "medium",
-      "kind": "dead-external-link",
       "page": "https://gajun.kr/guide/dishwasher-capacity-guide",
       "href": "https://eep.energy.or.kr/certification/certi_list_292.aspx",
       "status": 404,
@@ -154,9 +171,9 @@
       "severity": "medium",
       "kind": "dead-external-link",
       "page": "https://gajun.kr/guide/energy-grade1-aircon",
-      "href": "https://eep.energy.or.kr/more/compare_efficiency.aspx",
+      "href": "https://eep.energy.or.kr/certification/certi_list_260.aspx",
       "status": 404,
-      "refs": 4,
+      "refs": 2,
       "text": "eep.energy.or.kr",
       "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
     },
@@ -168,16 +185,6 @@
       "status": 404,
       "refs": 1,
       "text": "eep.energy.or.kr",
-      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "medium",
-      "kind": "dead-external-link",
-      "page": "https://gajun.kr/guide/tv-as-monitor-guide",
-      "href": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000185801&chrClsCd=010201",
-      "status": 404,
-      "refs": 1,
-      "text": "www.law.go.kr",
       "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
     },
     {
@@ -199,6 +206,204 @@
       "refs": 1,
       "text": "eep.energy.or.kr",
       "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/air-purifier-compatible-filter-guide",
+      "href": "https://www.kca.go.kr/webzine/board/view?div=kca_2201&linkId=383&menuId=MENU00307",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/heating-mat-compare",
+      "href": "https://www.kca.go.kr/home//sub.do?menukey=4006&mode=view&no=1003052349",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/heating-mat-compare",
+      "href": "https://www.kca.go.kr/smartconsumer/board/download.do?bid=00000146&did=1003056039&fno=10029050&menukey=7301",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/heating-mat-compare",
+      "href": "https://www.kca.go.kr/home/sub.do?menukey=4006&mode=view&no=1001470015&page=4",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/heating-mat-compare",
+      "href": "https://www.safetykorea.kr",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/baby-washer-guide",
+      "href": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1000494919",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/baby-washer-guide",
+      "href": "https://www.kca.go.kr/smartconsumer/board/download.do?bid=00000146&did=1002994865&fno=10027947&menukey=7301",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/baby-washer-guide",
+      "href": "https://www.kca.go.kr/home/sub.do?menukey=4009&mode=view&no=1000647058",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/mini-kimchi-fridge-necessity",
+      "href": "https://www.kca.go.kr/smartconsumer/board/download.do?bid=00000180&did=1003582727&fno=10040505&menukey=7782",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/tv-size-price-guide",
+      "href": "https://www.kca.go.kr/smartconsumer/board/download.do?bid=00000146&did=1003440012&fno=10037306&menukey=7301",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/vacuum-spec-reading",
+      "href": "https://www.kca.go.kr/home/board/download.do?bid=00000013&did=1003922488&fno=10048269&menukey=4002",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/vacuum-spec-reading",
+      "href": "https://www.kca.go.kr/webzine/board/view?menuId=MENU00307&linkId=399&div=kca_2203",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/steam-vs-mop-vacuum",
+      "href": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1000549328",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/steam-vs-mop-vacuum",
+      "href": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1002818050",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/soundbar-guide",
+      "href": "https://www.kca.go.kr/smartconsumer/board/download.do?menukey=7782&fno=10039855&bid=00000180&did=1003519424",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/water-purifier-rental-vs-buy",
+      "href": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003994596",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/water-purifier-rental-vs-buy",
+      "href": "https://www.kca.go.kr/kca/sub.do?menukey=5084&mode=view&no=1001981160&page=58",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/water-purifier-rental-vs-buy",
+      "href": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003003350",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/daewoo-aircon-guide",
+      "href": "https://www.kca.go.kr/home/board/downloadlink.do?bid=00000011&did=1003146556",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/daewoo-aircon-guide",
+      "href": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1004013059",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/mini-fridge-guide",
+      "href": "https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1000401246",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
+    },
+    {
+      "severity": "low",
+      "kind": "external-unreachable",
+      "page": "https://gajun.kr/guide/fridge-lifespan",
+      "href": "https://www.kca.go.kr/odr/pg/pi/osPgBjResolvW.do",
+      "status": 0,
+      "error": "fetch failed",
+      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
     },
     {
       "severity": "low",
