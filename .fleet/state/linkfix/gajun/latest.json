@@ -3,16 +3,16 @@
   "label": "가전비교연구소",
   "domain": "gajun.kr",
   "repo": "playskang-svg/gajun-onesearch",
-  "scannedAt": "2026-11-22T03:27:24.749Z",
+  "scannedAt": "2026-11-23T03:52:36.170Z",
   "pagesCrawled": 99,
   "sitemapUrls": 98,
   "externalChecked": 108,
   "summary": {
     "high": 1,
-    "medium": 22,
-    "low": 8
+    "medium": 25,
+    "low": 1
   },
-  "occurrences": 31,
+  "occurrences": 27,
   "findings": [
     {
       "severity": "high",
@@ -131,6 +131,16 @@
       "severity": "medium",
       "kind": "dead-external-link",
       "page": "https://gajun.kr/guide/commercial-fridge-at-home",
+      "href": "https://eep.energy.or.kr/certification/certi_list_263.aspx",
+      "status": 404,
+      "refs": 1,
+      "text": "eep.energy.or.kr",
+      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
+    },
+    {
+      "severity": "medium",
+      "kind": "dead-external-link",
+      "page": "https://gajun.kr/guide/commercial-fridge-at-home",
       "href": "https://eep.energy.or.kr/business_introduction/effi_summary.aspx",
       "status": 404,
       "refs": 7,
@@ -144,6 +154,16 @@
       "href": "https://eep.energy.or.kr/business_introduction/effi_standard.aspx",
       "status": 404,
       "refs": 2,
+      "text": "eep.energy.or.kr",
+      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
+    },
+    {
+      "severity": "medium",
+      "kind": "dead-external-link",
+      "page": "https://gajun.kr/guide/vacuum-spec-reading",
+      "href": "https://eep.energy.or.kr/certification/certi_list_115.aspx",
+      "status": 404,
+      "refs": 3,
       "text": "eep.energy.or.kr",
       "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
     },
@@ -185,6 +205,16 @@
       "status": 404,
       "refs": 1,
       "text": "한국에너지공단",
+      "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
+    },
+    {
+      "severity": "medium",
+      "kind": "dead-external-link",
+      "page": "https://gajun.kr/guide/energy-grade1-aircon",
+      "href": "https://eep.energy.or.kr/more/compare_efficiency.aspx",
+      "status": 404,
+      "refs": 4,
+      "text": "eep.energy.or.kr",
       "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
     },
     {
@@ -236,69 +266,6 @@
       "refs": 1,
       "text": "eep.energy.or.kr",
       "note": "외부 링크가 죽었다. 대체 출처를 찾거나 링크를 걷어낸다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://gajun.kr/guide/washer-freeze-prevention-guide",
-      "href": "https://www.samsungsvc.co.kr/solution/540620",
-      "status": 502,
-      "error": null,
-      "note": "502 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://gajun.kr/guide/washer-freeze-prevention-guide",
-      "href": "https://www.samsungsvc.co.kr/solution/38005",
-      "status": 502,
-      "error": null,
-      "note": "502 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://gajun.kr/guide/home-fan-heater-electricity-cost",
-      "href": "https://cyber.kepco.co.kr/ckepco/front/jsp/CY/E/E/CYEEHP00101.jsp",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://gajun.kr/guide/air-styler-electricity-cost",
-      "href": "https://cyber.kepco.co.kr/ckepco/front/jsp/CY/H/C/CYHCHP00206.jsp",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://gajun.kr/guide/dehumidifier-air-purifier-combo",
-      "href": "https://www.samsungsvc.co.kr/info/fee?tab=conflict",
-      "status": 502,
-      "error": null,
-      "note": "502 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://gajun.kr/guide/electric-range-vs-induction",
-      "href": "https://cyber.kepco.co.kr",
-      "status": 0,
-      "error": "fetch failed",
-      "note": "응답없음 — 일시적일 수 있어 다음 회차에 다시 본다"
-    },
-    {
-      "severity": "low",
-      "kind": "external-unreachable",
-      "page": "https://gajun.kr/guide/water-purifier-rental-vs-buy",
-      "href": "https://easylaw.go.kr/CSP/CnpClsMain.laf?csmSeq=1455&ccfNo=1&cciNo=2&cnpClsNo=1",
-      "status": 503,
-      "error": null,
-      "note": "503 — 일시적일 수 있어 다음 회차에 다시 본다"
     },
     {
       "severity": "low",
